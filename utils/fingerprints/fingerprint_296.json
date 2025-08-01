@@ -1,0 +1,139 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 1280,
+    "height": 720,
+    "availWidth": 1280,
+    "availHeight": 680,
+    "clientWidth": 0,
+    "clientHeight": 18,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1280,
+    "outerHeight": 680,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Not_A Brand",
+          "version": "99"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "109"
+        },
+        {
+          "brand": "Chromium",
+          "version": "109"
+        }
+      ],
+      "mobile": false,
+      "platform": "Windows"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Win32",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "probably",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [],
+    "mimeTypes": []
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": null,
+    "dischargingTime": null,
+    "level": 0
+  },
+  "videoCard": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "vendor": "Google Inc. (Google)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": "f18d7126192e944462b04d16d179a79fc12656560e6c489c7162f40aba77062f"
+      }
+    ],
+    "micros": [],
+    "webcams": []
+  },
+  "fonts": [
+    "Agency FB",
+    "Arabic Typesetting",
+    "Arial Unicode MS",
+    "Batang",
+    "Calibri",
+    "Century",
+    "Century Gothic",
+    "Franklin Gothic",
+    "Haettenschweiler",
+    "Leelawadee",
+    "Levenim MT",
+    "Lucida Bright",
+    "Lucida Sans",
+    "MS Mincho",
+    "MS Outlook",
+    "MS Reference Specialty",
+    "MS UI Gothic",
+    "MT Extra",
+    "Marlett",
+    "Meiryo UI",
+    "Microsoft Uighur",
+    "Monotype Corsiva",
+    "PMingLiU",
+    "Pristina",
+    "Segoe UI Light",
+    "SimHei",
+    "Vrinda"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

@@ -2,10 +2,7 @@
 
 # jobs page urls for listing all jobs first
 jobs_listed_pages_urls = [
-"https://www.indeed.com/jobs?q=power+bi+analyst&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=f6fec11c6cb0b807", 
-"https://www.indeed.com/jobs?q=data+scientist&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=921edb4b120e47ac", 
-"https://www.indeed.com/jobs?q=analytics%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp"
-
+"https://www.indeed.com/jobs?q=power+bi+analyst&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=f6fec11c6cb0b807"
 ]
 
 # contexts means (google chrome profiles) we will use differents google chrome profiles, proxies and other settings for each context to do fast scraping while doing with one context there are very big chance to block account or indeed server don't giving you reponses to our requests
@@ -13,15 +10,23 @@ jobs_listed_pages_urls = [
 
 # In below var we will gave prompt to ai for geting specfic task for now as matching % for each jobs
 AI_PROMPT = """
+Below is the 'About Me'.
+For each job title, provide **percentage**:
+1. **Match Percentage** – How well this job title matches my profile.
+Return only the highest percentage (Match) for each job title,and your response must in a single line of numbers separated by spaces and keep in mind  without any explaination info. For example:
+Here are the highest percentages
+95 85 30 65...
+About Me:
 """
 
 # resume for ai to provide every jobs matching % base one resume
-resume = """
+RESUME = """
 I'm AI/ML Engineer
 """
-
+#
+per_company_jobs = 3
 # list of companies to ignore for instance like : apple, amazon, google etc
-ignore_companies_jobs = [
+ignore_companies = [
 "HCA Healthcare", 
 "Sumitomo Mitsui Banking Corporation", 
 "KeyBank National Association", 

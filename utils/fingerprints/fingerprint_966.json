@@ -1,0 +1,172 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 1536,
+    "height": 864,
+    "availWidth": 1536,
+    "availHeight": 816,
+    "clientWidth": 0,
+    "clientHeight": 18,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1536,
+    "outerHeight": 816,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1.25
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138"
+        }
+      ],
+      "mobile": false,
+      "platform": "Windows"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Win32",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "Chrome PDF Plugin",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/x-google-chrome-pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chrome PDF Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Chrome PDF Viewer",
+        "description": "",
+        "filename": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "",
+            "enabledPlugin": "Chrome PDF Viewer"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "~~application/pdf~~pdf",
+      "Portable Document Format~~application/x-google-chrome-pdf~~pdf"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001636) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (AMD)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "micros": [
+      {
+        "deviceId": "",
+        "kind": "audioinput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "webcams": [
+      {
+        "deviceId": "",
+        "kind": "videoinput",
+        "label": "",
+        "groupId": ""
+      }
+    ]
+  },
+  "fonts": [
+    "Agency FB",
+    "Calibri",
+    "Century",
+    "Century Gothic",
+    "Franklin Gothic",
+    "Haettenschweiler",
+    "Lucida Bright",
+    "Lucida Sans",
+    "MS Outlook",
+    "MS Reference Specialty",
+    "MS UI Gothic",
+    "MT Extra",
+    "Marlett",
+    "Monotype Corsiva",
+    "Pristina",
+    "Segoe UI Light"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

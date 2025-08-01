@@ -1,0 +1,370 @@
+{
+  "screen": {
+    "availTop": 25,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 2560,
+    "height": 1440,
+    "availWidth": 2560,
+    "availHeight": 1415,
+    "clientWidth": 0,
+    "clientHeight": 19,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 2560,
+    "outerHeight": 1388,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 2
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Not)A;Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Chromium",
+          "version": "138"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "138"
+        }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "MacIntel",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "Chrome PDF Plugin",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/x-google-chrome-pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chrome PDF Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Chrome PDF Viewer",
+        "description": "",
+        "filename": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "",
+            "enabledPlugin": "Chrome PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "文件、試算表及簡報的 Office 編輯擴充功能",
+        "description": "",
+        "filename": "gbkeegbaiigmenfmjfclcdgdpimamgkj",
+        "mimeTypes": [
+          {
+            "type": "application/msexcel",
+            "suffixes": "xls",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/mspowerpoint",
+            "suffixes": "ppt",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/msword",
+            "suffixes": "doc",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/msword-template",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ces-quickpoint",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ces-quicksheet",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ces-quickword",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-excel",
+            "suffixes": "xls",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-excel.sheet.macroEnabled.12",
+            "suffixes": "xlsm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-excel.sheet.macroenabled.12",
+            "suffixes": "xlsm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-powerpoint",
+            "suffixes": "ppt",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-powerpoint.presentation.macroEnabled.12",
+            "suffixes": "pptm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-powerpoint.presentation.macroenabled.12",
+            "suffixes": "pptm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-word",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-word.document.12",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-word.document.macroEnabled.12",
+            "suffixes": "docm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.ms-word.document.macroenabled.12",
+            "suffixes": "docm",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.msword",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "suffixes": "pptx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.presentationml.template",
+            "suffixes": "potx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "suffixes": "xlsx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+            "suffixes": "xltx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "suffixes": "docx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+            "suffixes": "dotx",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.presentation-openxml",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.presentation-openxmlm",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.spreadsheet-openxml",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "application/vnd.wordprocessing-openxml",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          },
+          {
+            "type": "text/csv",
+            "suffixes": "csv",
+            "description": "",
+            "enabledPlugin": "文件、試算表及簡報的 Office 編輯擴充功能"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "~~application/msexcel~~xls",
+      "~~application/mspowerpoint~~ppt",
+      "~~application/msword~~doc",
+      "~~application/msword-template~~",
+      "~~application/pdf~~pdf",
+      "~~application/vnd.ces-quickpoint~~",
+      "~~application/vnd.ces-quicksheet~~",
+      "~~application/vnd.ces-quickword~~",
+      "~~application/vnd.ms-excel~~xls",
+      "~~application/vnd.ms-excel.sheet.macroEnabled.12~~xlsm",
+      "~~application/vnd.ms-excel.sheet.macroenabled.12~~xlsm",
+      "~~application/vnd.ms-powerpoint~~ppt",
+      "~~application/vnd.ms-powerpoint.presentation.macroEnabled.12~~pptm",
+      "~~application/vnd.ms-powerpoint.presentation.macroenabled.12~~pptm",
+      "~~application/vnd.ms-word~~",
+      "~~application/vnd.ms-word.document.12~~",
+      "~~application/vnd.ms-word.document.macroEnabled.12~~docm",
+      "~~application/vnd.ms-word.document.macroenabled.12~~docm",
+      "~~application/vnd.msword~~",
+      "~~application/vnd.openxmlformats-officedocument.presentationml.presentation~~pptx",
+      "~~application/vnd.openxmlformats-officedocument.presentationml.template~~potx",
+      "~~application/vnd.openxmlformats-officedocument.spreadsheetml.sheet~~xlsx",
+      "~~application/vnd.openxmlformats-officedocument.spreadsheetml.template~~xltx",
+      "~~application/vnd.openxmlformats-officedocument.wordprocessingml.document~~docx",
+      "~~application/vnd.openxmlformats-officedocument.wordprocessingml.template~~dotx",
+      "~~application/vnd.presentation-openxml~~",
+      "~~application/vnd.presentation-openxmlm~~",
+      "~~application/vnd.spreadsheet-openxml~~",
+      "~~application/vnd.wordprocessing-openxml~~",
+      "Portable Document Format~~application/x-google-chrome-pdf~~pdf",
+      "~~text/csv~~csv"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+    "vendor": "Google Inc. (Apple)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "micros": [
+      {
+        "deviceId": "",
+        "kind": "audioinput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "webcams": [
+      {
+        "deviceId": "",
+        "kind": "videoinput",
+        "label": "",
+        "groupId": ""
+      }
+    ]
+  },
+  "fonts": [
+    "Arial Unicode MS",
+    "Gill Sans",
+    "Helvetica Neue",
+    "Menlo"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

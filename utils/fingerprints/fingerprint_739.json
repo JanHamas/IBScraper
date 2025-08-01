@@ -1,0 +1,256 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 1280,
+    "height": 720,
+    "availWidth": 1280,
+    "availHeight": 680,
+    "clientWidth": 0,
+    "clientHeight": 18,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1280,
+    "outerHeight": 680,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Not_A Brand",
+          "version": "99"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "109"
+        },
+        {
+          "brand": "Chromium",
+          "version": "109"
+        }
+      ],
+      "mobile": false,
+      "platform": "Windows"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Win32",
+    "deviceMemory": 2,
+    "hardwareConcurrency": 2,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "probably",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Chrome PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chrome PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chrome PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Chromium PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chromium PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chromium PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Microsoft Edge PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Microsoft Edge PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Microsoft Edge PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "WebKit built-in PDF",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "WebKit built-in PDF"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "WebKit built-in PDF"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "Portable Document Format~~application/pdf~~pdf",
+      "Portable Document Format~~text/pdf~~pdf"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "vendor": "Google Inc. (Google)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": "486f88d6f342fcd55f1550827647f468d4a3730737e508a95768db544dce1db4"
+      }
+    ],
+    "micros": [
+      {
+        "deviceId": "",
+        "kind": "audioinput",
+        "label": "",
+        "groupId": "486f88d6f342fcd55f1550827647f468d4a3730737e508a95768db544dce1db4"
+      }
+    ],
+    "webcams": [
+      {
+        "deviceId": "",
+        "kind": "videoinput",
+        "label": "",
+        "groupId": "ee73cbc48b53f797a66f4b38fa40af9125939097996e7a736cacabf143056da2"
+      }
+    ]
+  },
+  "fonts": [
+    "Agency FB",
+    "Arabic Typesetting",
+    "Arial Unicode MS",
+    "Batang",
+    "Calibri",
+    "Century",
+    "Century Gothic",
+    "Franklin Gothic",
+    "Futura Md BT",
+    "Haettenschweiler",
+    "Leelawadee",
+    "Levenim MT",
+    "Lucida Bright",
+    "Lucida Sans",
+    "MS Mincho",
+    "MS Outlook",
+    "MS Reference Specialty",
+    "MS UI Gothic",
+    "MT Extra",
+    "MYRIAD PRO",
+    "Marlett",
+    "Meiryo UI",
+    "Microsoft Uighur",
+    "Monotype Corsiva",
+    "PMingLiU",
+    "Pristina",
+    "SCRIPTINA",
+    "Segoe UI Light",
+    "SimHei",
+    "Staccato222 BT",
+    "Vrinda"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

@@ -1,0 +1,142 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 800,
+    "height": 600,
+    "availWidth": 800,
+    "availHeight": 600,
+    "clientWidth": 0,
+    "clientHeight": 18,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 800,
+    "outerHeight": 600,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.8591.1381 Safari/537.36",
+    "userAgentData": {
+      "brands": [],
+      "mobile": false,
+      "platform": ""
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Linux x86_64",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.8591.1381 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": null,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "probably",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "Chrome PDF Plugin",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/x-google-chrome-pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chrome PDF Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Chrome PDF Viewer",
+        "description": "",
+        "filename": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "",
+            "enabledPlugin": "Chrome PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Native Client",
+        "description": "",
+        "filename": "internal-nacl-plugin",
+        "mimeTypes": [
+          {
+            "type": "application/x-nacl",
+            "suffixes": "",
+            "description": "Native Client Executable",
+            "enabledPlugin": "Native Client"
+          },
+          {
+            "type": "application/x-pnacl",
+            "suffixes": "",
+            "description": "Portable Native Client Executable",
+            "enabledPlugin": "Native Client"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "~~application/pdf~~pdf",
+      "Portable Document Format~~application/x-google-chrome-pdf~~pdf",
+      "Native Client Executable~~application/x-nacl~~",
+      "Portable Native Client Executable~~application/x-pnacl~~"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "Intel Iris OpenGL Engine",
+    "vendor": "Intel Inc."
+  },
+  "multimediaDevices": {
+    "speakers": [],
+    "micros": [],
+    "webcams": []
+  },
+  "fonts": [],
+  "mockWebRTC": false,
+  "slim": false
+}

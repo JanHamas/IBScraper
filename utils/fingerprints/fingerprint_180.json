@@ -1,0 +1,160 @@
+{
+  "screen": {
+    "availTop": 37,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": true,
+    "width": 1470,
+    "height": 956,
+    "availWidth": 1470,
+    "availHeight": 872,
+    "clientWidth": 0,
+    "clientHeight": 19,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1470,
+    "outerHeight": 869,
+    "colorDepth": 30,
+    "pixelDepth": 30,
+    "devicePixelRatio": 2
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Microsoft Edge",
+          "version": "137"
+        },
+        {
+          "brand": "Chromium",
+          "version": "137"
+        },
+        {
+          "brand": "Not/A)Brand",
+          "version": "24"
+        }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "MacIntel",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 10,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": "1",
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "Microsoft Edge PDF Plugin",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/x-google-chrome-pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Microsoft Edge PDF Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Microsoft Edge PDF Viewer",
+        "description": "",
+        "filename": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "",
+            "enabledPlugin": "Microsoft Edge PDF Viewer"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "~~application/pdf~~pdf",
+      "Portable Document Format~~application/x-google-chrome-pdf~~pdf"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 7740,
+    "dischargingTime": null,
+    "level": 0.15
+  },
+  "videoCard": {
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)",
+    "vendor": "Google Inc. (Apple)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "micros": [
+      {
+        "deviceId": "",
+        "kind": "audioinput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "webcams": [
+      {
+        "deviceId": "",
+        "kind": "videoinput",
+        "label": "",
+        "groupId": ""
+      }
+    ]
+  },
+  "fonts": [
+    "Arial Unicode MS",
+    "Gill Sans",
+    "Helvetica Neue",
+    "Menlo"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

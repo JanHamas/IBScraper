@@ -1,0 +1,441 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 1920,
+    "height": 1080,
+    "availWidth": 1920,
+    "availHeight": 1040,
+    "clientWidth": 0,
+    "clientHeight": 24,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1920,
+    "outerHeight": 1040,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Chromium",
+          "version": "122"
+        },
+        {
+          "brand": "Not(A:Brand",
+          "version": "24"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "122"
+        }
+      ],
+      "mobile": false,
+      "platform": "Windows"
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Win32",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 16,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": "1",
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [
+        "chrome"
+      ],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "probably"
+  },
+  "videoCodecs": {
+    "ogg": "",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "",
+        "description": "文件上传插件(2.0.0.4)",
+        "filename": "npUploader.dll",
+        "mimeTypes": [
+          {
+            "type": "application/bd-npupload-plugin",
+            "suffixes": "",
+            "description": "Plugin for uploading files quickly",
+            "enabledPlugin": ""
+          }
+        ]
+      },
+      {
+        "name": "360SoftMgrPlugin",
+        "description": "360SoftMgrPlugin",
+        "filename": "np360SoftMgr.dll",
+        "mimeTypes": [
+          {
+            "type": "application/360softmgrplugin",
+            "suffixes": "dll",
+            "description": "np360SoftMgr.dll",
+            "enabledPlugin": "360SoftMgrPlugin"
+          }
+        ]
+      },
+      {
+        "name": "Alipay Security Control 3",
+        "description": "Alipay Security Control",
+        "filename": "npAliSecCtrl.dll",
+        "mimeTypes": [
+          {
+            "type": "application/x-alisecctrl-plugin",
+            "suffixes": "*",
+            "description": "npAliSecCtrl.dll",
+            "enabledPlugin": "Alipay Security Control 3"
+          }
+        ]
+      },
+      {
+        "name": "Alipay security control",
+        "description": "npaliedit",
+        "filename": "npaliedit.dll",
+        "mimeTypes": [
+          {
+            "type": "application/aliedit",
+            "suffixes": "",
+            "description": "npaliedit",
+            "enabledPlugin": "Alipay security control"
+          }
+        ]
+      },
+      {
+        "name": "BaiduYunGuanjia Application",
+        "description": "YunWebDetect",
+        "filename": "npYunWebDetect.dll",
+        "mimeTypes": [
+          {
+            "type": "application/bd-npyunwebdetect-plugin",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "BaiduYunGuanjia Application"
+          }
+        ]
+      },
+      {
+        "name": "Chromium PDF Plugin",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/x-google-chrome-pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "Chromium PDF Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Chromium PDF Viewer",
+        "description": "",
+        "filename": "mhjfbmdgcfjbbpaeojofohoefgiehjai",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "",
+            "enabledPlugin": "Chromium PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Jule game player version 3",
+        "description": "Jule game player version 3",
+        "filename": "npjlgplayer3.dll",
+        "mimeTypes": [
+          {
+            "type": "application/npjlgplayer3-chrome-jlp",
+            "suffixes": "jlp",
+            "description": "JuLeGameWebPlayer",
+            "enabledPlugin": "Jule game player version 3"
+          }
+        ]
+      },
+      {
+        "name": "Microsoft® Windows Media Player Firefox Plugin",
+        "description": "np-mswmp",
+        "filename": "np-mswmp.dll",
+        "mimeTypes": [
+          {
+            "type": "application/x-ms-wmp",
+            "suffixes": "*",
+            "description": "np-mswmp",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "application/asx",
+            "suffixes": "*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "video/x-ms-asf-plugin",
+            "suffixes": "*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "application/x-mplayer2",
+            "suffixes": "*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "video/x-ms-asf",
+            "suffixes": "asf,asx,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "video/x-ms-wm",
+            "suffixes": "wm,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "audio/x-ms-wma",
+            "suffixes": "wma,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "audio/x-ms-wax",
+            "suffixes": "wax,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "video/x-ms-wmv",
+            "suffixes": "wmv,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          },
+          {
+            "type": "video/x-ms-wvx",
+            "suffixes": "wvx,*",
+            "description": "",
+            "enabledPlugin": "Microsoft® Windows Media Player Firefox Plugin"
+          }
+        ]
+      },
+      {
+        "name": "Shockwave Flash",
+        "description": "Shockwave Flash 31.0 r0*",
+        "filename": "NPSWF64_31_0_0_122.dll",
+        "mimeTypes": [
+          {
+            "type": "application/x-shockwave-flash",
+            "suffixes": "swf",
+            "description": "Adobe Flash movie",
+            "enabledPlugin": "Shockwave Flash"
+          },
+          {
+            "type": "application/futuresplash",
+            "suffixes": "spl",
+            "description": "FutureSplash movie",
+            "enabledPlugin": "Shockwave Flash"
+          }
+        ]
+      },
+      {
+        "name": "Tencent QQ",
+        "description": "Tencent QQ CPHelper plugin for Chrome",
+        "filename": "npactivex.dll",
+        "mimeTypes": [
+          {
+            "type": "application/qscall-plugin",
+            "suffixes": "dll",
+            "description": "DLL",
+            "enabledPlugin": "Tencent QQ"
+          }
+        ]
+      },
+      {
+        "name": "VMware Remote Console Plug-in",
+        "description": "VMware Remote Console Plug-in",
+        "filename": "np-vmware-vmrc.dll",
+        "mimeTypes": [
+          {
+            "type": "application/x-vmware-remote-console-2012",
+            "suffixes": "",
+            "description": "VMware Remote Console Plug-in",
+            "enabledPlugin": "VMware Remote Console Plug-in"
+          }
+        ]
+      },
+      {
+        "name": "XunLei User Plugin",
+        "description": "Xunlei User scriptability Plugin,version= 2.0.2.3",
+        "filename": "npxluser2.0.2.3.dll",
+        "mimeTypes": [
+          {
+            "type": "application/npxluser_plugin",
+            "suffixes": "",
+            "description": "",
+            "enabledPlugin": "XunLei User Plugin"
+          }
+        ]
+      },
+      {
+        "name": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin",
+        "description": "iTrusPTA&XEnroll hwPTA,IEnroll,UKeyInstalls for FireFox,version=1.0.0.2",
+        "filename": "npcombrg.dll",
+        "mimeTypes": [
+          {
+            "type": "application/pta.itruspta.version.1",
+            "suffixes": "*",
+            "description": "PTA",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          },
+          {
+            "type": "application/cenroll.cenroll.version.1",
+            "suffixes": "",
+            "description": "CEnroll",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          },
+          {
+            "type": "application/itrusenroll.certenroll.version.1",
+            "suffixes": "",
+            "description": "IEnroll",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          },
+          {
+            "type": "application/hwpta.itrushwpta",
+            "suffixes": "",
+            "description": "hwPTA",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          },
+          {
+            "type": "application/hwwdkey.installwdkey",
+            "suffixes": "",
+            "description": "hwWDkey",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          },
+          {
+            "type": "application/hwepass2001.installepass2001",
+            "suffixes": "",
+            "description": "HwEpass2001",
+            "enabledPlugin": "iTrusChina iTrusPTA,XEnroll,iEnroll,hwPTA,UKeyInstalls Firefox Plugin"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "np360SoftMgr.dll~~application/360softmgrplugin~~dll",
+      "npaliedit~~application/aliedit~~",
+      "~~application/asx~~*",
+      "Plugin for uploading files quickly~~application/bd-npupload-plugin~~",
+      "~~application/bd-npyunwebdetect-plugin~~",
+      "CEnroll~~application/cenroll.cenroll.version.1~~",
+      "FutureSplash movie~~application/futuresplash~~spl",
+      "HwEpass2001~~application/hwepass2001.installepass2001~~",
+      "hwPTA~~application/hwpta.itrushwpta~~",
+      "hwWDkey~~application/hwwdkey.installwdkey~~",
+      "IEnroll~~application/itrusenroll.certenroll.version.1~~",
+      "JuLeGameWebPlayer~~application/npjlgplayer3-chrome-jlp~~jlp",
+      "~~application/npxluser_plugin~~",
+      "~~application/pdf~~pdf",
+      "PTA~~application/pta.itruspta.version.1~~*",
+      "DLL~~application/qscall-plugin~~dll",
+      "npAliSecCtrl.dll~~application/x-alisecctrl-plugin~~*",
+      "Portable Document Format~~application/x-google-chrome-pdf~~pdf",
+      "~~application/x-mplayer2~~*",
+      "np-mswmp~~application/x-ms-wmp~~*",
+      "Adobe Flash movie~~application/x-shockwave-flash~~swf",
+      "VMware Remote Console Plug-in~~application/x-vmware-remote-console-2012~~",
+      "~~audio/x-ms-wax~~wax,*",
+      "~~audio/x-ms-wma~~wma,*",
+      "~~video/x-ms-asf~~asf,asx,*",
+      "~~video/x-ms-asf-plugin~~*",
+      "~~video/x-ms-wm~~wm,*",
+      "~~video/x-ms-wmv~~wmv,*",
+      "~~video/x-ms-wvx~~wvx,*"
+    ]
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1060 6GB (0x00001C03) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)"
+  },
+  "multimediaDevices": {
+    "speakers": [
+      {
+        "deviceId": "",
+        "kind": "audiooutput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "micros": [
+      {
+        "deviceId": "",
+        "kind": "audioinput",
+        "label": "",
+        "groupId": ""
+      }
+    ],
+    "webcams": []
+  },
+  "fonts": [
+    "Agency FB",
+    "Calibri",
+    "Century",
+    "Century Gothic",
+    "Franklin Gothic",
+    "Haettenschweiler",
+    "Leelawadee",
+    "Lucida Bright",
+    "Lucida Sans",
+    "MS Outlook",
+    "MS Reference Specialty",
+    "MS UI Gothic",
+    "MT Extra",
+    "Marlett",
+    "Microsoft Uighur",
+    "Monotype Corsiva",
+    "Pristina",
+    "Segoe UI Light",
+    "SimHei"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

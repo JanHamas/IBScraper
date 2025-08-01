@@ -1,0 +1,89 @@
+{
+  "screen": {
+    "availTop": 0,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 800,
+    "height": 600,
+    "availWidth": 800,
+    "availHeight": 600,
+    "clientWidth": 0,
+    "clientHeight": 18,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 800,
+    "outerHeight": 600,
+    "colorDepth": 24,
+    "pixelDepth": 24,
+    "devicePixelRatio": 1
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "userAgentData": {
+      "brands": [],
+      "mobile": false,
+      "platform": ""
+    },
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "Linux x86_64",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 12,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": "Google Inc.",
+    "vendorSub": null,
+    "doNotTrack": null,
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "oscpu": null,
+    "extraProperties": {
+      "vendorFlavors": [],
+      "globalPrivacyControl": null,
+      "pdfViewerEnabled": null,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "probably",
+    "wav": "probably",
+    "m4a": "",
+    "aac": ""
+  },
+  "videoCodecs": {
+    "ogg": "probably",
+    "h264": "",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [],
+    "mimeTypes": []
+  },
+  "battery": {
+    "charging": true,
+    "chargingTime": 0,
+    "dischargingTime": null,
+    "level": 1
+  },
+  "videoCard": {
+    "renderer": "ANGLE (Google, Vulkan 1.2.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "vendor": "Google Inc. (Google)"
+  },
+  "multimediaDevices": {
+    "speakers": [],
+    "micros": [],
+    "webcams": []
+  },
+  "fonts": [],
+  "mockWebRTC": false,
+  "slim": false
+}

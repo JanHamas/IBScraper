@@ -1,0 +1,184 @@
+{
+  "screen": {
+    "availTop": 25,
+    "availLeft": 0,
+    "pageXOffset": 0,
+    "pageYOffset": 0,
+    "screenX": 0,
+    "hasHDR": false,
+    "width": 1680,
+    "height": 1050,
+    "availWidth": 1680,
+    "availHeight": 966,
+    "clientWidth": 0,
+    "clientHeight": 19,
+    "innerWidth": 0,
+    "innerHeight": 0,
+    "outerWidth": 1680,
+    "outerHeight": 966,
+    "colorDepth": 30,
+    "pixelDepth": 30,
+    "devicePixelRatio": 2
+  },
+  "navigator": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0",
+    "userAgentData": null,
+    "language": "en-US",
+    "languages": [
+      "en-US"
+    ],
+    "platform": "MacIntel",
+    "deviceMemory": null,
+    "hardwareConcurrency": 12,
+    "maxTouchPoints": 0,
+    "product": "Gecko",
+    "productSub": "20030107",
+    "vendor": null,
+    "vendorSub": null,
+    "doNotTrack": "1",
+    "appCodeName": "Mozilla",
+    "appName": "Netscape",
+    "appVersion": "5.0 (Macintosh)",
+    "oscpu": "Intel Mac OS X 10.15",
+    "extraProperties": {
+      "vendorFlavors": [],
+      "globalPrivacyControl": true,
+      "pdfViewerEnabled": true,
+      "installedApps": []
+    },
+    "webdriver": false
+  },
+  "audioCodecs": {
+    "ogg": "probably",
+    "mp3": "maybe",
+    "wav": "probably",
+    "m4a": "maybe",
+    "aac": "maybe"
+  },
+  "videoCodecs": {
+    "ogg": "",
+    "h264": "probably",
+    "webm": "probably"
+  },
+  "pluginsData": {
+    "plugins": [
+      {
+        "name": "PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Chrome PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Chromium PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "Microsoft Edge PDF Viewer",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      },
+      {
+        "name": "WebKit built-in PDF",
+        "description": "Portable Document Format",
+        "filename": "internal-pdf-viewer",
+        "mimeTypes": [
+          {
+            "type": "application/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          },
+          {
+            "type": "text/pdf",
+            "suffixes": "pdf",
+            "description": "Portable Document Format",
+            "enabledPlugin": "PDF Viewer"
+          }
+        ]
+      }
+    ],
+    "mimeTypes": [
+      "Portable Document Format~~application/pdf~~pdf",
+      "Portable Document Format~~text/pdf~~pdf"
+    ]
+  },
+  "battery": null,
+  "videoCard": {
+    "renderer": "Apple M1, or similar",
+    "vendor": "Apple"
+  },
+  "multimediaDevices": {
+    "speakers": [],
+    "micros": [],
+    "webcams": []
+  },
+  "fonts": [
+    "Arial Unicode MS",
+    "Gill Sans",
+    "Helvetica Neue",
+    "Menlo"
+  ],
+  "mockWebRTC": false,
+  "slim": false
+}

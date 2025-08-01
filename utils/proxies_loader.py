@@ -19,6 +19,8 @@ async def load_proxies():
                         "username": user,
                         "password": pwd
                     })
+        if not proxies:
+            print("🛑 Check proxeis file we got 0")
         return proxies
     except Exception as e:
         print(f"❌ Error \n {e}")

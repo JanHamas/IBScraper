@@ -1,0 +1,64 @@
+import json
+
+async def inject_fingerprint(page, fingerprint):
+    nav = fingerprint['navigator']
+    screen = fingerprint['screen']
+    plugins = fingerprint.get("PluginsData", {}).get("plugins", [])
+    fonts = fingerprint.get("fonts", [])
+
+    plugin_str = ','.join([f'{{ name: "{p["name"]}", filename: "{p["filename"]}" }}' for p in plugins])
+    
+    script = f"""
+    (() => {{
+        // Screen
+        Object.defineProperty(window, 'innerWidth', {{ get: () => {screen["width"]} }});
+        Object.defineProperty(window, 'innerHeight', {{ get: () => {screen["height"]} }});
+        Object.defineProperty(window, 'outerWidth', {{ get: () => {screen["outerWidth"]} }});
+        Object.defineProperty(window, 'outerHeight', {{ get: () => {screen["outerHeight"]} }});
+        Object.defineProperty(window, 'screenX', {{ get: () => {screen["screenX"]} }});
+        Object.defineProperty(window, 'devicePixelRatio', {{ get: () => {screen["devicePixelRatio"]} }});
+
+        Object.defineProperty(window, 'screen', {{
+            get: () => {{
+                return {{
+                    availTop: {screen['availTop']},
+                    availLeft: {screen['availLeft']},
+                    availWidth: {screen['availWidth']},
+                    availHeight: {screen['availHeight']},
+                    width: {screen['width']},
+                    height: {screen['height']},
+                    colorDepth: {screen['colorDepth']},
+                    pixelDepth: {screen['pixelDepth']}
+                }};
+            }}
+        }});
+
+        // Navigator
+        Object.defineProperties(navigator, {{
+            userAgent: {{ get: () => "{nav['userAgent']}" }},
+            language: {{ get: () => "{nav['language']}" }},
+            languages: {{ get: () => {json.dumps(nav['languages'])} }},
+            vendor: {{ get: () => "{nav['vendor']}" }},
+            deviceMemory: {{ get: () => {nav['deviceMemory']} }},
+            hardwareConcurrency: {{ get: () => {nav['hardwareConcurrency']} }},
+            maxTouchPoints: {{ get: () => {nav['maxTouchPoint']} }},
+            webdriver: {{ get: () => false }}
+        }});
+
+        // Plugins
+        Object.defineProperty(navigator, 'plugins', {{
+            get: () => [{plugin_str}]
+        }});
+
+        // Fonts (basic mock)
+        const fontList = {json.dumps(fonts)};
+        const originalGetComputedStyle = window.getComputedStyle;
+        window.getComputedStyle = function(el, pseudo) {{
+            const style = originalGetComputedStyle(el, pseudo);
+            style.fontFamily = fontList.join(',');
+            return style;
+        }};
+    }})();
+    """
+
+    await page.add_init_script(script)
