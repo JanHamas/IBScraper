@@ -1,0 +1,247 @@
+
+Indeed Job Scraper (IBScraper) (Indeed 🚀Blast Scraper)
+
+Overview
+IBScraper is a powerful, automated web scraping tool designed to fetch job listings from Indeed.com. It leverages AI to intelligently filter and rank jobs based on their relevance to your resume, saving you hours/day of manual searching. The scraper is built with stealth in mind, using advanced techniques like browser fingerprinting and proxies to avoid detection.
+
+The final output is neatly organized into a local Excel file and can be automatically uploaded and sorted in a Google Sheet for easy access and collaboration.
+
+Key Features
+
+Multi-threaded Scraping: Processes multiple job search queries concurrently for maximum speed.
+
+AI-Powered Resume Matching: Uses a Groq AI model (Llama 3) to calculate a match percentage for each job against your resume, ensuring you only see the most relevant opportunities.
+
+Advanced Stealth: Bypasses bot detection using unique browser fingerprints, proxies, and human-like browser interactions.
+
+Cloudflare Bypass: Integrated with 2Captcha to automatically solve Cloudflare Turnstile challenges.
+
+Smart Filtering:
+
+Ignores a comprehensive list of pre-defined companies (e.g., large corporations, staffing agencies).
+
+Avoids scraping duplicate jobs from previous runs.
+
+Limits the number of jobs scraped per company to diversify results.
+
+Organized Data Export:
+
+Saves job details to a local Excel file (.xlsx).
+
+Categorizes jobs into three sheets: Easy_applies, CS_applies (Company Site), and Confirmation_applies (high-priority companies).
+
+Automatically uploads and sorts the data in a designated Google Sheet.
+
+Highly Configurable: Easily customize search queries, filtering criteria, and AI prompts through a central configuration file.
+
+How It Works (Workflow)
+
+The scraper follows a systematic process to fetch, filter, and save job data:
+
+Initialization:
+
+Loads all settings from config_input.py and scraper_setting.py.
+
+Loads proxies, Indeed account cookies, and browser fingerprints.
+
+Loads the list of already processed jobs to prevent duplicates.
+
+Listing Scraper:
+
+Launches a separate, isolated browser instance for each search URL in jobs_listed_pages_urls.
+
+Each instance is configured with a unique proxy, account, and fingerprint.
+
+Navigates through the job search result pages, collecting job titles, company names, and links.
+
+Filters out jobs from ignored companies or those already processed.
+
+AI Matching:
+
+Batches the collected job titles and sends them to the Groq AI API along with your resume.
+
+The AI returns a match percentage for each job.
+
+Detail Scraper:
+
+For jobs that meet the MATCHING_PERCENTAGE threshold, the scraper opens each job link in a new tab.
+
+It extracts full details: company name, job title, salary, description, benefits, etc.
+
+It categorizes the job based on the application type ("Easy Apply" vs. "Apply on company site").
+
+Data Storage:
+
+The categorized job data is appended to the corresponding sheets in the local output/jobs.xlsx file.
+
+Finally, the data from the Excel file is uploaded to your configured Google Sheet, sorted by match percentage in descending order.
+
+Prerequisites
+
+Before you begin, ensure you have the following:
+
+Python 3.8+
+
+An account with Groq AI to get an API key.
+
+An account with 2Captcha to get an API key for solving CAPTCHAs.
+
+One or more Indeed.com accounts.
+
+A Google Cloud Platform (GCP) project with the Google Sheets API enabled and a service account credentials.json file.
+
+Access to HTTP Proxies.
+
+Setup and Installation
+
+Clone the Repository:
+
+Generated bash
+git clone <https://github.com/JanHamas/IBScraper.git>
+
+
+Install Dependencies:
+Create a requirements.txt file with the following content:
+
+Generated code
+playwright
+playwright-stealth
+python-dotenv
+groq
+openpyxl
+pandas
+gspread
+gspread-dataframe
+google-oauth2-service-account
+aioconsole
+twocaptcha-python
+aiohttp
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+IGNORE_WHEN_COPYING_END
+
+Set Up Environment Variables:
+Create a file named .env in the root directory and add your API keys:
+
+Generated .env
+OPEN_AI_KEY="gsk_YourGroqAPIKeyHere"
+2CAPTCHA_API_KEY="Your2CaptchaAPIKeyHere"
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+.env
+IGNORE_WHEN_COPYING_END
+
+Configure Google Sheets:
+
+Go to your GCP project, create a service account, and download its JSON key.
+
+Rename the downloaded file to gs_credentials.json and place it in the root directory.
+
+Open your target Google Sheet and share it with the client_email found inside the gs_credentials.json file, giving it "Editor" permissions.
+
+Add Proxies:
+Edit the proxies.txt file and add your proxies, one per line, in the format ip:port:username:password.
+
+Add Indeed Accounts:
+
+Log in to an Indeed account in your browser.
+
+Use a cookie editor extension (like EditThisCookie) to export your cookies as a JSON file.
+
+Place the JSON file(s) in the accounts/ directory. Each file represents one account.
+
+Add Browser Fingerprints:
+Place your browser fingerprint JSON files in the fingerprints/ directory. The scraper uses these to appear as a unique, real user for each session.
+
+Configuration (config_input.py)
+
+This is the main file for customizing the scraper's behavior.
+
+jobs_listed_pages_urls: A Python list of Indeed search result URLs. Each URL represents a query the scraper will process.
+Example: "https://www.indeed.com/jobs?q=python+developer&l=United+States&fromage=1"
+
+MATCHING_PERCENTAGE: An integer (0-100). The scraper will only fetch full details for jobs with an AI match score equal to or greater than this value.
+Example: 60
+
+leave_blank_colls: An integer. Inserts a specified number of empty columns in the output Excel/Google Sheet, useful for adding manual notes.
+Example: 2
+
+confirmation_companies: A list of company names. Jobs from these companies are always saved to the "Confirmation_applies" sheet, regardless of application type, for high-priority review.
+
+AI_PROMPT & RESUME:
+
+AI_PROMPT: The template text sent to the AI. It instructs the model on how to format its response.
+
+RESUME: A concise, keyword-rich summary of your skills and experience. The AI uses this to calculate the match score.
+
+per_company_jobs: An integer. Sets the maximum number of jobs to process from a single company during a run to ensure a diverse set of results.
+Example: 3
+
+ignore_companies: A comprehensive list of company names to completely ignore. This is pre-populated with major tech companies, staffing agencies, and government entities to filter out noise. You can add or remove companies as needed.
+
+Running the Scraper
+
+Create Initial Files: Before the first run, create an empty Excel file by running helper.create_wb_with_3sheet(). You can do this by adding helper.create_wb_with_3sheet() to a temporary script or main.py and running it once.
+
+Start the Scraper:
+Execute the main script from your terminal.
+
+Generated bash
+python main.py
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Monitor the Output:
+The scraper will print its progress in the console, including which jobs are being collected, the AI match scores, and the final classification.
+
+Upload to Google Sheets (Optional):
+After the scraper finishes and populates output/jobs.xlsx, run the sheet_uploader.py script to sync the data.
+
+Generated bash
+python -c "from utils.sheet_uploader import update_google_sheets_from_excel; update_google_sheets_from_excel()"
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+
+Note: This can be integrated into the main script to run automatically at the end.
+
+File Structure
+Generated code
+.
+├── accounts/
+│   └── your_account_cookies.json  # Indeed account cookies
+├── fingerprints/
+│   └── your_fingerprint.json      # Browser fingerprint data
+├── input/
+│   └── processed_jobs.txt         # Stores IDs of scraped jobs to avoid duplicates
+├── output/
+│   └── jobs.xlsx                  # The final Excel output file
+├── utils/
+│   ├── bypass/
+│   │   └── cloudflare.py          # Cloudflare Turnstile bypass logic
+│   ├── __init__.py
+│   ├── accounts_loader.py         # Loads Indeed accounts
+│   ├── fingerprint_loader.py      # Loads browser fingerprints
+│   ├── helper.py                  # Utility functions (AI, simulation, file I/O)
+│   ├── proxies_loader.py          # Loads proxies
+│   └── sheet_uploader.py          # Handles Excel and Google Sheets operations
+├── .env                           # API keys (Groq, 2Captcha)
+├── config_input.py                # Main user configuration
+├── gs_credentials.json            # Google Sheets API service account key
+├── job_details_scraper.py         # Scrapes individual job pages
+├── job_listings_scraper.py        # Scrapes job search result pages
+├── main.py                        # The main entry point to run the scraper
+├── proxies.txt                    # List of proxies
+├── requirements.txt               # Python package dependencies
+└── scraper_setting.py             # Technical scraper settings
