@@ -26,6 +26,9 @@ if __name__ == "__main__":
         # # After save all result of scraper uploading to google sheet
         helper.sort_csv_files_by_column(config_input.CSV_FILES, sort_column_index=config_input.leave_blank_colls + 2)
         sheet_uploader.update_google_sheets_from_csv(config_input.CSV_FILES)
+
+        # Send debugging pictures to builder
+        helper.send_debugging_screenshots_email()
     except Exception as e:
         print(e)
     finally:

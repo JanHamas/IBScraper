@@ -142,7 +142,7 @@ def clean_processed_jobs_file():
         urls = f.readlines()
     
     # Get the last 2300 lines
-    last_urls = urls[-5000:]
+    last_urls = urls[-8000:]
 
     with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
         f.writelines(last_urls)

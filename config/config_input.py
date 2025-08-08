@@ -1,23 +1,23 @@
 
 # jobs page urls for listing all jobs first
 jobs_listed_pages_urls = [
-# "https://www.indeed.com/jobs?q=power+bi+analyst&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=f6fec11c6cb0b807",
-# "https://www.indeed.com/jobs?q=data+scientist&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=921edb4b120e47ac",
-# "https://www.indeed.com/jobs?q=machine%20learning%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-# "https://www.indeed.com/jobs?q=deep%20learning&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-# "https://www.indeed.com/jobs?q=analytics+engineer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=58a9f0610cc52841",
-# "https://www.indeed.com/jobs?q=artificial+intelligence&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=7cb4140c5710b59b",
-# "https://www.indeed.com/jobs?q=etl+developer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=43928fe71aedfd20",
-# "https://www.indeed.com/jobs?q=mlops&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=1a720386f4d7bcc3",
+"https://www.indeed.com/jobs?q=power+bi+analyst&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=f6fec11c6cb0b807",
+"https://www.indeed.com/jobs?q=data+scientist&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=921edb4b120e47ac",
+"https://www.indeed.com/jobs?q=machine%20learning%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+"https://www.indeed.com/jobs?q=deep%20learning&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+"https://www.indeed.com/jobs?q=analytics+engineer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=58a9f0610cc52841",
+"https://www.indeed.com/jobs?q=artificial+intelligence&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=7cb4140c5710b59b",
+"https://www.indeed.com/jobs?q=etl+developer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=43928fe71aedfd20",
+"https://www.indeed.com/jobs?q=mlops&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=1a720386f4d7bcc3",
+
 # "https://www.indeed.com/jobs?q=databricks&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=9027abd1668d6bcd",
 # "https://www.indeed.com/jobs?q=azure+cloud+engineer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=f8ef3fb4d7b56898",
 # "https://www.indeed.com/jobs?q=nlp&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=1a720386f4d7bcc3",
 # "https://www.indeed.com/jobs?q=matlab&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=ce081b994d4e554b",
-
-
 # "https://www.indeed.com/jobs?q=transformer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=a8e33be9c8ab431a"
 # "https://www.indeed.com/jobs?q=computer+vision&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=8bf2b28241529eeb",
 # "https://www.indeed.com/jobs?q=nlp&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+
 # "https://www.indeed.com/jobs?q=python%20developer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 # "https://www.indeed.com/jobs?q=mlops&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 # "https://www.indeed.com/jobs?q=tensorflow&l=United%20States&fromage=1&from=searchOnDesktopSerp",
@@ -27,7 +27,7 @@ jobs_listed_pages_urls = [
 # "https://www.indeed.com/jobs?q=ai%20testing&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 # "https://www.indeed.com/jobs?q=analytics%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 # "https://www.indeed.com/jobs?q=ai%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=statistical%20analyst&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=statistical%20analyst&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 
 ]
 
@@ -52,7 +52,7 @@ per_company_jobs = 2
 
 
 # ON/OFF Headless mode
-headless = False
+headless = True
 
 # File path which jobs processed 
 PROCESSED_JOBS_FILE_PATH =r'input\\processed_jobs.txt'
@@ -553,6 +553,9 @@ confirmation_companies = [
 
 # list of companies to ignore for instance like : apple, amazon, google etc
 ignore_companies = [
+    "City Of Mableton",
+    "Indygo",
+    "Teachers Federal Credit Union",
     "Lila Sciences, Inc.",
     "Academy Automobile Insurance Services, Inc.",
     "Ellumen",
