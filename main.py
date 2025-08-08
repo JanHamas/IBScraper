@@ -12,7 +12,7 @@ if __name__ == "__main__":
         sb.prevent_sleep()
         
         # Create first new workbook with three sheet for saving scraper result
-        helper.create_csv_files()
+        helper.create_csv_files(config_input.CSV_FILES)
 
         # Clean the processded saved jobs file
         helper.clean_processed_jobs_file()

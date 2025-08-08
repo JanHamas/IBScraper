@@ -15,18 +15,18 @@ jobs_listed_pages_urls = [
 # "https://www.indeed.com/jobs?q=matlab&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=ce081b994d4e554b",
 
 
-"https://www.indeed.com/jobs?q=transformer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=a8e33be9c8ab431a"
-"https://www.indeed.com/jobs?q=computer+vision&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=8bf2b28241529eeb",
-"https://www.indeed.com/jobs?q=nlp&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=python%20developer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=mlops&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=tensorflow&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=pytorch&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=33d65538b54dd489",
-"https://www.indeed.com/jobs?q=data+engineer&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=65049515d961f17e",
-"https://www.indeed.com/jobs?q=etl%20developer&l=United%20States&fromage=1&from=searchOnDesktopSerp"
-"https://www.indeed.com/jobs?q=ai%20testing&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=analytics%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
-"https://www.indeed.com/jobs?q=ai%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=transformer&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=a8e33be9c8ab431a"
+# "https://www.indeed.com/jobs?q=computer+vision&l=USA&fromage=1&from=searchOnDesktopSerp&vjk=8bf2b28241529eeb",
+# "https://www.indeed.com/jobs?q=nlp&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=python%20developer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=mlops&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=tensorflow&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=pytorch&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=33d65538b54dd489",
+# "https://www.indeed.com/jobs?q=data+engineer&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=65049515d961f17e",
+# "https://www.indeed.com/jobs?q=etl%20developer&l=United%20States&fromage=1&from=searchOnDesktopSerp"
+# "https://www.indeed.com/jobs?q=ai%20testing&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=analytics%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
+# "https://www.indeed.com/jobs?q=ai%20engineer&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 "https://www.indeed.com/jobs?q=statistical%20analyst&l=United%20States&fromage=1&from=searchOnDesktopSerp",
 
 ]
@@ -52,19 +52,13 @@ per_company_jobs = 2
 
 
 # ON/OFF Headless mode
-headless = True
+headless = False
 
 # File path which jobs processed 
 PROCESSED_JOBS_FILE_PATH =r'input\\processed_jobs.txt'
 
 # after extract jobs from list page size of batche should be process and saving excel file
 process_batch = 15
-
-# Wait until pagination appears before rasing not found error
-wait_pg_present = 6
-
-# Excel file path
-EXCEL_FILE_PATH = r'output\\jobs.xlsx'
 
 
 DEBUGGING_SCREENSHOTS_PATH = "debugging_screenshots"

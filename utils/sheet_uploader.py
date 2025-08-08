@@ -10,7 +10,7 @@ def _append_jobs(easy_applies, cs_applies, c_applies):
     def append_to_csv(file_name, rows):
         if not rows:
             return
-        path = os.path.join("csv_data", file_name)
+        path = os.path.join("output", file_name)
         with open(path, mode="a", newline='', encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerows(rows)

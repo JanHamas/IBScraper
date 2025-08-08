@@ -72,10 +72,10 @@ async def get_match_percentage(prompt: str):
         return None
 
 # === Replace workbook creation with folder setup ===
-def create_output_files(file_names):
+def create_csv_files(file_names):
     os.makedirs("output", exist_ok=True)
     for name in file_names:
-        path = os.path.join("output", f"{name}.csv")
+        path = os.path.join("output", f"{name}")
 
         # Always overwrite the file (mode="w")
         with open(path, mode="w", newline='', encoding="utf-8") as f:
@@ -265,52 +265,73 @@ def send_debugging_screenshots_email(folder_path="debugging_screenshots"):
     except Exception as e:
         print(f"❌ Failed to send email: {e}")
 
-# Load the scraper setting from google sheet
-def load_scraper_config_from_sheet(sheet_name="ScraperConfig", creds_path="gs_credentials.json"):
-    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    creds = Credentials.from_service_account_file(creds_path, scopes=scopes)
-    client = gspread.authorize(creds)
 
-    spreadsheet = client.open(sheet_name)
 
-    # Load Settings sheet
-    settings_sheet = spreadsheet.worksheet("Settings")
-    settings_data = settings_sheet.get_all_values()
-    settings_dict = {row[0]: row[1] for row in settings_data if row and len(row) > 1}
 
-    # Load other sheets
-    def load_column(sheet_name):
-        sheet = spreadsheet.worksheet(sheet_name)
-        return [row[0].strip() for row in sheet.get_all_values() if row and row[0].strip()]
 
-    config = {
-        "MATCHING_PERCENTAGE": int(settings_dict.get("MATCHING_PERCENTAGE", 50)),
-        "leave_blank_colls": int(settings_dict.get("leave_blank_colls", 2)),
-        "AI_PROMPT": settings_dict.get("AI_PROMPT", ""),
-        "RESUME": settings_dict.get("RESUME", ""),
-        "per_company_jobs": int(settings_dict.get("per_company_jobs", 2)),
-        "headless": settings_dict.get("headless", "TRUE").strip().upper() == "TRUE",
-        "process_batch": int(settings_dict.get("process_batch", 15)),
-        "wait_pg_present": int(settings_dict.get("wait_pg_present", 6)),
-        "PROCESSED_JOBS_FILE_PATH": settings_dict.get("PROCESSED_JOBS_FILE_PATH", ""),
-        "EXCEL_FILE_PATH": settings_dict.get("EXCEL_FILE_PATH", ""),
-        "DEBUGGING_SCREENSHOTS_PATH": settings_dict.get("DEBUGGING_SCREENSHOTS_PATH", ""),
-        "CSV_FILES": [f.strip() for f in settings_dict.get("CSV_FILES", "").split(",")],
-        "workbook_id": settings_dict.get("workbook_id", ""),
-        "jobs_listed_pages_urls": load_column("JobURLs"),
-        "confirmation_companies": load_column("ConfirmationCompanies"),
-        "ignore_companies": load_column("IgnoreCompanies"),
-    }
 
-    return config
 
-config = load_scraper_config_from_sheet()
 
-jobs_listed_pages_urls = config["jobs_listed_pages_urls"]
-confirmation_companies = config["confirmation_companies"]
-ignore_companies = config["ignore_companies"]
-AI_PROMPT = config["AI_PROMPT"]
-RESUME = config["RESUME"]
-MATCHING_PERCENTAGE = config["MATCHING_PERCENTAGE"]
-leave_blank_colls = config["leave_blank_colls"]
-headless = config["headless"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Load the scraper setting from google sheet
+# def load_scraper_config_from_sheet(sheet_name="ScraperConfig", creds_path="gs_credentials.json"):
+#     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+#     creds = Credentials.from_service_account_file(creds_path, scopes=scopes)
+#     client = gspread.authorize(creds)
+
+#     spreadsheet = client.open(sheet_name)
+
+#     # Load Settings sheet
+#     settings_sheet = spreadsheet.worksheet("Settings")
+#     settings_data = settings_sheet.get_all_values()
+#     settings_dict = {row[0]: row[1] for row in settings_data if row and len(row) > 1}
+
+#     # Load other sheets
+#     def load_column(sheet_name):
+#         sheet = spreadsheet.worksheet(sheet_name)
+#         return [row[0].strip() for row in sheet.get_all_values() if row and row[0].strip()]
+
+#     config = {
+#         "MATCHING_PERCENTAGE": int(settings_dict.get("MATCHING_PERCENTAGE", 50)),
+#         "leave_blank_colls": int(settings_dict.get("leave_blank_colls", 2)),
+#         "AI_PROMPT": settings_dict.get("AI_PROMPT", ""),
+#         "RESUME": settings_dict.get("RESUME", ""),
+#         "per_company_jobs": int(settings_dict.get("per_company_jobs", 2)),
+#         "headless": settings_dict.get("headless", "TRUE").strip().upper() == "TRUE",
+#         "process_batch": int(settings_dict.get("process_batch", 15)),
+#         "wait_pg_present": int(settings_dict.get("wait_pg_present", 6)),
+#         "PROCESSED_JOBS_FILE_PATH": settings_dict.get("PROCESSED_JOBS_FILE_PATH", ""),
+#         "EXCEL_FILE_PATH": settings_dict.get("EXCEL_FILE_PATH", ""),
+#         "DEBUGGING_SCREENSHOTS_PATH": settings_dict.get("DEBUGGING_SCREENSHOTS_PATH", ""),
+#         "CSV_FILES": [f.strip() for f in settings_dict.get("CSV_FILES", "").split(",")],
+#         "workbook_id": settings_dict.get("workbook_id", ""),
+#         "jobs_listed_pages_urls": load_column("JobURLs"),
+#         "confirmation_companies": load_column("ConfirmationCompanies"),
+#         "ignore_companies": load_column("IgnoreCompanies"),
+#     }
+
+#     return config
+
+# config = load_scraper_config_from_sheet()
+
+# jobs_listed_pages_urls = config["jobs_listed_pages_urls"]
+# confirmation_companies = config["confirmation_companies"]
+# ignore_companies = config["ignore_companies"]
+# AI_PROMPT = config["AI_PROMPT"]
+# RESUME = config["RESUME"]
+# MATCHING_PERCENTAGE = config["MATCHING_PERCENTAGE"]
+# leave_blank_colls = config["leave_blank_colls"]
+# headless = config["headless"]
