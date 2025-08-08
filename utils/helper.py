@@ -1,28 +1,21 @@
-from config import scraper_setting
-import traceback, os
+import urllib.parse
+from config import setting
+import traceback, os, shutil, csv
 from dotenv import load_dotenv
 from playwright.async_api import Page
 import google.generativeai as genai
 import asyncio, random
-import ctypes
-import platform
-import subprocess
-import os
-import csv
-import os
-import traceback
-import shutil
-import urllib.parse
+import platform, subprocess, ctypes
 from urllib.parse import urlparse, parse_qs
 
 # first load .env file
 load_dotenv 
 
-
-def load_processed_jobs_id():
+# load jobs id from previews processed jobs that are saved processed_jobs.txt
+def load_processed_jobs_id(filename=setting.PROCESSED_JOBS_FILE_PATH):
     try:
         jobs_id = set()
-        with open(scraper_setting.PROCESSED_JOBS_FILE_PATH, 'r') as f:
+        with open(filename, 'r') as f:
             for url in f:
                 parsed_url = urlparse(url.strip())
                 query_params = parse_qs(parsed_url.query)
@@ -36,7 +29,6 @@ def load_processed_jobs_id():
         print(f"❌ Error loading job IDs: {e}")
         return set()
 
-
 # this one function are extracting id from provided url
 async def get_job_id(url):
     try:
@@ -48,17 +40,15 @@ async def get_job_id(url):
         print(f"Error extracting job_id: {e}")
         return None
 
-
 # this one funciton update the processed jobs during scripting for avoid duplicate
 async def update_processed_jobs(links):
-    with open(scraper_setting.PROCESSED_JOBS_FILE_PATH, "a") as f:
+    with open(setting.PROCESSED_JOBS_FILE_PATH, "a") as f:
         for link in links:
             f.write(f"{link}\n")
         f.flush()
 
 # Set your Gemini API key (you can also use os.getenv("GOOGLE_API_KEY"))
 genai.configure(api_key="AIzaSyAfM8-AmzjZAF_ovj5vlEKbwLUj4aWR2OA")
-
 # Define an async wrapper (Gemini's SDK is sync, so use asyncio.to_thread)
 async def get_match_percentage(prompt: str):
     try:
@@ -78,22 +68,16 @@ async def get_match_percentage(prompt: str):
 
 
 # === Replace workbook creation with folder setup ===
-def create_csv_files():
-    os.makedirs("csv_data", exist_ok=True)
-
-    headers = ["Col1", "Col2", "Col3", "Col4", "Col5", "Col6", "Col7", "Col8"]
-    file_names = ["Easy_applies", "CS_applies", "Confirmation_applies"]
-
+def create_output_files(file_names):
+    os.makedirs("output", exist_ok=True)
     for name in file_names:
-        path = os.path.join("csv_data", f"{name}.csv")
+        path = os.path.join("output", f"{name}.csv")
 
         # Always overwrite the file (mode="w")
         with open(path, mode="w", newline='', encoding="utf-8") as f:
-            writer = csv.writer(f)
-            writer.writerow(headers)
+            continue
 
         print(f"✅ Created fresh file: {path}")
-
 
 # this one function are simulating human behavior we will call after some actioned
 async def simulate_human_behavior(page: Page):
@@ -114,23 +98,7 @@ async def simulate_human_behavior(page: Page):
     await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
     await asyncio.sleep(random.randint(1, 3))
 
-
-
-
-
-
-# # the below function are use for checking internect connection 
-# async def check_internet():
-#      test_sites = [
-#         "https://1.1.1.1",  # Cloudflare DNS (very reliable)
-#         "https://www.cloudflare.com",  # Cloudflare official site
-#         "https://example.com",  # Example website (simple and lightweight)
-#         "https://www.bing.com"  # Bing as an alternative to Google
-#     ]
-#     async with aiohttp.ClientSession() as session:
-#         sa
-    
-
+# Prevent different system to sleep
 class SleepBlocker:
     def __init__(self):
         self.platform = platform.system()
@@ -164,21 +132,19 @@ class SleepBlocker:
         else:
             print("Unsupported OS")
 
-
 # clean and resave last 3000 links in previews.txt file
 def clean_processed_jobs_file():
-    with open(scraper_setting.PROCESSED_JOBS_FILE_PATH, 'r') as f:
+    with open(setting.PROCESSED_JOBS_FILE_PATH, 'r') as f:
         urls = f.readlines()
     
     # Get the last 2300 lines
     last_urls = urls[-5000:]
 
-    with open(scraper_setting.PROCESSED_JOBS_FILE_PATH, 'w') as f:
+    with open(setting.PROCESSED_JOBS_FILE_PATH, 'w') as f:
         f.writelines(last_urls)
 
 
-
-
+# Create a new folder for saveing debugging screenshots during scriping
 def create_debugging_screenshots_folder(folder_path):
     # Delete the folder if exists
     if os.path.exists(folder_path):
@@ -187,3 +153,58 @@ def create_debugging_screenshots_folder(folder_path):
     # Create a new folder
     os.mkdir(folder_path)
     print(f"✅ Create a new folder: {folder_path}")
+
+# After complete scraping sort row descending base matching % column and overwrite save files
+def sort_csv_files_by_column(filenames = setting.CSV_FILES, sort_column_index=4):
+    
+    encodings_to_try = ['utf-8', 'latin1', 'cp1252', 'utf-8-sig']
+
+    for filename in filenames:
+        filename = f"output/{filename}"
+        rows, chosen_encoding = None, None
+
+        # Try reading file with different encodings
+        for encoding in encodings_to_try:
+            try:
+                with open(filename, 'r', newline='', encoding=encoding) as f:
+                    reader = csv.reader(f)
+                    rows = list(reader)
+                chosen_encoding = encoding
+                print(f"📘 Read {filename} successfully with {encoding} encoding")
+                break
+            except UnicodeDecodeError:
+                continue
+            except Exception as e:
+                print(f"⚠️ Error reading {filename} with {encoding}: {str(e)}")
+
+        if not rows:
+            print(f"⚠️ Could not read or file is empty: {filename}. Skipping.")
+            continue
+
+        # Detect header
+        try:
+            int(rows[0][sort_column_index])
+            has_header = False
+        except (ValueError, IndexError):
+            has_header = True
+
+        header = rows[0] if has_header else None
+        data = rows[1:] if has_header else rows
+
+        # Try to sort data by specified column
+        try:
+            data.sort(key=lambda row: int(row[sort_column_index]), reverse=True)
+        except (IndexError, ValueError) as e:
+            print(f"⚠️ Sorting failed for {filename}: {str(e)}. Saving unsorted.")
+
+        # Write back sorted data
+        try:
+            with open(filename, 'w', newline='', encoding=chosen_encoding) as f:
+                writer = csv.writer(f)
+                if header:
+                    writer.writerow(header)
+                writer.writerows(data)
+            print(f"✅ Sorted and saved {filename} successfully.\n")
+        except Exception as e:
+            print(f"⚠️ Failed to write {filename}: {str(e)}")
+

@@ -2,7 +2,7 @@ import asyncio, random, re, os
 from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
 
-from config import config_input, scraper_setting
+from config import config_input, setting
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
 
@@ -83,7 +83,7 @@ async def _listing(context, job_page_url):
                 if len(list_of_titles) % 5 == 0:
                     print(f"⏳ Collected {len(list_of_titles)} jobs...")
 
-                if len(list_of_titles) >= scraper_setting.process_batch:
+                if len(list_of_titles) >= setting.process_batch:
                     print("🧠 Processing batch...")
                     await process_batch(context, list_of_titles, list_of_links)
                     list_of_titles.clear()
@@ -100,7 +100,7 @@ async def _listing(context, job_page_url):
                     pagination_number += 1
                 else:
                     filename = f"screenshot_{pagination_number}.png"
-                    file_path = os.path.join(scraper_setting.DEBUGGING_SCREENSHOTS_PATH, filename)
+                    file_path = os.path.join(setting.DEBUGGING_SCREENSHOTS_PATH, filename)
                     await page.screenshot(path=file_path, full_page=True)
                     break
             except Exception as e:
@@ -166,7 +166,7 @@ async def jobs_lister():
 
     # launch borwser 
     async with Stealth().use_async(async_playwright()) as p:
-        browser = await p.chromium.launch(headless=scraper_setting.headless)
+        browser = await p.chromium.launch(headless=setting.headless)
         tasks = []
         
         for index, job_page_url in enumerate(config_input.jobs_listed_pages_urls):

@@ -16,3 +16,9 @@ EXCEL_FILE_PATH = r'output\\jobs.xlsx'
 
 
 DEBUGGING_SCREENSHOTS_PATH = "debugging_screenshots"
+
+#
+leave_blink_cols = 2
+
+# These file are append with scraping data during scraping
+CSV_FILES = ["Easy_applies.csv", "CS_applies.csv", "Confirmation_applies.csv"]

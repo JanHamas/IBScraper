@@ -1,27 +1,9 @@
-import os
-import csv
+import os, csv, pandas as pd
 import asyncio
-import pandas as pd
 import gspread
-from gspread_dataframe import set_with_dataframe
 from google.oauth2.service_account import Credentials
-from config import config_input, scraper_setting
-from config import config_input
-
-
-# === 1. Replace workbook creation with folder and empty CSVs ===
-def create_csv_files():
-    os.makedirs("csv_data", exist_ok=True)
-    sheet_names = ["Easy_applies", "CS_applies", "Confirmation_applies"]
-    for sheet in sheet_names:
-        path = os.path.join("csv_data", f"{sheet}.csv")
-        if not os.path.exists(path):
-            with open(path, mode="w", newline='', encoding="utf-8") as f:
-                writer = csv.writer(f)
-                # Use actual column headers here
-                writer.writerow(["Col1", "Col2", "Col3", "Col4", "Col5", "Col6", "Col7", "Col8"])
-    print("✔ CSV files initialized.")
-
+from config import setting
+from datetime import datetime
 
 # === 2. Append new job entries to corresponding CSVs ===
 def _append_jobs(easy_applies, cs_applies, c_applies):
@@ -38,7 +20,6 @@ def _append_jobs(easy_applies, cs_applies, c_applies):
     append_to_csv("Confirmation_applies.csv", c_applies)
     print("✔ Saved in CSV files.")
 
-
 # === 3. Async wrapper ===
 async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
     print(f"\nEasy: {len(easy_applies)}, CS: {len(cs_applies)}, C: {len(c_applies)}")
@@ -49,14 +30,8 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
         print(f"❌ Error saving to CSV: {e}")
 
 
-# === 4. Replace update_google_sheets_from_excel with CSV logic ===
-def update_google_sheets_from_csv():
-    import pandas as pd
-    import gspread
-    from gspread_dataframe import set_with_dataframe
-    from google.oauth2.service_account import Credentials
-    import os
-
+# After complete scraping sort row descending base matching % column and overwrite save files
+def update_google_sheets_from_csv(files=setting.CSV_FILES):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "gs_credentials.json")
@@ -68,54 +43,56 @@ def update_google_sheets_from_csv():
     client = gspread.authorize(creds)
     workbook = client.open_by_key(workbook_id)
 
-    # 📄 Sheet list
-    sheet_names = ["Easy_applies", "CS_applies", "Confirmation_applies"]
+    encodings_to_try = ['utf-8', 'utf-8-sig', 'latin1', 'cp1252']
 
-    for sheet_name in sheet_names:
-        csv_path = os.path.join("csv_data", f"{sheet_name}.csv")
+    # 📄 Loop through each CSV file in output/
+    for file_name in files:
+        file_path = os.path.join("output", file_name)
+        sheet_name = os.path.splitext(file_name)[0]  # "Easy_applies.csv" → "Easy_applies"
 
-        if not os.path.exists(csv_path):
-            print(f"❌ CSV not found: {csv_path}")
-            continue
-
-        try:
-            df = pd.read_csv(csv_path)
-        except Exception as e:
-            print(f"❌ Failed to read CSV '{csv_path}': {e}")
-            continue
-
-        if df.empty:
-            print(f"⚠ CSV '{sheet_name}' is empty. Skipping.")
-            continue
-
-        # ✅ Sort by column index 4 (Column 5)
-        try:
-            sort_column = df.columns[config_input.config_leave_colls + 2]  
-            df = df.sort_values(by=sort_column, ascending=False)
-        except Exception as e:
-            print(f"❌ Sorting failed for '{sheet_name}': {e}")
-            continue
-
-        # ✅ Get or create worksheet
         try:
             worksheet = workbook.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
-            worksheet = workbook.add_worksheet(title=sheet_name, rows="1000", cols="20")
-            print(f"📄 Created new worksheet: '{sheet_name}'")
+            print(f"❌ Sheet '{sheet_name}' not found. Skipping...")
+            continue
 
-        # ✅ Find the next empty row (always start at column A)
-        existing_data = worksheet.get_all_values()
-        next_row = len(existing_data) + 1
+        rows = []
+        for encoding in encodings_to_try:
+            try:
+                with open(file_path, 'r', newline='', encoding=encoding) as f:
+                    reader = csv.reader(f)
+                    rows = [row for row in reader if any(row)]
+                break
+            except Exception as e:
+                continue
 
-        # ✅ Write starting at first column (A)
+        if not rows:
+            print(f"⚠️ Could not read or file is empty: {file_path}. Skipping.")
+            continue
+
+        # Remove header if already present in sheet
         try:
-            set_with_dataframe(
-                worksheet,
-                df,
-                row=next_row,
-                col=1,  # ✅ force write from Column A
-                include_column_header=False
-            )
-            print(f"✅ Appended sorted data to Google Sheet: '{sheet_name}' from Column A")
+            header = rows[0]
+            data = rows[1:] if len(rows) > 1 else []
         except Exception as e:
-            print(f"❌ Failed to write to Google Sheet '{sheet_name}': {e}")
+            print(f"⚠️ Failed to process rows from {file_path}: {e}")
+            continue
+
+        try:
+            # Step 1: Get next empty row in column A
+            next_empty_row = len(worksheet.get_all_values()) + 1
+            range_start = f"A{next_empty_row}"
+
+            # Step 2: Prepare pre-header rows
+            now = datetime.now()
+            today_str = f"{now.month}/{now.day}/{now.year}"  # Always gives e.g., 8/7/2025
+            pre_rows = [[""], [""], [today_str, sheet_name]]  # Two blank rows, one metadata row
+
+            # Step 3: Combine all rows
+            all_rows = pre_rows + data
+
+            # Step 4: Upload starting from column A
+            worksheet.update(range_start, all_rows, value_input_option="RAW")
+            print(f"✅ Appended {len(data)} rows to '{sheet_name}' from column A with header")
+        except Exception as e:
+            print(f"❌ Failed to append to '{sheet_name}': {e}")
