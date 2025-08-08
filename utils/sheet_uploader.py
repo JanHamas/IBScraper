@@ -1,9 +1,9 @@
-import os, csv, pandas as pd
+import os, csv
 import asyncio
 import gspread
 from google.oauth2.service_account import Credentials
-from config import setting
 from datetime import datetime
+from config import config_input
 
 # === 2. Append new job entries to corresponding CSVs ===
 def _append_jobs(easy_applies, cs_applies, c_applies):
@@ -31,11 +31,11 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
 
 
 # After complete scraping sort row descending base matching % column and overwrite save files
-def update_google_sheets_from_csv(files=setting.CSV_FILES):
+def update_google_sheets_from_csv(files=config_input.CSV_FILES):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "gs_credentials.json")
-    workbook_id = "1wgGWS5xvxJgOuf2rx3TLQNDYSNStttQa7L8fFSWxs30"
+    workbook_id = config_input.workbook_id
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 
     # ✅ Auth & connect

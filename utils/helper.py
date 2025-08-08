@@ -1,5 +1,4 @@
 import urllib.parse
-from config import setting
 import traceback, os, shutil, csv
 from dotenv import load_dotenv
 from playwright.async_api import Page
@@ -7,12 +6,16 @@ import google.generativeai as genai
 import asyncio, random
 import platform, subprocess, ctypes
 from urllib.parse import urlparse, parse_qs
+import smtplib
+from email.message import EmailMessage
+import mimetypes
+from config import config_input
 
-# first load .env file
-load_dotenv 
+# Load environment variables
+load_dotenv()
 
 # load jobs id from previews processed jobs that are saved processed_jobs.txt
-def load_processed_jobs_id(filename=setting.PROCESSED_JOBS_FILE_PATH):
+def load_processed_jobs_id(filename=config_input.PROCESSED_JOBS_FILE_PATH):
     try:
         jobs_id = set()
         with open(filename, 'r') as f:
@@ -42,7 +45,7 @@ async def get_job_id(url):
 
 # this one funciton update the processed jobs during scripting for avoid duplicate
 async def update_processed_jobs(links):
-    with open(setting.PROCESSED_JOBS_FILE_PATH, "a") as f:
+    with open(config_input.PROCESSED_JOBS_FILE_PATH, "a") as f:
         for link in links:
             f.write(f"{link}\n")
         f.flush()
@@ -134,13 +137,13 @@ class SleepBlocker:
 
 # clean and resave last 3000 links in previews.txt file
 def clean_processed_jobs_file():
-    with open(setting.PROCESSED_JOBS_FILE_PATH, 'r') as f:
+    with open(config_input.PROCESSED_JOBS_FILE_PATH, 'r') as f:
         urls = f.readlines()
     
     # Get the last 2300 lines
     last_urls = urls[-5000:]
 
-    with open(setting.PROCESSED_JOBS_FILE_PATH, 'w') as f:
+    with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
         f.writelines(last_urls)
 
 
@@ -155,7 +158,7 @@ def create_debugging_screenshots_folder(folder_path):
     print(f"✅ Create a new folder: {folder_path}")
 
 # After complete scraping sort row descending base matching % column and overwrite save files
-def sort_csv_files_by_column(filenames = setting.CSV_FILES, sort_column_index=4):
+def sort_csv_files_by_column(filenames = config_input.CSV_FILES, sort_column_index=4):
     
     encodings_to_try = ['utf-8', 'latin1', 'cp1252', 'utf-8-sig']
 
@@ -208,3 +211,56 @@ def sort_csv_files_by_column(filenames = setting.CSV_FILES, sort_column_index=4)
         except Exception as e:
             print(f"⚠️ Failed to write {filename}: {str(e)}")
 
+
+def send_debugging_screenshots_email(folder_path="debugging_screenshots"):
+    sender = os.getenv("EMAIL_SENDER")
+    password = os.getenv("EMAIL_PASSWORD")
+    recipient = os.getenv("EMAIL_RECIPIENT")
+    smtp_server = os.getenv("SMTP_SERVER")
+    smtp_port = int(os.getenv("SMTP_PORT", 587))
+
+    if not all([sender, password, recipient, smtp_server]):
+        print("❌ Missing one or more required .env values.")
+        return
+
+    # Create the email message
+    msg = EmailMessage()
+    msg["Subject"] = "🪲 Debugging Screenshots"
+    msg["From"] = sender
+    msg["To"] = recipient
+    msg.set_content("Attached are the latest debugging screenshots.")
+
+    # Attach image files from the folder
+    if not os.path.exists(folder_path):
+        print(f"❌ Folder '{folder_path}' not found.")
+        return
+
+    attached = 0
+    for filename in os.listdir(folder_path):
+        filepath = os.path.join(folder_path, filename)
+        if os.path.isfile(filepath) and filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+            ctype, encoding = mimetypes.guess_type(filepath)
+            if ctype is None or encoding is not None:
+                ctype = 'application/octet-stream'
+            maintype, subtype = ctype.split('/', 1)
+
+            with open(filepath, 'rb') as f:
+                msg.add_attachment(f.read(),
+                                   maintype=maintype,
+                                   subtype=subtype,
+                                   filename=filename)
+                attached += 1
+
+    if attached == 0:
+        print("⚠️ No screenshots found to attach.")
+        return
+
+    # Send the email
+    try:
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            server.login(sender, password)
+            server.send_message(msg)
+        print(f"✅ Email sent to {recipient} with {attached} attachments.")
+    except Exception as e:
+        print(f"❌ Failed to send email: {e}")
