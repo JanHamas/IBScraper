@@ -35,7 +35,7 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "gs_credentials.json")
-    workbook_id = config_input.workbook_id
+    workbook_id = config_input.WORKBOOK_ID
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 
     # ✅ Auth & connect

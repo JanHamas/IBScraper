@@ -68,7 +68,7 @@ async def _listing(context, job_page_url):
                 count = processed_new_company_jobs.count(company)
 
                 if (
-                    count > config_input.per_company_jobs
+                    count > config_input.PER_COMPANY_JOBS
                     or job_id in processed_jobs_id
                     or company in config_input.ignore_companies
                 ):
@@ -83,7 +83,7 @@ async def _listing(context, job_page_url):
                 if len(list_of_titles) % 5 == 0:
                     print(f"⏳ Collected {len(list_of_titles)} jobs...")
 
-                if len(list_of_titles) >= config_input.process_batch:
+                if len(list_of_titles) >= config_input.PROCESS_BATCH_SIZE:
                     print("🧠 Processing batch...")
                     await process_batch(context, list_of_titles, list_of_links)
                     list_of_titles.clear()

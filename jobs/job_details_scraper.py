@@ -12,8 +12,8 @@ async def extract_full_details(context, urls , percentages):
     fixed_keys = ["company_name", "url"]
     
     # Add blank columns if configured
-    if isinstance(config_input.leave_blank_colls, int) and config_input.leave_blank_colls > 0:
-        fixed_keys.extend([f"blank_{i+1}" for i in range(config_input.leave_blank_colls)])
+    if isinstance(config_input.LEAVE_BLANK_COLLS, int) and config_input.LEAVE_BLANK_COLLS > 0:
+        fixed_keys.extend([f"blank_{i+1}" for i in range(config_input.LEAVE_BLANK_COLLS)])
     
     # Add remaining keys in fixed order
     fixed_keys.extend([
