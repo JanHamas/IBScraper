@@ -5,33 +5,36 @@ from playwright.async_api import async_playwright
 from config import config_input
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
-
 from .job_details_scraper import extract_full_details
+from utils.logger_setup import setup_logger
 
 
-# for avoid duplicate let's create a set that store all links uniqe id and create a method that load id from previews saved jobs
+logger = setup_logger(log_file="jobs_lister.log")
+
+# Avoid Duplicate
 processed_jobs_id = helper.load_processed_jobs_id()
-processed_new_company_jobs = [] # this are appending with c_name which are now processd and for avoiding store multiples per company jobs
+processed_new_company_jobs = []
 
 
 async def _listing(context, job_page_url):
     page = None
+    
     try:
         # Open job page
         page = await context.new_page()
-
         # Try to load page twice
         try:
             await page.goto(job_page_url, wait_until="load")
         except Exception:
+            logger.warning(f"Retry loading page: {job_page_url}")
             await page.goto(job_page_url, wait_until="load")
 
-        # Try to bypass cloudflare if present
+        # Cloudflare bypass
         try:
             cf_bypasser = CloudflareBypasser(page)
             await cf_bypasser.detect_and_bypass()
         except Exception as e:
-            print(f"❌ Error to handle captcha: \n {e}")
+            logger.error(f"Error handling captch: {e}")
 
         # Setup data holders
         list_of_processed_jobs = []
@@ -51,7 +54,7 @@ async def _listing(context, job_page_url):
                 links_task = page.query_selector_all("tr td a")
                 titles, companies, links = await asyncio.gather(titles_task, companies_task, links_task)
             except Exception as e:
-                print(f"❌ Error in selectors: \n {e}")
+                logger.error("Error in selectors: {e}")
                 break
 
             for title, company, link in zip(titles, companies, links):
@@ -81,10 +84,10 @@ async def _listing(context, job_page_url):
                 list_of_links.append(link)
 
                 if len(list_of_titles) % 5 == 0:
-                    print(f"⏳ Collected {len(list_of_titles)} jobs...")
+                    logger.info(f"Collected {len(list_of_titles)} job so far...")
 
                 if len(list_of_titles) >= config_input.PROCESS_BATCH_SIZE:
-                    print("🧠 Processing batch...")
+                    logger.info("Processing batch...")
                     await process_batch(context, list_of_titles, list_of_links)
                     list_of_titles.clear()
                     list_of_company.clear()
@@ -102,9 +105,10 @@ async def _listing(context, job_page_url):
                     filename = f"screenshot_{pagination_number}.png"
                     file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
                     await page.screenshot(path=file_path, full_page=True)
+                    logger.info(f"No more pages. Saved screenshot: {file_path}")
                     break
             except Exception as e:
-                print(f"❌ Failed to click button {pagination_number + 1} \n {e}")
+                logger.warning(f"Failed to click  page {pagination_number + 1}: {e}")
                 break
 
         # Final cleanup if any jobs are remaining in buffer
@@ -114,13 +118,14 @@ async def _listing(context, job_page_url):
 
     except Exception as e:
         print(f"❌ Unexpected error in _listing: {e}")
+        logger.critical(f" Unexpected error in _listing: {e}")
     finally:
         try:
             if page: await page.close()
             await context.close()
-            print("✔ Context closed successfully")
+            logger.debug("Context closed successfully")
         except Exception as e:
-            print(f"❌ Error during context/page close: {e}")
+            logger.error(f"Error during context/pages close: {e}")
 
 async def process_batch(context, list_of_titles, list_of_links):
     # Create first complete prompt
@@ -130,13 +135,15 @@ async def process_batch(context, list_of_titles, list_of_links):
 Jobs Titles:
 {list_of_titles}
     """
-    # print(f"PROMPT ARE : \n{prompt}")
+    logger.debug(f"Prompt sent to model: {prompt}")
     # Call model function for providing matching %
     try:
         model_response = await helper.get_match_percentage(prompt)
-        print(f"{model_response} \n")
+        logger.info(f"Modle response: {model_response}")
+
         matching_percentages = re.findall(r'\b\d+\b', model_response)  # Extracts all numbers
         matching_percentages = list(map(int, matching_percentages))
+
         links_list = []
         percentages = []
         for percentage, link in zip(matching_percentages, list_of_links):
@@ -148,7 +155,7 @@ Jobs Titles:
             await extract_full_details(context, links_list, percentages)
 
     except Exception as e:
-        print(e)
+        logger.error(f"Error in process_batch: {e}")
         await context.close()
     
 async def jobs_lister():
@@ -160,9 +167,9 @@ async def jobs_lister():
         proxies = await proxies_loader.load_proxies()
         # load indeed login accounts cookies
         accounts = await accounts_loader.load_accounts()
-
     except Exception as e:
-        print(f"❌Error to load context stuff: \n {e}")
+        logger.critical(f"Error loading context stuff: {e}")
+    
 
     # launch borwser 
     async with Stealth().use_async(async_playwright()) as p:
@@ -181,6 +188,7 @@ async def jobs_lister():
                 await context.add_init_script(script=script)
                 if index==0:
                     print(f"✔ Total {len(config_input.jobs_listed_pages_urls)} context are launched.")
+                    logger.info(f"Total {len(config_input.jobs_listed_pages_urls)} contexts launched.")
                 
                 # Jnject account into context
                 try:
@@ -191,7 +199,7 @@ async def jobs_lister():
                 tasks.append(_listing(context, job_page_url))
 
             except Exception as e:
-                print(f"❌ Error \n {e}")
+                logger.critical("Context creation failed: {e}")
 
         await asyncio.gather(*tasks)
 

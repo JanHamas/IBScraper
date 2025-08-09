@@ -2,9 +2,9 @@ from jobs.job_listings_scraper import jobs_lister
 import asyncio
 from utils import helper, sheet_uploader
 from config import config_input
+from utils.logger_setup import setup_logger
 
-
-
+logger = setup_logger(log_file="main.log")
 if __name__ == "__main__":
     try:
         # Prevent screen to sleep
@@ -30,7 +30,7 @@ if __name__ == "__main__":
         # Send debugging pictures to builder
         helper.send_debugging_screenshots_email()
     except Exception as e:
-        print(e)
+        logger.warning(f"Error in main.py {e}")
     finally:
         # Reanable default sleep mode
         sb.allow_sleep()
