@@ -1,0 +1,43 @@
+2025-08-25 08:39:57,305 [INFO] 🚀 Scraper started
+2025-08-25 08:39:57,306 [INFO] Created fresh file: output\Easy_applies.csv
+2025-08-25 08:39:57,307 [INFO] Created fresh file: output\Confirmation_applies.csv
+2025-08-25 08:39:57,307 [INFO] ✅ Fresh CSV files created
+2025-08-25 08:39:57,366 [INFO] Trimmed processed jobs file to last 8000 entries
+2025-08-25 08:39:57,367 [INFO] 🧹 Processed jobs file cleaned
+2025-08-25 08:39:57,367 [ERROR] Failed to create folder ['debugging_screenshots']
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper -org\utils\helper.py", line 54, in create_debugging_screenshots_folder
+    if os.path.exists(folder_path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _path_exists: path should be string, bytes, os.PathLike or integer, not list
+2025-08-25 08:39:57,369 [INFO] 📁 Debugging folder ready
+2025-08-25 08:39:57,377 [INFO] ✔ Sucessfully 10 indeed accounts load
+2025-08-25 08:39:59,263 [INFO] ✔  Unique fingerprints loaded
+2025-08-25 08:39:59,268 [INFO] Total 2 contexts launched.
+2025-08-25 08:40:23,565 [INFO] Collected 5 jobs...
+2025-08-25 08:40:45,126 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_2.png
+2025-08-25 08:40:46,949 [INFO] Model response: 60 5 15 5 20 50 5 5
+2025-08-25 08:40:53,585 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_3.png
+2025-08-25 08:40:54,122 [INFO] Model response: 75 80 70 20
+2025-08-25 08:40:55,921 [INFO] Benefits missing
+2025-08-25 08:40:55,974 [INFO] Company site apply: Amazon Kuiper Manufacturing Enterprises LLC
+2025-08-25 08:41:03,218 [INFO] Company site apply: SciPlay
+2025-08-25 08:41:03,268 [INFO] ✔ Saved in CSV files.
+2025-08-25 08:41:03,273 [INFO] Updated processed jobs with 21 new links
+2025-08-25 08:41:25,299 [INFO] Benefits missing
+2025-08-25 08:41:25,339 [INFO] Easy apply: Bosch-HomeComfort
+2025-08-25 08:41:33,880 [INFO] Benefits missing
+2025-08-25 08:41:33,919 [INFO] Confirmation job: Combined Insurance
+2025-08-25 08:41:42,366 [INFO] Benefits missing
+2025-08-25 08:41:42,412 [INFO] Company site apply: Klaviyo
+2025-08-25 08:41:42,470 [INFO] ✔ Saved in CSV files.
+2025-08-25 08:41:42,472 [INFO] Updated processed jobs with 32 new links
+2025-08-25 08:41:42,881 [INFO] 🧭 jobs_lister() finished
+2025-08-25 08:41:42,897 [INFO] Read output/Easy_applies.csv with utf-8 encoding
+2025-08-25 08:41:42,898 [INFO] Sorted and saved output/Easy_applies.csv
+2025-08-25 08:41:42,916 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
+2025-08-25 08:41:42,918 [INFO] Sorted and saved output/Confirmation_applies.csv
+2025-08-25 08:41:50,615 [INFO] 📊 Google Sheets updated
+2025-08-25 08:41:55,107 [INFO] Email sent to hamasjan5544@gmail.com with 3 attachments
+2025-08-25 08:41:55,108 [INFO] 📤 Debugging screenshots and spider.logs email sent
+2025-08-25 08:41:55,110 [INFO] 🛑 Scraper finished, sleep mode re-enabled

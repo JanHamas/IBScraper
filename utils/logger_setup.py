@@ -1,26 +1,16 @@
-import logging
-import os 
+# utils/logger_setup.py
+import logging, os
 
-def setup_logger(name="my_logger", log_file="scraper.log", level=logging.DEBUG):
-    os.makedirs("logs", exist_ok=True)
-    log_file = os.path.join("logs", log_file)
+def setup_logger(log_dir="logs", log_file="spider.log"):
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, log_file)
 
-    logger = logging.getLogger(name)
-    logger.setLevel(level)
-
-    # File handler
-    fh = logging.FileHandler(log_file)
-    fh.setLevel(level)
-
-    # Console handler
-    ch = logging.StreamHandler()
-    ch.setLevel(level)
-
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    fh.setFormatter(formatter)
-    ch.setFormatter(formatter)
-
-    logger.addHandler(fh)
-    logger.addHandler(ch)
-
-    return logger
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.FileHandler(log_path, mode="w", encoding="utf-8"),  # overwrite each run
+            logging.StreamHandler()  # also print to console
+        ]
+    )
+    return logging.getLogger("spider")

@@ -1,6 +1,8 @@
-import asyncio
 import os
+import logging
 
+# Logger
+logger = logging.getLogger("spider")
 
 # get the current dir path 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,8 +22,8 @@ async def load_proxies():
                         "password": pwd
                     })
         if not proxies:
-            print("🛑 Check proxeis file we got 0")
+            logger.info("🛑 Check proxeis file we got 0")
         return proxies
     except Exception as e:
-        print(f"❌ Error \n {e}")
+        logger.critical(f"❌ Error to load proxies \n {e}")
     

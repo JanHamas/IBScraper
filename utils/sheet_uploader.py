@@ -4,6 +4,10 @@ import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
 from config import config_input
+import logging
+
+# Logger
+logger = logging.getLogger("spider")
 
 # === 2. Append new job entries to corresponding CSVs ===
 def _append_jobs(easy_applies, cs_applies, c_applies):
@@ -18,7 +22,7 @@ def _append_jobs(easy_applies, cs_applies, c_applies):
     append_to_csv("Easy_applies.csv", easy_applies)
     append_to_csv("CS_applies.csv", cs_applies)
     append_to_csv("Confirmation_applies.csv", c_applies)
-    print("✔ Saved in CSV files.")
+    logger.info("✔ Saved in CSV files.")
 
 # === 3. Async wrapper ===
 async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
@@ -27,11 +31,11 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
     try:
         await loop.run_in_executor(None, lambda: _append_jobs(easy_applies, cs_applies, c_applies))
     except Exception as e:
-        print(f"❌ Error saving to CSV: {e}")
+        logger.error(f"❌ Error saving to CSV: {e}")
 
 
 # After complete scraping sort row descending base matching % column and overwrite save files
-def update_google_sheets_from_csv(files=config_input.CSV_FILES):
+def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applies.csv")):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "gs_credentials.json")
@@ -53,7 +57,7 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES):
         try:
             worksheet = workbook.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
-            print(f"❌ Sheet '{sheet_name}' not found. Skipping...")
+            logger.error(f"❌ Sheet '{sheet_name}' not found. Skipping...")
             continue
 
         rows = []
@@ -75,7 +79,7 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES):
             header = rows[0]
             data = rows[1:] if len(rows) > 1 else []
         except Exception as e:
-            print(f"⚠️ Failed to process rows from {file_path}: {e}")
+            logger.error(f"⚠️ Failed to process rows from {file_path}: {e}")
             continue
 
         try:
@@ -95,4 +99,4 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES):
             worksheet.update(range_start, all_rows, value_input_option="RAW")
             print(f"✅ Appended {len(data)} rows to '{sheet_name}' from column A with header")
         except Exception as e:
-            print(f"❌ Failed to append to '{sheet_name}': {e}")
+            logger.error(f"❌ Failed to append to '{sheet_name}': {e}")

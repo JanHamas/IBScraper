@@ -1,5 +1,9 @@
 from pathlib import Path
 import json, random
+import logging
+
+# Logger
+logger = logging.getLogger("spider")
 
 
 BAISE_DIR = Path(__file__).resolve().parent
@@ -16,14 +20,14 @@ for path in FINGERPRINTS_DIR.glob("*.json"):
             content = f.read().strip()
             
             if not content:
-                print(f"⚠ Skipped empty file: {path.name}")
+                logger.info(f"⚠ Skipped empty file: {path.name}")
                 continue
         
             fingerprint = json.loads(content)
             user_agent = fingerprint.get("navigator", {}).get("userAgent", "").strip() 
             
             if not user_agent:
-               print(f"UserAgent not found {path.name}")  
+               logger.info(f"UserAgent not found {path.name}")  
 
             if user_agent not in seen_user_agent: 
                 seen_user_agent.add(user_agent)
@@ -34,15 +38,15 @@ for path in FINGERPRINTS_DIR.glob("*.json"):
                 # print(f"🔁 Duplicate skipped: {path.name}")
     
     except json.JSONDecodeError as e:
-        print(f"❌ JSON error in {path.name}: {e}")
+        logger.error(f"❌ JSON error in {path.name}: {e}")
     except UnicodeDecodeError as e:
-      print(f"❌ Encoding error in {path.name}: {e}")
+      logger.error(f"❌ Encoding error in {path.name}: {e}")
     except Exception as e:
-      print(f"❌ Unexpected error in {path.name}: {e}")
+      logger.error(f"❌ Unexpected error in {path.name}: {e}")
     
 async def load_fingerprint(index=0):
     if index==0:
-        print(f"✔  Unique fingerprints loaded")
+        logger.info(f"✔  Unique fingerprints loaded")
 
     fingerprint = fingerprints[index]
 

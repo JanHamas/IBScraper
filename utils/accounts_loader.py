@@ -1,7 +1,7 @@
 from pathlib import Path
 import json, asyncio
-from aioconsole import ainput
-
+import logging
+logger = logging.getLogger("spider")  # use shared logger
 
 # Get the accounts dir
 BAISE_DIR = Path(__file__).resolve().parent
@@ -14,10 +14,10 @@ async def load_accounts():
             with open(account, "r") as f:
                 account = json.load(f)   
                 accounts.append(account)         
-        print(f"✔ Sucessfully {len(accounts)} indeed accounts load")
+        logger.info(f"✔ Sucessfully {len(accounts)} indeed accounts load")
         return accounts
     except Exception as e:
-        print(f"❌ Error accounts loading: \n {e}")
+        logger.critical(f"❌ Error accounts loading: \n {e}")
 
 
 

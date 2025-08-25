@@ -10,14 +10,28 @@ import smtplib
 from email.message import EmailMessage
 import mimetypes
 from config import config_input
-import gspread
-from google.oauth2.service_account import Credentials
+from groq import Groq
+import logging
+
+# Logger
+logger = logging.getLogger("spider")
 
 # Load environment variables
 load_dotenv()
 
-# load jobs id from previews processed jobs that are saved processed_jobs.txt
+# Create CSV file for simultinouly saveing scraping data
+def create_csv_files(file_names):
+    """Create empty CSV files inside output/ directory."""
+    os.makedirs("output", exist_ok=True)
+    for name in file_names:
+        path = os.path.join("output", f"{name}")
+        with open(path, mode="w", newline='', encoding="utf-8"):
+            pass
+        logger.info(f"Created fresh file: {path}")
+
+# Load jobs id from previews 1,2,3 day ago processed jobs for avoid duplicate
 def load_processed_jobs_id(filename=config_input.PROCESSED_JOBS_FILE_PATH):
+    """Load job IDs from previously processed jobs file."""
     try:
         jobs_id = set()
         with open(filename, 'r') as f:
@@ -27,164 +41,147 @@ def load_processed_jobs_id(filename=config_input.PROCESSED_JOBS_FILE_PATH):
                 job_id = query_params.get("jk", [None])[0]
                 if job_id:
                     jobs_id.add(job_id)
-        print(f"len jobs_id {len(jobs_id)}")
+        logger.info(f"Loaded {len(jobs_id)} job IDs from {filename}")
         return jobs_id
-    
-    except Exception as e:
-        print(f"❌ Error loading job IDs: {e}")
+    except Exception:
+        logger.exception("Error loading job IDs")
         return set()
 
-# this one function are extracting id from provided url
+# Create a logs and debugging_screenshot folder for saveing spider and screenshots
+def create_debugging_screenshots_folder(folder_path):
+    """Recreate debugging/log folders from scratch."""
+    try:
+        if os.path.exists(folder_path):
+            shutil.rmtree(folder_path)
+            os.mkdir(folder_path)
+            logger.info(f"Created new folder: {folder_path}")
+    except Exception:
+        logger.exception(f"Failed to create folder {folder_path}")
+
 async def get_job_id(url):
+    """Extract job_id from a given URL."""
     try:
         parsed_url = urllib.parse.urlparse(url)
         query_params = urllib.parse.parse_qs(parsed_url.query)
-        job_id = query_params.get("jk", [None])[0]
-        return job_id
-    except Exception as e:
-        print(f"Error extracting job_id: {e}")
+        return query_params.get("jk", [None])[0]
+    except Exception:
+        logger.exception("Error extracting job_id")
         return None
 
-# this one funciton update the processed jobs during scripting for avoid duplicate
+
 async def update_processed_jobs(links):
-    with open(config_input.PROCESSED_JOBS_FILE_PATH, "a") as f:
-        for link in links:
-            f.write(f"{link}\n")
-        f.flush()
-
-# Set your Gemini API key (you can also use os.getenv("GOOGLE_API_KEY"))
-genai.configure(api_key="AIzaSyAfM8-AmzjZAF_ovj5vlEKbwLUj4aWR2OA")
-# Define an async wrapper (Gemini's SDK is sync, so use asyncio.to_thread)
-async def get_match_percentage(prompt: str):
+    """Append new processed jobs to the file."""
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        with open(config_input.PROCESSED_JOBS_FILE_PATH, "a") as f:
+            for link in links:
+                f.write(f"{link}\n")
+            f.flush()
+        logger.info(f"Updated processed jobs with {len(links)} new links")
+    except Exception:
+        logger.exception("Failed to update processed jobs")
 
-        # Run sync Gemini call in a background thread
+
+# AI matching function
+genai.configure(api_key=os.getenv("GEMIMI_API_KEY"))
+async def get_match_percentage_from_gemini(prompt: str):
+    """Get match percentage using Gemini."""
+    try:
+        model = genai.GenerativeModel(config_input.gemini_model_version)
         response = await asyncio.to_thread(model.generate_content, prompt)
-
-        # Extract and return the cleaned response
-        response_text = response.text.strip()
-        return response_text
-
-    except Exception as e:
-        print("\nError:", e)
-        print(traceback.format_exc())
+        return response.text.strip()
+    except Exception:
+        logger.exception("Error in get_match_percentage")
         return None
 
-# === Replace workbook creation with folder setup ===
-def create_csv_files(file_names):
-    os.makedirs("output", exist_ok=True)
-    for name in file_names:
-        path = os.path.join("output", f"{name}")
 
-        # Always overwrite the file (mode="w")
-        with open(path, mode="w", newline='', encoding="utf-8") as f:
-            continue
-
-        print(f"✅ Created fresh file: {path}")
-
-# this one function are simulating human behavior we will call after some actioned
 async def simulate_human_behavior(page: Page):
-    # Random delay to minic thinking time
+    """Simulate human-like behavior on a page."""
     await asyncio.sleep(random.uniform(1.5, 3.5))
-
-    # Random scroll (small movement)
     scroll_amount = random.randint(100, 600)
     await page.mouse.wheel(0, scroll_amount)
     await asyncio.sleep(random.uniform(0.5, 1.5))
-
-    # Random mouse movement
-    x = random.randint(0, 800)
-    y = random.randint(0, 600)
-    await page.mouse.move(x, y, steps=random.randint(5, 15))
-
-    # Another small puse
+    await page.mouse.move(random.randint(0, 800), random.randint(0, 600), steps=random.randint(5, 15))
     await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
     await asyncio.sleep(random.randint(1, 3))
 
-# Prevent different system to sleep
+
 class SleepBlocker:
+    """Prevent system from sleeping during scraping."""
+
     def __init__(self):
         self.platform = platform.system()
-        self.proc = None  # For macOS and Linux
+        self.proc = None
 
     def prevent_sleep(self):
-        if self.platform == "Windows":
-            ES_CONTINUOUS = 0x80000000
-            ES_SYSTEM_REQUIRED = 0x00000001
-            ES_DISPLAY_REQUIRED = 0x00000002
-            ctypes.windll.kernel32.SetThreadExecutionState(
-                ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED
-            )
-        elif self.platform == "Darwin":  # macOS
-            # Starts a background caffeinate process
-            self.proc = subprocess.Popen(["caffeinate"])
-        elif self.platform == "Linux":
-            # Dummy workaround: start a process that prevents screensaver
-            self.proc = subprocess.Popen(["bash", "-c", "while true; do sleep 60; done"])
-        else:
-            print("Unsupported OS")
+        try:
+            if self.platform == "Windows":
+                ES_CONTINUOUS = 0x80000000
+                ES_SYSTEM_REQUIRED = 0x00000001
+                ES_DISPLAY_REQUIRED = 0x00000002
+                ctypes.windll.kernel32.SetThreadExecutionState(
+                    ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED
+                )
+            elif self.platform == "Darwin":
+                self.proc = subprocess.Popen(["caffeinate"])
+            elif self.platform == "Linux":
+                self.proc = subprocess.Popen(["bash", "-c", "while true; do sleep 60; done"])
+            else:
+                logger.warning("Unsupported OS for sleep prevention")
+        except Exception:
+            logger.exception("Failed to prevent sleep")
 
     def allow_sleep(self):
-        if self.platform == "Windows":
-            ES_CONTINUOUS = 0x80000000
-            ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS)
-        elif self.platform in ["Darwin", "Linux"]:
-            if self.proc:
-                self.proc.terminate()
-                self.proc = None
-        else:
-            print("Unsupported OS")
+        try:
+            if self.platform == "Windows":
+                ES_CONTINUOUS = 0x80000000
+                ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS)
+            elif self.platform in ["Darwin", "Linux"]:
+                if self.proc:
+                    self.proc.terminate()
+                    self.proc = None
+            else:
+                logger.warning("Unsupported OS for allowing sleep")
+        except Exception:
+            logger.exception("Failed to allow sleep")
 
-# clean and resave last 3000 links in previews.txt file
+
 def clean_processed_jobs_file():
-    with open(config_input.PROCESSED_JOBS_FILE_PATH, 'r') as f:
-        urls = f.readlines()
-    
-    # Get the last 2300 lines
-    last_urls = urls[-8000:]
+    """Keep only the last N lines in processed_jobs.txt."""
+    try:
+        with open(config_input.PROCESSED_JOBS_FILE_PATH, 'r') as f:
+            urls = f.readlines()
+        last_urls = urls[-8000:]
+        with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
+            f.writelines(last_urls)
+        logger.info(f"Trimmed processed jobs file to last {len(last_urls)} entries")
+    except Exception:
+        logger.exception("Failed to clean processed jobs file")
 
-    with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
-        f.writelines(last_urls)
 
-# Create a new folder for saveing debugging screenshots during scriping
-def create_debugging_screenshots_folder(folder_path):
-    # Delete the folder if exists
-    if os.path.exists(folder_path):
-        shutil.rmtree(folder_path)
-    
-    # Create a new folder
-    os.mkdir(folder_path)
-    print(f"✅ Create a new folder: {folder_path}")
-
-# After complete scraping sort row descending base matching % column and overwrite save files
-def sort_csv_files_by_column(filenames = config_input.CSV_FILES, sort_column_index=4):
-    
+def sort_csv_files_by_column(filenames=config_input.CSV_FILES, sort_column_index=4):
+    """Sort CSV files by a column in descending order."""
     encodings_to_try = ['utf-8', 'latin1', 'cp1252', 'utf-8-sig']
 
     for filename in filenames:
         filename = f"output/{filename}"
         rows, chosen_encoding = None, None
 
-        # Try reading file with different encodings
         for encoding in encodings_to_try:
             try:
                 with open(filename, 'r', newline='', encoding=encoding) as f:
-                    reader = csv.reader(f)
-                    rows = list(reader)
+                    rows = list(csv.reader(f))
                 chosen_encoding = encoding
-                print(f"📘 Read {filename} successfully with {encoding} encoding")
+                logger.info(f"Read {filename} with {encoding} encoding")
                 break
             except UnicodeDecodeError:
                 continue
-            except Exception as e:
-                print(f"⚠️ Error reading {filename} with {encoding}: {str(e)}")
+            except Exception:
+                logger.warning(f"Error reading {filename} with {encoding}", exc_info=True)
 
         if not rows:
-            print(f"⚠️ Could not read or file is empty: {filename}. Skipping.")
+            logger.warning(f"Could not read {filename} or file is empty. Skipping.")
             continue
 
-        # Detect header
         try:
             int(rows[0][sort_column_index])
             has_header = False
@@ -194,25 +191,24 @@ def sort_csv_files_by_column(filenames = config_input.CSV_FILES, sort_column_ind
         header = rows[0] if has_header else None
         data = rows[1:] if has_header else rows
 
-        # Try to sort data by specified column
         try:
             data.sort(key=lambda row: int(row[sort_column_index]), reverse=True)
-        except (IndexError, ValueError) as e:
-            print(f"⚠️ Sorting failed for {filename}: {str(e)}. Saving unsorted.")
+        except Exception:
+            logger.warning(f"Sorting failed for {filename}, saving unsorted.", exc_info=True)
 
-        # Write back sorted data
         try:
             with open(filename, 'w', newline='', encoding=chosen_encoding) as f:
                 writer = csv.writer(f)
                 if header:
                     writer.writerow(header)
                 writer.writerows(data)
-            print(f"✅ Sorted and saved {filename} successfully.\n")
-        except Exception as e:
-            print(f"⚠️ Failed to write {filename}: {str(e)}")
+            logger.info(f"Sorted and saved {filename}")
+        except Exception:
+            logger.exception(f"Failed to write sorted data for {filename}")
 
-# Send the debugging screenshots to scraper builder 
-def send_debugging_screenshots_email(folder_path="debugging_screenshots"):
+
+def send_debugging_screenshots_and_spider_log_email(folder_path="debugging_screenshots", log_file="logs/spider.log"):
+    """Send debugging screenshots and spider.log via email."""
     sender = os.getenv("EMAIL_SENDER")
     password = os.getenv("EMAIL_PASSWORD")
     recipient = os.getenv("EMAIL_RECIPIENT")
@@ -220,47 +216,49 @@ def send_debugging_screenshots_email(folder_path="debugging_screenshots"):
     smtp_port = int(os.getenv("SMTP_PORT", 587))
 
     if not all([sender, password, recipient, smtp_server]):
-        print("❌ Missing one or more required .env values.")
+        logger.error("Missing one or more required .env values for email")
         return
 
-    # Create the email message
     msg = EmailMessage()
-    msg["Subject"] = "🪲 Debugging Screenshots"
+    msg["Subject"] = "🪲 Debugging Files"
     msg["From"] = sender
     msg["To"] = recipient
-    msg.set_content("Attached are the latest debugging screenshots.")
-
-    # Attach image files from the folder
-    if not os.path.exists(folder_path):
-        print(f"❌ Folder '{folder_path}' not found.")
-        return
+    msg.set_content("Attached are the latest debugging screenshots and logs.")
 
     attached = 0
-    for filename in os.listdir(folder_path):
-        filepath = os.path.join(folder_path, filename)
-        if os.path.isfile(filepath) and filename.lower().endswith(('.png', '.jpg', '.jpeg')):
-            ctype, encoding = mimetypes.guess_type(filepath)
-            if ctype is None or encoding is not None:
-                ctype = 'application/octet-stream'
-            maintype, subtype = ctype.split('/', 1)
 
-            with open(filepath, 'rb') as f:
-                msg.add_attachment(f.read(),
-                                   maintype=maintype,
-                                   subtype=subtype,
-                                   filename=filename)
-                attached += 1
+    # Attach screenshots
+    if os.path.exists(folder_path):
+        for filename in os.listdir(folder_path):
+            filepath = os.path.join(folder_path, filename)
+            if os.path.isfile(filepath) and filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+                ctype, encoding = mimetypes.guess_type(filepath)
+                if ctype is None or encoding is not None:
+                    ctype = 'application/octet-stream'
+                maintype, subtype = ctype.split('/', 1)
+                with open(filepath, 'rb') as f:
+                    msg.add_attachment(f.read(), maintype=maintype, subtype=subtype, filename=filename)
+                    attached += 1
+    else:
+        logger.warning(f"Folder '{folder_path}' not found.")
+
+    # Attach spider.log
+    if os.path.exists(log_file):
+        with open(log_file, "rb") as f:
+            msg.add_attachment(f.read(), maintype="text", subtype="plain", filename=os.path.basename(log_file))
+            attached += 1
+    else:
+        logger.warning(f"Log file '{log_file}' not found.")
 
     if attached == 0:
-        print("⚠️ No screenshots found to attach.")
+        logger.warning("No files found to attach.")
         return
 
-    # Send the email
     try:
         with smtplib.SMTP(smtp_server, smtp_port) as server:
             server.starttls()
             server.login(sender, password)
             server.send_message(msg)
-        print(f"✅ Email sent to {recipient} with {attached} attachments.")
-    except Exception as e:
-        print(f"❌ Failed to send email: {e}")
+        logger.info(f"Email sent to {recipient} with {attached} attachments")
+    except Exception:
+        logger.exception("Failed to send debugging email")
