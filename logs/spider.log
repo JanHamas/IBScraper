@@ -1,0 +1,196 @@
+2025-08-29 03:52:30,954 [INFO] 🚀 Scraper started
+2025-08-29 03:52:30,957 [INFO] Created fresh file: output\Easy_applies.csv
+2025-08-29 03:52:30,958 [INFO] Created fresh file: output\Confirmation_applies.csv
+2025-08-29 03:52:30,958 [INFO] ✅ Fresh CSV files created
+2025-08-29 03:52:31,082 [INFO] Trimmed processed jobs file to last 8000 entries
+2025-08-29 03:52:31,102 [INFO] 🧹 Processed jobs file cleaned
+2025-08-29 03:52:31,105 [INFO] Created new folder: debugging_screenshots
+2025-08-29 03:52:31,106 [INFO] 📁 Debugging folder ready
+2025-08-29 03:52:31,107 [INFO] Processing 20 URLs in 2 chunks
+2025-08-29 03:52:31,107 [INFO] Processing chunk 1/2
+2025-08-29 03:52:31,202 [INFO] ✔ Sucessfully 10 indeed accounts load
+2025-08-29 03:52:46,961 [INFO] ✔  Unique fingerprints loaded
+2025-08-29 03:52:46,967 [INFO] Total 10 contexts launched.
+2025-08-29 03:52:53,096 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=power+bi+analyst&l=United+States&fromage=1
+2025-08-29 03:52:53,110 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,239 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=nlp&l=United+States&fromage=1
+2025-08-29 03:52:53,271 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=matlab&l=United+States&fromage=1
+2025-08-29 03:52:53,326 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,438 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,487 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=artificial+intelligence&l=United+States&fromage=1
+2025-08-29 03:52:53,536 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1
+2025-08-29 03:52:53,599 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=transformer&l=United+States&fromage=1
+2025-08-29 03:52:53,635 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,675 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,771 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=python+developer&l=United+States&fromage=1
+2025-08-29 03:52:53,815 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,849 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=tensorflow&l=United+States&fromage=1
+2025-08-29 03:52:53,899 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=pytorch&l=United+States&fromage=1
+2025-08-29 03:52:53,908 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=data+engineer&l=United+States&fromage=1
+2025-08-29 03:52:53,920 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:53,991 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:54,137 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:54,322 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-08-29 03:52:54,432 [ERROR] Context close issue: BrowserContext.close: Target page, context or browser has been closed
+2025-08-29 03:52:54,490 [ERROR] Context close issue: BrowserContext.close: Target page, context or browser has been closed
+2025-08-29 03:52:54,509 [ERROR] Context close issue: BrowserContext.close: Target page, context or browser has been closed
