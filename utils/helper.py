@@ -94,6 +94,34 @@ async def get_match_percentage_from_gemini(prompt: str):
         return None
 
 
+async def get_match_percentage_from_groq(prompt):
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    messages = [{"role": "user", "content": prompt}]
+    
+    try:
+        loop = asyncio.get_event_loop()
+        completion = await loop.run_in_executor(
+            None,
+            lambda: client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=messages,
+                temperature=0,
+                max_tokens=1024,
+                top_p=1,
+                stream=False
+            )
+        )
+
+        response_text = completion.choices[0].message.content.strip()
+        return response_text
+
+    except Exception as e:
+        print("\nError:", e)
+        print(traceback.format_exc())
+        return None
+
+
+
 async def simulate_human_behavior(page: Page):
     """Simulate fast human-like behavior on a page."""
     await asyncio.sleep(random.uniform(0.1, 0.3))  # shorter delay

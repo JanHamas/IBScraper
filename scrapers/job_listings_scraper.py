@@ -127,7 +127,8 @@ Jobs Titles:
 {list_of_titles}
     """
     try:
-        model_response = await helper.get_match_percentage_from_gemini(prompt)
+        # model_response = await helper.get_match_percentage_from_gemini(prompt)
+        model_response = await helper.get_match_percentage_from_groq(prompt)
         logger.info(f"Model response: {model_response}")
 
         matching_percentages = re.findall(r'\b\d+\b', model_response)

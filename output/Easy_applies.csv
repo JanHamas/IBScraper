@@ -1,0 +1,543 @@
+Scalable Systems,https://indeed.com/rc/clk?jk=0b273efef1e11dba&bb=6Hv3uzKxehrIfA3xiZfSR4aDCxGR8yIIydFboqC-HW1jvrV_oacwZpij3yEuUxiF3s8Gs129OfUuTJcXAZr2KkKFHN7-dbTmpY5ptSE0tXulQi0ODDdUkUO5nHILkUpXSRrHcsSan18%3D&xkcb=SoDF67M3tapRXG0RhR0LbzkdCdPP&fccid=b747ac6a9294eb0c&cmp=Scalable-Systems&ti=Ai+Developer&vjs=3,,,95,MLOps Engineer with Vertex AI,$50 - $55 an hour - Contract,"Scalable Systems
+4.3
+4.3 out of 5 stars
+Remote",,"Being thorough in this section will allow the suppliers to pre-identify candidates more accurately.
+
+Lead the integration of machine learning models into business-critical applications using GCP Vertex AI.
+Collaborate with data engineers, data scientists, software engineers, and product owners to ensure seamless model deployment and performance in production environments.
+Design and implement scalable, resilient, and secure model inference pipelines using Vertex AI, Vertex Pipelines, and related services.
+Enable continuous delivery and monitoring of models via Vertex AI Model Registry, Prediction Endpoints, and Model Monitoring features.
+Optimize model serving performance, cost, and throughput under high-load, real-time, and batch scenarios.
+Automate model lifecycle management including CI/CD pipelines, retraining, versioning, rollback, and shadow testing.
+Participate in architecture reviews and advocate best practices in ML model orchestration, resource tuning, and observability.
+
+Required Skills (top 3 non-negotiables):
+Ex. Agile Experience – 2 Years minimum
+
+2 years - Strong experience in model integration and deployment using GCP Vertex AI, especially around Vertex Pipelines, Endpoints,
+Familiarity with enterprise monitoring tools like Prometheus, Grafana, or Stackdriver for ML observability.
+Proficiency in MLOps and model operationalization techniques, with knowledge of infrastructure-as-code and containerized environments.
+
+Preferred Skills (nice to have):
+Ex. Case Management Experience – 3+ years
+
+Experience with MLOps tools such as Kubeflow, MLFlow, or TFX
+Expertise in scaling ML models in production, including load balancing, latency optimization, A/B testing, and automated retraining pipelines.
+Exposure to hybrid or federated model deployment architectures.
+
+Disqualifiers/ Dislikes on Resumes:
+
+More than 3-4 pages in length.
+Generic resumes without clearly defined accomplishments or project impact.
+Missing valid LinkedIn profile
+
+Required Testing:
+Candidates should attend interviews without any external help or assistance.
+
+Software Skills Required:
+
+GCP Vertex AI Suite (including Pipelines, Feature Store, Model Monitoring)
+Python (with emphasis on integration frameworks and automation)
+Git, Docker, Poetry, Terraform or Deployment Manager
+BigQuery, Dataflow, and Cloud Functions
+Monitoring tools (Stackdriver, Prometheus, etc.)
+
+Job Type: Contract
+
+Pay: $50.00 - $55.00 per hour
+
+Work Location: Remote"
+Data Ideology,https://indeed.com/rc/clk?jk=80025e5dbb9d11e7&bb=fx4QyrdjO4u4LGgZlF0Yhq3ytiGvG26Lge2BC9k3QuvdQZEPBBpSxJyNqnUTy5QAr5WpxU79B6_gmvIWL0JNlFABgPiNeGtR8WAe5U4lBe0bvfJ_XoNOJ4SSU8mYTnha3-W9eYN_UTU%3D&xkcb=SoCo67M3tapS-gARnz0fbzkdCdPP&fccid=eafdfb1130e7c236&vjs=3,,,90,Sr. Data Engineer (Snowflake),Full-time,"Data Ideology
+5.0
+5.0 out of 5 stars
+Remote","Benefits
+Pulled from the full job description
+Referral program
+Health insurance
+Retirement plan
+Work from home
+&nbsp;","Data Ideology
+
+At DI, we provide Data & Analytics expertise to drive measurable business outcomes, often solving complex business problems for our clients. Our data analytics advisory services enable our customers to transform data into insights by driving a culture of empowerment and ownership of results. Our team consists of highly motivated individuals who are passionate about learning, understanding, collaborating, and who are intellectually curious. For more information about Data Ideology, visit www.dataideology.com.
+
+Sr. Data Engineer - (Snowflake) - Full-time (FT)
+
+Data Ideology is seeking a Sr. Snowflake Data Engineer to support our growing partnership with Snowflake in a hybrid pre-sales and delivery role. This is a client-facing, consultative position that bridges strategic technical planning with hands-on implementation. You will play a critical role in helping accelerate sales opportunities, build technical credibility, and deliver impactful data solutions across a variety of industries. This opportunity is ideal for mid-to-senior data professionals who have deep Snowflake experience, are motivated to grow their impact, and are looking to take the next step in their career.
+The ideal candidate combines strong technical skills, cloud-native data platform experience, and the ability to collaborate directly with clients and cross-functional teams. The ideal candidate will also demonstrate leadership potential, ownership, and a passion for innovation.
+
+Responsibilities
+
+To perform in this position successfully, an individual must be able to perform each essential duty satisfactorily. Reasonable accommodations may be made to enable individuals with disabilities to perform essential functions. Other duties may be assigned to meet business needs.
+
+Design and build scalable, secure, and cost-effective data architectures in Snowflake, aligned with industry and client best practices.
+Implement data pipelines using ETL/ELT tools such as dbt, Python, CloverDX, and cloud-native services.
+Conduct technical discovery sessions to understand client goals and translate them into architectural designs and project plans.
+Collaborate with pre-sales and account teams to scope work, define solutions, and estimate effort for Statements of Work (SOWs).
+Serve as a Snowflake SME, providing guidance on performance tuning, cost optimization, access control, data sharing, and workload management.
+Lead and execute data platform modernization and migration initiatives, moving clients from legacy systems to Snowflake-based solutions.
+Integrate Snowflake environments with BI tools, data governance platforms, and AI/ML frameworks.
+Contribute to internal IP, including templates, frameworks, accelerators, and proofs of concept (POCs).
+Support delivery engagements by implementing scalable solutions and continuously improving architectures based on business needs.
+Mentor junior team members and contribute to ongoing knowledge sharing across the engineering team.
+
+Supervisory Responsibilities: None
+
+Qualifications:
+Education and Experience:
+7+ years of experience in data engineering, data warehousing, or data architecture roles.
+3+ years of hands-on Snowflake experience including advanced features such as performance tuning, access control, data sharing, Snowpark, or Snowpipe.
+Strong experience with SQL, Python, and DBT in production environments.
+Proficiency in cloud infrastructure such as AWS, Azure, or GCP and modern data tooling such as Airflow, Fivetran, Power BI, Looker, or Informatica.
+Demonstrated success in client-facing delivery roles or solution architecture in consulting or services environments.
+Deep understanding of cloud-native architectures, data modeling, and data pipeline orchestration.
+Experience with streaming data, unstructured data, or real-time analytics is a plus.
+Excellent verbal and written communication skills and the ability to present to both technical and executive stakeholders.
+Proven ability to influence client architecture decisions and lead data modernization initiatives.
+Skills and Attributes:
+Excellent verbal and written communication skills, with the ability to tailor communication to both technical and executive audiences.
+Proven ability to influence architecture decisions, present solution strategies, and drive technical outcomes.
+Strong problem-solving mindset and a proactive, self-directed approach to delivery and growth.
+Demonstrated desire to grow into a higher-impact technical role, such as a lead engineer or architect, over time.
+Certifications:
+SnowPro Core Certification (Required).
+One or more SnowPro Advanced Certifications such as Data Engineer, Architect, Snowpark, or Data Analyst.
+Additional cloud or data platform certifications such as AWS, Azure, dbt, or Databricks are a plus.
+Work Environment:
+Remote work from home.
+Hours of work and days are generally Monday through Friday. Specific business hours will depend on client needs.
+Physical Demands:
+Must be able to remain in a stationary position 50% of the time.
+The person in this position must occasionally move about inside the office to access file cabinets, library stacks, office machinery, etc.
+Constantly operates a computer and other office productivity machinery, such as a calculator, copy machine, and printer.
+The person in this position frequently communicates with clients and coworkers. Must be able to exchange accurate information in these situations.
+Benefits:
+Flexible Time Off Policy
+Eligibility for Health Benefits
+Retirement Plan with Company Match
+Training and Certification Reimbursement
+Utilization Based Incentive Program
+Commission Incentive Program
+Referral Bonuses
+Work from Home
+Data Ideology is an EEO Employer
+
+1ikiuJllfx"
+Georgia System Operations Corporation,https://indeed.com/rc/clk?jk=719d8335fb3aa801&bb=ugcao_8mrVqLaBGuTBM83raOmN1H8cAmMNQToKOhLZ3E69E5C-PHtOCMcQQQHUE3QhwwqWjOdWguIjpQRIONxdrJFx84RY9215e4iW9RsrOjUHtwPNUY7Pwnx2fxkYLoPgaPpjb3eAHBwz2TBp8kcw%3D%3D&xkcb=SoA067M3tapV5px7kJ0PbzkdCdPP&fccid=c71d4f4b8eba4266&vjs=3,,,80,Data Engineer (Levels III – V),"$96,600 - $168,800 a year - Full-time","Georgia System Operations Corporation
+3.4
+3.4 out of 5 stars
+Tucker, GA 30084
+Hybrid work","Benefits
+Pulled from the full job description
+Tuition reimbursement
+Parental leave
+Health insurance
+401(k) matching
+Paid time off
+Vision insurance
+Dental insurance
+Show more
+&nbsp;","This position, within the Data Analytics Specialist job family of IT, focuses on building and operating the data platforms, pipelines, and services that power analytics and decision‑making across the enterprise. You will design and maintain robust, scalable data integration and transformation processes, uphold data quality and governance standards, and collaborate closely with analysts and data scientists to deliver trusted, well‑modeled data for BI, AI/ML, and operational use cases.
+
+Our environment emphasizes the Microsoft Azure data platform-including Azure Data Factory, Azure Synapse Analytics, Databricks, and Azure Data Lake-alongside enterprise BI and governance tools. Experience with distributed data processing (e.g., Spark) and orchestration is highly valued.
+
+This position requires a strong customer service focus, positive attitude, and excellent oral and written communication skills.
+
+Responsible for compliance with all applicable laws, regulations, industry standards, corporate policies, guidelines and procedures, including but not limited to, RUS, OSHA, SOX, NERC, FERC and ITS requirements. Promotes an environment of compliance and continuous improvement to meet the Corporation's goals and objectives.
+
+Job Duties:
+
+Data Pipeline Engineering: Design, build, and maintain reliable ETL/ELT pipelines to extract from diverse sources, transform and validate data, and load to enterprise storage/warehouse layers; optimize for scalability, performance, and cost.
+Integration & Modeling: Integrate data from databases, APIs, and external systems; enforce consistency and integrity; contribute to dimensional and lakehouse modeling patterns that support BI/AI use cases.
+Platform Engineering: Leverage Azure Data Factory, Synapse, Databricks, and Spark to standardize ingestion/processing frameworks; automate jobs, monitoring, and alerting for resilient operations.
+Performance & Reliability: Tune pipelines, queries, and clusters; address bottlenecks; apply caching, indexing/partitioning, and workload management for dependable SLAs.
+Quality & Governance: Implement in‑pipeline data quality checks and validation rules; document lineage/assumptions; contribute to cataloging and stewardship practices in partnership with data governance.
+Collaboration: Partner with data analysts and scientists to productionize data for dashboards and models; translate business needs into technical designs and reusable data products.
+Continuous Improvement: Evaluate emerging tools and methods (e.g., orchestration, streaming, cost/perf optimization); proactively enhance standards, templates, and developer experience.
+
+Required Qualifications:
+
+Education: Bachelor's degree in Computer Science, Data Science, Software Engineering, Information Systems, or a related quantitative field; Master's degree preferred.
+
+Experience:
+
+Level III - Minimum of 4 years in data engineering (or closely related), including hands‑on pipeline development and operations.
+Level IV - Minimum of 6 years designing and managing large‑scale data solutions; leads project workstreams and cross‑functional delivery.
+Level V - Minimum of 8 years architecting and operating enterprise data platforms; standardizes patterns and provides technical leadership across IT.
+
+Equivalent Experience (in lieu of degree requirements above):
+
+Level III - Minimum of 8 years of relevant experience may also be considered.
+Level IV - Minimum of 10 years of relevant experience may also be considered.
+Level V - Minimum of 12 years of relevant experience may also be considered.
+
+Responsibility:
+
+Level III - Independently delivers production‑grade pipelines and data models; contributes to standards; begins leading small initiatives.
+Level IV - Leads the design and rollout of new data domains and frameworks; mentors junior engineers; partners with stakeholders to improve data product reliability and usability.
+Level V - Oversees major data platform initiatives; sets best practices for modeling, orchestration, performance, security, and governance; recognized as a subject matter expert across the IT function.
+
+Licenses, Certifications, and/or Registrations (plus, not required):
+
+Microsoft Certified: Azure Data Engineer Associate; Microsoft Certified: Azure Solutions Architect Expert.
+Databricks Certified Data Engineer Associate.
+ITIL Foundation.
+
+Specialized Skills:
+
+Technical Expertise
+
+Proficiency with distributed data processing/orchestration (e.g., Apache Spark, Airflow, Kafka) to build scalable pipelines and streaming/batch workloads.
+Strong programming skills in Python and/or Java; expert SQL for transformation and performance‑minded querying.
+Experience designing and deploying solutions on modern cloud data platforms, especially Azure (Data Factory, Synapse, Databricks, ADLS); exposure to Snowflake is a plus.
+
+Data Architecture & Warehousing
+
+Knowledge of lakehouse/warehouse concepts (e.g., medallion layering, dimensional modeling, partitioning); experience with relational and NoSQL stores.
+
+Data Governance & Security
+
+Implement data quality checks, schema enforcement, and lineage; align with stewardship, cataloging, and compliance standards (e.g., SOX) in partnership with IT and Security.
+
+Soft Skills
+
+Excellent problem‑solving/analytical skills and attention to detail; strong communication with both technical and business stakeholders; customer‑service orientation and positive attitude."
+Leland,https://indeed.com/rc/clk?jk=b9285f16b9953403&bb=fx4QyrdjO4u4LGgZlF0YhikJDzE7JUqo2ZfbNEazbrhWwkKL2BDl9m59I_2Ic2hsPLp2rNldv-iBZJM00WiTJaRUnsRIyyrvciQKU-HcbZDMmVlmbkJIPH5oDNOjI3ZfYn7HjrLpFW4%3D&xkcb=SoCB67M3tapS-gARnz0dbzkdCdPP&fccid=3fe5ba5f15272713&vjs=3,,,80,Data Engineer,Full-time,"Leland
+3.5
+3.5 out of 5 stars
+Lehi, UT",,"Leland’s mission is to unlock human potential by making the world’s expertise more accessible. We do that through a platform that connects people with coaching, content, and courses that can can help them achieve their most ambitious career and educational goals. Since our founding in 2021, we’ve helped tens of thousands of people reach their most ambitious goals, raised $19M from world-class investors, and built the industry leader in educational and career coaching.
+
+We’re looking for our first ever data hire to design and own the data foundation at Leland. You’ll transform product and business data (MongoDB, Posthog, Stripe, Hubspot, etc.) into a reliable, documented analytics layer that powers decisions across the company. Your work will let our Ops, Finance, and Growth teams answer their own questions with confidence, while also giving leadership clear visibility into metrics like revenue, take-rate, CAC, and conversion funnels. If you’re excited to model complex data into clean, reliable structures, enable self-serve analytics, and set the standards for a high-growth startup’s data culture, we’d love to chat.
+
+What You'll Do:
+
+Model the warehouse for usability by creating curated, documented tables that make product and order data accessible.
+
+Define the semantic/metrics layer with governed, consistent definitions for key metrics like bookings, take-rate, customer channel attribution, and funnel conversion.
+
+Manage ingestion and orchestration from sources like MongoDB, Posthog, Stripe, Hubspot, and Sendbird into our warehouse with daily/hourly freshness.
+
+Advocate for analytics in engineering design. Be the voice of downstream data needs in conversations about schemas and product data models.
+
+Define and enforce data contracts. Set and maintain standards for event tracking, field requirements, and tests so data stays consistent and reliable.
+
+Guarantee quality and lineage through tests, monitoring, and observability.
+
+Enable self-serve by publishing user-friendly marts, templates, and training for non-technical teams.
+
+Deliver insights and dashboards while self-serve capabilities mature.
+
+Establish conventions, tools, and practices that will guide future data hires.
+
+Qualifications:
+
+5+ years in data engineering or analytics engineering with deep warehouse modeling and SQL expertise.
+
+Proven experience with a modern cloud data warehouse (Databricks, Snowflake, BigQuery, or similar) and dbt in production.
+
+Strong track record of building semantic/metrics layers and governed datasets used across multiple teams.
+
+Experience designing event tracking plans and data contracts with product/engineering partners.
+
+Demonstrated use of testing, observability, and lineage tools to ensure data quality.
+
+Clear communicator who can explain data concepts to SQL novices and collaborate with business stakeholders to unlock value through broad-based data access.
+
+Action-oriented professional who proactively seeks out projects that drive value through increasing data accessibility and insights.
+
+Nice to Have Experience:
+
+Familiarity with Databricks/Delta Lake (our current environment).
+
+Experience with Hubspot, Stripe, or Posthog pipelines.
+
+BI experience with tools like Looker, Hex, Sigma, or Mode.
+
+Python for lightweight transforms and tests.
+
+Early-stage or “first data hire” experience.
+
+Why Leland?
+
+Join a high-growth consumer marketplace startup focused on helping people achieve their goals by connecting them with expert coaches
+
+Opportunity to take part in building a world-class team
+
+A collaborative, high-energy environment where your contributions have a direct impact
+
+The chance to join a passionate team helping people achieve their career and educational dreams
+
+
+Leland is an equal opportunity employer. We encourage candidates of all backgrounds and demographics to apply."
+Siddhi Solutions,https://indeed.com/rc/clk?jk=ed774019d84c00a3&bb=LX0ys363aXB5DgI7_ehl1zMS9zlJDXBE5itJlf-E0EZBzk1W33IJyyNERAATjxcbHErQLR-m5wKCS-iWnCcCk8G1IQSVlyv1p7iON_wZn5vSO4xcjSkRj9gSPrn-qDrn-RJbE53cpq-9xZ3KWx9QHYobaYteoyhY&xkcb=SoB067M3tapTTry4YB0FbzkdCdPP&fccid=dd616958bd9ddc12&cmp=Siddhi-Solutions&ti=Software+Engineer&vjs=3,,,60,Software Engineer,$62 - $70 an hour - Contract,"Siddhi Solutions
+9500 Lakeside Blvd, Spring, TX 77381
+Hybrid work",,"Job Summary:
+As a core member of the AI team, the software engineer is responsible for designing, building, and maintaining scalable, reliable and maintainable software systems. These systems often power AI-enabled applications, ranging from internal tools to customer-facing platforms.
+
+Design, develop, and implement software solutions on system design specifications.
+Collaborate with cross-functional teams to define, design, and ship new features.
+Refine and optimize data and machine learning algorithms into production environments.
+Ensure scalability, efficiency, and maintainability of the codebase.
+Ensure the performance, quality, and responsiveness of applications.
+Identify, correct, and improve inefficient code.
+Participate in code reviews to maintain code quality.
+Document software development and monitor systems to ensure they meet both user needs and business goals.
+Stay updated on new technologies and best practices in software engineering.
+12+ years’ experience in software engineering, software development, or related field.
+Experience working with cloud-based platforms such as AWS, GCP, or Azure.
+2+ years’ experience working in the electric or gas utility sector preferred.
+Green card or US citizen preferred - TX or LA based
+
+Job Type: Contract
+
+Pay: $62.00 - $70.00 per hour
+
+Expected hours: 40 per week
+
+Application Question(s):
+
+This is hybrid position in Houston TX. Are you currently located in this area?
+
+Work Location: Hybrid remote in Spring, TX 77381"
+TEEMA,https://indeed.com/rc/clk?jk=d37f917f32f191a1&bb=fx4QyrdjO4u4LGgZlF0YhjZGF9aWZgGiZRjpkSjR-F0arKeZnnOItlDcbkEunfJ_JvWmbkS4rKMsdFaSbL2iVED-IXNdAAiqQ0KyG5x6qe-62aU10v6BOBf09BI2rEPmrd0--qpGg-I%3D&xkcb=SoCc67M3tapS-gARnz0EbzkdCdPP&fccid=b43afc08eead9ebd&vjs=3,,,60,CRM Data Anlayst/Data Engineer.,$70 - $72 an hour - Contract,"TEEMA
+4.1
+4.1 out of 5 stars
+New York, NY
+Remote",,"The Data Engineer will support the Tech Operations data team by running standardized queries, parsing and loading files, and ensuring high-quality data delivery across platforms such as Salesforce Marketing Cloud and Braze. This is a hands-on technical role requiring strong SQL, Python, and data integration skills within a secure, fast-paced environment.
+Key Responsibilities
+
+Run standardized SQL/Python queries to extract data from data lakes and other sources.
+
+Parse data files according to ingestion requirements.
+
+Load data into CRM platforms (e.g., SFMC, Braze) via UI or other methods.
+
+Perform quality assurance, resolve data discrepancies, and maintain InfoSec compliance.
+
+Document completion and maintain audit trails in Jira.
+
+Collaborate in Agile environments (Scrum/Kanban).
+
+Basic Qualifications
+
+3+ years’ experience with SQL and Python scripting.
+
+Hands-on experience with Snowflake and/or Databricks.
+
+Experience with CRM/engagement platforms such as Salesforce and Braze.
+
+Familiarity with InfoSec procedures and QA testing.
+
+Experience with Agile methodologies; Jira strongly preferred.
+
+Preferred Qualifications
+
+3–5 years of data engineering/integration experience.
+
+Background in subscription services or streaming is ideal.
+
+Strong problem-solving skills, attention to detail, and ability to manage multiple tasks.
+
+Flexible team player with excellent communication and interpersonal skills.
+
+
+Education
+
+Bachelor’s degree in Computer Science or related field, or equivalent experience.
+
+
+
+
+#Workwolf"
+Valify,https://indeed.com/rc/clk?jk=df5ea7ca4932eb0b&bb=mjRnKwnfmkRozgPMKZgK_jlcK_dOHldP7yvcYOnEhfPutbaNNC1TaVsDU0NcamHpkP50iDEMUg27JhQTr435mSL73IlKTRBbs-49Bb-07Z61E6tFGCNW33DN9qo_IJxFM1V-JQEUQlsv6bV8qO97Ag%3D%3D&xkcb=SoDp67M3tapvqF3qbJ0GbzkdCdPP&fccid=341815e532007934&vjs=3,,,60,Business Intelligence Engineer II,Full-time,"Valify
+10601 Clarence Drive, Frisco, TX 75033","Benefits
+Pulled from the full job description
+Tuition reimbursement
+Pet insurance
+Employee stock purchase plan
+Health insurance
+401(k) matching
+Paid time off
+Vision insurance
+Show more
+&nbsp;","Introduction
+
+Do you want to join an organization that invests in you as a Business Intelligence Engineer II? At Valify, a division of HCA, you come first. HCA Healthcare has committed up to $300 million in programs to support our incredible team members over the course of three years.
+
+Benefits
+
+Valify, offers a total rewards package that supports the health, life, career and retirement of our colleagues. The available plans and programs include:
+
+Comprehensive medical coverage that covers many common services at no cost or for a low copay. Plans include prescription drug and behavioral health coverage as well as free telemedicine services and free AirMed medical transportation.
+Additional options for dental and vision benefits, life and disability coverage, flexible spending accounts, supplemental health protection plans (accident, critical illness, hospital indemnity), auto and home insurance, identity theft protection, legal counseling, long-term care coverage, moving assistance, pet insurance and more.
+Free counseling services and resources for emotional, physical and financial wellbeing
+
+401(k) Plan with a 100% match on 3% to 9% of pay (based on years of service)
+
+Employee Stock Purchase Plan with 10% off HCA Healthcare stock
+
+Family support through fertility and family building benefits with Progyny and adoption assistance.
+
+Referral services for child, elder and pet care, home and auto repair, event planning and more
+
+Consumer discounts through Abenity and Consumer Discounts
+
+Retirement readiness, rollover assistance services and preferred banking partnerships
+
+Education assistance (tuition, student loan, certification support, dependent scholarships)
+
+Colleague recognition program
+
+Time Away From Work Program (paid time off, paid family leave, long- and short-term disability coverage and leaves of absence)
+
+Employee Health Assistance Fund that offers free employee-only coverage to full-time and part-time colleagues based on income.
+
+Learn more about Employee Benefits
+
+Note: Eligibility for benefits may vary by location.
+
+
+You contribute to our success. Every role has an impact on our patients’ lives and you have the opportunity to make a difference. We are looking for a dedicated Business Intelligence Engineer II like you to be a part of our team.
+
+Job Summary and Qualifications
+
+The Consulting Business Intelligence Engineer will lead the development and management of our Power BI platform, serving as the primary owner of Power BI-based business reporting, analytics strategy, and self-service enablement across internal and external stakeholders. This role is responsible for designing and implementing automated data workflows and supporting the analysis of large, complex datasets to drive business insights. The ideal candidate is highly data-driven, with strong experience in building scalable BI solutions and delivering impactful reports and dashboards for both internal teams and external stakeholders. This individual will collaborate closely with data engineers to enhance our end-to-end data ecosystem and should be passionate about driving innovation in business intelligence.
+
+What you will do in this role includes:
+
+Design, develop, and maintain Power BI dashboards and reports that deliver actionable insights to both internal stakeholders and external clients.
+Collaborate with internal teams and external partners to gather requirements, understand reporting needs, and implement tailored BI solutions.
+Partner with internal stakeholders, including product, client success and leadership teams, to translate business needs into PowerBI solutions that drive decision-making.
+Build and manage DAX-based semantic models to support efficient and scalable analytics within the Power BI platform.
+Support and enhance automated data pipelines in collaboration with data engineering, with the ability to contribute Python scripts for custom report generation or data transformation.
+Ensure accuracy and consistency of data visualizations through thorough self-review, validation against source data, and user testing.
+Document reporting processes, data definitions, and workflows to promote transparency and repeatability.
+Troubleshoot issues, identify root causes, and raise concerns proactively to maintain the reliability of BI tools and reports.
+Contribute to the expansion and optimization of the BI reporting catalog, identifying opportunities for new dashboards, KPIs, and process improvements.
+Maintain version control and testing procedures for Power BI datasets and reports in alignment with best practices and governance policies.
+Stay current with BI trends, Power BI feature updates, and industry best practices to continuously improve report quality and user experience.
+Design frameworks and reusable templates that empower clients to extract and customize their own Power BI reports
+Act as subject matter expert on PowerBI best practices for both development and business analysis functions.
+Lead data visualization strategy, aligning business goals with impactful storytelling.
+Provide guidance and training to less technical users on PowerBI usage and self-service capabilities.
+Knowledge, Skills & Abilities
+
+Extensive experience with Power BI, including report development, DAX calculations, data modeling, Power Query, and performance optimization of dashboards
+Proficient in SQL-based querying, with preference for experience in PostgreSQL or similar relational databases
+Working knowledge of Python and Shell scripting for data transformation and custom reporting tasks
+Familiarity with Linux-based environments, including file system navigation and basic command-line operations
+Skilled in using Microsoft Excel for data validation, manipulation, and reconciliation tasks
+Solid understanding of file structures, data exchange formats, and best practices for secure data sharing
+Strong analytical and problem-solving skills, with the ability to clearly articulate technical concepts to both technical and non-technical audiences
+Deep understanding of database design principles, data normalization, and data warehousing concepts
+Strong interpersonal and communication skills to effectively gather business requirements and translate them into actionable BI solutions
+Experience enabling self-service PowerBI capabilities for clients and internal teams
+Comfortable leading workshops, requirement sessions, or report walkthroughs with business stakeholders
+Ability to prioritize and work independently while maintaining close collaboration with cross-functional teams
+
+What qualifications you will need:
+
+Bachelor's degree in Data Analytics, Computer Science, or equivalent degree
+Minimum 2-4 years of experience in business intelligence, reporting, or analytics roles including at least 3 years of hands on experience with PowerBI in both development and client-facing capacities
+
+In today's challenging business environment of cost pressures, supply disruptions, and workforce shortages, it is crucial for providers to efficiently manage expenses and enhance performance. HealthTrust, in collaboration with 1,800 hospitals and health systems, offers a specialized group purchasing organization (GPO) membership model designed to deliver immediate and sustainable cost savings. Their team of experts provides tailored value acceleration engagements to address specific needs, delivering unparalleled benefits. With nationwide purchasing power and a focus on overall spending management, HealthTrust offers unmatched pricing advantages on supplies, along with industry-leading benchmarks and best practices. The dedicated team is committed to guiding and implementing performance enhancements in cost, quality, and outcomes.
+
+HCA Healthcare has been recognized as one of the World’s Most Ethical Companies® by the Ethisphere Institute more than ten times. In recent years. HCA Healthcare spent an estimated $3.7 billion in costs for the delivery of charitable care, uninsured discounts, and other uncompensated expenses.
+
+
+""Good people beget good people.""- Dr. Thomas Frist, Sr.
+HCA Healthcare Co-Founder
+
+We are a family 270,000 dedicated professionals! Our Talent Acquisition team is reviewing applications for our Business Intelligence Engineer II opening. Qualified candidates will be contacted for interviews. Submit your resume today to join our community of caring!
+
+We are an equal opportunity employer. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status."
+Walden University,https://indeed.com/rc/clk?jk=075f7d6001a238f0&bb=aELAWnS1hvt9cdUPyAYWWf22fJiayClCHzeJN-0ckDgTIScIo9d1RE3SpQgYksoaRs95ORbQE9ucZvH1Mdu-7ZmBNjCJ7YLQC9kKrrFKUm89zPTE8m2VSrgrmThB535F2ciX5_uMAFjvRiYgKHcoFA%3D%3D&xkcb=SoBJ67M3tapuvpXVox0NbzkdCdPP&fccid=e50b6f6e26100bfe&vjs=3,,,60,Senior Analyst- Research,"$49,199.33 - $86,253.75 a year - Full-time","Walden University
+3.7
+3.7 out of 5 stars
+Remote","Benefits
+Pulled from the full job description
+Health insurance
+401(k) matching
+Vision insurance
+Dental insurance
+Disability insurance
+401(k) 6% Match
+Paid holidays
+&nbsp;","Company Description
+
+
+Walden University, an Adtalem Global Education institution, supports a diverse community of adult learners from across the U.S. and other countries, who seek to achieve their academic goals and make positive, lasting social change in their professions and communities. Walden offers more than 100 online degree and certificate programs, for students pursuing a bachelor’s, master’s, doctoral or certificate. Walden University has graduated more than 174,000 students and is accredited by the Higher Learning Commission.
+
+Visit WaldenU.edu for more information, and follow on Twitter, Instagram, Facebook, Instagram and LinkedIn.
+
+
+
+
+Job Description
+
+
+Opportunity at a Glance
+The position will establish and manage the competitive intelligence and market research function for the institution, on behalf of the organization.
+
+Responsibilities
+
+Responsible for all phases of research design, including consulting with business partners to articulate research objectives, providing recommendations for appropriate research method, vendor selection (where applicable), design of data analysis plan, report writing, and presentation of findings to stakeholders.
+
+Identifies and communicates themes from survey comments to leadership.
+
+Develops and maintains library of marketing surveys and research studies.
+
+Develops evaluation methodologies and plans for new programs and other innovation initiatives.
+
+Manages research studies, including NPS, student satisfaction, and brand tracking studies.
+
+Ensures research efforts remain within approved research budget, timeline, and objectives.
+
+Independently leads research method recommendation directs analysis of research findings and presents findings to audiences spanning junior to executive level.
+
+Supports development of competitive intelligence function for the institution, including identification of key competitors and key topics.
+
+Completes other duties as assigned.
+
+Performs other duties as assigned
+
+Complies with all policies and standards
+
+
+Qualifications
+
+Education: Master’s Degree in Business, Market Research, or a related quantitative discipline. (Required)
+Experience:
+Minimum of 5 years of hands-on market research experience. (Required)
+Proven track record in managing research projects from initiation to successful completion. (Required)
+Experience programming surveys using Qualtrics or similar survey platforms. (Preferred)
+Experience working in higher education and/or institutional research. (Preferred)
+Technical Skills:
+Proficient in Microsoft Word, Excel, and PowerPoint. (Required)
+Strong command of quantitative and qualitative research methodologies and statistical analysis. (Required)
+Skilled in questionnaire development, sample design, tabulation planning, data analysis, and reporting.
+Communication & Leadership:
+Excellent written and interpersonal communication skills, including experience presenting findings to diverse audiences.
+Demonstrated research leadership with the ability to clearly communicate insights and recommendations.
+Ability to translate complex research findings into clear, actionable insights for stakeholders at all organizational levels, including senior leadership.
+Analytical & Organizational Abilities:
+Strong analytical and problem-solving skills.
+Capable of managing multiple projects and priorities in a fast-paced environment.
+
+Additional Information
+
+
+In support of the pay transparency laws enacted across the country, the expected salary range for this position is between $49,199.33 and $86,253.75. Actual pay will be adjusted based on job-related factors permitted by law, such as experience and training; geographic location; licensure and certifications; market factors; departmental budgets; and responsibility. Our Talent Acquisition Team will be happy to answer any questions you may have, and we look forward to learning more about your salary requirements. The position qualifies for the below benefits.
+
+Adtalem offers a robust suite of benefits including:
+
+Health, dental, vision, life and disability insurance
+401k Retirement Program + 6% employer match
+Participation in Adtalem’s Flexible Time Off (FTO) Policy
+12 Paid Holidays
+
+For more information related to our benefits please visit: https://careers.adtalem.com/benefits.
+
+
+
+
+Equal Opportunity – Minority / Female / Disability / V / Gender Identity / Sexual Orientation"

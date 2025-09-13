@@ -8,7 +8,7 @@ if __name__ == "__main__":
     logger = setup_logger()  # ← first thing: set up logging
 
     try:
-        logger.info("🚀 Scraper started")
+        logger.info("🚀 Project Acquirer AI started")
 
         # Prevent screen to sleep
         sb = helper.SleepBlocker()

@@ -1,42 +1,725 @@
-2025-08-31 00:30:10,161 [INFO] 🚀 Scraper started
-2025-08-31 00:30:10,163 [INFO] Created fresh file: output\Easy_applies.csv
-2025-08-31 00:30:10,164 [INFO] Created fresh file: output\Confirmation_applies.csv
-2025-08-31 00:30:10,164 [INFO] ✅ Fresh CSV files created
-2025-08-31 00:30:10,220 [INFO] Trimmed processed jobs file to last 8000 entries
-2025-08-31 00:30:10,222 [INFO] 🧹 Processed jobs file cleaned
-2025-08-31 00:30:10,226 [INFO] Created new folder: debugging_screenshots
-2025-08-31 00:30:10,228 [INFO] 📁 Debugging folder ready
-2025-08-31 00:30:10,228 [INFO] Processing 4 URLs in 1 chunks
-2025-08-31 00:30:10,229 [INFO] Processing chunk 1/1
-2025-08-31 00:30:10,235 [INFO] ✔ Sucessfully 3 indeed accounts load
-2025-08-31 00:30:12,163 [INFO] ✔  Unique fingerprints loaded
-2025-08-31 00:30:12,168 [INFO] Total 4 contexts launched.
-2025-08-31 00:31:03,580 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_2.png
-2025-08-31 00:31:23,230 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_4.png
-2025-08-31 00:31:23,244 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_3.png
-2025-08-31 00:32:04,476 [ERROR] Error in _listing
+2025-09-10 12:04:10,425 [INFO] 🚀 Project Acquirer AI started
+2025-09-10 12:04:10,429 [INFO] Created fresh file: output\Easy_applies.csv
+2025-09-10 12:04:10,430 [INFO] Created fresh file: output\Confirmation_applies.csv
+2025-09-10 12:04:10,431 [INFO] ✅ Fresh CSV files created
+2025-09-10 12:04:10,536 [INFO] Trimmed processed jobs file to last 8000 entries
+2025-09-10 12:04:10,537 [INFO] 🧹 Processed jobs file cleaned
+2025-09-10 12:04:10,540 [INFO] Created new folder: debugging_screenshots
+2025-09-10 12:04:10,543 [INFO] 📁 Debugging folder ready
+2025-09-10 12:04:10,543 [INFO] Processing 20 URLs in 2 chunks
+2025-09-10 12:04:10,544 [INFO] Processing chunk 1/2
+2025-09-10 12:04:10,548 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-10 12:04:11,848 [INFO] ✔  Unique fingerprints loaded
+2025-09-10 12:04:11,852 [INFO] Total 10 contexts launched.
+2025-09-10 12:04:42,697 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1
+2025-09-10 12:04:42,701 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=data+engineer&l=United+States&fromage=1
+2025-09-10 12:04:46,098 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=power+bi+analyst&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+2025-09-10 12:04:49,043 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:04:49,047 [INFO] Model response: 30 10
+2025-09-10 12:04:49,057 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:05:00,134 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=python+developer&l=United+States&radius=50&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    16 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:01,938 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:05:01,940 [INFO] Model response: 30 85 40
+2025-09-10 12:05:05,537 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=pytorch&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:06,799 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=matlab&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:08,438 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=artificial+intelligence&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:09,073 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:05:09,103 [INFO] Model response: 30
+2025-09-10 12:05:09,125 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:05:09,282 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=022a141a808da080&bb=V06AdvvzAOEIzxkqXRCKJurIIpRiYz7mSTMwE_hBU6vjjecnmIrysQxkly82mI8Aaskxoqc08m9EKEs_athRjZvYO6b9gVMuYNPbjyUw9TfCh9Q4Fz0ARgJs95iLjFS2zPmZbBXms-ZDcpxcdCENpA%3D%3D&xkcb=SoBe67M3taoQUvgIfj0MbzkdCdPP&fccid=3dceb49d5cce0f4e&cmp=Kamiwaza-AI&ti=Senior+Software+Engineer&vjs=3
+2025-09-10 12:05:09,354 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:05:09,361 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:05:12,719 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 44, in _listing
-    await page.wait_for_timeout(random.randint(3000, 10000))
-  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 11413, in wait_for_timeout
-    await self._impl_obj.wait_for_timeout(timeout=timeout)
-  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 1102, in wait_for_timeout
-    await self._main_frame.wait_for_timeout(timeout)
-  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 844, in wait_for_timeout
-    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
   File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
     return await self._connection.wrap_api_call(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
-2025-08-31 00:32:04,533 [ERROR] Context close issue: BrowserContext.close: Target page, context or browser has been closed
-Browser logs:
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.indeed.com/jobs?q=data+engineer&l=United+States&fromage=1", waiting until "load"
 
-<launching> C:\Users\Hamas\AppData\Local\ms-playwright\chromium-1181\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --disable-blink-features=AutomationControlled --accept-lang=en-US,en --user-data-dir=C:\Users\Hamas\AppData\Local\Temp\playwright_chromiumdev_profile-xQAFrT --remote-debugging-pipe --no-startup-window
-<launched> pid=13432
-[pid=13432][err] [13432:14972:0831/003022.534:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
-[pid=13432][err] [13432:14972:0831/003022.535:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
-[pid=13432][err] [13432:14972:0831/003049.674:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
-[pid=13432][err] [13432:14972:0831/003146.019:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: QUOTA_EXCEEDED
-[pid=13432] <gracefully close start>
+2025-09-10 12:05:12,948 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=nlp&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:13,295 [INFO] Collected 5 jobs...
+2025-09-10 12:05:13,647 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=transformer&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:05:23,792 [WARNING] Failed to click page 3: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-3']")
+    - locator resolved to <a aria-label="3" data-testid="pagination-page-3" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=tensorflow&l=United+States&radius=25&fromage=1&start=20">3</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-hovbc7 ew2qmgg0">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  4 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-hovbc7 ew2qmgg0">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-09-10 12:05:25,325 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:05:25,326 [INFO] Model response: 85 95 95 90 80 70 90 60
+2025-09-10 12:06:00,626 [INFO] No more pages. Screenshot saved: debugging_screenshots\screenshot_2.png
+2025-09-10 12:06:41,244 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7c73b85baab5f7bf&bb=ex-NEZzv0GCUMFJvu37bL9p5FhQBqIgAa3i8Cb7QJA6gs0hSxEqqPfLLgKnroJzl-ztzNPuwym9O3P7o6Nqnn_QuD95pOgH-nekhyBug9CqDSt24wF_YoxEoeGPfg9aYlPXHd5ym-bM%3D&xkcb=SoDP67M3taovVqRM9Z0FbzkdCdPP&fccid=6e4828d61ff7d77c&vjs=3
+2025-09-10 12:06:47,604 [INFO] Company site apply: TikTok
+2025-09-10 12:07:57,331 [INFO] Page not loaded after two tries: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://indeed.com/rc/clk?jk=0080702444341a69&bb=agRdL2jDvNHlzdFLINi1cvUWUZtC3g39H6vF2e_k_UxIHNAtJ4ja0p0O67cyr8yxyPGewfj8DJiWbT5ZPPnByix45Rzy5QYHYzTWIjBeQPPkFtFmrHAKJjigcjQgG4IWpCkIr9PPFPA%3D&xkcb=SoDA67M3taotp73Vlh0KbzkdCdPP&fccid=3ba95f123ac3615f&vjs=3", waiting until "load"
+
+2025-09-10 12:08:57,350 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=5123c75b81931b9d&from=serp&vjs=3"
+
+2025-09-10 12:10:22,856 [INFO] Salary missing
+2025-09-10 12:10:22,892 [INFO] Benefits missing
+2025-09-10 12:10:22,941 [INFO] Company site apply: Advanced Micro Devices, Inc
+2025-09-10 12:11:22,959 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=8157f540f332a73e&from=serp&vjs=3"
+
+2025-09-10 12:11:31,815 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=45f60422bd432ec0&bb=agRdL2jDvNHlzdFLINi1ctwo66xOfw8IRQhPwB6WDTSwXFCKW7VO03L6UpIq6-LjPA6nl0BjwGhEdrsXyZEsx2H2rOJWAveB0VXk0PExiL69wb0RRLqacJQk7Vdjy4rvsuDJlpfdVD0%3D&xkcb=SoCn67M3taotp73Vlh0CbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
+2025-09-10 12:12:31,835 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=a52818b10da422d1&from=serp&vjs=3"
+
+2025-09-10 12:12:31,855 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:12:31,860 [INFO] Updated processed jobs with 32 new links
+2025-09-10 12:12:32,045 [INFO] Processing chunk 2/2
+2025-09-10 12:12:32,045 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-10 12:12:33,214 [INFO] ✔  Unique fingerprints loaded
+2025-09-10 12:12:33,231 [INFO] Total 10 contexts launched.
+2025-09-10 12:12:56,537 [INFO] Collected 5 jobs...
+2025-09-10 12:13:03,857 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=statistical+analyst&l=United+States&fromage=1
+2025-09-10 12:13:03,989 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=azure+cloud+engineer&l=United+States&fromage=1
+2025-09-10 12:13:06,832 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=etl+developer&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:08,429 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:08,440 [INFO] Model response: 30 10 60 85 80 40
+2025-09-10 12:13:12,078 [INFO] Collected 5 jobs...
+2025-09-10 12:13:19,287 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=machine+learning+engineer&l=United+States&radius=50&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:20,388 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:20,389 [INFO] Model response: 85 70 60
+2025-09-10 12:13:22,275 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=databricks&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:23,918 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:23,920 [INFO] Model response: 30 20 60 80 40 90 20 80
+2025-09-10 12:13:24,502 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=data+scientist&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:25,898 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:25,945 [INFO] Model response: 30
+2025-09-10 12:13:25,948 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:13:28,255 [INFO] Company site apply: Covetrus
+2025-09-10 12:13:32,281 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b5214ad5d2334731&bb=LX0ys363aXB5DgI7_ehl1yqB7CMxuw_nhaQn4nGDqTr20R8fzqm1A_KG3nglE8LaXhb-fyGs4oYzlRZJrsDr-x5jfOJCDbtGBanTNXgqHuoa5WC1JddZCjHTJFhwAJRhM5XyWxF_nzMCPrGWOrbPKIeb468ejGrY&xkcb=SoBd67M3tapTTry4YB0HbzkdCdPP&fccid=230117385c78571f&vjs=3
+2025-09-10 12:13:34,015 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "c:\Users\Hamas\Desktop\IBScraper\scrapers\job_listings_scraper.py", line 28, in _listing
+    await page.goto(job_page_url, wait_until="load")
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8992, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_page.py", line 556, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamas\Desktop\IBScraper\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.indeed.com/jobs?q=azure+cloud+engineer&l=United+States&fromage=1", waiting until "load"
+
+2025-09-10 12:13:34,313 [INFO] Benefits missing
+2025-09-10 12:13:34,369 [INFO] Easy apply: TEEMA
+2025-09-10 12:13:35,986 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=ai+testing&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:37,077 [INFO] Benefits missing
+2025-09-10 12:13:37,241 [INFO] Easy apply: Siddhi Solutions
+2025-09-10 12:13:37,267 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:13:37,276 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:13:37,451 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:37,463 [INFO] Company site apply: University of Utah Health
+2025-09-10 12:13:37,479 [INFO] Model response: 95 10
+2025-09-10 12:13:39,419 [INFO] Company site apply: HealthEquity
+2025-09-10 12:13:40,403 [INFO] Benefits missing
+2025-09-10 12:13:40,455 [INFO] Confirmation job: Rippling
+2025-09-10 12:13:43,193 [INFO] Easy apply: Data Ideology
+2025-09-10 12:13:44,113 [INFO] Easy apply: Georgia System Operations Corporation
+2025-09-10 12:13:44,135 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:13:44,137 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:13:45,551 [INFO] Benefits missing
+2025-09-10 12:13:45,623 [INFO] Easy apply: Scalable Systems
+2025-09-10 12:13:45,669 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:13:45,672 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:13:47,522 [INFO] Benefits missing
+2025-09-10 12:13:47,568 [INFO] Easy apply: Leland
+2025-09-10 12:13:47,586 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:13:47,588 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:13:49,152 [WARNING] Failed to click page 3: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-3']")
+    - locator resolved to <a aria-label="3" data-testid="pagination-page-3" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=analytics+engineer&l=United+States&radius=25&fromage=1&start=20">3</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:50,177 [INFO] Collected 5 jobs...
+2025-09-10 12:13:50,219 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:50,223 [INFO] Model response: 85 70 60 40
+2025-09-10 12:13:50,455 [INFO] Collected 10 jobs...
+2025-09-10 12:13:50,455 [INFO] Processing batch...
+2025-09-10 12:13:51,683 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:51,691 [INFO] Model response: 30 75 80 40 60 45 45 70 20 40
+2025-09-10 12:13:51,971 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=ai+engineer&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-09-10 12:13:53,128 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:13:53,135 [INFO] Model response: 30 65 20 10
+2025-09-10 12:13:53,147 [INFO] Collected 5 jobs...
+2025-09-10 12:13:58,643 [INFO] Benefits missing
+2025-09-10 12:13:58,711 [INFO] Company site apply: Simmons University
+2025-09-10 12:14:01,779 [INFO] Benefits missing
+2025-09-10 12:14:01,838 [INFO] Company site apply: Home Depot / THD
+2025-09-10 12:14:03,370 [WARNING] Failed to click page 4: Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid='pagination-page-4']")
+    - locator resolved to <a aria-label="4" data-testid="pagination-page-4" class="serp-page-1l12u5d e71d0lh0" href="/jobs?q=deep+learning&l=United+States&radius=25&fromage=1&start=30">4</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <p class="css-1t3rggk e1wnkr790">…</p> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  4 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p class="css-1t3rggk e1wnkr790">…</p> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-dv09ei e6sydv65">…</div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="gnav-header-1ogsc7t e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+2025-09-10 12:14:04,790 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-10 12:14:04,800 [INFO] Model response: 95 90 10 5 80 70 85
+2025-09-10 12:14:04,993 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=13451ac792dd741c&bb=eSVk_-zd7wm8x23U5GOLqMa1bH63JBz4obZLHDEIMPQrjNp1Jsqw46EsLWH4_3o-642ky5LRE396Kt5tLeDKWZAjh9NNqJr6qV5v7sEiyGeAa2oucEkGukg_Wy_jt5Ndj4ed7UUAv6E%3D&xkcb=SoA767M3tapvd8QpUJ0NbzkdCdPP&fccid=7da3e5408bcf63f7&vjs=3
+2025-09-10 12:14:05,028 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:14:05,030 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:14:14,031 [INFO] Easy apply: Valify
+2025-09-10 12:14:14,077 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:14:14,077 [INFO] Updated processed jobs with 32 new links
+2025-09-10 12:15:00,692 [INFO] Page not loaded after two tries: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://indeed.com/rc/clk?jk=decf77b84f2e16b8&bb=aELAWnS1hvt9cdUPyAYWWQg3aY1Z_kN83fC2jd0zpxLm958ruEIEr-zqzN7V1rf02Jyyy7E3DcCHcf-B-H_hbcCJpmeewZSMJ19oFaApXP5ty7BA10cni02961UFI5yICQQbVeqlhX2CU0A0fz2skg%3D%3D&xkcb=SoBa67M3tapuvpXVox0JbzkdCdPP&fccid=ef203e7e2c00cf23&vjs=3", waiting until "load"
+
+2025-09-10 12:15:12,413 [INFO] Page not loaded after two tries: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://indeed.com/rc/clk?jk=751ba86297ae35b4&bb=kM3BTWMk5R-gKZmhDEcSnRDZO-xwmJnOch74lvE4TaGronuYI4Eb5Uk76Ksu6tWXDmGXBo_EZNJOuQbiDkhxgFTKFXNIHz7uIzibGM562wjrHsnFQGVoub5WMaSv2BdAgWd6pvm-vco%3D&xkcb=SoCy67M3tapvTgQH7p0NbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3", waiting until "load"
+
+2025-09-10 12:15:18,910 [INFO] Benefits missing
+2025-09-10 12:15:18,962 [INFO] Company site apply: Amazon.com Services LLC - A57
+2025-09-10 12:16:00,710 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=f638dd6f088c544d&from=serp&vjs=3"
+
+2025-09-10 12:16:19,001 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=7c1ef8b4b6cfe83f&from=serp&vjs=3"
+
+2025-09-10 12:16:22,367 [INFO] Easy apply: Walden University
+2025-09-10 12:16:47,108 [INFO] Salary missing
+2025-09-10 12:16:47,142 [INFO] Benefits missing
+2025-09-10 12:16:47,188 [INFO] Company site apply: Advanced Micro Devices, Inc
+2025-09-10 12:17:22,382 [INFO] Page not loaded after two tries: Page.reload: Timeout 30000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "https://www.indeed.com/viewjob?jk=a2b529e420ec0d6c&from=serp&vjs=3"
+
+2025-09-10 12:17:22,432 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:17:22,432 [INFO] Updated processed jobs with 16 new links
+2025-09-10 12:17:36,774 [INFO] Company site apply: University of North Dakota
+2025-09-10 12:17:36,787 [INFO] ✔ Saved in CSV files.
+2025-09-10 12:17:36,789 [INFO] Updated processed jobs with 48 new links
+2025-09-10 12:18:04,463 [WARNING] Failed to click page 3: Page.screenshot: Timeout 30000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+2025-09-10 12:18:04,578 [INFO] 🧭 jobs_lister() finished
+2025-09-10 12:18:04,616 [INFO] Read output/Easy_applies.csv with utf-8 encoding
+2025-09-10 12:18:04,619 [INFO] Sorted and saved output/Easy_applies.csv
+2025-09-10 12:18:04,636 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
+2025-09-10 12:18:04,638 [INFO] Sorted and saved output/Confirmation_applies.csv
+2025-09-10 12:18:15,187 [INFO] 📊 Google Sheets updated
+2025-09-10 12:18:20,785 [INFO] Email sent to hamasjan5544@gmail.com with 2 attachments
+2025-09-10 12:18:20,785 [INFO] 📤 Debugging screenshots and spider.logs email sent
+2025-09-10 12:18:20,785 [INFO] 🛑 Scraper finished, sleep mode re-enabled

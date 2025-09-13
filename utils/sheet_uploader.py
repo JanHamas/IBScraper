@@ -57,8 +57,8 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applie
         try:
             worksheet = workbook.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
-            logger.error(f"❌ Sheet '{sheet_name}' not found. Skipping...")
-            continue
+            logger.warning(f"⚠️ Sheet '{sheet_name}' not found. Creating new one...")
+            worksheet = workbook.add_worksheet(title=sheet_name, rows="500", cols="30")
 
         rows = []
         for encoding in encodings_to_try:
@@ -96,7 +96,8 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applie
             all_rows = pre_rows + data
 
             # Step 4: Upload starting from column A
-            worksheet.update(range_start, all_rows, value_input_option="RAW")
+            # worksheet.update(range_start, all_rows, value_input_option="RAW")
+            worksheet.append_rows(all_rows, value_input_option="RAW")
             print(f"✅ Appended {len(data)} rows to '{sheet_name}' from column A with header")
         except Exception as e:
             logger.error(f"❌ Failed to append to '{sheet_name}': {e}")

@@ -112,14 +112,7 @@ Create a utils/proxies.txt file (one proxy per line: IP:PORT:USERNAME:PASSWORD).
 Fingerprints: The system comes with pre-loaded fingerprints in utils/fingerprints/. You can add more if desired.
 Usage
 To run the scraper:
-code
-Bash
 
-download
-
-content_copy
-
-expand_less
 python main.py
 The scraper will run, outputting logs to the console and logs/spider.log. Qualified leads will be saved to CSVs in the output/ folder and then uploaded to your specified Google Sheets. Debugging screenshots will be saved in debugging_screenshots/ and sent via email upon completion.
 🤝 Contributing
