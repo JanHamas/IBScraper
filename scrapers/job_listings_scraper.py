@@ -3,6 +3,7 @@ from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
 
 from config import config_input
+from aioconsole import ainput
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
 from .job_details_scraper import extract_full_details
@@ -23,6 +24,36 @@ async def _listing(context, job_page_url):
         # Navigate to jobs page
         try:
             await page.goto(job_page_url, wait_until="load")
+            try:
+                # Wait for the Accept Terms button using an exact selector
+                await page.wait_for_selector('button[data-gnav-element-name="AcceptButton"]', timeout=5000)
+                accept_button = await page.query_selector('button[data-gnav-element-name="AcceptButton"]')
+
+                if accept_button:
+                    # Scroll into view just in case
+                    await accept_button.scroll_into_view_if_needed()
+
+                    # Get the button's bounding box to calculate where to click
+                    box = await accept_button.bounding_box()
+                    if box:
+                        # Move the mouse to the center of the button and click
+                        x = box["x"] + box["width"] / 2
+                        y = box["y"] + box["height"] / 2
+
+                        await page.mouse.move(x, y)
+                        await page.mouse.down()
+                        await asyncio.sleep(0.1)  # simulate slight press delay
+                        await page.mouse.up()
+
+                        logger.info("Successfully clicked Accept Terms using real mouse events.")
+                        await asyncio.sleep(3)  # Wait for modal to close
+                    else:
+                        logger.warning("Could not get bounding box for Accept Terms button.")
+                else:
+                    logger.warning("Accept Terms button not found.")
+            except Exception as e:
+                logger.error(f"Error clicking Accept Terms button: {e}")
+ 
         except Exception:
             logger.warning(f"Retry loading page: {job_page_url}")
             await page.goto(job_page_url, wait_until="load")
@@ -41,6 +72,12 @@ async def _listing(context, job_page_url):
         pagination_number = 1
 
         while True:
+            # Bypass cloudflare if appears
+            try:
+                cf_bypasser = CloudflareBypasser(page)
+                await cf_bypasser.detect_and_bypass()
+            except Exception as e:
+                logger.error(f"Captcha error: {e}")
             await page.wait_for_timeout(random.randint(3000, 10000))
             await asyncio.sleep(config_input.RANDOM_SLEEP)
             await helper.simulate_human_behavior(page)
@@ -102,6 +139,7 @@ async def _listing(context, job_page_url):
                     logger.info(f"No more pages. Screenshot saved: {file_path}")
                     break
             except Exception as e:
+
                 logger.warning(f"Failed to click page {pagination_number + 1}: {e}")
                 break
 
@@ -163,7 +201,8 @@ async def jobs_lister(chunk_urls):
         for index, job_page_url in enumerate(chunk_urls):
             try:
                 context = await browser.new_context(
-                    proxy=proxies[index]
+                    # proxy=proxies[index]
+                    viewport = { 'width': 1280, 'height': 1024 },
                 )
 
                 script = await fingerprint_loader.load_fingerprint(index)

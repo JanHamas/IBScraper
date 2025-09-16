@@ -1,8 +1,8 @@
-import gspread,random
+import gspread, random, os
 from google.oauth2.service_account import Credentials
 
 def load_scraper_config_from_sheet():
-    creds_path = "utils/gs_credentials.json"
+    creds_path = "utils/indeed_spider_gs_credentails.json"
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 
     # Auth
@@ -90,12 +90,13 @@ ignore_companies = config["IGNORE_COMPANIES"]
 # High Preority/Confirmation companies
 confirmation_companies = config["CONFIRMATION_COMPANIES"]
 
+PROCESSED_JOBS_FILE_PATH = os.path.join('input', 'processed_jobs.txt')
 
-PROCESSED_JOBS_FILE_PATH = r'input\\processed_jobs.txt'
+
 DEBUGGING_SCREENSHOTS_PATH = "debugging_screenshots"
 
 # on/off headless mode
-headless = True
+headless = False
 
 
 RANDOM_SLEEP = random.randint(1,3)

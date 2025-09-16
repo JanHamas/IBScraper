@@ -1,4 +1,5 @@
 🚀 Project Acquirer AI: Your Automated Project & Lead Generation Engine
+
 Stop Chasing, Start Winning.
 
 In the competitive landscape of IT and service provision, finding the next project shouldn't be a manual chore. It should be an automated, intelligent, and highly efficient process. Too many sales and business development teams are still sifting through countless job postings, trying to manually identify companies in need of their services. This is slow, inefficient, and costly.

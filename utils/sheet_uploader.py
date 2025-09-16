@@ -38,7 +38,7 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
 def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applies.csv")):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
-    creds_path = os.path.join(base_dir, "gs_credentials.json")
+    creds_path = os.path.join(base_dir, "indeed_spider_gs_credentails.json")
     workbook_id = config_input.WORKBOOK_ID
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 
