@@ -21,49 +21,34 @@ async def _listing(context, job_page_url):
         # Create new page
         page = await context.new_page()
         
+        # # Before performing critical actions, check internet
+        # if not await helper.check_internet():
+        #     await helper.wait_until_internet_is_back(page)
+
         # Navigate to jobs page
         try:
             await page.goto(job_page_url, wait_until="load")
-            try:
-                # Wait for the Accept Terms button using an exact selector
-                await page.wait_for_selector('button[data-gnav-element-name="AcceptButton"]', timeout=5000)
-                accept_button = await page.query_selector('button[data-gnav-element-name="AcceptButton"]')
-
-                if accept_button:
-                    # Scroll into view just in case
-                    await accept_button.scroll_into_view_if_needed()
-
-                    # Get the button's bounding box to calculate where to click
-                    box = await accept_button.bounding_box()
-                    if box:
-                        # Move the mouse to the center of the button and click
-                        x = box["x"] + box["width"] / 2
-                        y = box["y"] + box["height"] / 2
-
-                        await page.mouse.move(x, y)
-                        await page.mouse.down()
-                        await asyncio.sleep(0.1)  # simulate slight press delay
-                        await page.mouse.up()
-
-                        logger.info("Successfully clicked Accept Terms using real mouse events.")
-                        await asyncio.sleep(3)  # Wait for modal to close
-                    else:
-                        logger.warning("Could not get bounding box for Accept Terms button.")
-                else:
-                    logger.warning("Accept Terms button not found.")
-            except Exception as e:
-                logger.error(f"Error clicking Accept Terms button: {e}")
- 
+            await helper.handle_terms_cond_btn(page)
         except Exception:
             logger.warning(f"Retry loading page: {job_page_url}")
             await page.goto(job_page_url, wait_until="load")
+            await helper.handle_terms_cond_btn(page)
+
+        # # Before performing critical actions, check internet
+        # if not await helper.check_internet():
+        #     await helper.wait_until_internet_is_back(page)
         
         # Bypass cloudflare if appears
         try:
             cf_bypasser = CloudflareBypasser(page)
             await cf_bypasser.detect_and_bypass()
+            await helper.handle_terms_cond_btn(page)
         except Exception as e:
             logger.error(f"Captcha error: {e}")
+        
+        # # Before performing critical actions, check internet
+        # if not await helper.check_internet():
+        #     await helper.wait_until_internet_is_back(page)
 
         # Temporary save extract data
         list_of_processed_jobs = []
@@ -72,6 +57,10 @@ async def _listing(context, job_page_url):
         pagination_number = 1
 
         while True:
+            # # Before performing critical actions, check internet
+            # if not await helper.check_internet():
+            #     await helper.wait_until_internet_is_back(page)
+            
             # Bypass cloudflare if appears
             try:
                 cf_bypasser = CloudflareBypasser(page)
@@ -166,8 +155,7 @@ Jobs Titles:
     """
     try:
         # model_response = await helper.get_match_percentage_from_gemini(prompt)
-        model_response = await helper.get_match_percentage_from_groq(prompt)
-        logger.info(f"Model response: {model_response}")
+        model_response = await helper.get_match_percentage(prompt)
 
         matching_percentages = re.findall(r'\b\d+\b', model_response)
         matching_percentages = list(map(int, matching_percentages))
@@ -201,8 +189,8 @@ async def jobs_lister(chunk_urls):
         for index, job_page_url in enumerate(chunk_urls):
             try:
                 context = await browser.new_context(
-                    # proxy=proxies[index]
-                    viewport = { 'width': 1280, 'height': 1024 },
+                    proxy=proxies[index]
+                    # viewport = { 'width': 1280, 'height': 1024 },
                 )
 
                 script = await fingerprint_loader.load_fingerprint(index)

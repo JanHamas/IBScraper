@@ -1,31 +1,11 @@
-2025-09-16 16:33:09,643 [INFO] 🚀 Project Acquirer AI started
-2025-09-16 16:33:09,643 [INFO] Created fresh file: output/Easy_applies.csv
-2025-09-16 16:33:09,644 [INFO] Created fresh file: output/Confirmation_applies.csv
-2025-09-16 16:33:09,644 [INFO] ✅ Fresh CSV files created
-2025-09-16 16:33:09,655 [INFO] Trimmed processed jobs file to last 8000 entries
-2025-09-16 16:33:09,656 [INFO] 🧹 Processed jobs file cleaned
-2025-09-16 16:33:09,656 [INFO] Created new folder: debugging_screenshots
-2025-09-16 16:33:09,656 [INFO] 📁 Debugging folder ready
-2025-09-16 16:33:09,656 [INFO] Processing 20 URLs in 20 chunks
-2025-09-16 16:33:09,657 [INFO] Processing chunk 1/20
-2025-09-16 16:33:09,658 [INFO] ✔ Sucessfully 5 indeed accounts load
-2025-09-16 16:33:11,011 [INFO] ✔  Unique fingerprints loaded
-2025-09-16 16:33:11,013 [INFO] Total 1 contexts launched.
-2025-09-16 16:33:22,181 [INFO] Successfully clicked Accept Terms using real mouse events.
-2025-09-16 16:34:30,838 [INFO] Collected 5 jobs...
-2025-09-16 16:34:30,944 [INFO] Collected 10 jobs...
-2025-09-16 16:34:30,945 [INFO] Processing batch...
-2025-09-16 16:34:31,986 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-16 16:34:31,990 [INFO] Model response: 30 20 40 35 40 30 10 50 35 45
-2025-09-16 16:34:31,992 [INFO] Updated processed jobs with 27 new links
-2025-09-16 16:34:32,110 [INFO] Collected 5 jobs...
-2025-09-16 16:34:44,659 [INFO] Collected 10 jobs...
-2025-09-16 16:34:44,659 [INFO] Processing batch...
-2025-09-16 16:34:45,501 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-16 16:34:45,509 [INFO] Model response: 80 20 20 15 25 75 30 40 80 25
-2025-09-16 16:34:50,205 [INFO] Easy apply: EVI Industries
-2025-09-16 16:34:54,559 [INFO] Easy apply: Rea
-2025-09-16 16:34:58,929 [INFO] Easy apply: NY Home Care Services Inc
-2025-09-16 16:34:58,963 [INFO] ✔ Saved in CSV files.
-2025-09-16 16:34:58,964 [INFO] Updated processed jobs with 10 new links
-2025-09-16 16:34:59,147 [INFO] Collected 5 jobs...
+2025-09-20 21:59:12,420 [INFO] 🚀 Project Acquirer AI started
+2025-09-20 21:59:12,422 [INFO] Created fresh file: output/Easy_applies.csv
+2025-09-20 21:59:12,422 [INFO] Created fresh file: output/Confirmation_applies.csv
+2025-09-20 21:59:12,422 [INFO] ✅ Fresh CSV files created
+2025-09-20 21:59:12,439 [INFO] Trimmed processed jobs file to last 8000 entries
+2025-09-20 21:59:12,441 [INFO] 🧹 Processed jobs file cleaned
+2025-09-20 21:59:12,445 [INFO] Created new folder: debugging_screenshots
+2025-09-20 21:59:12,445 [INFO] 📁 Debugging folder ready
+2025-09-20 21:59:12,445 [INFO] Processing 20 URLs in 2 chunks
+2025-09-20 21:59:12,445 [INFO] Processing chunk 1/2
+2025-09-20 21:59:12,508 [INFO] ✔ Sucessfully 5 indeed accounts load

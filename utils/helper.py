@@ -11,7 +11,9 @@ from email.message import EmailMessage
 import mimetypes
 from config import config_input
 from groq import Groq
-import logging
+import logging, requests
+import aiohttp
+from google.api_core.exceptions import ResourceExhausted
 
 # Logger
 logger = logging.getLogger("spider")
@@ -120,21 +122,37 @@ async def get_match_percentage_from_groq(prompt):
         print(traceback.format_exc())
         return None
 
-
-
 async def simulate_human_behavior(page: Page):
-    """Simulate fast human-like behavior on a page."""
-    await asyncio.sleep(random.uniform(0.1, 0.3))  # shorter delay
-    scroll_amount = random.randint(50, 200)  # smaller scroll
-    await page.mouse.wheel(0, scroll_amount)
-    await asyncio.sleep(random.uniform(0.05, 0.2))  # minimal pause
+    """Simulate faster human-like behavior on a page."""
+    
+    # Initial pause before interaction (thinking, observing)
+    await asyncio.sleep(random.uniform(0.2, 0.5))  # much shorter initial delay
+
+    # Simulate scrolling (like someone casually reading)
+    for _ in range(random.randint(1, 2)):  # fewer scrolls
+        scroll_amount = random.randint(100, 200)  # smaller scroll amount
+        await page.mouse.wheel(0, scroll_amount)
+        await asyncio.sleep(random.uniform(0.2, 0.5))  # shorter wait between scrolls
+
+    # Move mouse quickly (simulate hand movement)
     await page.mouse.move(
         random.randint(0, 800),
         random.randint(0, 600),
-        steps=random.randint(2, 5)  # fewer steps, faster
+        steps=random.randint(5, 10)  # fewer steps for faster movement
     )
+    await asyncio.sleep(random.uniform(0.2, 0.5))  # short idle pause
+
+    # Scroll to bottom like a user might do
     await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    await asyncio.sleep(random.uniform(0.1, 0.5))  # quick final wait
+    await asyncio.sleep(random.uniform(0.5, 1.0))  # shorter after-scroll wait
+
+    # Optional: small extra move to simulate curiosity
+    await page.mouse.move(
+        random.randint(0, 800),
+        random.randint(0, 600),
+        steps=random.randint(5, 10)  # fewer steps for faster movement
+    )
+    await asyncio.sleep(random.uniform(0.2, 0.5))  # short idle pause
 
 
 class SleepBlocker:
@@ -294,3 +312,113 @@ def send_debugging_screenshots_and_spider_log_email(folder_path="debugging_scree
         logger.info(f"Email sent to {recipient} with {attached} attachments")
     except Exception:
         logger.exception("Failed to send debugging email")
+
+
+async def handle_terms_cond_btn(page):
+    try:
+        # Wait for the Accept Terms button using an exact selector
+        await page.wait_for_selector('button[data-gnav-element-name="AcceptButton"]', timeout=5000)
+        accept_button = await page.query_selector('button[data-gnav-element-name="AcceptButton"]')
+
+        if accept_button:
+            # Scroll into view just in case
+            await accept_button.scroll_into_view_if_needed()
+
+            # Get the button's bounding box to calculate where to click
+            box = await accept_button.bounding_box()
+            if box:
+                # Move the mouse to the center of the button and click
+                x = box["x"] + box["width"] / 2
+                y = box["y"] + box["height"] / 2
+
+                await page.mouse.move(x, y)
+                await page.mouse.down()
+                await asyncio.sleep(0.1)  # simulate slight press delay
+                await page.mouse.up()
+
+                logger.info("Successfully clicked Accept Terms using real mouse events.")
+                await asyncio.sleep(3)  # Wait for modal to close
+            else:
+                logger.warning("Could not get bounding box for Accept Terms button.")
+        else:
+            logger.warning("Accept Terms button not found.")
+    except Exception as e:
+        logger.error(f"NotError/found clicking Accept Terms button.")
+
+
+
+# Async function to check internet connectivity
+async def check_internet():
+    test_sites = [
+        "https://1.1.1.1",
+        "https://www.cloudflare.com",
+        "https://example.com",
+        "https://www.bing.com"
+    ]
+    
+    timeout = aiohttp.ClientTimeout(total=10)
+
+    async with aiohttp.ClientSession(timeout=timeout) as session:
+        for site in test_sites:
+            try:
+                async with session.get(site) as response:
+                    if response.status == 200:
+                        return True
+            except aiohttp.ClientError:
+                pass  # Ignore failed site and try next
+
+    return False
+
+
+# Function to wait until internet is back and optionally refresh the page
+async def wait_until_internet_is_back(page):
+    print("❌ Internet connection lost. Waiting to reconnect...")
+    while not await check_internet():
+        await asyncio.sleep(10)
+    print("✅ Internet reconnected.")
+    await page.reload()
+
+
+
+# Chech internet
+def check_internet():
+    test_sites = [
+        "https://1.1.1.1",  # Cloudflare DNS (very reliable)
+        "https://www.cloudflare.com",  # Cloudflare official site
+        "https://example.com",  # Example website (simple and lightweight)
+        "https://www.bing.com"  # Bing as an alternative to Google
+    ]
+    
+    for site in test_sites:
+        try:
+            response = requests.get(site, timeout=10)
+            if response.status_code == 200:
+                return True
+            else:
+                print(f"Failed to connect to {site}. HTTP Status Code: {response.status_code}")
+        except requests.RequestException as e:
+           pass    
+    return False
+
+
+async def get_match_percentage(prompt):
+    model_response = None
+
+    try:
+        model_response = await get_match_percentage_from_gemini(prompt)
+        logger.info(f"Gemini response: {model_response}")
+    except ResourceExhausted as e:
+        logger.error("Gemini quota exceeded, falling back to Groq...")
+    except Exception as e:
+        logger.error(f"Error from Gemini: {e}")
+
+    # Fallback if Gemini fails or returns None
+    if not model_response:
+        try:
+            model_response = await get_match_percentage_from_groq(prompt)
+            logger.info(f"Groq response: {model_response}")
+        except Exception as e:
+            logger.error(f"Error from Groq: {e}")
+            model_response = None  # Optional: keep as None for later handling
+
+    return model_response

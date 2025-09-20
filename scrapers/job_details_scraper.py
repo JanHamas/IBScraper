@@ -27,6 +27,10 @@ async def extract_full_details(context, urls, percentages):
 
     tab2_page = await context.new_page()
 
+    # # Before performing critical actions, check internet
+    # if not await helper.check_internet():
+    #     await helper.wait_until_internet_is_back(tab2_page)
+
     for p_index, url in enumerate(urls):
         full_url = f"https://indeed.com{url}"
 

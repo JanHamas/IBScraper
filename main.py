@@ -1,10 +1,37 @@
+import time
+import requests
+
+def check_internet():
+    test_sites = [
+        "https://1.1.1.1",
+        "https://www.cloudflare.com",
+        "https://example.com",
+        "https://www.bing.com"
+    ]
+    
+    for site in test_sites:
+        try:
+            response = requests.get(site, timeout=10)
+            if response.status_code == 200:
+                return True
+        except requests.RequestException:
+            pass    
+    return False
+
+# Wait until internet is available
+while not check_internet():
+    print("Check your internet connection...")
+    time.sleep(5)
+
+
 from scrapers.job_listings_scraper import jobs_lister
-import asyncio
+import asyncio, time
 from utils import helper, sheet_uploader
 from config import config_input
-from utils.logger_setup import setup_logger   # ← add this
+from utils.logger_setup import setup_logger
 
 if __name__ == "__main__":
+                
     logger = setup_logger()  # ← first thing: set up logging
 
     try:
