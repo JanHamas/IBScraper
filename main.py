@@ -32,7 +32,7 @@ from utils.logger_setup import setup_logger
 
 if __name__ == "__main__":
                 
-    logger = setup_logger()  # ← first thing: set up logging
+    logger = setup_logger()
 
     try:
         logger.info("🚀 Project Acquirer AI started")

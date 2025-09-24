@@ -3,7 +3,6 @@ from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
 
 from config import config_input
-from aioconsole import ainput
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
 from .job_details_scraper import extract_full_details
@@ -22,8 +21,8 @@ async def _listing(context, job_page_url):
         page = await context.new_page()
         
         # # Before performing critical actions, check internet
-        # if not await helper.check_internet():
-        #     await helper.wait_until_internet_is_back(page)
+        if not await helper.check_internet():
+            await helper.wait_until_internet_is_back(page)
 
         # Navigate to jobs page
         try:
@@ -35,8 +34,8 @@ async def _listing(context, job_page_url):
             await helper.handle_terms_cond_btn(page)
 
         # # Before performing critical actions, check internet
-        # if not await helper.check_internet():
-        #     await helper.wait_until_internet_is_back(page)
+        if not await helper.check_internet():
+            await helper.wait_until_internet_is_back(page)
         
         # Bypass cloudflare if appears
         try:
@@ -47,8 +46,8 @@ async def _listing(context, job_page_url):
             logger.error(f"Captcha error: {e}")
         
         # # Before performing critical actions, check internet
-        # if not await helper.check_internet():
-        #     await helper.wait_until_internet_is_back(page)
+        if not await helper.check_internet():
+            await helper.wait_until_internet_is_back(page)
 
         # Temporary save extract data
         list_of_processed_jobs = []
@@ -58,8 +57,8 @@ async def _listing(context, job_page_url):
 
         while True:
             # # Before performing critical actions, check internet
-            # if not await helper.check_internet():
-            #     await helper.wait_until_internet_is_back(page)
+            if not await helper.check_internet():
+                await helper.wait_until_internet_is_back(page)
             
             # Bypass cloudflare if appears
             try:

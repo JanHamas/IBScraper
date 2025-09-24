@@ -200,7 +200,7 @@ def clean_processed_jobs_file():
     try:
         with open(config_input.PROCESSED_JOBS_FILE_PATH, 'r') as f:
             urls = f.readlines()
-        last_urls = urls[-8000:]
+        last_urls = urls[-15000:]
         with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
             f.writelines(last_urls)
         logger.info(f"Trimmed processed jobs file to last {len(last_urls)} entries")
@@ -346,6 +346,29 @@ async def handle_terms_cond_btn(page):
         logger.error(f"NotError/found clicking Accept Terms button.")
 
 
+async def get_match_percentage(prompt):
+    model_response = None
+
+    try:
+        model_response = await get_match_percentage_from_gemini(prompt)
+        logger.info(f"Gemini response: {model_response}")
+    except ResourceExhausted as e:
+        logger.error("Gemini quota exceeded, falling back to Groq...")
+    except Exception as e:
+        logger.error(f"Error from Gemini: {e}")
+
+    # Fallback if Gemini fails or returns None
+    if not model_response:
+        try:
+            model_response = await get_match_percentage_from_groq(prompt)
+            logger.info(f"Groq response: {model_response}")
+        except Exception as e:
+            logger.error(f"Error from Groq: {e}")
+            model_response = None  # Optional: keep as None for later handling
+
+    return model_response
+
+
 
 # Async function to check internet connectivity
 async def check_internet():
@@ -378,47 +401,3 @@ async def wait_until_internet_is_back(page):
     print("✅ Internet reconnected.")
     await page.reload()
 
-
-
-# Chech internet
-def check_internet():
-    test_sites = [
-        "https://1.1.1.1",  # Cloudflare DNS (very reliable)
-        "https://www.cloudflare.com",  # Cloudflare official site
-        "https://example.com",  # Example website (simple and lightweight)
-        "https://www.bing.com"  # Bing as an alternative to Google
-    ]
-    
-    for site in test_sites:
-        try:
-            response = requests.get(site, timeout=10)
-            if response.status_code == 200:
-                return True
-            else:
-                print(f"Failed to connect to {site}. HTTP Status Code: {response.status_code}")
-        except requests.RequestException as e:
-           pass    
-    return False
-
-
-async def get_match_percentage(prompt):
-    model_response = None
-
-    try:
-        model_response = await get_match_percentage_from_gemini(prompt)
-        logger.info(f"Gemini response: {model_response}")
-    except ResourceExhausted as e:
-        logger.error("Gemini quota exceeded, falling back to Groq...")
-    except Exception as e:
-        logger.error(f"Error from Gemini: {e}")
-
-    # Fallback if Gemini fails or returns None
-    if not model_response:
-        try:
-            model_response = await get_match_percentage_from_groq(prompt)
-            logger.info(f"Groq response: {model_response}")
-        except Exception as e:
-            logger.error(f"Error from Groq: {e}")
-            model_response = None  # Optional: keep as None for later handling
-
-    return model_response
