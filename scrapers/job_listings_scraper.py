@@ -1,4 +1,5 @@
 import asyncio, random, re, os
+from datetime import datetime
 from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
 
@@ -29,9 +30,14 @@ async def _listing(context, job_page_url):
             await page.goto(job_page_url, wait_until="load")
             await helper.handle_terms_cond_btn(page)
         except Exception:
-            logger.warning(f"Retry loading page: {job_page_url}")
-            await page.goto(job_page_url, wait_until="load")
-            await helper.handle_terms_cond_btn(page)
+            try:
+                logger.warning(f"Retry loading page: {job_page_url}")
+                await page.goto(job_page_url, wait_until="load")
+                await helper.handle_terms_cond_btn(page)
+            except Exception as e:
+                filename = f"screenshot_{datetime.now()}.png"
+                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
+                await page.screenshot(path=file_path, full_page=True)
 
         # # Before performing critical actions, check internet
         if not await helper.check_internet():
