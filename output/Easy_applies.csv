@@ -1,132 +1,1727 @@
-BrightView Landscapes,https://indeed.com/rc/clk?jk=7a56571d8da32fb9&bb=3vatToUgIM_aTLbXM64aDAfbVQ9NBT5e4nwEXRZwOTTPOubCaNN2_08N6vgiLHzzqwUwFrBDU70cazrkTAj49XVYr9YFvttkUKme23jQ9RI1BlRYN0odL14O3s4v7jJ9eiNLKT6c_jyqD55cIwNY5Q%3D%3D&xkcb=SoAt67M3t-L-o3SREh0KbzkdCdPP&fccid=4da0f1bebd962ba1&vjs=3,,,65,Senior Analyst Data,Full-time,"BrightView Landscapes
+"Blue Ridge Solutions, Inc",https://indeed.com/rc/clk?jk=f371a20914961c5e&bb=09pOnJtQSOIMYN8DRXzMzZ551bR5tDsrDFFcYOD7QIxPsIc9mmS74imjeAvP5FBpm3FozTiNlDRwykKcGJyWKXCUtE0B38hAIRRTFQxKGXPnM_JCjHpFCwl4HJOrQ-SPBJ9T5T8wOmg%3D&xkcb=SoCn67M3sAhXclwpWp0DbzkdCdPP&fccid=64b6b0883ca16de0&vjs=3,,,95,Lead Full-stack Engineer - GenAI,Full-time,"Blue Ridge Solutions, Inc
+Remote","Benefits
+Pulled from the full job description
+Health insurance
+401(k) matching
+Vision insurance
+Dental insurance
+Unlimited paid time off
+&nbsp;","About Blue Ridge Solutions, Inc
+
+We are Blue Ridge, creators of the leading supply chain platform for distributors, retailers, and manufacturers. Our fast-growing and exciting SaaS supply chain planning platform provides cutting-edge supply chain solutions including forecasting and demand planning, replenishment, S&OP, rough-cut capacity planning, and pricing. Our software helps businesses gain control, improve forecasting precision, reduce costs, improve service levels, and increase profit.
+
+
+We are looking for a passionate individual who is excited about the intersection of AI technology and supply chain optimization. The Lead Full-stack Engineer - GenAI is responsible for building and deploying advanced machine learning systems with a focus on generative AI technologies that drive value for our supply chain solutions. You will lead the design and development of production-grade Generative AI (GenAI) and SaaS platforms. You’ll be the technical force behind scalable, secure, and intelligent systems that transform rapid PoCs into enterprise-ready solutions.
+
+
+This is a strategic technical role within our AI/ML team, working at the intersection of cutting-edge research and practical implementation. You will be responsible for designing, developing, prototyping, improving and scaling ML systems from conception through production deployment, with emphasis on generative AI models and full-stack integration capabilities.
+
+
+Key Responsibilities
+
+GenAI/ML System Development
+
+Design and develop Generative AI solutions using cloud-based managed AI services (e.g. Amazon Bedrock, Amazon SageMaker).
+Design and develop AI Agent workflows using cloud and open source agentic frameworks.
+Containerize AI applications and deploy them using cloud orchestration services.
+Collaborate with data architects/engineers to build end-to-end AI pipelines.
+Implement MLOps practices to automate the development, deployment, and monitoring of AI applications and models.
+Implement and manage robust monitoring systems for AI solutions in production environments, ensuring continuous performance tracking, anomaly detection, and model drift analysis; collaborate with cross-functional teams to deploy model updates, maintain version control, and optimize model efficiency over time.
+Use Infrastructure as Code (IaC) to manage and version cloud resources for AI projects.
+Ensure clear and accessible knowledge transfer to internal teams and create knowledge-sharing resources to ensure smooth transitions during model handoffs and system updates.
+Contribute to the development of best practices and standards for AI engineering within the organization.
+
+
+Technical Leadership & Innovation
+
+Lead the architecture and implementation of ML systems that can process supply chain data at scale
+Research and implement cutting-edge ML techniques including transformer models, reinforcement learning, and generative adversarial networks
+Optimize model performance for production environments, ensuring low latency and high availability
+Establish best practices for model versioning, monitoring, and continuous integration/deployment
+
+
+Supply Chain Domain Excellence
+
+Understand critical supply chain planning workflows and identify opportunities for AI-driven automation
+Develop ML models that provide insights into potential supply disruptions and recommend automated resolutions
+Build tools that increase the reach of supply chain solutions through partner integrations
+Act as the voice of AI innovation within the supply chain domain
+
+
+Required Qualifications
+
+Education & Experience
+
+University degree or higher in Computer Science, Machine Learning, Data Science, Artificial Intelligence, or related technical field, OR 5-7 years of equivalent experience in machine learning engineering
+3+ years of hands-on experience designing, building, and deploying ML models and systems in production environments
+3+ years of experience with deep learning frameworks (PyTorch, TensorFlow, Keras) and generative AI models
+Strong full-stack development experience with modern web technologies, ability to take concept to prototype
+
+Technical Skills
+
+Programming Languages: Expert-level proficiency in Python; proficiency in JavaScript/TypeScript, SQL
+ML/AI Frameworks: PyTorch, TensorFlow, Hugging Face Transformers, LangChain, scikit-learn or equivalent
+Generative AI: Experience with large language models (GPT, BERT, LLaMA), fine-tuning techniques (RLHF, LoRA), and prompt engineering or equivalent
+Full-Stack Development: React, Node.js, REST APIs, microservices architecture
+MLOps: Docker, Kubernetes, CI/CD pipelines, model monitoring, and deployment automation or equivalent
+Data Technologies: Apache Spark, streaming data processing, vector databases, data warehousing or equivalent
+
+Core Competencies
+
+Strong foundation in statistics, linear algebra, and optimization techniques
+Experience with distributed systems and large-scale data processing
+Proficiency in data structures, algorithms, and software engineering principles
+Experience with A/B testing, model evaluation, and performance monitoring
+Understanding of software development lifecycle and agile methodologies
+
+
+Preferred Qualifications
+
+Industry Experience
+
+Supply Chain Software: Previous experience with supply chain management software, ERP systems, or logistics platforms is highly valued
+Experience in B2B SaaS environments with enterprise-scale deployments
+Background in operations research, industrial engineering, or supply chain optimization
+
+Advanced Technical Skills
+
+Experience with reinforcement learning for sequential decision-making problems
+Knowledge of graph neural networks and their applications to supply chain networks
+Familiarity with edge computing and model optimization for deployment constraints
+Experience with modern vector databases (Pinecone, Weaviate, ChromaDB) for RAG applications
+
+
+What We Offer
+
+Free Medical/Dental/Vision (for Individual)
+
+401(k) match
+
+Unlimited PTO
+
+Work-from-Home
+
+Collaborative, fun environment
+
+
+Blue Ridge is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to age, ancestry, color, family or medical care leave, gender identity or expression, genetic information, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran status, race, religion, sex, sexual orientation, or any other characteristic protected by applicable laws, regulations, and ordinances."
+MHA Systems Inc,https://indeed.com/rc/clk?jk=34b8924c272148b1&bb=lxCn39E_QR9Y_ahnHtmDaC9B09rRR50oVAYdWsNEHBvtGdEUe8B5BLrsEzxLUeghFrCelFJCDw0-zx0rYTY-MW3lPL3A89y_WjCju5GUvETxD7zCO02rQjhARAaFVad0DUPsaSwQ8AChVDYlrT5RAQ%3D%3D&xkcb=SoD_67M3sAiNmhgNj70MbzkdCdPP&fccid=e0340fc19a010200&cmp=MakesCents%2C-Inc&ti=Senior+Data+Scientist&vjs=3,,,95,Sr . Data Scientist,"$120,000 - $150,000 a year - Full-time","MHA Systems Inc
+United States
+Remote","Benefits
+Pulled from the full job description
+401(k)
+Health insurance
+Retirement plan
+401(k) matching
+Paid time off
+Vision insurance
+Dental insurance
+Show more
+&nbsp;","Summary of position
+
+The Senior Data Scientist will play a critical role in developing, implementing, and maintaining predictive models and analytical frameworks that directly influence consumer lending acquisition, underwriting, fraud prevention, and portfolio performance.
+
+This position is hands-on, requiring strong technical expertise in data science and machine learning, paired with the ability to collaborate across business functions. The Senior Data Scientist will apply advanced statistical and machine learning techniques to optimize lending policies, improve lead acquisition, enhance fraud detection, and support customer lifecycle management.
+
+Candidates should bring strong problem-solving skills, a collaborative spirit, and flexibility to adapt to evolving priorities. Familiarity with industry-standard LMS platforms such as Infinity or Tekambi is required. Experience with automated ML platforms like DataRobot is strongly preferred. Direct experience in tribal lending or the broader consumer lending industry is a plus. This position will report to the Chief Risk Officer.
+
+Essential Roles/Responsibilities
+
+Insight & Data Science
+
+· Develop, test, and deploy predictive models to support loan application decisioning, fraud detection, repayment risk, affordability assessments, and lead conversion.
+
+· Support champion/challenger testing of consumer lending scorecards, underwriting rules, and lending policies.
+
+· Conduct deep-dive analyses into loan performance, repayment behavior, and borrower characteristics; translate findings into actionable recommendations.
+
+· Apply a variety of modeling techniques including regression, decision trees, gradient boosting, clustering, and neural networks.
+
+· Leverage DataRobot and custom-built pipelines (Python/R) for model development, validation, and deployment.
+
+· Collaborate with LMS platform Collaborate with LMS platform account executives (Infinity, Tekambi, or similar) to operationalize scorecards and decisioning logic.
+
+· Perform back-testing, statistical validation, and ongoing monitoring to ensure models remain accurate and stable in production.
+
+· Deliver clear visualizations and insights to stakeholders across risk, operations, and finance.
+
+Data Management & Engineering Support
+
+· Partner with BI/Technology teams to define, source, and maintain datasets used for lending analytics and portfolio monitoring.
+
+· Use SQL (SSMS preferred) to query, clean, and transform large-scale lending data.
+
+· Ensure data integrity, perform feature engineering, and document business rules used for modeling.
+
+· Support development of automated pipelines to track model performance and portfolio KPIs.
+
+Collaboration & Business Impact
+
+· Work closely with Risk, Marketing, Operations, and Finance to align models with consumer lending strategies and portfolio goals.
+
+· Support initiatives such as lead source optimization, pricing strategies, repayment forecasting, and fraud mitigation.
+
+· Act as a subject matter expert on lending-focused modeling methodologies and statistical best practices.
+
+· Stay current on AI/ML tools, bureau and third-party data offerings, and trends in the consumer lending industry.
+
+Onboarding & Alignment (0–30 Days)
+
+Gain a deep understanding of Makes Cents Inc.’s consumer lending business model, portfolio, and underwriting process.
+Build working relationships with Risk, Operations, Marketing, and Technology stakeholders.
+Access, validate, and familiarize with LMS platforms (Infinity, Tekambi) and key data pipelines.
+Review existing consumer lending models, scorecards, and loan performance reports.
+
+Early Deliverables (30-60 days):
+
+Conduct an initial diagnostic of current loan decisioning models and risk scorecards; identify gaps and opportunities.
+Begin developing at least one new or improved consumer lending model (e.g., fraud detection or repayment prediction) using DataRobot or Python/R.
+Provide early insights into borrower risk patterns, repayment behavior, or lead source quality.
+Document data sources, feature sets, and assumptions for a core initiative.
+
+Impact & Execution (60–90 Days)
+
+Deploy a new or updated model into champion/challenger testing within Infinity or Tekambi.
+Deliver a 90-day report to leadership with findings, early results, and ROI estimates.
+Propose a roadmap for future lending model development, monitoring, and automation.
+Establish credibility as a trusted, collaborative data science partner across the business
+
+Education Requirements
+
+Master’s degree in Statistics, Data Science, Economics, Econometrics, Computer Science, or a related quantitative field.
+PhD preferred but not required.
+
+Qualifications
+
+3–5+ years of experience in predictive modeling, applied data science, or analytics within consumer lending or fintech.
+Strong experience with loan decisioning models, fraud detection, lead optimization, and repayment forecasting.
+Hands-on experience with Infinity, Tekambi, or similar LMS/decisioning platforms.
+Proven use of DataRobot or other AutoML platforms in production.
+Experience in high-volume, data-intensive consumer lending environments.
+Experience in tribal lending is highly preferred
+
+Knowledge and Skills
+
+Advanced SQL (SSMS preferred) for querying and data wrangling.
+Familiarity with model interpretability tools (SHAP, LIME, etc.).
+Experience with BI tools (Tableau, Power BI, Domo).
+Familiarity with cloud-based environments (AWS, Azure, or GCP).
+Strong communication skills: able to explain technical findings in plain language.
+Ability to manage multiple projects independently in a fast-paced environment.
+Strong programming in Python or R (experience with scikit-learn, XGBoost, LightGBM, TensorFlow, or PyTorch a plus).
+
+Attributes
+
+Oral Expression - The ability to communicate information and ideas in speaking so others will understand
+Oral Comprehension - The ability to listen to and understand information and ideas presented through spoken words and sentences
+Written Comprehension - The ability to read and understand information and ideas presented in writing
+Written Expression - The ability to communicate information and ideas in writing so others will understand
+Speech Clarity - The ability to speak clearly so others can understand you
+Speech Recognition - The ability to identify and understand the speech of another person
+Hands-on problem solver with a practical, execution-focused mindset.
+Strong analytical and critical-thinking skills.
+Collaborative team player with excellent cross-functional communication.
+Flexible, adaptable, and eager to contribute in a fast-changing consumer lending environment.
+Continuous learner with a passion for emerging AI/ML tools and lending technologies.
+
+Physical Demands
+
+While performing the duties of the job, the employee is frequently required to sit and talk or hear. The employee is occasionally required to walk; use hands to finger, handle, or feel objects, tools or controls; and reach with hands and arms. Must be able to occasionally lift up to 5 lbs. Must be able to work with a moderate noise level office atmosphere.
+
+Work Environment
+
+The position is remote under the Make Cents, Inc company located in Parshall, ND. Normal working hours are 8:00 a.m. to 4:30 p.m., CST. Monday through Friday, with flexibility to meet project deadlines with additional hours in the evening and/or weekends may be necessary. Occasional travel may be required for training, vendor meetings, or cross-team collaboration.
+
+Job Type: Full-time
+
+Pay: $120,000.00 - $150,000.00 per year
+
+Benefits:
+
+401(k)
+401(k) matching
+Dental insurance
+Employee assistance program
+Health insurance
+Life insurance
+Paid time off
+Retirement plan
+Vision insurance
+
+Application Question(s):
+
+Must acceptable Background check and an Alcohol & Drug Testing
+
+Education:
+
+Master's (Required)
+
+Experience:
+
+Data science: 3 years (Required)
+Tekambi: 3 years (Required)
+Call center: 1 year (Required)
+
+Work Location: Remote"
+Chariot Energy,https://indeed.com/rc/clk?jk=82120f0f9bfc0d90&bb=cujk_pGR4RNm4k1X5s2iC0YIv35ahhWxaxIjp5T53DyxtXWo_yG_x8ryOdLo_bFf9BeBFGZ509qG3bGakF07Ev8lXWuAcTOYrQQDGVe665Yc16BVrOHvaOvlmxcrYmGDvW64ifYlNcg%3D&xkcb=SoDL67M3sAhiPyAHMj0BbzkdCdPP&fccid=a8f20427f49a0dc4&vjs=3,,,95,Senior Data Scientist,"$160,000 - $185,000 a year","Chariot Energy
+Houston, TX",,"COMPANY OVERVIEW
+
+174 Power Global, headquartered in Irvine, California, is an affiliate company of Hanwha Group, a FORTUNE Global 500 firm that is among the eight largest business enterprises in South Korea. 174 Power Global designs, builds and manages solar power plant solutions. The company brings a decade of global leadership in solar PV to North America, combining best-of-world technology, processes, and partnerships to deliver utility-grade solar PV solutions customized for local energy markets. 174 Power Global offers the full spectrum of PV solutions – from power plant development, design, construction, operations, and maintenance. With proven capabilities across the solar value chain, 174 Power Global minimizes uncertainty and risk, and helps customers achieve a higher return on their investment in solar energy.
+
+174 Power Global has recently embarked on entering the energy retail market in deregulated markets throughout North America. Chariot Energy is a retail energy provider based in Houston, Texas. We offer electricity to homes and businesses, and it is our goal to provide products and services our customers love and an unmatched experience that is missing in today's retail energy market.
+
+174 Power Global has set out to have Chariot Energy become one of the leading energy retail providers (by RCE count) within 5 years of Chariot Energy's launch.
+
+
+
+
+POSITION OVERVIEW
+
+As an integral part of Chariot Energy's Energy Analytics team, the Senior Data Scientist will oversee the entire data science pipeline for all wholesale applications including load forecasting, price formation and trading algorithms. This will encompass R&D, model development, pre and post model analytics, model deployment, and management of ML model library. This role will leverage the latest AI/ML modeling techniques to directly impact the company's ability to make informed decisions, optimize operations, mitigate risks, and drive business growth.
+
+Reporting to the Head of Energy Analytics, the role requires a self-motivated, dedicated, and responsible individual with the ability to perform well under pressure collaboratively with a team of highly analytical and quantitative talent. Along with deep expertise in AI/ML modelling, the candidate should possess a solid understanding of ERCOT and PJM market fundamentals and emerging trends.
+
+The employee may be required to perform other job-related duties as requested by management. All duties will be assigned in accordance with applicable laws and company policies.
+
+The position will be based out of the Chariot Energy Houston office, and the ideal candidate will be within commutable distance to the Houston office location.
+
+
+
+
+RESPONSIBILITIES
+
+As part of Chariot Energy's Energy Analytics team, this position will play a pivotal role in developing innovative solutions to our wholesale analytical needs including load and price forecasting by applying state-of-the-art machine learning and predictive modeling techniques
+Responsible for coordinating the entire ML life cycle including pre-model analytics, model selection, feature engineering, post model evaluation and model refinements
+Coordinate the model deployment efforts including integration into downstream business processes and tracking performance metrics
+Develop a comprehensive data visualization layer to enable intuitive understanding of the analytical drivers by the business stakeholders
+Working closely with the technology team and leveraging the availability of vast amounts of proprietary data, develop ways to extract business intelligence and actionable insights that can have a meaningful impact on the company's bottom-line
+Communicate technical details of the modeling to key stakeholders and partners to drive impact and facilitate decision making
+
+REQUIRED QUALIFICATIONS
+
+Strong technical knowledge on time series modelling (GBM, LSTM) and deep learning/generative AI (CNN, VAE, GAN)
+10+ years of industry experience of applying the modelling techniques in successful business applications
+Thorough understanding of the analytical drivers of the energy industry including weather, consumption patterns, wholesale and retail prices, particularly for ERCOT and PJM markets
+An advanced degree, preferably Ph.D, in Engineering, Math, Physics or in a related field of study
+Strong problem-solving skills along with ability to intuitively explain complex technical concepts to business stakeholders
+Strong knowledge in programming (Python, SQL), visualization tools (Plotly, PowerBI), ML packages (Pytorch, Tensorflow) and hyperparameter tuning (Optuna)
+Proven track record in managing complex projects and leading cross-functional teams.
+Excellent interpersonal skills with capability to work collaboratively with technical and non-technical teams.
+Eligible to work in the USA for any employer without sponsorship.
+
+
+
+Compensation: $160,000 - $185,000 salary
+
+
+
+
+Chariot Energy provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics. www.mychariotenergy.com"
+MHA Systems/ MCI,https://indeed.com/rc/clk?jk=a040fad5a83e1ff3&bb=oxilfvpsD4CwMeEOMO9DJbMK6mY7OBS4gcyCr_Xj0G6ap-brIkpC2WII2fQjzZLC8uD97bKcWuWCi0WKi5gzGD0yTarv8MIr8GT-pIUTXnYqgdxPrVeKbxN7Lhs5EQ9u6NiBQaGRsv4%3D&xkcb=SoDW67M3sAhgAlgWuT0LbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3,,,95,Senior Data Scientist,Full-time,"MHA Systems/ MCI
+4207 Boulder Ridge Road, Bismarck, ND 58503",,"summary of position
+
+The Senior Data Scientist will play a critical role in developing, implementing, and maintaining predictive models and analytical frameworks that directly influence consumer lending acquisition, underwriting, fraud prevention, and portfolio performance.
+
+
+
+
+
+This position is hands-on, requiring strong technical expertise in data science and machine learning, paired with the ability to collaborate across business functions. The Senior Data Scientist will apply advanced statistical and machine learning techniques to optimize lending policies, improve lead acquisition, enhance fraud detection, and support customer lifecycle management.
+
+
+
+
+
+Candidates should bring strong problem-solving skills, a collaborative spirit, and flexibility to adapt to evolving priorities. Familiarity with industry-standard LMS platforms such as Infinity or Tekambi is required. Experience with automated ML platforms like DataRobot is strongly preferred. Direct experience in tribal lending or the broader consumer lending industry is a plus. This position will report to the Chief Risk Officer.
+
+Essential Roles/Responsibilities
+
+Insight & Data Science
+
+Develop, test, and deploy predictive models to support loan application decisioning, fraud detection, repayment risk, affordability assessments, and lead conversion.
+Support champion/challenger testing of consumer lending scorecards, underwriting rules, and lending policies.
+Conduct deep-dive analyses into loan performance, repayment behavior, and borrower characteristics; translate findings into actionable recommendations.
+Apply a variety of modeling techniques including regression, decision trees, gradient boosting, clustering, and neural networks.
+Leverage DataRobot and custom-built pipelines (Python/R) for model development, validation, and deployment.
+Collaborate with LMS platform Collaborate with LMS platform account executives (Infinity, Tekambi, or similar) to operationalize scorecards and decisioning logic.
+Perform back-testing, statistical validation, and ongoing monitoring to ensure models remain accurate and stable in production.
+Deliver clear visualizations and insights to stakeholders across risk, operations, and finance.
+
+
+
+Data Management & Engineering Support
+
+Partner with BI/Technology teams to define, source, and maintain datasets used for lending analytics and portfolio monitoring.
+Use SQL (SSMS preferred) to query, clean, and transform large-scale lending data.
+Ensure data integrity, perform feature engineering, and document business rules used for modeling.
+Support development of automated pipelines to track model performance and portfolio KPIs.
+
+
+
+Collaboration & Business Impact
+
+Work closely with Risk, Marketing, Operations, and Finance to align models with consumer lending strategies and portfolio goals.
+Support initiatives such as lead source optimization, pricing strategies, repayment forecasting, and fraud mitigation.
+Act as a subject matter expert on lending-focused modeling methodologies and statistical best practices.
+Stay current on AI/ML tools, bureau and third-party data offerings, and trends in the consumer lending industry.
+
+
+
+Onboarding & Alignment (0–30 Days)
+
+Gain a deep understanding of Makes Cents Inc.’s consumer lending business model, portfolio, and underwriting process.
+Build working relationships with Risk, Operations, Marketing, and Technology stakeholders.
+Access, validate, and familiarize with LMS platforms (Infinity, Tekambi) and key data pipelines.
+Review existing consumer lending models, scorecards, and loan performance reports.
+
+
+
+Early Deliverables (30-60 days):
+
+Conduct an initial diagnostic of current loan decisioning models and risk scorecards; identify gaps and opportunities.
+Begin developing at least one new or improved consumer lending model (e.g., fraud detection or repayment prediction) using DataRobot or Python/R.
+Provide early insights into borrower risk patterns, repayment behavior, or lead source quality.
+Document data sources, feature sets, and assumptions for a core initiative.
+
+
+
+Impact & Execution (60–90 Days)
+
+Deploy a new or updated model into champion/challenger testing within Infinity or Tekambi.
+Deliver a 90-day report to leadership with findings, early results, and ROI estimates.
+Propose a roadmap for future lending model development, monitoring, and automation.
+Establish credibility as a trusted, collaborative data science partner across the business
+
+knowledge and skills
+
+Advanced SQL (SSMS preferred) for querying and data wrangling.
+Familiarity with model interpretability tools (SHAP, LIME, etc.).
+Experience with BI tools (Tableau, Power BI, Domo).
+Familiarity with cloud-based environments (AWS, Azure, or GCP).
+Strong communication skills: able to explain technical findings in plain language.
+Ability to manage multiple projects independently in a fast-paced environment.
+Strong programming in Python or R (experience with scikit-learn, XGBoost, LightGBM, TensorFlow, or PyTorch a plus).
+
+Attributes
+
+Oral Expression - The ability to communicate information and ideas in speaking so others will understand
+Oral Comprehension - The ability to listen to and understand information and ideas presented through spoken words and sentences
+Written Comprehension - The ability to read and understand information and ideas presented in writing
+Written Expression - The ability to communicate information and ideas in writing so others will understand
+Speech Clarity - The ability to speak clearly so others can understand you
+Speech Recognition - The ability to identify and understand the speech of another person
+Hands-on problem solver with a practical, execution-focused mindset.
+Strong analytical and critical-thinking skills.
+Collaborative team player with excellent cross-functional communication.
+Flexible, adaptable, and eager to contribute in a fast-changing consumer lending environment.
+Continuous learner with a passion for emerging AI/ML tools and lending technologies.
+
+Physical Demands
+
+While performing the duties of the job, the employee is frequently required to sit and talk or hear. The employee is occasionally required to walk; use hands to finger, handle, or feel objects, tools or controls; and reach with hands and arms. Must be able to occasionally lift up to 5 lbs. Must be able to work with a moderate noise level office atmosphere.
+
+Work Environment
+
+The position is remote under the Make Cents, Inc company located in Parshall, ND. Normal working hours are 8:00 a.m. to 4:30 p.m., CST. Monday through Friday, with flexibility to meet project. Occasional travel may be required for training, vendor meetings, or cross-team collaboration.
+
+Education Requirements
+
+Master’s degree in Statistics, Data Science, Economics, Econometrics, Computer Science, or a related quantitative field.
+PhD preferred but not required.
+
+Qualifications
+
+3–5+ years of experience in predictive modeling, applied data science, or analytics within consumer lending or fintech.
+Strong experience with loan decisioning models, fraud detection, lead optimization, and repayment forecasting.
+Hands-on experience with Infinity, Tekambi, or similar LMS/decisioning platforms.
+Proven use of DataRobot or other AutoML platforms in production.
+Experience in high-volume, data-intensive consumer lending environments.
+Experience in tribal lending is highly preferred"
+THIA,https://indeed.com/rc/clk?jk=d532592eabdee6b0&bb=dQ3hy6yW28KaADP5ikv1CRwEdwa7uZf2YMiH1tt9Yr9ojTlkGVPtgUUXevae2HkguZFoXwZ_-X4BULCpUhkDOP-3PegwkM7OKFYpdaVrhQiX8_05lb3e8Xc2LrOKMuaiaytQ8OdfZwaAU5BlCIX6oYNhT9Frw7Ic&xkcb=SoDp67M3sAhx-3XqZJ0GbzkdCdPP&fccid=d88e50cc98cc2a5f&cmp=THIA&ti=Ai%2Fml+Engineer&vjs=3,,,95,JD - ML Engineer - Research,"$100,000 - $200,000 a year - Full-time","THIA
+Remote",,"THIA is seeking a highly qualified AI/ML Research Engineer to join our rapidly growing Research team.
+
+As an AI/ML Research Engineer, you’ll play a crucial role in translating cutting-edge AI research into working prototypes and experimental implementations. Your primary focus will be on building and deploying machine learning models in secure research environments, transforming theoretical concepts into functional code that can be tested and validated. You’ll work closely with our research team to implement novel AI techniques and run comprehensive experiments that push the boundaries of what’s possible in AI technology.
+
+This is an exceptional opportunity to be at the forefront of AI research implementation at a high-growth startup working with leading innovators in the AI field. You’ll bridge the gap between academic theory and practical application, turning research ideas into tangible prototypes that demonstrate real-world potential.
+
+This position is fully remote. However, applicants must be authorized to work for ANY employer in the U.S. We are unable to sponsor or take over sponsorship of an employment Visa at this time.
+
+This role involves work on both Department of Defense contracts (requiring U.S. Citizenship) and commercial projects. U.S. Citizenship is required for some DoD project assignments. Non-U.S. citizens may be considered for commercial project work only, subject to export control restrictions.
+
+Responsibilities:
+
+Design, implement, and deploy machine learning models from research papers and theoretical concepts
+Build end-to-end training pipelines from bare metal cloud instances
+Develop prototypes in secure research environments to validate new AI techniques and methodologies
+Collaborate with research scientists to translate complex algorithms into efficient, testable code
+Conduct comprehensive experiments and performance evaluations of novel AI approaches
+Optimize training processes for various GPU configurations and hardware setups
+Package and deploy research models for internal testing and validation
+Maintain detailed documentation of experimental processes and results
+Stay current with the latest developments in AI/ML research and implementation techniques
+
+Required skills and experience:
+
+Bachelor’s or Master’s Degree in Computer Science, Machine Learning, AI, or related field OR equivalent work experience OR an equivalent combination of both education and experience
+Strong programming skills in Python with demonstrated ability to implement complex ML algorithms
+Hands-on experience with training, fine-tuning, and deploying machine learning models in production-like environments
+Proficiency with Linux/Ubuntu CLI and ability to set up training environments on cloud platforms
+Experience with GPU provisioning, optimization, and modifying training code for various GPU configurations
+Solid understanding of a wide range of AI/ML training techniques and ability to implement diverse approaches
+Experience with Docker containerization and model deployment workflows
+Proven ability to translate research papers and theoretical concepts into working code
+Strong problem-solving skills and ability to debug complex ML training issues
+Experience working in remote environments with distributed teams
+
+Desired skills:
+
+Experience with HuggingFace transformers library and ecosystem
+Knowledge of MLFlow or similar experiment tracking and model registry systems
+Experience with transformer architectures, fine-tuning, and optimization techniques
+Background in computer vision, speech recognition or other specialized AI domains
+Familiarity with distributed training frameworks and multi-GPU setups
+Experience with cloud platforms (AWS, GCP, Azure) for ML workloads
+
+Salary based on skills and experience
+
+Job Type: Full-time
+
+Pay: $100,000.00 - $200,000.00 per year
+
+People with a criminal record are encouraged to apply
+
+Application Question(s):
+
+This role involves work on both Department of Defense contracts (requiring U.S. Citizenship) and commercial projects. U.S. Citizenship is required for some DoD project assignments. Non-U.S. citizens may be considered for commercial project work only. Are you eligible to work on DoD contracts?
+
+Work Location: Remote"
+Compass Corporate,https://indeed.com/rc/clk?jk=d223f063080e10fe&bb=k0avuPeuGNVr83DkjEnMRFE1gPs7szAnTW1h_a2YQRURWoAAFGHJnHRZ3T7Vqgkhq1FCs7ARGQNWvnnQYHyft-vSAiL0anHEwfTIC2Phy0s_SaCdPR2SQJmWTh0qEZL2cmrhGJQbEpOc9876-AeauBARCEb6JvM1&xkcb=SoDQ67M3sAjfvLANj70MbzkdCdPP&fccid=03f3423a93a05732&vjs=3,,,95,"ENTERPRISE ARCHITECT - AI ADOPTION & AGENTIC SOLUTIONS (CHARLOTTE, NC)",Full-time,"Compass Corporate
 3.2
 3.2 out of 5 stars
-980 Jolly Road, Blue Bell, PA 19422","Benefits
+2400 Yorkmont Road, Charlotte, NC 28217","Benefits
+Pulled from the full job description
+Pet insurance
+Paid parental leave
+Parental leave
+Health insurance
+Retirement plan
+Paid time off
+Employee discount
+Show more
+&nbsp;","A family of companies and experiences
+
+As the leading foodservice and support services company, Compass Group USA is known for our great people, great service and our great results. If you’ve been hungry and away from home, chances are you’ve tasted Compass Group’s delicious food and experienced our outstanding service. We have over 284,000 US associates who work in award-winning restaurants, corporate cafes, hospitals, schools, arenas, museums, and more in all 50 states. Our reach is constantly expanding to shape the industry and create new opportunities for innovation. Join the Compass family today!
+
+great people. great services. great results.
+
+Each and every individual plays a key role in the growth and legacy of our company. We know the next big idea can come from anyone. We encourage developing and attracting expertise that differentiates us as a company as we continue to raise the bar.
+
+Job Summary:
+
+We’re seeking an Enterprise Architect to lead AI adoption across software development teams. This role creates the shared context (standards, practices, and common services) that lets teams ship safe, reliable, and cost-effective AI features. You will define and govern our AI reference architecture, stand up platform capabilities (retrieval, orchestration, guardrails, observability), and guide the rollout of agentic AI for real business outcomes.
+
+Responsibilities:
+Set the North Star
+Own the enterprise AI reference architecture (applications, data, security, and operations).
+Define canonical domain models and patterns for shared context: knowledge sources, metadata, embeddings, ontologies, and retrieval.
+Establish decision frameworks for build/buy, model selection, and cost/performance trade-offs.
+Create Shared Context & Platform Services
+Stand up common services: identity-aware retrieval (RAG), vector/graph storage, prompt/skill catalogs, tool/function registries, evaluation harnesses, and LLM observability.
+Provide SDKs, templates, and reference implementations so teams can adopt patterns quickly (APIs, eventing, CI/CD, IaC).
+Standards & Practices
+Publish and govern AI engineering standards: prompt patterns, tool/agent orchestration, structured outputs, evaluation/testing, telemetry, and rollout gates.
+Define SLOs/SQOs for AI features (quality, latency, cost, safety) and embed automated checks into pipelines.
+Agentic AI Delivery
+Architect agent workflows (plan–act–observe–reflect loops), tool usage, and multi-agent collaboration for real-world processes.
+Pilot high-impact use cases; turn successful patterns into reusable components.
+Risk, Security, and Compliance
+Implement guardrails for privacy, safety, IP, and data residency; integrate content filtering, PII handling, and audit trails.
+Partner with Legal, Risk, and Security on policy, red-teaming, incident response, and vendor due diligence.
+Enablement & Change Management
+Lead developer enablement: playbooks, training, office hours, internal community of practice.
+Design and deliver a developer education program on implementing agentic coding (plan–act–observe–reflect loops, tool/skill catalogs, safety guardrails, evaluation and regression testing, cost control, and SDLC integration).
+Drive citizen intelligence/development governance with safe rails and supported toolchains.
+Advise product leaders on AI opportunity sizing, success metrics, and ethical considerations.
+Education & Training (Agentic Coding)
+Lead developer enablement: playbooks, training, office hours, internal community of practice.
+Design and deliver a developer education program on implementing agentic coding (plan–act–observe–reflect loops, tool/skill catalogs, safety guardrails, evaluation and regression testing, cost control, and SDLC integration).
+Drive citizen intelligence/development governance with safe rails and supported toolchains.
+Advise product leaders on AI opportunity sizing, success metrics, and ethical considerations.
+Qualifications:
+5+ years in software/enterprise architecture; 3+ years building LLM/AI solutions at scale.
+Deep knowledge of LLM patterns: RAG, fine-tuning/adapter strategies, function/tool calling, structured output, evaluation, caching.
+Strong platform background: API design, microservices, IAM/zero-trust, observability, CI/CD, IaC (Terraform), and cost management.
+Data foundations: domain modeling, data lifecycle governance, vector/graph stores, catalog/lineage, feature stores.
+Cloud proficiency (AWS/Azure/GCP) and modern data/AI stacks (e.g., Python, Typescript, Docker/K8s, message brokers).
+Proven ability to drive standards across many teams; excellent facilitation and storytelling skills.
+Experience designing and delivering developer education (curriculum design, hands-on labs, code reviews, certification rubrics, and outcome-based evaluation).
+
+Nice to Have
+
+Experience standing up internal AI platforms or Centers of Excellence.
+Background in large, distributed orgs and regulated data environments.
+Familiarity with Microsoft Copilot/M365 extensibility and citizen-developer governance.
+
+
+Apply to Compass Group today!
+
+Click here to Learn More about the Compass Story
+
+
+Compass Group is an equal opportunity employer. At Compass, we are committed to treating all Applicants and Associates fairly based on their abilities, achievements, and experience without regard to race, national origin, sex, age, disability, veteran status, sexual orientation, gender identity, or any other classification protected by law.
+
+Qualified candidates must be able to perform the essential functions of this position satisfactorily with or without a reasonable accommodation. Disclaimer: this job post is not necessarily an exhaustive list of all essential responsibilities, skills, tasks, or requirements associated with this position. While this is intended to be an accurate reflection of the position posted, the Company reserves the right to modify or change the essential functions of the job based on business necessity. We will consider for employment all qualified applicants, including those with a criminal history (including relevant driving history), in a manner consistent with all applicable federal, state, and local laws, including the City of Los Angeles’ Fair Chance Initiative for Hiring Ordinance, the San Francisco Fair Chance Ordinance, and the New York Fair Chance Act. We encourage applicants with a criminal history (and driving history) to apply.
+
+
+Compass Corporate maintains a drug-free workplace.
+
+
+Applications are accepted on an ongoing basis.
+
+
+Associates at Corporate are offered many fantastic benefits.
+
+Medical
+Dental
+Vision
+Life Insurance/ AD
+Disability Insurance
+Retirement Plan
+Paid Time Off
+Paid Parental Leave
+Holiday Time Off (varies by site/state)
+Personal Leave
+Associate Shopping Program
+Health and Wellness Programs
+Discount Marketplace
+Identity Theft Protection
+Pet Insurance
+Commuter Benefits
+Employee Assistance Program
+Flexible Spending Accounts (FSAs)
+
+
+Associates may also be eligible for paid and/or unpaid time off benefits in accordance with applicable federal, state, and local laws. For positions in Washington State, Maryland, or to be performed Remotely, click here for paid time off benefits information.
+
+
+Req ID: 1466642
+
+Compass Corporate
+
+Bankston B Williams
+
+[[req_classification]]"
+GTV,https://indeed.com/rc/clk?jk=340da2c8b3b9704e&bb=sIsukX9ySCAbu6lMMfbSut1dD1IZ8ihTzsstU5RxHtliBXQ9kByEVjlGCcnrKEg2pZW5gILwKwlSFu0v3kKntTfnnW78nWn2azPbQlqlNVn2HU6y5RqQCflbyJZ_skvBrJ3EVozj0ZeBOzAJzEaAuwPBTbyngzoY&xkcb=SoDo67M3sAj-PxwpWp0CbzkdCdPP&fccid=6346f58e673dea6d&vjs=3,,,95,"Software Engineer, ML Infra","$225,000 - $275,000 a year - Full-time","GTV
+1.5
+1.5 out of 5 stars
+San Francisco, CA","Benefits
+Pulled from the full job description
+Health insurance
+Vision insurance
+Dental insurance
+&nbsp;","About Unit
+
+Unit is an AI video company. We’re building GTV, a consumer product that combines creativity and automation to deliver a next-generation video experience. Our team includes senior people from Instagram, TikTok, and NVIDIA. We’re based in San Francisco and backed by Khosla Ventures, Air Street Capital, and other leaders in AI.
+
+Role Overview
+
+We're looking for an experienced ML Infra Software Engineer to join the GTV team. You'll work closely with researchers and engineers to build our core ML systems, including training and serving generative models, orchestrating real-time data pipelines, enabling reinforcement learning at scale, and more. This role is for someone who loves building high-performance ML infra and wants to reimagine the future of media.
+
+Responsibilities
+
+Design and develop scalable ML systems that power the creative engine behind GTV
+
+Partner with researchers and engineers to turn new model/product ideas into production-ready workflows
+
+Build robust pipelines for real-time data collection, labeling, and feedback
+
+Drive reliability and efficiency of distributed systems with automated testing, performance benchmarking, and end-to-end observability
+
+Requirements
+
+5+ years of software engineering experience and proficiency in Python
+
+Industry experience designing and operating large-scale distributed systems for ML training and serving
+
+Deep understanding of multi-node training, reinforcement learning, large-scale data processing, and real-time feedback loops
+
+Proven ability to debug complex systems, navigate ambiguity, and take ownership of challenging problems
+
+Excellent communication and collaboration with cross-functional teams (research, engineering, and design)
+
+Nice To Have
+
+Prior work experience at early-stage or high-growth startups
+
+Familiarity with video generation, evaluation, and labeling
+
+Background in generative AI and infra for consumer-facing products
+
+Compensation
+
+$225-$275 base salary
+
+Competitive equity grant
+
+Top-tier benefits (medical, dental, and vision)
+
+Daily dinner stipend
+
+Relocation support
+
+Compensation Range: $225K - $275K"
+Broadway Infotech,https://indeed.com/rc/clk?jk=ae150ac0b50b8edb&bb=BigBrAOJUwow1wIIaJ5r6tSw3O1N96H3Ni8KUhUp_q5_Y5odXnrY7AWy7C6CYv8fhPIRKNgzkf1gbFyNsZP-r93kaSM52rJcWY7paRZD8ZEaETlgO8Gn13m6cXMaF52clEk3BEGgCjOZdydF6W11Fz8h8TZ8K7RI&xkcb=SoAN67M3sAlfiYA5Yz0FbzkdCdPP&fccid=dcd7afbdb1cd9b8b&cmp=Broadway-Infotech&ti=Computer+Scientist&vjs=3,,,95,Generative AI and Computer Vision Research Scientist,$45 - $55 an hour - Full-time,"Broadway Infotech
+Remote",,"Role: Airtable expert
+
+Location: Open for Remote (NYC/Phoenix)
+
+Job Description
+
+Skillset: Airtable (https://www.airtable.com/)
+
+Secondary: Gen AI
+
+Key Responsibilities
+
+Design and structure Airtable bases, tables, and relationships for scalable solutions.
+Develop formulas, rollups, lookups, and advanced field logic to support workflows.
+Configure and optimize views (grid, Kanban, calendar, gallery, timeline) for different teams.
+Build and maintain Airtable Automations (triggers, actions, notifications).
+Integrate Airtable with third-party tools (Zapier, Make, APIs, Slack, Google Workspace, etc.).
+Create custom dashboards and user-friendly apps using Airtable Interface Designer.
+Write scripts (JavaScript) in Airtable for advanced automation and customization.
+Manage user permissions, access controls, and collaboration workflows.
+Train and support team members on Airtable best practices.
+Optimize existing Airtable systems for speed, reliability, and scalability.
+
+Job Type: Full-time
+
+Pay: $45.00 - $55.00 per hour
+
+Work Location: Remote"
+Digitals AI Inc,https://indeed.com/rc/clk?jk=ed204b55955a85d3&bb=k0avuPeuGNVr83DkjEnMRI1val2jyMmUAokqN-rbF6VK1Oa2x0tf9RmNgXxI8E9CIA2y6SNSTHGoIor14qmt14Gi6Fz1DUn1CPoIn7nnUw4EvNCQTZkdMlcC1TjHEQyvKT4a72Fs5p606bCn4duX9atxNjzdg3Rr&xkcb=SoAD67M3sAjfvLANj70FbzkdCdPP&fccid=23511dfc14638959&vjs=3,,,90,GEN AI Transformation Consultant,Contract,"Digitals AI Inc
+Oregon",,"We are seeking a GenAI Transformation Consultant to help lead and support internal AI initiatives focused on GenAI adoption and innovation for a Grant Thornton client company.
+This role would work closely with the current engagement team to deliver results for the client.
+Client is generating a list of GenAI use cases tailored to team needs.
+The GenAI Transformation Consultant will lead client internal initiatives to strategically integrate generative AI across workflows, leveraging existing platforms like Google Gemini, Adobe Firefly, and Agentforce while exploring emerging tools such as Typeface, Writer, and Gamma.
+This role involves identifying high-impact use cases, designing and prototyping AI agents (e.g., for briefing automation, narrative writing, and content generation), and guiding implementation through playbooks, training, and governance.
+The consultant will also define success metrics, monitor performance, and continuously surface new opportunities to drive innovation and operational efficiency.
+The client sponsor is part of the marketing business function, specifically in marketing campaign execution and strategy.
+This role would help to scope and implement one or more of these use cases (or suggest other feasible use cases based on client need)
+Briefing automation (input/output agents)
+Narrative writing agents
+Deck builder agents
+Researcher agents
+Content generation agents
+
+Project Deliverables:
+
+Prototype AI Agents
+Functional prototypes or mockups of selected GenAI agents
+Example: A deck builder agent that auto-generates slides from a brief
+Example: A researcher agent that summarizes competitive intel
+External Tool Evaluation Matrix
+Comparative analysis of external GenAI platforms (e.g. Typeface, Writer, Gamma)
+Scoring based on relevance, scalability, integration ease, and ROI
+Recommendations for pilot programs or vendor engagement
+Training & Enablement Materials
+Internal documentation and tutorials for team adoption
+Live workshops or recorded walkthroughs of GenAI tools and agents
+Performance Metrics & Reporting Framework
+KPIs to measure GenAI impact (e.g. time saved, quality improvement)
+Dashboards or templates for ongoing tracking and optimization
+Innovation Pipeline
+Ongoing ideation sessions and feedback loops
+Recurring innovation briefs highlighting new GenAI opportunities
+
+Requirements
+
+Lead and support internal GenAI transformation projects from ideation to implementation
+Assess current capabilities and identify high-impact use cases using existing tools (Google Gemini, Adobe Firefly, Salesforce Agent force)
+Explore and evaluate external GenAI platforms for future adoption (e.g. Typeface, Writer, Gamma)
+Collaborate with cross-functional teams to scope and prototype AI agents for: Briefing process automation (inputs/outputs), Narrative writing and storytelling, Presentation and deck generation, Research synthesis and summarization, Content creation and optimization
+Develop strategic recommendations and roadmaps for GenAI integration
+Stay ahead of GenAI trends, tools, and best practices
+
+Qualifications:
+
+Proven, RECENT experience in GenAI transformation consulting or AI implementation at a large enterprise
+Deep familiarity with GenAI platforms and tools, especially Google Gemini, Adobe Firefly, and Agent force
+Strong understanding of emerging GenAI solutions and their enterprise applications
+Prior experience deploying GenAI agents for marketing, research, or content workflows
+Ability to translate business needs into scalable AI use cases
+Familiarity with prompt engineering, LLM fine-tuning, and agent orchestration
+Excellent communication and stakeholder management skills
+Strategic mindset with a passion for innovation and experimentation
+Experience working in agile, cross-functional environments"
+Bright Uro,https://indeed.com/rc/clk?jk=e323dd9b4dda9dc3&bb=flJm5ToM5WNyM3jz1G7a7Rj5-QZtXiF03GTKH0sd36hKcDsRLwtkGTm0jQrOG_sP8BPkg7hEXU24NYmqgEE4HSFYw3vpaq_kkqTCUh3MOBBsqNo3xooIZGGPp-38mNlCIBDqRpuFWOYGZfsD9KA5vnshaSII-7wZ&xkcb=SoBU67M3sAktqL3qS50NbzkdCdPP&fccid=e6d7cdfa0435d6b5&vjs=3,,,90,Software Engineer (Local Candidates Only),"$100,000 - $130,000 a year - Full-time","Bright Uro
+3 Goddard, Irvine, CA 92618",,"About Bright Uro:
+
+Bright Uro is a fast-growing medical device startup headquartered in Irvine, CA. Our mission is to improve the lives of millions affected by lower urinary tract symptoms (LUTS) by developing cutting-edge diagnostic technology that combines advanced hardware, intuitive software, and powerful data analytics – making it easier for clinicians to gain actionable insights while delivering a better patient experience. Our passion lies in advancing urologic care through innovation and building a collaborative, dynamic team to bring transformative solutions to life.
+
+About the Role:
+
+The Software Engineer is an individual contributor in a small team. They will have a key part in delivering robust software platforms that support Bright Uro's wireless sensing systems for urology. Their code advances feasibility into reliable, scalable solutions while ensuring alignment with regulatory, clinical, and cross-functional needs. The engineer will help implement solutions across the software lifecycle, enabling innovative products that improve patient care.
+
+We're looking for talented, motivated coders who want to build a career in our company, especially if you've worked for startups before. This is a local role, working 5 days per week in-person at our Irvine, CA office.
+
+Duties and Responsibilities:
+
+Implement mobile, web and cloud backend software
+Build and evolve reliable, secure, and scalable services (REST/GraphQL/microservices)
+Deploy and operate services; we use AWS/Azure using Docker/Kubernetes
+Integrate and evaluate ML models
+Contribute to the development of testing strategies (Unit/Integration) and Design Verification protocols to verify software/firmware functionality; support QA debugging and verification
+Collaborate with cross-functional teams, including hardware engineers, systems engineers, quality, regulatory affairs, manufacturing, and PMO, to ensure seamless device integration
+Maintain thorough design documentation, traceability matrices, and SDLC artifacts for regulatory submissions.
+Determine automation needs for lab testing and implement software to facilitate testing and test data management
+Document decisions and build reusable components, templates, and patterns
+Participate in and foster a culture of innovation, continuous improvement, and knowledge sharing within the R&D team
+
+Tech KnowledgeRequirements:
+
+Significant coding experience in at least one of: Python, Java, C#, Go, or C++
+Sound knowledge of object-oriented and API principles, testing and coding guidelines
+Significant project experience with databases and data storage
+Significant project experience with distributed communications strategy such as HTTP, messaging, or RPC.
+Understanding of machine learning models and AI assisted development
+
+Skills/Background Requirements:
+
+Excellent verbal and written communication skills
+Strong organizational, multitasking, and documentation skills, with a high level of attention to detail and a proactive approach to problem-solving
+High personal/professional integrity, trustworthiness, strong work ethic, and ability to work independently
+Ability to work in a dynamic and collaborative environment and maintain a results-oriented, positive, “can-do” attitude and ability to work well under pressure
+Bachelor's or higher in Computer Science. Related degrees such as Electrical Engineering, Computer Engineering, Software Engineering etc will be considered with strong understanding of CS principles
+2+ years of experience in software development with an emphasis on coding; Master's degree may substitute for one year of experience
+
+Nice to Have:
+
+Angular/Dart or Flutter/Dart development
+Full-stack development
+Work experience at a startup or similar early-stage company
+Medical device development experience; this is a highly-regulated industry and if you're not used to the pace and red tape of getting devices approved, there will be a learning curve
+Microservice-based architecture design and development of full-stack applications in an FDA-regulated environment or other regulated industry
+IaC: Terraform
+Bluetooth development
+Firmware development"
+DOT Compliance Group L.L.C.,https://indeed.com/rc/clk?jk=e6225017f39498a1&bb=TYxSXyurfkFWXAsWjJOLxkGpGMtK05kV3pb4wnm0YcwqvsW7eiGtCq-lFNyLYtswS8PV5Ch-uMAMuy8qrwVsaHQvamMRob52rblwYaLAG0AvAPgAO5DmmNkyejuYlETnGuyR-TaiVIE%3D&xkcb=SoCk67M3sAl1EIACJ70KbzkdCdPP&fccid=97e0962c0e6f79bb&cmp=DOT-Compliance-Group-L.L.C.&ti=Data+Science+Manager&vjs=3,,,90,Data Science and Analytics Manager,"$120,000 - $165,000 a year - Full-time","DOT Compliance Group L.L.C.
+4.4
+4.4 out of 5 stars
+Bedford, TX 76022
+Hybrid work","Benefits
+Pulled from the full job description
+401(k)
+Health insurance
+401(k) matching
+Paid time off
+Vision insurance
+Dental insurance
+&nbsp;","Are you passionate about leveraging data and AI to drive business innovation? DOT Compliance Group is seeking a Data Science & Analytics Manager to lead our data strategy and analytics initiatives, supporting our mission to deliver cutting-edge compliance solutions for the transportation industry.
+
+What You’ll Do:
+
+Lead the development and execution of a company-wide Data & AI strategy, including predictive modeling and intelligent automation.
+Build and maintain cloud-native data infrastructure and ETL pipelines using platforms such as Snowflake, Databricks, and Mulesoft.
+Apply advanced statistical and machine learning techniques to uncover insights, optimize operations, and enhance product capabilities.
+Define and enforce data governance standards and quality controls.
+Collaborate with cross-functional teams to deliver customized reporting, dashboards, and actionable insights.
+Manage relationships with third-party data vendors and analytics platforms.
+Support the development of KPIs and performance metrics for internal teams and customer-facing products.
+Stay current on industry trends, AI technologies, and compliance requirements relevant to DOT-regulated environments.
+
+What You Bring:
+
+Bachelor’s degree in data science, statistics, computer science, business analytics, or a related field (Master’s preferred).
+5+ years of experience in data science, analytics, or data engineering roles.
+Demonstrated ownership of enterprise Data & AI strategy from vision to measurable business impact.
+Strong proficiency in SQL, Python, R, and machine learning libraries.
+Experience with data visualization platforms (Power BI, Tableau, Looker).
+Deep experience with cloud-native architecture and modern data platforms (Snowflake, Databricks, Mulesoft), MLOps, and LLM applications (RAG, prompt engineering, eval, guardrails).
+Proven ability to manage third-party vendors and external data partnerships.
+Strategic mindset with the ability to translate data into actionable insights and intelligent automation.
+Excellent analytical thinking, problem-solving, and communication skills.
+Knowledge of compliance-related data (DOT or similar regulatory frameworks) is a plus.
+
+Why Join DOT Compliance Group?
+
+We’re a fast-growing compliance solutions provider helping independent truckers and small fleets stay on the road and in compliance. You’ll be part of a mission-driven team that values innovation, customer empathy, and continuous improvement.
+
+Ready to make an impact? Apply today and help us drive the future of compliance through data and AI!
+
+Job Type: Full-time
+
+Pay: $120,000.00 - $165,000.00 per year
+
+Benefits:
+
+401(k)
+401(k) matching
+Dental insurance
+Health insurance
+Paid time off
+Vision insurance
+
+Experience:
+
+data science, analytics, or data engineering: 5 years (Required)
+
+Ability to Commute:
+
+Bedford, TX 76022 (Required)
+
+Work Location: Hybrid remote in Bedford, TX 76022"
+Latitude AI,https://indeed.com/rc/clk?jk=1ed026df6b7984d5&bb=SEbpJ5UdSRXCQyXwQcCNDxPEOH888rQHIXHKt8iYq5zeVnctjb034Crpl3Ayfclt4A5-2AU_U9lgP7UkQLYXtu49-1ImaWYWuWY7g15i21rZt02gIQKdKef4Ulk6X2j2O47x1M2aX3bWbKNB-07M9w%3D%3D&xkcb=SoA667M3sAmKmbAlOj0KbzkdCdPP&fccid=0094ba88a49d3226&vjs=3,,,90,"Senior Software Engineer, Machine Learning (Offboard Models)","$174,000 - $261,000 a year - Full-time","Latitude AI
+Palo Alto, CA
+Remote","Benefits
+Pulled from the full job description
+Professional development assistance
+Pet insurance
+Paid parental leave
+Parental leave
+Health insurance
+401(k) matching
+Vision insurance
+Show more
+&nbsp;","Latitude AI (lat.ai) develops automated driving technologies, including L3, for Ford vehicles at scale. We're driven by the opportunity to reimagine what it's like to drive and make travel safer, less stressful, and more enjoyable for everyone.
+
+When you join the Latitude team, you'll work alongside leading experts across machine learning and robotics, cloud platforms, mapping, sensors and compute systems, test operations, systems and safety engineering – all dedicated to making a real, positive impact on the driving experience for millions of people.
+
+As a Ford Motor Company subsidiary, we operate independently to develop automated driving technology at the speed of a technology startup. Latitude is headquartered in Pittsburgh with engineering centers in Dearborn, Mich., and Palo Alto, Calif.
+
+Meet the team:
+
+The Offboard Models team is a group of highly skilled and experienced professionals who specialize in cutting-edge computer vision and machine learning technology. Together, we collaborate to create auto-labeling and data augmentation solutions for autonomy consumers including perception and mapping.
+
+On the auto-labeling front, the primary focus is on developing multi-view, multi-sensor deep learning models capable of leveraging the maximal sensing suite on our development and consumer vehicles to perform a wide range of tasks such as 3D object detection, lane line detection and scene segmentation.
+
+What you'll do:
+
+Develop auto-labeling and/or data augmentation solutions for addressing the data diversity and/or annotation needs for onboard perception
+Read literature, analyze raw data, and design state-of-the-art solutions
+Collaborate with perception experts and experienced roboticists on algorithm design, prototyping, testing, cloud deployment, and productization
+Develop clean and efficient software for auto-labeling and/or data augmentation modules interfacing with consumer modules such as perception and resimulation
+Build and maintain industry-leading software practices and principles
+Show initiative and be a valued team member in a fast-paced, innovative, and entrepreneurial environment
+
+What you'll need to succeed:
+
+Bachelor's degree in Computer Engineering, Computer Science, Electrical Engineering, Robotics or a related field and 4+ years of relevant experience (or Master's degree and 2+ years of relevant experience, or PhD)
+Strong knowledge and experience (4+ years) in machine learning, with a proven track record of developing and deploying deep learning solutions using PyTorch, Tensorflow, or similar frameworks
+Experience in developing perception systems using sensors such as camera, LiDAR, and RADAR
+Experience in developing object detection, lane detection, or semantic segmentation models
+At least 4 years of development experience in Python/C++ environments
+
+Nice to have:
+
+Experience developing transformer models, diffusion models, or vision language models (VLM)
+
+What we offer you:
+
+Competitive compensation packages
+High-quality individual and family medical, dental, and vision insurance
+Health savings account with available employer match
+Employer-matched 401(k) retirement plan with immediate vesting
+Employer-paid group term life insurance and the option to elect voluntary life insurance
+Paid parental leave
+Paid medical leave
+Unlimited vacation
+15 paid holidays
+Daily lunches, snacks, and beverages available in all office locations
+Pre-tax spending accounts for healthcare and dependent care expenses
+Pre-tax commuter benefits
+Monthly wellness stipend
+Adoption/Surrogacy support program
+Backup child and elder care program
+Professional development reimbursement
+Employee assistance program
+Discounted programs that include legal services, identity theft protection, pet insurance, and more
+Company and team bonding outlets: employee resource groups, quarterly team activity stipend, and wellness initiatives
+
+Learn more about Latitude's team, mission and career opportunities at lat.ai!
+
+The expected base salary range for this full-time position in California is $174,000 - $261,000 USD. Actual starting pay will be based on job-related factors, including exact work location, experience, relevant training and education, and skill level. Latitude employees are also eligible to participate in Latitude's annual bonus programs, equity compensation, and generous Company benefits program, subject to eligibility requirements.
+
+Candidates for positions with Latitude AI must be legally authorized to work in the United States on a permanent basis. Verification of employment eligibility will be required at the time of hire. Visa sponsorship is available for this position.
+
+We are an Equal Opportunity Employer committed to a culturally diverse workforce. All qualified applicants will receive consideration for employment without regard to race, religion, color, age, sex, national origin, sexual orientation, gender identity, disability status or protected veteran status."
+ClinDCast LLC,https://indeed.com/rc/clk?jk=311b244f0a93713f&bb=l8CkDvH6DGjRM0dFl_UYhOtkAcMXkCiROU4VatdEZWjc7LEGR-45AnOXKy3PUo9OgE0DEij_3QVRCjdsXVF92LPlVafEjzpCaYE3kfx7LMVdx-Esa45ayFSLSxNxHAPFJQgcl0-752U%3D&xkcb=SoCV67M3sAhkSFyC650JbzkdCdPP&fccid=7c1160c7a30bc202&vjs=3,,,85,Lead Data Architect,$65 - $70 an hour - Full-time,"ClinDCast LLC
+Remote",,"Lead Data Architect (Healthcare) – Remote
+
+We are looking for a Lead Data Architect with 15+ years of experience, including 4+ years in healthcare, to design scalable data architectures, ensure regulatory compliance, and drive data initiatives. The role involves collaborating with stakeholders, implementing governance frameworks, and leveraging emerging technologies.
+
+Candidates must have expertise in Azure (VMs, Databricks, Kubernetes), cloud platforms (AWS/GCP), databases (Snowflake, Synapse, Cosmos DB), AI/ML (TensorFlow, GPT, Llama2), and data integration tools (Informatica, Mulesoft, Apache NiFi). Experience with CI/CD, DevOps, and healthcare interoperability (FHIR, HL7) is preferred.
+
+Certifications: TOGAF, AWS/Azure/GCP Solutions Architect, CDMP, Cloud Data Architect, Snowflake Architect.
+
+Remote with some travel
+
+Apply now!
+
+
+This is a remote position."
+Adaptable Intelligence,https://indeed.com/rc/clk?jk=dd5c652e9751f131&bb=NiAFVPcpctxyIbMdlFWd1RwWznwc2Tfs9tcmcoxwipEYs1kn6HjvbeWNtIm1y9l8soDb4MvoJvuIAravjeXWzxGq2off6SLLGa0B82i-XQVTrwkcKDpGLSoFXyz4o1C1t_eOp4mCQGcjEDzGsksoxCe8ysrh1t-H&xkcb=SoCY67M3sAiTLMACJ70LbzkdCdPP&fccid=253744f1f22d8adf&vjs=3,,,85,Inference Engineer,Full-time,"Adaptable Intelligence
+San Francisco, CA",,"We are building Adaptive Intelligence. We believe the future is adaptive, and not one-size-fits-all. We will lead in real-time efficient adaptation that combines algorithm with innovative interface design. We are a global team in both SF and around the world with the best talent in AI innovation. We're backed by top-tier investors and ready to scale our impact.
+
+The Role
+
+We’re looking for an Inference Engineer who thrives in zero-to-one environments and enjoys owning the full lifecycle of LLM inference design and implementation. You’ll work closely with the founding engineering team to set up the core inference systems that will power our product, including deployment pipelines, model serving, observability, and cloud infrastructure for large language models.
+
+You should be comfortable wearing multiple hats, making pragmatic technical decisions, and laying down scalable, secure foundations for future growth of our LLM inference capabilities.
+
+Responsibilities
+
+Build from zero to one: Design and implement our entire LLM inference infrastructure, making critical architectural decisions for scalability and performance
+
+Own the inference stack: Deploy, optimize, and maintain high-throughput, low-latency inference systems serving millions of requests
+
+Framework expertise: Leverage frameworks like vLLM, SGLang, or similar to maximize inference efficiency and cost-effectiveness
+
+Performance optimization: Fine-tune model serving configurations, implement batching strategies, and optimize GPU utilization
+
+Infrastructure scaling: Design auto-scaling systems that can handle variable traffic patterns while controlling costs
+
+Monitoring & reliability: Build comprehensive observability into our inference pipeline with proper alerting and incident response
+
+Cross-functional collaboration: Work closely with our ML and product teams to understand requirements and deliver optimal serving solutions
+
+Qualifications
+
+Proven 0 1 experience: You've previously built LLM inference systems from scratch in a production environment
+
+Framework proficiency: Hands-on experience with modern inference frameworks (vLLM, SGLang, TensorRT-LLM, or similar)
+
+Infrastructure expertise: Strong background in distributed systems, containerization (Docker/Kubernetes), and cloud platforms (AWS/GCP/Azure)
+
+Performance mindset: Experience optimizing inference latency, throughput, and cost at scale
+
+Production experience: You've deployed and maintained ML systems serving real users in production
+
+
+Nice to have
+
+Experience in a fast-paced startup environment
+
+Contributions to open-source inference tools and frameworks
+
+Experience with model quantization, pruning, or other optimization techniques
+
+Knowledge of CUDA programming and GPU optimization
+
+Experience serving multi-modal models (vision, audio, etc.)
+
+
+What We Offer
+
+Competitive salary + meaningful equity
+
+Budget for learning, development, and certifications
+
+Opportunity to define and own foundational inference systems and services"
+Prospect Infosystem,https://indeed.com/rc/clk?jk=5ef2a80a53ebdecc&bb=Fjt1GK7B079dl5f6m0hwYJqFNnrTxomqWVgw1tessjRncvlnLyO9pJPT33BWJOLM-ZZ-kSOr1mjpr9c3lkbWyKo8xJesaAdSJyOcJKz17rrGb4pZ41rpDW5CINfTJN2sxBdYWSWP6s4C6kgIWDTLL05FwbWClSIo&xkcb=SoBQ67M3sAklyzA5Yz0BbzkdCdPP&fccid=e1f2da869a2d456f&cmp=Prospect-Infosystem&ti=Ai+Architect&vjs=3,,,85,AI Data Architect,From $80 an hour - Contract,"Prospect Infosystem
+Denver, CO 80206
+Hybrid work",,"Job Title: AI Data Architect
+
+Location: Denver CO
+
+Duration: 6 Months
+
+Rate: $80/hr. on 1099
+
+Key Responsibilities:
+
+Use Case Identification & Assessment: Conduct thorough assessments of potential AI use cases, considering their feasibility, impact, and associated risks.
+Solution Review & Architecture: Evaluate the technical soundness of AI project proposals, focusing on architecture, security, privacy, data quality, model performance, and scalability. Advise on design to ensure scalable and secure data architectures to support AI/ML workloads, ensuring data quality, availability, and compliance.
+Risk Management & Mitigation: Assess the potential impact of AI projects. Identify and mitigate risks associated with AI projects, including data privacy concerns, algorithmic bias, and potential misuse of AI.
+Collaboration: Foster strong relationships with cross-functional teams, including agency and OIT teams. Provide guidance and support on technical and ethical considerations and assist with strengthening procedure and operationalizing AI considerations.
+Technology Evaluation & Selection: Stay abreast of the latest AI technologies and trends, evaluating their suitability for specific use cases and recommending appropriate solutions.
+Documentation: Prepare clear and concise technical reports summarizing the findings of project reviews as well as outline trends in use cases and surface considerations around opportunities for future use.
+
+Required Skills and Experience:
+
+Communication and interpersonal skills, with the ability to translate complex technical concepts to diverse audiences on cross-functional teams
+Technical background in AI and machine learning, including deep knowledge of AI/ML tools and models (e.g. Google Vertex, AWS Kendra, Snowflake Cortex, AWS SageMaker, Google AI Studio), cloud computing (i.e., AWS, GCP), big data technologies (i.e., Snowflake, Redshift, BigQuery), and data architecture principles.
+Experience with AI and data architecture and management.
+Knowledge of responsible AI principles and ethical considerations.
+Senior analytical and problem-solving skills.
+
+Additional Desired Skills and Experience:
+
+NIST AI Framework training or certification
+
+Job Type: Contract
+
+Pay: $80.00 per hour
+
+Expected hours: 37.5 per week
+
+Work Location: Hybrid remote in Denver, CO 80206"
+AgeRight,https://indeed.com/rc/clk?jk=3f7b0e13c1e69f40&bb=wHn2qKe6S2aHvpBPyyyVcxGn_3s8rRp-5f6X2XfY2WIYrqLrdQ_KiDI_4jiSPn1RCuSZzMBjI-3D1VUgFbZ5YUfEjN8ZWoXYUsPGOoBOvs3rTESZdt26BF1NXnFrxeAQq70llKGeMzrJxefonHaMkg%3D%3D&xkcb=SoDu67M3sAl0_ZSEAJ0BbzkdCdPP&fccid=2687fdf9672266cd&vjs=3,,,85,Data Engineer,Full-time,"AgeRight
+5.0
+5.0 out of 5 stars
+Milwaukie, OR 97222",,"Overview:
+Data Engineer
+
+
+JOIN AN OUTSTANDING TEAM!
+
+This is a Portland, OR based position and requires in-office work.
+
+What’s your wish list for the perfect job? Maybe it’s to make a positive impact in the world, or to grow your career in healthcare. Maybe working with a supportive team is top priority, or to feel respected and valued.
+Age Right Care Management Solutions is at the forefront of revolutionizing population health management through cutting-edge technology. Our mission is to enhance health outcomes, improve care coordination, and drive efficiencies in healthcare systems across all settings.
+
+
+As the Data Engineer, you will play a critical role in expanding, optimizing, and maintaining our data architecture and data pipelines across the enterprise. This position is responsible for ensuring efficient data flow, collection, organization, and integration from both internal and external sources. The Data Engineer will support software developers, database architects, analysts, and business teams by providing scalable infrastructure that enables accurate, timely, and accessible data while collaborating analysts, developers and business stakeholders.
+
+This is a Portland, OR based position and requires in-office work.
+
+Job Responsibilities:
+
+Data Pipeline Development & Optimization:
+Design, develop, and maintain data pipelines to move and transform data from diverse sources (databases, APIs, logs, files) into storage and analytical systems.
+Implement robust ETL/ELT processes to clean, normalize, and enrich data for downstream consumption.
+Continuously optimize pipeline performance for speed, reliability, and scalability.
+Data Integration & APIs:
+Design, build, and maintain system integrations to connect internal and external data sources.
+Develop and manage APIs for secure and reliable data exchange across platforms.
+Implement real-time or near-real-time data synchronization where required.
+Data Storage, Modeling & Transformation:
+Select appropriate storage solutions (relational, NoSQL, cloud warehouses) based on business and performance needs.
+Design and implement transformation logic to structure raw data into usable formats for reporting and analysis.
+Develop and maintain data models and schemas that align with business requirements.
+Data Quality, Security & Compliance:
+Establish and enforce processes for data validation, cleansing, and quality checks.
+Monitor and resolve data anomalies, discrepancies, or pipeline errors.
+Ensure compliance with regulations (e.g., HIPAA, GDPR) and implement security best practices (encryption, access controls).
+Qualifications:
+3+ years of experience building and optimizing data pipelines, architectures, and large-scale datasets.
+Strong SQL skills and experience with relational databases; familiarity with NoSQL and cloud-native data stores preferred.
+Hands-on experience with Azure data technologies (Data Factory, Logic Apps, Data Lake, Azure SQL/SQL Data Warehouse).
+Proficiency in API development and integration (REST, GraphQL, JSON, XML).
+Experience with ETL/ELT orchestration tools (e.g., Airflow, dbt, Informatica, Talend, MuleSoft).
+Salesforce experience preferred but not required.
+EEO Statement:
+
+“Be here. Be you.”
+For more than 30 years, Marquis Companies and Consonus Healthcare have been serving seniors and welcoming staff of all backgrounds, skills, and perspectives. The Marquis family of companies offer a rich heritage of embracing differences and honoring individuality. We’ve continued to grow in our appreciation of diversity in the workplace. We know it builds strength, drives innovation, and brings valuable new perspectives and energy.
+
+We’re committed to making our workforce an even greater reflection of the people and communities we serve, and we are honored our employees have chosen to work at Marquis and Consonus. Everything we do as a company is driven by our mission to help those we serve, and each other, live the best rest of our lives.
+
+That means you being you – without apology or compromise. We value your every uniqueness and continue to curate, nurture, and sustain an inclusive culture. It’s the foundation of who we are and the evolution of our collective future."
+Jobs For You,https://indeed.com/rc/clk?jk=6287c370d03a9579&bb=lS56oi2rMOYOnoh46oFBRL-1MURbJBrnQV8cV3I4k6rUtBaZXa_uwHkprYy1YEk-Hc0CIbwhTU2MMVNGe8DPRL5DkseogeM9lLVx4jOw0QYLFhvgf5uTqFVrKO40ZU6SoiA1bI-bst9huIaAwijjfQ%3D%3D&xkcb=SoBi67M3sAhtyaSSsJ0CbzkdCdPP&fccid=164bf95d90c36280&cmp=Jobs-For-You&ti=Data+Analyst&vjs=3,,,80,Data Analyst - Humacao,"From $50,000 a year - Full-time","Jobs For You
+Humacao Municipio, PR",,"Data Analyst - Humacao, PR
+
+Lunes a Viernes
+8:00am a 5:00pm
+
+Responsabilidades
+
+Analizar datos de producción, calidad e inventario para identificar tendencias y áreas de mejora.
+Desarrollar y mantener informes y paneles de rendimiento de producción utilizando herramientas como Excel, Power BI o Tableau.
+Colaborar con los equipos de ingeniería, operaciones y calidad para comprender las necesidades de generación de informes y proporcionar información precisa.
+Garantizar la integridad y la coherencia de los datos en todos los sistemas e informes.
+Automatizar los procesos de recopilación de datos y generación de informes siempre que sea posible.
+Apoyar el análisis de causa raíz y las iniciativas de mejora continua con información basada en datos.
+
+Requisitos:
+
+Bachillerato en Análisis de Datos, Ingeniería Industrial, Estadística o un campo relacionado.
+Más de 2 años de experiencia en análisis de datos, preferiblemente en un entorno de fabricas.
+Dominio de herramientas de visualización de datos (p. ej., Power BI, Tableau) y Excel.
+Sólido conocimiento de los procesos de manufactura y KPI’s.
+Excelentes habilidades analíticas, de resolución de problemas y de comunicación.
+Capacidad para trabajar de forma independiente y colaborativa en un entorno dinámico.
+Experiencia con el sistema SAP.
+Conocimiento de los principios de Lean Manufacturing o Six Sigma.
+
+Job Type: Full-time
+
+Pay: $50,000.00 per year
+
+Work Location: In person"
+Curology,https://indeed.com/rc/clk?jk=aa0ed6de898b4007&bb=dQ3hy6yW28KaADP5ikv1CaR95n0ER6Nk8CD2F3emJ42IaeWC9xtKl8jX3Ltsz2WjrALkGqfzawM-bZRgfxxRDxxCTkagVjoyQRKnq3qpX831uwTUPmqPr14rqOZKJ-INeY7MqiOoT7IAPck0d6puP9ymEqyjJcZR&xkcb=SoCd67M3sAhx-3XqZJ0KbzkdCdPP&fccid=544af407da89bfb9&vjs=3,,,80,"VP, Product - AI + Mobile Experience","$250,000 - $300,000 a year","Curology
+3.7
+3.7 out of 5 stars
+Remote","Benefits
+Pulled from the full job description
+Paid parental leave
+Parental leave
+401(k)
+Health insurance
+Vision insurance
+Dental insurance
+Flexible spending account
+Show more
+&nbsp;","The Opportunity: Lead Aira—Curology’s AI-Powered Care Platform
+
+We’re entering a new era of care at Curology—one that combines the empathy of human providers with the power of machine intelligence. We call it Aira: our next-generation AI care platform and mobile experience, built to transform how patients access, engage with, and benefit from expert skin care.
+
+We’re looking for a visionary and execution-oriented VP of Product to lead Aira from its current foundation to scale. You’ll shape our mobile-first patient experience, drive intelligent automation across our care model, and partner deeply with Engineering, Data Science, Clinical, and Design teams to bring to life the most ambitious product we’ve ever built.
+
+This is not a traditional product leadership role. It’s an opportunity to redefine care.
+
+Set the Vision & Strategy
+Own and evolve the product strategy for Aira—our AI and mobile care platform—grounded in our mission and rooted in deep understanding of patient, provider, and business needs.
+Translate Curology’s strategic bets into scalable, consumer-grade mobile and AI-first experiences.
+Define and track KPIs that measure success in patient experience, cost-to-serve, clinical quality, and engagement.
+Build AI Into the Heart of the Experience
+Drive seamless human-AI collaboration in how we intake, triage, counsel, and treat patients—leveraging LLMs and intelligent automation.
+Partner with our Head of Data and ML to design feedback loops and ensure models are rigorously evaluated and continuously improved.
+Champion safety, trust, and medical rigor as first principles in every AI-enabled interaction.
+Own the Mobile App Experience
+Lead the product roadmap and execution for Curology’s mobile app—our primary patient touchpoint and home for care.
+Ensure intuitive, high-performance, and emotionally resonant design in collaboration with UX and brand teams.
+Drive retention, activation, and conversion through a differentiated and delightful experience.
+Partner, Inspire, and Execute
+Lead a team of high-caliber PMs while working shoulder-to-shoulder with Engineering, Data, Design, and Clinical partners.
+Work closely with our CEO, Head of Engineering & Data, and CPO/CMO to shape Curology’s future of care.
+Thrive in ambiguity and prioritize relentlessly across short-term delivery and long-term innovation.
+
+Requirements
+
+10+ years of product leadership experience, with 5+ in consumer mobile and/or AI-native platforms.
+Proven success leading 0 1 and 1
+n product development in a highly cross-functional setting.
+Deep empathy for users and a strong sense of product intuition—balanced by data and experimentation.
+Familiarity with AI/ML technologies and an understanding of how to productize them safely and effectively.
+Exceptional communicator and stakeholder manager who brings clarity and conviction.
+Mission-driven, ambitious, and energized by building the future of care.
+Ability to thrive in a fast-paced, dynamic environment.
+
+Benefits
+
+You Will Love Working At Curology Because:
+
+
+
+Competitive salary and equity packages
+Comprehensive benefits: medical, dental, and vision insurance for employees; flexible spending account; 401k; mental health & wellness programs
+Minimum Time Off policy (unlimited PTO, with at least 3 weeks off) for exempt employees
+11 company observed holidays
+Additional holidays: Curology days off (1 per quarter), 1 annual floating holiday (employee’s choice), and Gratitude Week (employees take the full week of Thanksgiving off; business critical teams observe different days)
+Paid parental leave
+pre-tax commuter benefits
+Employee donation matching program
+Company-sponsored events
+Free subscription to Curology or Agency (for you and another VIP of your choice!)
+
+Salary Range: $275-300k (placement in range dependent on location and experience)
+
+Curology encourages applications from people of all races, religions, national origins, genders, sexual orientations, gender identities, gender expressions, and ages, as well as veterans and individuals with disabilities. Pursuant to the San Francisco Fair Chance Ordinance, we will consider qualified applicants with arrest and conviction records Notice to Applicants under the CCPA."
+AbbVie,https://indeed.com/rc/clk?jk=e50810a534010360&bb=sIsukX9ySCAbu6lMMfbSuiFVbeOdk2AOHp6ddKel6n8XCjeGbjVglWcZngzy_AE-Xtvsq9l6lAaWu6UFmEha6e7Djk6KwvQ5QEszpW0d39vno_WuvBc9mQZg_MuC4iJOYNNkipxzjLE5YkkA7QVVDBaVYFsmq4Tg&xkcb=SoCm67M3sAj-PxwpWp0IbzkdCdPP&fccid=a3b51ece17c02aae&vjs=3,,,80,"Engineer, Technology I",Full-time,"AbbVie
+3.8
+3.8 out of 5 stars
+North Chicago, IL","Benefits
 Pulled from the full job description
 401(k)
 Health insurance
 Paid time off
-&nbsp;","Description
+Vision insurance
+Dental insurance
+Paid holidays
+&nbsp;","Company Description
 
-At BrightView, the best teams are created and maintained here. If you are searching for your next fulfilling career, picture yourself on a best-in-class team where you can grow to be your brightest. We’re looking for a Senior Data Analyst. Can you picture yourself here?
 
-Here’s what you’d do:
+AbbVie's mission is to discover and deliver innovative medicines and solutions that solve serious health issues today and address the medical challenges of tomorrow. We strive to have a remarkable impact on people's lives across several key therapeutic areas – immunology, oncology, neuroscience, and eye care – and products and services in our Allergan Aesthetics portfolio. For more information about AbbVie, please visit us at www.abbvie.com. Follow @abbvie on X, Facebook, Instagram, YouTube, LinkedIn and Tik Tok.
 
-The Senior Data Analyst leads high-impact analytics initiatives and helps shape data-driven decision making across the organization. This role partners with stakeholders to define business needs, build scalable analytical solutions, and mentor junior analysts while championing best practices in data and reporting.
 
-You’d be responsible for
+Job Description
 
-Lead end-to-end analytics projects, including requirement gathering, scoping, data preparation, visualization, maintenance, and ongoing enhancement of dashboards and reports.
-Manage data from multiple sources, including Salesforce, Azure Service Fabric, JDE, and Workday, to create integrated views and ensure data integrity and consistency.
-Serve as a bridge between business teams and technical teams, ensuring analytics solutions are actionable and aligned to organizational priorities.
-Identify opportunities for automation, efficiency, and process improvements across reporting and analytics workflows.
-Identify new or underserved areas of the business and develop analytical solutions to close the gaps.
-Promote adoption of dashboards and reporting solutions by developing documentation, delivering training, and demonstrating the value of analytics.
-Contribute to data strategy by championing data quality, governance, and scalable practices.
-Mentor junior analysts on tools, methods, best practices, and business communication.
 
-You might be a good fit if you have:
+AbbVie's EPIC team is dedicated to building and scaling cutting-edge technology products for internal use, enhancing productivity and innovation. Our Generative AI workstream is looking for a versatile software engineer who can develop robust applications and platforms with both backend and frontend capabilities.
 
-Bachelor’s degree in a business, technical, or related field
-5+ years of relevant experience, including 1–2 years in a senior or lead capacity.
-Advanced skills in Power BI (data modeling, DAX, visualization design)
-Proficiency in SQL, Python, Alteryx, and Microsoft Excel
-Experience with Fabric, Azure Service Fabric, and OneLake is preferred.
-Strong analytical and problem-solving skills, with the ability to tell compelling stories with data and provide actionable recommendations.
-Experience working with enterprise data platforms (e.g., Azure, Snowflake, Redshift, Databricks) and integrating multiple systems.
-Solid understanding of data management, governance, quality, and information security practices
-Proven ability to influence cross-functional stakeholders, foster strong partnerships, and drive change with urgency.
-Exceptional attention to detail and appreciation for the relationships among process, data, and business outcomes
-Ability to work both independently and collaboratively.
+Responsibilities
 
-Here’s what to know about working here:
+Deliver clean, scalable, well-optimized code in both Python (backend) and React (frontend)
 
-Here at BrightView, we’re as passionate about caring for our clients as we are about caring for each other. Though we’re the nation’s leading landscape company, we maintain a small company feel and supportive environment that makes our team members feel at home.
+Design and implement modular, maintainable Generative AI applications and platforms
 
-If you’re looking to join a team of talented go-getters who tackle big vision projects other companies could only dream of, you just might have found your match. With our range of services, including landscape design, development, maintenance and enhancements, there’s no limit to what we can do, and what you can achieve.
+Work with experts to determine optimal system architecture and technology choices
 
-Growing Everyday
+Develop comprehensive test suites and handle edge cases across the full stack
 
-Like the communities we serve, you are on a constant path of discovery to shape your career and personal development. In addition to best-in-class opportunities and competitive salary, you may be eligible for benefits and perks like:
+Integrate and optimize various Generative AI models and tools into user-friendly applications
 
+Build intuitive, responsive user interfaces that effectively leverage AI capabilities
+
+Support multiple projects while maintaining high code quality and documentation standards
+
+Balance technical considerations including security, performance, and cost-effectiveness
+
+Learn and adapt to emerging technologies in the rapidly evolving AI landscape
+
+
+Qualifications
+
+
+Bachelor's Degree in Computer Science or related field and 4+ years of experience (or Master's and 2+ years)
+
+Strong Python skills with experience building backend services and data pipelines
+
+Proficient in React (JavaScript/TypeScript) development with modern frontend practices
+
+Understanding of software engineering fundamentals including data structures, algorithms, and system design
+
+Experience with Generative AI technologies, API integration, or model deployment (preferred)
+
+Knowledge of cloud services, containerization, and CI/CD practices
+
+Demonstrated ability to balance multiple priorities and deliver quality work on schedule
+
+Strong communication skills and experience collaborating in cross-functional teams
+
+
+Additional Information
+
+
+Applicable only to applicants applying to a position in any location with pay disclosure requirements under state or local law:
+
+The compensation range described below is the range of possible base pay compensation that the Company believes in good faith it will pay for this role at the time of this posting based on the job grade for this position. Individual compensation paid within this range will depend on many factors including geographic location, and we may ultimately pay more or less than the posted range. This range may be modified in the future.
+
+We offer a comprehensive package of benefits including paid time off (vacation, holidays, sick), medical/dental/vision insurance and 401(k) to eligible employees.
+
+This job is eligible to participate in our short-term incentive programs.
+
+This job is eligible to participate in our long-term incentive programs
+
+Note: No amount of pay is considered to be wages or compensation until such amount is earned, vested, and determinable. The amount and availability of any bonus, commission, incentive, benefits, or any other form of compensation and benefits that are allocable to a particular employee remains in the Company's sole and absolute discretion unless and until paid and may be modified at the Company’s sole and absolute discretion, consistent with applicable law.
+
+AbbVie is an equal opportunity employer and is committed to operating with integrity, driving innovation, transforming lives and serving our community. Equal Opportunity Employer/Veterans/Disabled.
+
+US & Puerto Rico only - to learn more, visit https://www.abbvie.com/join-us/equal-employment-opportunity-employer.html
+
+US & Puerto Rico applicants seeking a reasonable accommodation, click here to learn more:
+
+https://www.abbvie.com/join-us/reasonable-accommodations.html"
+Articul8,https://indeed.com/rc/clk?jk=ae2635399379fddb&bb=VoqfG6ad0LHubsdQTLl_2uWgpthOBDm1eSove_oINLQCMMokwg5hTBhwxTxkmGp7CnVwgFFlIR0rpJDqK7kss-ZcOhvy-ERBJIx2Y6KYmoQ776hm0Pd1zPoUEX3k1P_IWnk6HsbJOnrSgjlDuUbz5MykdOlaGNLC&xkcb=SoAy67M3sAknhswpSp0BbzkdCdPP&fccid=b8cfa40ee7aec0f0&vjs=3,,,80,Industries Solutions Architect - Manufacturing & Industrial,Full-time,"Articul8
+Dublin, CA",,"About Articul8 AI
+
+At Articul8, we build enterprise-grade Generative AI solutions that help global organizations unlock new value from their data. Our platform is trusted by some of the world's most innovative companies, and we partner closely with customers to design, deploy, and scale AI solutions that deliver measurable impact.
+
+As a fast-moving startup, we move with urgency and focus. Every team member has real ownership, and the work you do here directly shapes our platform and our customers' success. If you thrive in an environment where innovation happens daily and impact is visible, Articul8 is the place to do the best work of your career.
+
+Role Overview
+
+The Manufacturing & Industrial Solutions Architect at Articul8 will play a critical role in partnering with leading manufacturing companies to design, implement, and optimize scalable, flexible, and resilient cloud architectures. This senior technical role will merge deep manufacturing and industrial domain expertise, cloud architecture proficiency, and customer success engagement to deliver measurable business impact. The role includes guiding the product roadmap by driving feedback and market insights into solution strategy and product development in complex enterprise environments.
+
+Key Responsibilities
+
+Design and deploy scalable architectures for manufacturing use cases including industrial operations that include SCADA/HMI, EDA, IoT, Machine Learning, AI, and advanced analytics.
+
+Lead technical workshops, prototype solutions, and oversee platform deployment and optimization.
+
+Collaborate with product and engineering teams to incorporate customer feedback into the product roadmap.
+
+Advise customers on Articul8 product adoption strategies with a focus on differentiating capability, security, cost, and operational efficiency.
+
+Architect and tune Kubernetes-based and containerized infrastructure leveraging cloud platforms (AWS, Azure, GCP, or on-premises) to ensure infrastructure excellence.
+
+Develop reusable solution templates and document best practices.
+
+Partner with sales and business development to drive cloud adoption and align solutions with industry trends.
+
+Continuously monitor and improve deployed solutions for performance and scalability.
+
+Communicate technical concepts clearly to diverse audiences and advocate for customer needs internally.
+
+Stay current with emerging manufacturing and cloud technologies to inform strategy and ability to support other industry verticals when required.
+
+Required Qualifications
+
+10+ years of experience in solution architecture, technical implementation, or enterprise software delivery, including significant engagement with executive and technical leadership.
+
+Strong expertise in cloud platforms, Kubernetes orchestration, containerization, microservices architecture, and modern programming languages (e.g., Python, Node.js, Go).
+
+Deep understanding of manufacturing industry specific challenges, IT/OT convergence, and digital transformation.
+
+Experience with enterprise integration patterns, RESTful APIs, GraphQL, and data engineering.
+
+Proven ability to build effective prototypes, demos, and production-grade deployments.
+
+Exceptional communication skills, capable of articulating complex technical concepts clearly across business and engineering audiences.
+
+Expertise in generative AI building blocks and at least one specialization in AI/ML pipelines, API design, data engineering, vector/graph databases, or AI model orchestration.
+
+Willingness and ability to travel for customer workshops, deployments, and support as necessary.
+
+Our Culture Matters
+
+At Articul8, culture isn't just words — it's how we show up for each other and our customers:
+
+Practice humility – Listen first, respect all voices, and recognize that great solutions are built together.
+
+Bias for outcomes – Focus on impact, not just effort; deliver meaningful results that matter to our customers.
+
+Care deeply – About customers, teammates, and the quality of our deliverables. Act as Customer 0 for our products and tools.
+
+Dare to do the impossible & embrace scarcity – Push boundaries with creativity and resourcefulness.
+
+Build a better world – Use our technology and platform to create solutions that benefit not just enterprises, but society at large.
+
+What We Offer
+
+Joining Articul8 means stepping into a startup environment where every contribution matters and outcomes move the company forward. It's an ""all in"" culture — not about long hours, but about shared commitment, ownership, and impact.
+
+The opportunity to architect and implement cutting-edge Generative AI for leading global enterprises.
+
+A culture of curiosity and technical excellence, where you'll continuously learn and grow.
+
+High ownership of solutions — your work goes live, impacts customers directly, and informs the product roadmap.
+
+A collaborative team that values diversity, inclusion, and creativity, supporting both personal and professional development.
+
+Equity and ownership opportunities in a category-defining company.
+
+The chance to build reference architectures and deployments that will shape enterprise AI adoption at scale.
+
+If you're ready to join a team that's moving fast, thinking big, and helping customers succeed with Generative AI from initial vision through production deployment, we'd love to hear from you."
+United Wholesale Mortgage,https://indeed.com/rc/clk?jk=2315ef92c50bcb9d&bb=1NwdSM9h_mPtjK05OHi4_Zl01vUGQGsI-CqhnqA6YsjaJrzGC9di8ajpm2tJZRL-Y4xGcqqE6BK6pQrqO9_9iHYawrV-ToUIi7aKELbzkpzmK5LdN1YYNWz4yNDEPv88-pVdnpZ5DAA8-JLGZXjrb2_ZILtpRy5j&xkcb=SoDV67M3sAiujdXqZB0JbzkdCdPP&fccid=99e4f26dc71309cf&vjs=3,,,75,"Team Lead, Product Development - Docs AI",Full-time,"United Wholesale Mortgage
+2.8
+2.8 out of 5 stars
+585 South Boulevard East, Pontiac, MI 48341","Benefits
+Pulled from the full job description
+Paid training
+Parental leave
+Health insurance
+401(k) matching
 Paid time off
-Health and wellness coverage
-401k savings plan
+Vision insurance
+Dental insurance
+Show more
+&nbsp;",":
+At UWM we want the best people. We work with you to ensure your role is tailored to best suit you. You will play a key role in expanding our fast growing application development team. We have experienced explosive growth as an emerging leader in the Financial Industry, and are looking for team leads who will lead our growth going forward.
 
-Start Your Bright New Career Journey
+As a Lead at UWM you will work in a fast paced, results driven environment and be responsible mentoring and growing a cross functional team of developers, BAs, and QAs who will work to build a highly scalable enterprise application. Your team will be a highly talented group comprised of talented developers that are working on many of our exciting projects to continue our phenomenal growth and dominance of the wholesale mortgage market.
 
+We are looking for a highly motivated and passionate innovator to join our machine learning team. A successful candidate will bring a mix of real-world experience, vision and the ability to execute on that vision.
+WHAT YOU WILL BE DOING:
+You are responsible for the productivity of your team
+Promote best practices and patterns
+Facilitate communication between team members to ensure the success of your team
+Mentor and lead developers, BAs, and QAs
+Foster learning on your team
+Suggest new processes and document reoccurring processes that will help streamline software development.
+Leads the design, construction, and implementation phases of system or project upgrades.
+Cultivate leadership on your team
+Facilitate collaboration on your team, and among our other technical discipline leads
+Foster adoption and adherence to our Agile software methodology
+Drive to keep projects on track
+Keep senior leaders well informed during the project life cycle
+Participate in interviews
+WHAT WE NEED FROM YOU:
+Required:
+Computer-related degree or equivalent work experience
+Ability to communicate with strong technical skills
+A minimum of 5 years’ experience with software project management
+Strong analytical problem solving skills
+Experience with customer management (setting expectations, relationship management)
+Ability to work with limited guidance in a team environment
+Experience with team member management
+Full software life-cycle experience
+Exemplary communication abilities
+Ability to mentor developers
+Excellent organizational skills
+Preferred:
+Knowledge of Machine Learning Concepts
+Experience with database design
+Experience in the mortgage industry
+Experience with TFS and SVN
+Experience in an Agile environment
+Experience unit testing
+Knowledge of SOLID principles
+THE PLACE & THE PERKS:
+Ready to join thousands of talented team members who are making the dream of home ownership possible for more Americans? It’s all happening on UWM’s campus, where our award-winning workplace packs plenty of perks and amenities that keep the atmosphere buzzing with energy and excitement.
 
-BrightView is an Equal Employment Opportunity and E-Verify Employer."
-Spectrum Brands,https://indeed.com/rc/clk?jk=2b906c4a8190a706&bb=3vatToUgIM_aTLbXM64aDHvw4zRdCUAUg4dd4IYsd965QMd62GY2YwafOB32DwePGyXmYZDSxGlkmh7nvJDO5FuSRe6cd39vAhtQaKLq3M3pmoToIz0uIyiKxMoLeA12wzzCKd7qhus0xEjjau_1eA%3D%3D&xkcb=SoCZ67M3t-L-o3SREh0LbzkdCdPP&fccid=1bd3f60bf0d815c3&vjs=3,,,60,Global MDM Data Analyst,Full-time,"Spectrum Brands
-3.5
-3.5 out of 5 stars
-Earth City, MO
-Hybrid work",,"Division Information
-
-
-Spectrum Brands’ global enabling functions, including Finance, Legal, IT, Human Resources, Supply Chain, and Commercial Operations, provide enterprise-wide strategy, structure, and common processes to deliver the knowledge and expertise that helps our businesses grow. Enabling functions may operate as a center-led global team, providing a central strategy, structure, and standards; or as business partner teams, with resources embedded within the businesses to deliver business unit-specific results.
-
-
-Job Summary
-
-
-The Global MDM (Master Data Management) Data Analyst will be responsible for supporting our implementation of SAP S4/HANA and other MDM transformation efforts to develop globally harmonized data standards and improve business processes to ensure we maintain ‘one data source of truth’ and robust data governance. While ownership lives within the respective business functions, this position will support efforts to sustain data governance on an ongoing basis.
-
-
-Primary Duties & Responsibilities
-
-
-The Global MDM Data Analyst is responsible for supporting, monitoring, and analyzing master data within the organization. Responsible for developing reporting solutions to help improve decisions for the organization, design and produce user-friendly intelligence reporting, business metrics, reports, dashboards, and data solutions.
-
-Support implementation of S4/HANA and MDG by validating multiple variations of Pre-load and Post-load reports; including Material Master Data, Classification Data, and List of Value (LOV) tables.
-Support MDM Team in building out best practice approach to manage reporting and analytics.
-Ensure data integrity by performing routine monthly audits to check for completeness, conformity, and consistency.
-Develop and document processes with support of Domain Leaders to create business processes.
-Assist in the creation of Data Cleansing files for the business owners.
-Update Cleansing Tracker weekly to ensure forward progress in Cleansing initiatives.
-Administer MDM dashboards and data visualization within the PowerBI tool.
-Collaborate with MDM Leads to maintain content within MDM SharePoint Library.
-
-
-Education and Experience Profile
-
-
-Bachelor’s degree in Business, Finance, Operations, Data Science, or relevant disciplines required
-3 or more years of experience in Master Data Management or equivalent required
-2 or more years of experience with Visual Analytics tools (Power BI) preferred
-2 or more years of experience in supporting SAP Implementation strongly preferred
-Role not eligible for sponsorship
-
-Required Skills
-
-Excellent communication skills, both verbal and written
-Effective project planning and resource coordination experience
-Excellent documentation skills required
-Must be comfortable interacting with management of all levels
-Able to participate in project work as both a SME and performer
-Microsoft Office expertise, especially with Excel and Pivot Tables
-Strong multi-tasking and time management skills
-Ability to develop & maintain strong relationships with cross-functional groups
-Experience working with data sets from multiple sources
-Extreme attention to detail
-English proficiency
-Ability to operate in a changing environment and respond positively to change
+It’s no wonder that out of our six pillars, People Are Our Greatest Asset is number one. It’s at the very heart of how we treat each other, our clients and our community. Whether it’s providing elite client service or continuously striving to improve, our pillars provide a pathway to a more successful personal and professional life.
 
 
-Work Environment
+From the team member that holds a door open to the one that helps guide your career, you’ll feel the encouragement and support on day one. No matter your race, creed, gender, age, sexual orientation and ethnicity, you’ll be welcomed here. Accepted here. And empowered to Be You Here.
 
 
-Working conditions are normal for an office environment.
+More reasons you’ll love working here include:
+Paid Time Off (PTO) after just 30 days
+Additional parental and maternity leave benefits after 12 months
+Adoption reimbursement program
+Paid volunteer hours
+Paid training and career development
+Medical, dental, vision and life insurance
+401k with employer match
+Mortgage discount and area business discounts
+Free membership to our large, state-of-the-art fitness center, including exercise classes such as yoga and Zumba, various sports leagues and a full-size basketball court
+Wellness area, including an in-house primary-care physician’s office, full-time massage therapist and hair salon
+Gourmet cafeteria featuring homemade breakfast and lunch
+Convenience store featuring healthy grab-and-go snacks
+In-house Starbucks and Dunkin
+Indoor/outdoor café with Wi-Fi
+DISCLAIMER: All the above duties and responsibilities are essential job functions subject to reasonable accommodation and change. All job requirements listed indicate the minimum level of knowledge, skills and/or ability deemed necessary to perform the job proficiently. Team members may be required to perform other or different job-related duties as requested by their team lead, subject to reasonable accommodation. This document does not create an employment contract, implied or otherwise. Employment with UWM is ""at-will."" UWM is an Equal Opportunity Employer. By selecting “Apply for this job online” you provide consent to UWM to record phone call conversations between you and UWM to be used for quality control purposes."
+Organon,https://indeed.com/rc/clk?jk=6743f02797a8f854&bb=ybatt02piL2XVzqYv34KmMKPKMI8XrI6iUBE7DCL9JvJ7lfmeHcY54RF0p0gx-T2uYsPOrx7YYE3KEO43F2CHfeXAhUTVDjIiGYT0uqsZ0mhoaQ-jiTA43X905JSzlqX2UlwRnRILpI2MOraroKmAb-IuwLcCChC&xkcb=SoDs67M3sAjVvySC650GbzkdCdPP&fccid=3b5522176c21a60c&vjs=3,,,75,"Associate Director, Engineering, Development and Integration","$125,400 - $213,100 a year - Full-time","Organon
+4.0
+4.0 out of 5 stars
+Plymouth Meeting, PA","Benefits
+Pulled from the full job description
+Flextime
+Parental leave
+Health insurance
+Retirement plan
+Vision insurance
+Dental insurance
+Paid holidays
+&nbsp;","The Position
 
-The above information on this description has been designed to indicate the general nature and level of work performed by employees within this job/classification. It is not designed to contain or be interpreted as a comprehensive inventory of all duties, responsibilities, and qualifications required of employees assigned to this job.
+Organon is seeking a Team Product Owner for its Field Engagement product area, who will lead product development and support operations teams for US market. This position is essential for ensuring operational efficiency and effective coordination across various teams. Organon welcomes and embraces your individuality! This individual is passionate about technology and one who possesses a strong subset or combination of the requirements listed below.
 
-Spectrum Brands is an Equal Employment Opportunity/Affirmative Action employer.
+Reporting to the Customer Engagement Value Team, Commercial System Architect, Team Product Owner is responsible for managing Field Engagement operations team and leading product development in building digital marketing solutions for Organon’s commercial sales and marketing group. This role is the primary point of contact for US Field Engagement solution development and operations support. As a Veeva CRM and Field Engagement technology platform expert, this resource will be partnering directly with In-market technology leads, US commercial Ops leads, Product managers, Managed Service support groups and other members of the technology organization to maintain the smooth operations and keep the delivery predictability of the team to deliver business value.
 
-#LI-SA1
+Responsibilities
 
-#LI-Hybrid
+Serve as the point of contact for all Field Engagement platforms Architecture and support for US market.
+
+Lead Veeva CRM development and support activities for the US Sales and Marketing Operations team.
+
+Support US call center – Customization and integration of Salesforce Service cloud.
+
+Manage DevOps team of four to five developers, testers and business analysts following SAFe Agile practices.
+
+Actively participate and develop solution architecture for the Field Engagement solutions.
+
+Manage all stages of product development including sprint planning, system and user testing as well as product release management.
+
+Translate business requirements into technology solutions by effectively communicating the technical possibilities and constraints to stakeholders.
+
+Meet SLAs for platform support including, but not limited to, Veeva CRM, Veeva Nitro, Veeva Align and other integration services.
+
+Develop and Own Quality metrics for the release deliverables.
+
+Participate in quarterly Program Interval (PI) planning and act as the Team product owner for the Field engagement US DevOps team.
+
+Measure product performance as well as value delivered to clients and adjust, where necessary.
+
+Required Education, Experience and Skills
+
+Bachelor’s degree in software engineering, Computer Applications or related discipline.
+
+Ten plus years of relevant work experience with experience in a product support lead/product owner role preferred.
+
+Product certifications - Veeva, Certified SAFe Scrum Master, SAFe Product Owner Certification etc., is a plus.
+
+Must have ten plus years of field systems support experience in life science, sales and marketing functions including knowledge of Market Access.
+
+Strong understanding of complex business problems and the ability to identify and interpret business need into technology solutions.
+
+Demonstrate experience of integrating commercial Field engagement solutions into a sales and marketing ecosystem such as Veeva CRM, Salesforce Service cloud, Market Access Tools and Salesforce Marketing Cloud.
+
+Advanced knowledge of agile development methodologies including SAFe practices.
+
+Demonstrated ability to manage field engagement systems support for large field force (> 500) meeting SLAs.
+
+Strong problem-solving and analytical skills.
+
+Direct and motivate the product development teams.
+
+Experience in use of AI to increase team productivity and operations quality.
+
+Who We Are:
+
+Organon delivers ingenious health solutions that enable people to live their best lives. We are a $6.5 billion global healthcare company focused on making a world of difference for women, their families and the communities they care for. We have an important portfolio and are growing it by investing in the unmet needs of Women’s Health, expanding access to leading biosimilars and touching lives with a diverse and trusted portfolio of health solutions. Our Vision is clear: A better and healthier every day for every woman.
+
+US and PR Residents Only
+
+For more information about personal rights under Equal Employment Opportunity, visit:
+
+EEOC Poster
+
+EEOC GINA Supplement
+
+OFCCP EEO Supplement
+
+OFCCP Pay Transparency Rule
+
+Organon is an Equal Opportunity Employer. We are committed to fostering a culture of inclusion, innovation, and belonging for all employees and job applicants. We ensure all employment practices are conducted without regard to race, color, religion, sex, sexual orientation, age, gender identity or gender expression, national origin, disability, veteran status, or any other characteristic protected by state or federal law.
+
+Search Firm Representatives Please Read Carefully
+Organon LLC., does not accept unsolicited assistance from search firms for employment opportunities. All CVs / resumes submitted by search firms to any employee at our company without a valid written search agreement in place for this position will be deemed the sole property of our company. No fee will be paid in the event a candidate is hired by our company as a result of an agency referral where no pre-existing agreement is in place. Where agency agreements are in place, introductions are position specific. Please, no phone calls or emails.
+
+Applicable to United States Positions Only: Under various U.S. state laws, Organon is required to provide a reasonable estimate of the salary range for this job. Final salary determinations take a number of factors into account including, but not limited to, primary work location, relevant skills, education level, and/or prior work experience. The applicable salary range for this position in the U.S. is stated below. Benefits offered in the U.S. include a retirement savings plan, paid vacation and holiday time, paid caregiver/parental and medical leave, and health benefits including medical, prescription drug, dental, and vision coverage in accordance with the terms and conditions of the applicable plans.
+
+Annualized Salary Range (US)
+
+$125,400.00 - $213,100.00
+
+Please Note: Pay Ranges are Specific to local market and therefore vary from country to country
+
+Employee Status:
+
+Regular
+
+Relocation:
+
+No relocation
+
+VISA Sponsorship:
+
+Yes
+
+Travel Requirements: Organon employees must be able to satisfy all applicable travel and credentialing requirements, including associated vaccination prerequisites.
+
+No Travel Required
+
+Flexible Work Arrangements:
+
+Flex Time, Hybrid
+
+Shift:
+
+Valid Driving License:
+
+Hazardous Material(s):
+
+Number of Openings:
+
+1
 
 
+Requisition ID:R536384"
+Adaptable Intelligence,https://indeed.com/rc/clk?jk=48b1d4e55e52f1f6&bb=4ONHtpHdnCLYdZqKPnS6QrbETj7vhseeQX1Swjp6qZly2oRrs7n5GuOJRb_y7cMA9j5h80EGqOHx-9EDAJkOwCZC4YMiwdejxbGlpYon6Lz0yIh_OTO3h24Pwh19J380ht0hvyHqHvfsgwE5DwmVRRFXZqbgRxjx&xkcb=SoAq67M3sAkrSjgWuT0KbzkdCdPP&fccid=253744f1f22d8adf&vjs=3,,,75,Infrastructure Engineer,Full-time,"Adaptable Intelligence
+San Francisco, CA",,"We are building Adaptive Intelligence. We believe the future is adaptive, and not one-size-fits-all. We will lead in real-time efficient adaptation that combines algorithm with innovative interface design. We are a global team in both SF and around the world with the best talent in AI innovation. We're backed by top-tier investors and ready to scale our impact.
+
+The Role
+
+We’re looking for an Infrastructure Engineer who thrives in zero-to-one environments and enjoys owning the full lifecycle of infrastructure design and implementation. You’ll work closely with the founding engineering team to set up the core infrastructure systems that will power our product, including CI/CD pipelines, container orchestration, observability, and cloud infrastructure.
+
+You should be comfortable wearing multiple hats, making pragmatic technical decisions, and laying down scalable, secure foundations for future growth.
+
+Responsibilities
+
+Design, build, and own the cloud infrastructure from scratch (0 1), with a focus on scalability, reliability, and security
+
+Define and implement Infrastructure as Code (IaC) using Terraform (or similar tools)
+
+Set up and manage Kubernetes clusters for service orchestration and deployment
+
+Design, deploy, and manage GPU clusters for AI/ML training and inference workloads
+
+Build CI/CD pipelines to automate deployment and testing
+
+Implement observability best practices (monitoring, logging, alerting)
+
+Collaborate closely with backend and product engineers to define deployment and scaling strategies
+
+Ensure infrastructure cost-efficiency and help set up cost monitoring tools
+
+Define internal best practices for DevOps and platform engineering
+
+Qualifications
+
+5+ years of experience as a Infrastructure / SRE / Platform / DevOps engineer
+
+Experience designing and building cloud-native infrastructure from scratch (preferably in AWS, GCP, or Azure)
+
+Proficient with Kubernetes (EKS, GKE, or self-managed clusters)
+
+Experience setting up and managing GPU resources and clusters for machine learning workloads
+
+Strong hands-on experience with Terraform and Infrastructure as Code best practices
+
+Experience building CI/CD pipelines using tools like GitHub Actions, ArgoCD, CircleCI, or similar
+
+Familiar with monitoring and logging stacks (e.g., Prometheus, Grafana, Datadog, ELK, etc.)
+
+Security-minded and familiar with cloud and container security best practices
+
+Ability to balance ideal solutions with startup pragmatism and speed
 
 
-Job Reference: US19734"
+Nice to have
+
+Experience in a fast-paced startup environment
+
+Knowledge of service mesh technologies (e.g., Istio, Linkerd)
+
+Experience with serverless infrastructure or hybrid architectures
+
+Contributions to open-source infrastructure tools
+
+
+What We Offer
+
+Competitive salary + meaningful equity
+
+Budget for learning, development, and certifications
+
+Opportunity to define and own foundational infrastructure decisions"
+G Associates LLC,https://indeed.com/rc/clk?jk=e8047389116afc44&bb=WTTO2EeeLq2fXtnWq8Rwp3t1vtCWZqydRN3-3N62wVrOJJ3eRaSCATn1eao3j_0-RWlmGmgqB1TsL7MCWg2ACPXpLOphEYxw35LlsS5ZpGBtC1sxVebkU_zq7ORTdf9zBviym2H7B6EpdDZixujGJw%3D%3D&xkcb=SoDP67M3sAmAyeSSqZ0AbzkdCdPP&fccid=005f9feda00acf03&cmp=Evoke-Technologies-Inc&ti=Data+Warehouse+Engineer&vjs=3,,,75,Data Warehouse Developer (Hybrid Role),Contract,"G Associates LLC
+14449 New York City Highway 30a, Andes, NY 13731
+Hybrid work",,"Title: Data Warehouse Developer
+
+Location: New York City, NY (Hybrid Role)
+
+Length: 30 Months
+
+The duties of the consulting resource
+
+- Provide recommendations, guidance, and actual implementation for new data marts, as well as improving and consolidating existing Data marts.
+
+- Participate and contribute to DW/BI projects throughout the project lifecycle.
+
+- Establish written best practices, procedures and generally provide guidance on DW/DM data model design
+
+- Create and maintain up-to-date documentation for all supported DW/DM, ETL…
+
+- Plan, create, modify, maintain, test and implement code in support of any of the following:
+
+-- Source System extraction processes for the Data Warehouse.
+
+-- ETL processes.
+
+-- BI Dashboards and reports. (R, Python)
+
+- Develop and maintain Spotfire systems (including prediction models written in R, TERR and automation services)
+
+- Automation of source system data extraction processes and data loading of the Data Warehouse.
+
+- Operationalize prediction models
+
+- The consultant will adhere to NYSIF’s application development standards, including, but not limited to, project management methodology, SDLC (software development life cycle), Enterprise Architecture standards and the IT governance process. Support the BI Data Warehouse using TIBCO Spotfire, Information Builders software Data Migrator
+
+84 months Data Modeling experience in designing underwriting, claims
+
+DataMarts, Data warehouse in Insurance industry (Workers’ Compensation
+
+and disability)
+
+84 months experience with developing maintaining predictive systems written R or Python using TIBCO Spotfire/TERR.
+
+84 months experience with TIBCO Spotfire Analyst, Web Player and Business Authors, using Iron Python, R, and Java Scripts
+
+84 months experience in developing, documenting, maintaining end-to-end
+
+ETL data pipeline (Information Builder International “IBI” Data Migrator aka
+
+TIBCO Data Migrator).
+
+84 months experience in Oracle PL/SQL and MS-SQL T-SQL development, including triggers, stored procedures, packages, and advanced query optimization, database design and implementation.
+
+84 months experience in Agile/scrum project management methodology.
+
+60 months experience in automated testing, build and deployment tools (TFS, PowerShell and Visual Build Pro)
+
+84 months experience in development tools, such as: VS Code, Visual Studio Code, Visual Studio, Git, Azure, and TFS
+
+48 month experience in graph database, GDS, neo4j, and cypher
+
+Bachelor’s Degree
+
+Job Type: Contract
+
+Pay: $36.15 - $70.00 per hour
+
+Expected hours: 40 per week
+
+Experience:
+
+Data warehouse: 8 years (Required)
+tibco: 5 years (Required)
+PL/SQL: 5 years (Required)
+Data modeling: 8 years (Required)
+
+Work Location: In person"

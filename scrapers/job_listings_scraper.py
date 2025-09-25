@@ -28,6 +28,7 @@ async def _listing(context, job_page_url):
         # Navigate to jobs page
         try:
             await page.goto(job_page_url, wait_until="load")
+            await asyncio.sleep(random.randint(3,9))
             await helper.handle_terms_cond_btn(page)
         except Exception:
             try:
@@ -38,6 +39,7 @@ async def _listing(context, job_page_url):
                 filename = f"screenshot_{datetime.now()}.png"
                 file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
                 await page.screenshot(path=file_path, full_page=True)
+                await context.close()
 
         # # Before performing critical actions, check internet
         if not await helper.check_internet():
@@ -124,7 +126,7 @@ async def _listing(context, job_page_url):
             try:
                 button_locator = page.locator(f"[data-testid='pagination-page-{pagination_number + 1}']")
                 if await button_locator.is_visible(timeout=10000):
-                    await button_locator.click(timeout=10000)
+                    await button_locator.click(timeout=15000)
                     pagination_number += 1
                 else:
                     filename = f"screenshot_{pagination_number}.png"
