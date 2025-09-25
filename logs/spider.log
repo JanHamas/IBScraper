@@ -1,1130 +1,877 @@
-2025-09-23 21:22:25,769 [INFO] 🚀 Project Acquirer AI started
-2025-09-23 21:22:25,770 [INFO] Created fresh file: output/Easy_applies.csv
-2025-09-23 21:22:25,770 [INFO] Created fresh file: output/Confirmation_applies.csv
-2025-09-23 21:22:25,770 [INFO] ✅ Fresh CSV files created
-2025-09-23 21:22:25,790 [INFO] Trimmed processed jobs file to last 14032 entries
-2025-09-23 21:22:25,791 [INFO] 🧹 Processed jobs file cleaned
-2025-09-23 21:22:25,793 [INFO] Created new folder: debugging_screenshots
-2025-09-23 21:22:25,793 [INFO] 📁 Debugging folder ready
-2025-09-23 21:22:25,793 [INFO] Processing 10 URLs in 1 chunks
-2025-09-23 21:22:25,793 [INFO] Processing chunk 1/1
-2025-09-23 21:22:25,795 [INFO] ✔ Sucessfully 5 indeed accounts load
-2025-09-23 21:22:26,571 [INFO] ✔  Unique fingerprints loaded
-2025-09-23 21:22:26,574 [INFO] Total 10 contexts launched.
-2025-09-23 21:22:28,091 [WARNING] Retry loading page: indeed.com/jobs?q=virtual%20assistant%20remote&l=United%20States&fromage=1&from=searchOnDesktopSerp
-2025-09-23 21:22:28,101 [ERROR] Error in _listing
-Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-09-24 19:24:23,584 [INFO] 🚀 Project Acquirer AI started
+2025-09-24 19:24:23,585 [INFO] Created fresh file: output/Easy_applies.csv
+2025-09-24 19:24:23,585 [INFO] Created fresh file: output/Confirmation_applies.csv
+2025-09-24 19:24:23,585 [INFO] ✅ Fresh CSV files created
+2025-09-24 19:24:23,710 [INFO] Trimmed processed jobs file to last 15000 entries
+2025-09-24 19:24:23,715 [INFO] 🧹 Processed jobs file cleaned
+2025-09-24 19:24:23,720 [INFO] Created new folder: debugging_screenshots
+2025-09-24 19:24:23,720 [INFO] 📁 Debugging folder ready
+2025-09-24 19:24:23,721 [INFO] Processing 20 URLs in 4 chunks
+2025-09-24 19:24:23,722 [INFO] Processing chunk 1/4
+2025-09-24 19:24:23,729 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-24 19:24:24,391 [INFO] ✔  Unique fingerprints loaded
+2025-09-24 19:24:24,393 [INFO] Total 5 contexts launched.
+2025-09-24 19:24:39,285 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:24:39,605 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:24:42,930 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:24:43,014 [INFO] Successfully clicked Accept Terms using real mouse events.
+2025-09-24 19:24:43,216 [INFO] Successfully clicked Accept Terms using real mouse events.
+2025-09-24 19:24:56,835 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=artificial+intelligence&l=United+States&fromage=1
+2025-09-24 19:24:57,943 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1
+2025-09-24 19:25:12,035 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:25:13,701 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:25:19,709 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:25:51,553 [WARNING] Failed to click page 2: Locator.click: Timeout 10000ms exceeded.
 Call log:
-  - navigating to "indeed.com/jobs?q=virtual%20assistant%20remote&l=United%20States&fromage=1&from=searchOnDesktopSerp", waiting until "load"
+  - waiting for locator("[data-testid='pagination-page-2']")
+    - locator resolved to <a aria-label="2" data-testid="pagination-page-2" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=matlab&l=United+States&radius=25&fromage=1&start=10">2</a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="gnav-header-1ugxurz e1nenfmp0"></div> from <span id="m-gnav-header" class="serp-page-u74ql7 eu4oa1w0">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
 
-2025-09-23 21:22:29,969 [WARNING] Retry loading page: indeed.com/jobs?q=sales%20representative&l=Remote&fromage=1&from=searchOnDesktopSerp
-2025-09-23 21:22:29,985 [ERROR] Error in _listing
+2025-09-24 19:25:53,574 [INFO] Collected 5 jobs...
+2025-09-24 19:25:58,660 [INFO] Gemini response: 30 20 90 20
+2025-09-24 19:26:02,762 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:26:14,569 [INFO] Collected 10 jobs...
+2025-09-24 19:26:14,569 [INFO] Processing batch...
+2025-09-24 19:26:15,488 [INFO] Gemini response: 30 30 35 20 40 35 20 30 35 30
+2025-09-24 19:26:15,489 [INFO] Updated processed jobs with 35 new links
+2025-09-24 19:26:15,857 [INFO] Collected 5 jobs...
+2025-09-24 19:26:26,562 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:26:28,211 [INFO] Collected 10 jobs...
+2025-09-24 19:26:28,212 [INFO] Processing batch...
+2025-09-24 19:26:29,625 [INFO] Gemini response: 60 50 55 55 60 60 65 60 60 55
+2025-09-24 19:26:37,127 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 532, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 49, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 748, in _connect_and_send_request
+    await resp.start(conn)
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 527, in start
+    with self._timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:27:19,185 [INFO] Page not loaded after two tries: Page.goto: Timeout 30000ms exceeded.
 Call log:
-  - navigating to "indeed.com/jobs?q=sales%20representative&l=Remote&fromage=1&from=searchOnDesktopSerp", waiting until "load"
+  - navigating to "https://indeed.com/rc/clk?jk=0c53f2e66c85daae&bb=ArTJKOeQX2jPDykXJDBmvNJ6RqNo5Et9WZcD8V5JsLCAhCj5r2qZpKupHkrZJUiTeINx1py-UKii23dNNAK0lycrGBXDdlaN8Zn3hJFr_VW9mACHIcm3xBKIH1sdh63Dj8Rx8GCDu60%3D&xkcb=SoBc67M3t-Lmt5g5Yz0HbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3", waiting until "load"
 
-2025-09-23 21:22:58,061 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=executive%20assistant&l=United%20States&fromage=1&from=searchOnDesktopSerp
-2025-09-23 21:22:58,270 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=work%20from%20home%20virtual%20assistant&l=&fromage=1&from=searchOnDesktopSerp
-2025-09-23 21:22:58,371 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=virtual+assistant&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=695069e54b5a4d9c
-2025-09-23 21:22:58,741 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=office%20assistant&l=Remote&fromage=1&from=searchOnDesktopSerp
-2025-09-23 21:22:58,793 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=sales+manager&l=remote&fromage=1&from=searchOnDesktopSerp&vjk=e036ad217b96f9bd
-2025-09-23 21:22:58,889 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=Salesforce&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=5b54acee015f2fa0
-2025-09-23 21:22:59,384 [ERROR] NotError/found clicking Accept Terms button.
-2025-09-23 21:23:02,059 [ERROR] NotError/found clicking Accept Terms button.
-2025-09-23 21:23:03,616 [INFO] Successfully clicked Accept Terms using real mouse events.
-2025-09-23 21:23:08,587 [ERROR] NotError/found clicking Accept Terms button.
-2025-09-23 21:23:10,261 [ERROR] NotError/found clicking Accept Terms button.
-2025-09-23 21:23:16,256 [ERROR] NotError/found clicking Accept Terms button.
-2025-09-23 21:23:21,740 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_1.png
-2025-09-23 21:23:25,719 [INFO] Gemini response: 55 75 60 75
-2025-09-23 21:23:27,445 [INFO] Collected 5 jobs...
-2025-09-23 21:23:28,085 [ERROR] Error in _listing
+2025-09-24 19:27:19,256 [INFO] ✔ Saved in CSV files.
+2025-09-24 19:27:19,259 [INFO] Updated processed jobs with 16 new links
+2025-09-24 19:27:35,269 [INFO] Benefits missing
+2025-09-24 19:27:35,310 [INFO] Company site apply: Baptist Health Arkansas
+2025-09-24 19:27:42,126 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 87, in start_connection
+    sock, _, _ = await _staggered.staggered_race(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/_staggered.py", line 165, in staggered_race
+    done = await _wait_one(
+           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/_staggered.py", line 46, in _wait_one
+    return await wait_next
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 60, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:27:46,828 [WARNING] Failed to click page 9: Locator.click: Timeout 10000ms exceeded.
 Call log:
-  - navigating to "https://www.indeed.com/jobs?q=executive%20assistant&l=United%20States&fromage=1&from=searchOnDesktopSerp", waiting until "load"
+  - waiting for locator("[data-testid='pagination-page-9']")
+    - locator resolved to <a aria-label="9" data-testid="pagination-page-9" class="serp-page-12x44p7 e71d0lh0" href="/jobs?q=nlp&l=United+States&radius=25&fromage=1&start=80">9</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
 
-2025-09-23 21:23:28,276 [ERROR] Error in _listing
+2025-09-24 19:27:52,448 [INFO] Company site apply: RPM International
+2025-09-24 19:28:07,452 [INFO] Benefits missing
+2025-09-24 19:28:07,489 [INFO] Easy apply: Spectrum Brands
+2025-09-24 19:28:19,469 [INFO] Easy apply: BrightView Landscapes
+2025-09-24 19:28:31,757 [INFO] Company site apply: Safe-Guard Products International LLC
+2025-09-24 19:28:41,220 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=66fc5e28afc884b7&bb=3vatToUgIM_aTLbXM64aDIJ1tiIkfkvFmq5IHoKn6LIBpi_MbDGi3k_kCla8u0mTCWXAgta2xZaRlnHAID2LIJyByIW_6cItLmD2JvLgIs7lXFQCak1rP_m2lvfSCc6r4xeC4yKEJczIm1TnghM6VQ%3D%3D&xkcb=SoAE67M3t-L-o3SREh0IbzkdCdPP&fccid=92c7d708da46e03f&vjs=3
+2025-09-24 19:28:41,226 [INFO] ✔ Saved in CSV files.
+2025-09-24 19:28:41,227 [INFO] Updated processed jobs with 21 new links
+2025-09-24 19:28:41,340 [INFO] Collected 5 jobs...
+2025-09-24 19:28:54,126 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.indeed.com/jobs?q=work%20from%20home%20virtual%20assistant&l=&fromage=1&from=searchOnDesktopSerp", waiting until "load"
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 87, in start_connection
+    sock, _, _ = await _staggered.staggered_race(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/_staggered.py", line 165, in staggered_race
+    done = await _wait_one(
+           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/_staggered.py", line 46, in _wait_one
+    return await wait_next
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
 
-2025-09-23 21:23:28,373 [ERROR] Error in _listing
-Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.indeed.com/jobs?q=virtual+assistant&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=695069e54b5a4d9c", waiting until "load"
+The above exception was the direct cause of the following exception:
 
-2025-09-23 21:23:28,746 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.indeed.com/jobs?q=office%20assistant&l=Remote&fromage=1&from=searchOnDesktopSerp", waiting until "load"
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 60, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:28:54,223 [INFO] Processing chunk 2/4
+2025-09-24 19:28:54,224 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-24 19:28:54,838 [INFO] ✔  Unique fingerprints loaded
+2025-09-24 19:28:54,840 [INFO] Total 5 contexts launched.
+2025-09-24 19:29:05,126 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 532, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
 
-2025-09-23 21:23:28,893 [ERROR] Error in _listing
-Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 33, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.indeed.com/jobs?q=Salesforce&l=United+States&fromage=1&from=searchOnDesktopSerp&vjk=5b54acee015f2fa0", waiting until "load"
+The above exception was the direct cause of the following exception:
 
-2025-09-23 21:23:40,807 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_2.png
-2025-09-23 21:23:41,639 [ERROR] Error in get_match_percentage
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 18.934084744s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 18
-}
-]
-2025-09-23 21:23:41,653 [INFO] Gemini response: None
-2025-09-23 21:23:42,132 [INFO] Easy apply: Reach Beyond Therapy
-2025-09-23 21:23:43,872 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:23:43,907 [INFO] Groq response: 85 95 30
-2025-09-23 21:23:46,999 [INFO] Collected 10 jobs...
-2025-09-23 21:23:46,999 [INFO] Processing batch...
-2025-09-23 21:23:47,705 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 748, in _connect_and_send_request
+    await resp.start(conn)
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 527, in start
+    with self._timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:29:05,133 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 12.742164599s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 12
-}
-]
-2025-09-23 21:23:47,707 [INFO] Gemini response: None
-2025-09-23 21:23:49,770 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:23:49,771 [INFO] Groq response: 30 10 20 15 25 30 20 15 10 15
-2025-09-23 21:23:49,771 [INFO] Updated processed jobs with 19 new links
-2025-09-23 21:23:50,044 [INFO] Collected 5 jobs...
-2025-09-23 21:23:55,628 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4ce2114b133d6587&bb=OxgVF_mNMlzj2tZ9dGgp3s4JsVn0qz_gp6gnzhJw_5tAEyOOTDXTbwj3svSc3AYSrKi3cUUl9Jj9r2SShpivemQ_SnXVHrTe-7WP7qqcoVqgl6CCclzf6jqb0PzGqK7EF_Hpo9-91PYZSXXCKHrdX9u3HeoD2K0HasXB-b2wI1Y%3D&xkcb=SoBQ67M3t7kb3WQH9R0BbzkdCdPP&fccid=992cb92e8a22dd42&vjs=3
-2025-09-23 21:24:06,982 [INFO] Collected 10 jobs...
-2025-09-23 21:24:06,983 [INFO] Processing batch...
-2025-09-23 21:24:07,298 [ERROR] Error in get_match_percentage
-Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 52.759604679s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 52
-}
-]
-2025-09-23 21:24:07,304 [INFO] Gemini response: None
-2025-09-23 21:24:09,208 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:24:09,231 [INFO] Groq response: 30 20 25 40 20 15 10 45 35 25
-2025-09-23 21:24:09,234 [INFO] Updated processed jobs with 16 new links
-2025-09-23 21:24:09,471 [INFO] Collected 5 jobs...
-2025-09-23 21:24:27,789 [INFO] Collected 10 jobs...
-2025-09-23 21:24:27,789 [INFO] Processing batch...
-2025-09-23 21:24:28,493 [ERROR] Error in get_match_percentage
-Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 31.933543351s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 31
-}
-]
-2025-09-23 21:24:28,494 [INFO] Gemini response: None
-2025-09-23 21:24:29,582 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:24:29,584 [INFO] Groq response: 30 25 20 40 60 35 30 20 20 20
-2025-09-23 21:24:53,771 [ERROR] Captcha bypass failed: Page.reload: net::ERR_NETWORK_CHANGED
-Call log:
-  - waiting for navigation until "load"
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 532, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
 
-2025-09-23 21:24:53,872 [ERROR] Captcha bypass failed: Page.reload: net::ERR_NETWORK_CHANGED
-Call log:
-  - waiting for navigation until "load"
+The above exception was the direct cause of the following exception:
 
-2025-09-23 21:24:53,905 [INFO] Page not loaded after two tries: Page.reload: Protocol error (Page.reload): Not attached to an active page
-Call log:
-  - waiting for navigation until "load"
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 748, in _connect_and_send_request
+    await resp.start(conn)
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 527, in start
+    with self._timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:29:05,142 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
 
-2025-09-23 21:24:53,934 [ERROR] Error checking clearance: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-2025-09-23 21:24:53,969 [INFO] ✔ Saved in CSV files.
-2025-09-23 21:24:53,971 [INFO] Updated processed jobs with 15 new links
-2025-09-23 21:24:54,071 [ERROR] Error checking clearance: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-2025-09-23 21:24:54,217 [ERROR] Failed to extract company name
-2025-09-23 21:24:54,312 [ERROR] Failed to extract company name
-2025-09-23 21:24:54,351 [INFO] Page not loaded after two tries: Page.reload: net::ERR_PROXY_CONNECTION_FAILED
-Call log:
-  - waiting for navigation until "load"
+The above exception was the direct cause of the following exception:
 
-2025-09-23 21:24:54,378 [INFO] ✔ Saved in CSV files.
-2025-09-23 21:24:54,379 [INFO] Updated processed jobs with 15 new links
-2025-09-23 21:24:54,412 [INFO] ✔ Saved in CSV files.
-2025-09-23 21:24:54,413 [INFO] Updated processed jobs with 16 new links
-2025-09-23 21:24:54,795 [INFO] Collected 5 jobs...
-2025-09-23 21:24:55,158 [INFO] Collected 10 jobs...
-2025-09-23 21:24:55,158 [INFO] Processing batch...
-2025-09-23 21:26:30,780 [ERROR] Error in get_match_percentage
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 29.699862564s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 29
-}
-]
-2025-09-23 21:26:30,785 [INFO] Gemini response: None
-2025-09-23 21:26:32,859 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:26:33,475 [INFO] Groq response: 30 5 5 5 5 5 5 5 5 5
-2025-09-23 21:26:33,476 [INFO] Updated processed jobs with 11 new links
-2025-09-23 21:26:51,200 [INFO] Collected 5 jobs...
-2025-09-23 21:26:51,413 [INFO] Collected 10 jobs...
-2025-09-23 21:26:51,413 [INFO] Processing batch...
-2025-09-23 21:26:51,715 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:29:30,900 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=python+developer&l=United+States&fromage=1
+2025-09-24 19:29:33,571 [WARNING] Retry loading page: https://www.indeed.com/jobs?q=transformer&l=United+States&fromage=1
+2025-09-24 19:29:47,844 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:29:47,934 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:30:57,924 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:31:08,130 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 8.318951392s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 8
-}
-]
-2025-09-23 21:26:51,720 [INFO] Gemini response: None
-2025-09-23 21:26:53,329 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:26:53,335 [INFO] Groq response: 30 30 20 10 10 5 10 15 25 40
-2025-09-23 21:26:53,336 [INFO] Updated processed jobs with 14 new links
-2025-09-23 21:27:06,609 [INFO] Collected 5 jobs...
-2025-09-23 21:27:06,825 [INFO] Collected 10 jobs...
-2025-09-23 21:27:06,825 [INFO] Processing batch...
-2025-09-23 21:27:07,112 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 49, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 52.923716195s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 52
-}
-]
-2025-09-23 21:27:07,115 [INFO] Gemini response: None
-2025-09-23 21:27:08,024 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:27:08,038 [INFO] Groq response: 30 20 10 25 15 20 40 35 20 25
-2025-09-23 21:27:08,042 [INFO] Updated processed jobs with 19 new links
-2025-09-23 21:27:26,279 [INFO] Collected 5 jobs...
-2025-09-23 21:27:26,407 [INFO] Collected 10 jobs...
-2025-09-23 21:27:26,407 [INFO] Processing batch...
-2025-09-23 21:27:26,719 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:21,058 [ERROR] NotError/found clicking Accept Terms button.
+2025-09-24 19:31:31,127 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 33.332609815s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 33
-}
-]
-2025-09-23 21:27:26,728 [INFO] Gemini response: None
-2025-09-23 21:27:27,946 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:27:27,952 [INFO] Groq response: 30 20 15 25 40 10 20 10 25 45
-2025-09-23 21:27:27,954 [INFO] Updated processed jobs with 15 new links
-2025-09-23 21:27:43,071 [INFO] Collected 5 jobs...
-2025-09-23 21:27:57,965 [INFO] Collected 10 jobs...
-2025-09-23 21:27:57,965 [INFO] Processing batch...
-2025-09-23 21:27:58,252 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 49, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 1.786119499s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 1
-}
-]
-2025-09-23 21:27:58,257 [INFO] Gemini response: None
-2025-09-23 21:27:59,931 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:27:59,933 [INFO] Groq response: 30 20 25 40 10 35 30 30 25 15
-2025-09-23 21:27:59,933 [INFO] Updated processed jobs with 21 new links
-2025-09-23 21:28:00,171 [INFO] Collected 5 jobs...
-2025-09-23 21:28:18,935 [INFO] Collected 10 jobs...
-2025-09-23 21:28:18,935 [INFO] Processing batch...
-2025-09-23 21:28:19,245 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:31,202 [INFO] Processing chunk 3/4
+2025-09-24 19:31:31,203 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-24 19:31:31,833 [INFO] ✔  Unique fingerprints loaded
+2025-09-24 19:31:31,835 [INFO] Total 5 contexts launched.
+2025-09-24 19:31:42,127 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 40.801809286s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 40
-}
-]
-2025-09-23 21:28:19,255 [INFO] Gemini response: None
-2025-09-23 21:28:20,467 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:28:20,478 [INFO] Groq response: 30 40 25 20 20 15 10 25 20 35
-2025-09-23 21:28:20,480 [INFO] Updated processed jobs with 28 new links
-2025-09-23 21:28:35,395 [INFO] Collected 5 jobs...
-2025-09-23 21:28:53,788 [INFO] Collected 10 jobs...
-2025-09-23 21:28:53,788 [INFO] Processing batch...
-2025-09-23 21:28:54,079 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 5.953318139s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 5
-}
-]
-2025-09-23 21:28:54,084 [INFO] Gemini response: None
-2025-09-23 21:28:55,042 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:28:55,498 [INFO] Groq response: 30 20 15 40 25 10 15 20 15 20
-2025-09-23 21:28:55,499 [INFO] Updated processed jobs with 23 new links
-2025-09-23 21:28:55,656 [INFO] Collected 5 jobs...
-2025-09-23 21:29:15,031 [INFO] Collected 10 jobs...
-2025-09-23 21:29:15,031 [INFO] Processing batch...
-2025-09-23 21:29:15,674 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:42,136 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 44.71624087s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 44
-}
-]
-2025-09-23 21:29:15,686 [INFO] Gemini response: None
-2025-09-23 21:29:21,824 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:29:21,828 [INFO] Groq response: 45 30 80 25 20 15 25 20 70 85
-2025-09-23 21:29:47,983 [INFO] Easy apply: HealthArc
-2025-09-23 21:30:18,718 [INFO] Easy apply: The Nielsen Company
-2025-09-23 21:30:27,588 [INFO] Salary missing
-2025-09-23 21:30:27,696 [INFO] Easy apply: Amplitude
-2025-09-23 21:30:27,724 [INFO] ✔ Saved in CSV files.
-2025-09-23 21:30:27,726 [INFO] Updated processed jobs with 14 new links
-2025-09-23 21:30:28,038 [INFO] Collected 5 jobs...
-2025-09-23 21:30:47,124 [INFO] Collected 10 jobs...
-2025-09-23 21:30:47,125 [INFO] Processing batch...
-2025-09-23 21:30:47,528 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 12.504463899s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 12
-}
-]
-2025-09-23 21:30:47,535 [INFO] Gemini response: None
-2025-09-23 21:30:48,736 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:30:48,746 [INFO] Groq response: 30 25 20 15 20 20 25 10 25 10
-2025-09-23 21:30:48,748 [INFO] Updated processed jobs with 14 new links
-2025-09-23 21:30:49,173 [INFO] Collected 5 jobs...
-2025-09-23 21:30:50,204 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_14.png
-2025-09-23 21:30:50,509 [ERROR] Error in get_match_percentage
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:42,143 [ERROR] Error in _listing
 Traceback (most recent call last):
-  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 92, in get_match_percentage_from_gemini
-    response = await asyncio.to_thread(model.generate_content, prompt)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
-    return await loop.run_in_executor(None, func_call)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
-    response = self._client.generate_content(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
-    response = rpc(
-               ^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
-    return wrapped_func(*args, **kwargs)
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
-    return retry_target(
-           ^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
-    next_sleep = _retry_error_helper(
-                 ^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
-    raise final_exc from source_exc
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
-    result = target()
-             ^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/google/api_core/grpc_helpers.py", line 78, in error_remapped_callable
-    raise exceptions.from_grpc_error(exc) from exc
-google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 200
-Please retry in 9.528986076s. [violations {
-  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
-  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
-  quota_dimensions {
-    key: "model"
-    value: "gemini-2.0-flash"
-  }
-  quota_dimensions {
-    key: "location"
-    value: "global"
-  }
-  quota_value: 200
-}
-, links {
-  description: "Learn more about Gemini API quotas"
-  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
-}
-, retry_delay {
-  seconds: 9
-}
-]
-2025-09-23 21:30:50,518 [INFO] Gemini response: None
-2025-09-23 21:30:51,982 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-09-23 21:30:51,993 [INFO] Groq response: 30 25 50 40 35 20 10
-2025-09-23 21:30:51,994 [INFO] Updated processed jobs with 10 new links
-2025-09-23 21:30:52,292 [INFO] 🧭 jobs_lister() finished
-2025-09-23 21:30:52,293 [INFO] Read output/Easy_applies.csv with utf-8 encoding
-2025-09-23 21:30:52,294 [INFO] Sorted and saved output/Easy_applies.csv
-2025-09-23 21:30:52,295 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
-2025-09-23 21:30:52,295 [WARNING] Could not read output/Confirmation_applies.csv or file is empty. Skipping.
-2025-09-23 21:30:59,975 [INFO] 📊 Google Sheets updated
-2025-09-23 21:30:59,976 [ERROR] Missing one or more required .env values for email
-2025-09-23 21:30:59,977 [INFO] 📤 Debugging screenshots and spider.logs email sent
-2025-09-23 21:30:59,978 [INFO] 🛑 Scraper finished, sleep mode re-enabled
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:42,149 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:42,157 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:42,315 [INFO] Processing chunk 4/4
+2025-09-24 19:31:42,317 [INFO] ✔ Sucessfully 5 indeed accounts load
+2025-09-24 19:31:42,934 [INFO] ✔  Unique fingerprints loaded
+2025-09-24 19:31:42,936 [INFO] Total 5 contexts launched.
+2025-09-24 19:31:53,127 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:53,142 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:53,152 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:53,159 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:54,126 [ERROR] Error in _listing
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 770, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 725, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1283, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1182, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hamas-jan/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 24, in _listing
+    if not await helper.check_internet():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/utils/helper.py", line 387, in check_internet
+    async with session.get(site) as response:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 1488, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 622, in _request
+    with timer:
+  File "/home/hamas-jan/Desktop/IBScraper/.venv/lib/python3.12/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+2025-09-24 19:31:54,192 [INFO] 🧭 jobs_lister() finished
+2025-09-24 19:31:54,192 [INFO] Read output/Easy_applies.csv with utf-8 encoding
+2025-09-24 19:31:54,193 [INFO] Sorted and saved output/Easy_applies.csv
+2025-09-24 19:31:54,193 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
+2025-09-24 19:31:54,193 [WARNING] Could not read output/Confirmation_applies.csv or file is empty. Skipping.
+2025-09-24 19:32:11,597 [INFO] 📊 Google Sheets updated
+2025-09-24 19:32:11,597 [ERROR] Missing one or more required .env values for email
+2025-09-24 19:32:11,597 [INFO] 📤 Debugging screenshots and spider.logs email sent
+2025-09-24 19:32:11,598 [INFO] 🛑 Scraper finished, sleep mode re-enabled
