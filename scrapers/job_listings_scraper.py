@@ -196,7 +196,7 @@ async def jobs_lister(chunk_urls):
         for index, job_page_url in enumerate(chunk_urls):
             try:
                 context = await browser.new_context(
-                    proxy=proxies[index]
+                    proxy=proxies[index],
                     viewport = { 'width': 320, 'height': 480 },
                 )
 
