@@ -51,6 +51,7 @@ async def _listing(context, job_page_url):
             await cf_bypasser.detect_and_bypass()
             await helper.handle_terms_cond_btn(page)
         except Exception as e:
+            await context.close()
             logger.error(f"Captcha error: {e}")
         
         # # Before performing critical actions, check internet
@@ -74,6 +75,8 @@ async def _listing(context, job_page_url):
                 await cf_bypasser.detect_and_bypass()
             except Exception as e:
                 logger.error(f"Captcha error: {e}")
+                await context.close()
+
             await page.wait_for_timeout(random.randint(3000, 10000))
             await asyncio.sleep(config_input.RANDOM_SLEEP)
             await helper.simulate_human_behavior(page)
@@ -94,8 +97,10 @@ async def _listing(context, job_page_url):
 
                 list_of_processed_jobs.append(link)
                 job_id = await helper.get_job_id(link)
+
                 if not job_id:
                     continue
+                
                 title_text = await title.inner_text()
                 company_name = await company.inner_text()
                 count = processed_new_company_jobs.count(company_name)
