@@ -26,22 +26,27 @@ async def _listing(context, job_page_url):
             await helper.wait_until_internet_is_back(page)
 
         # Navigate to jobs page
-        try:
-            await page.goto(job_page_url, wait_until="load")
-            await asyncio.sleep(random.randint(1,5))
-            await helper.handle_terms_cond_btn(page)
-        except Exception:
+        for attempt in range(3):
             try:
-                logger.warning(f"Retry loading page: {job_page_url}")
                 await page.goto(job_page_url, wait_until="load")
                 await helper.handle_terms_cond_btn(page)
-            except Exception as e:
-                filename = f"screenshot_{datetime.now()}.png"
-                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
-                await page.screenshot(path=file_path, full_page=True)
-                await context.close()
+                break  # Success: exit loop
+            except TimeoutError:
+                print(f"Attempt {attempt + 1} failed, retrying...")
 
-        # # Before performing critical actions, check internet
+                # Format datetime to make it filename-safe
+                timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                filename = f"screenshot_{timestamp}.png"
+                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
+
+                # Take a full-page screenshot
+                await page.screenshot(path=file_path, full_page=True)
+
+                # Wait before retrying
+                await asyncio.sleep(2)
+                
+
+        # Before performing critical actions, check internet
         if not await helper.check_internet():
             await helper.wait_until_internet_is_back(page)
         
@@ -77,7 +82,11 @@ async def _listing(context, job_page_url):
                 logger.error(f"Captcha error: {e}")
                 await context.close()
 
-            await page.wait_for_timeout(random.randint(3000, 10000))
+            try:
+                await page.wait_for_timeout(random.randint(3000, 10000))
+            except Exception as e:
+                pass
+
             await asyncio.sleep(config_input.RANDOM_SLEEP)
             await helper.simulate_human_behavior(page)
 
@@ -129,8 +138,8 @@ async def _listing(context, job_page_url):
                     list_of_processed_jobs.clear()
 
             try:
-                button_locator = page.locator(f"[data-testid='pagination-page-{pagination_number + 1}']")
-                await button_locator.click(timeout=20000)
+                await page.wait_for_selector(f"[data-testid='pagination-page-{pagination_number + 1}']", state="visible")
+                await page.click(f"[data-testid='pagination-page-{pagination_number + 1}']")
                 pagination_number += 1
             except Exception as e:
                 filename = f"screenshot_{pagination_number}.png"

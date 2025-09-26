@@ -200,7 +200,7 @@ def clean_processed_jobs_file():
     try:
         with open(config_input.PROCESSED_JOBS_FILE_PATH, 'r') as f:
             urls = f.readlines()
-        last_urls = urls[-8000:]
+        last_urls = urls[-12000:]
         with open(config_input.PROCESSED_JOBS_FILE_PATH, 'w') as f:
             f.writelines(last_urls)
         logger.info(f"Trimmed processed jobs file to last {len(last_urls)} entries")
