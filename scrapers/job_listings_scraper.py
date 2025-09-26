@@ -189,7 +189,7 @@ async def jobs_lister(all_urls):
     async with Stealth().use_async(async_playwright()) as p:
         browser = await p.chromium.launch(headless=config_input.headless)
 
-        semaphore = asyncio.Semaphore(config_input.MAX_CONTEXTS)  # limit concurrent contexts
+        semaphore = asyncio.Semaphore(config_input.MAX_CONTEXTS)  # 5 limit concurrent contexts
 
         async def worker(job_page_url, index):
             async with semaphore:
