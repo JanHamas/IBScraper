@@ -54,19 +54,9 @@ if __name__ == "__main__":
         helper.create_debugging_screenshots_folder(folder_path)
         logger.info("📁 Debugging folder ready")
 
-        # Split URLs into chunks
-        chunk_size = config_input.chunk_urls_size
-        urls_chunks = [
-            config_input.jobs_listed_pages_urls[i:i + chunk_size]
-            for i in range(0, len(config_input.jobs_listed_pages_urls), chunk_size)
-        ]
+        # Jobs lister main function
+        asyncio.run(jobs_lister(config_input.jobs_listed_pages_urls))
 
-        logger.info(f"Processing {len(config_input.jobs_listed_pages_urls)} URLs in {len(urls_chunks)} chunks")
-
-        for i, chunk in enumerate(urls_chunks):
-            logger.info(f"Processing chunk {i+1}/{len(urls_chunks)}")
-            asyncio.run(jobs_lister(chunk))   # ← process one chunk at a time
-        
         logger.info("🧭 jobs_lister() finished")
 
         # After saving all scraper results, upload to Google Sheets
