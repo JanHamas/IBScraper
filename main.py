@@ -22,7 +22,7 @@ def check_internet():
 while not check_internet():
     print("Check your internet connection...")
     time.sleep(5)
-
+#asdf
 
 from scrapers.job_listings_scraper import jobs_lister
 import asyncio, time
