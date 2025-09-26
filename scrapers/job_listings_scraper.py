@@ -1,4 +1,5 @@
 import asyncio, random, re, os
+from datetime import datetime
 from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
 
@@ -27,11 +28,18 @@ async def _listing(context, job_page_url):
         # Navigate to jobs page
         try:
             await page.goto(job_page_url, wait_until="load")
+            await asyncio.sleep(random.randint(3,9))
             await helper.handle_terms_cond_btn(page)
         except Exception:
-            logger.warning(f"Retry loading page: {job_page_url}")
-            await page.goto(job_page_url, wait_until="load")
-            await helper.handle_terms_cond_btn(page)
+            try:
+                logger.warning(f"Retry loading page: {job_page_url}")
+                await page.goto(job_page_url, wait_until="load")
+                await helper.handle_terms_cond_btn(page)
+            except Exception as e:
+                filename = f"screenshot_{datetime.now()}.png"
+                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
+                await page.screenshot(path=file_path, full_page=True)
+                await context.close()
 
         # # Before performing critical actions, check internet
         if not await helper.check_internet():
@@ -43,6 +51,7 @@ async def _listing(context, job_page_url):
             await cf_bypasser.detect_and_bypass()
             await helper.handle_terms_cond_btn(page)
         except Exception as e:
+            await context.close()
             logger.error(f"Captcha error: {e}")
         
         # # Before performing critical actions, check internet
@@ -66,6 +75,8 @@ async def _listing(context, job_page_url):
                 await cf_bypasser.detect_and_bypass()
             except Exception as e:
                 logger.error(f"Captcha error: {e}")
+                await context.close()
+
             await page.wait_for_timeout(random.randint(3000, 10000))
             await asyncio.sleep(config_input.RANDOM_SLEEP)
             await helper.simulate_human_behavior(page)
@@ -86,8 +97,10 @@ async def _listing(context, job_page_url):
 
                 list_of_processed_jobs.append(link)
                 job_id = await helper.get_job_id(link)
+
                 if not job_id:
                     continue
+                
                 title_text = await title.inner_text()
                 company_name = await company.inner_text()
                 count = processed_new_company_jobs.count(company_name)
@@ -118,7 +131,7 @@ async def _listing(context, job_page_url):
             try:
                 button_locator = page.locator(f"[data-testid='pagination-page-{pagination_number + 1}']")
                 if await button_locator.is_visible(timeout=10000):
-                    await button_locator.click(timeout=10000)
+                    await button_locator.click(timeout=1000)
                     pagination_number += 1
                 else:
                     filename = f"screenshot_{pagination_number}.png"
@@ -188,8 +201,8 @@ async def jobs_lister(chunk_urls):
         for index, job_page_url in enumerate(chunk_urls):
             try:
                 context = await browser.new_context(
-                    proxy=proxies[index]
-                    # viewport = { 'width': 1280, 'height': 1024 },
+                    proxy=proxies[index],
+                    viewport = { 'width': 320, 'height': 480 },
                 )
 
                 script = await fingerprint_loader.load_fingerprint(index)

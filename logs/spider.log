@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025-09-25 00:58:58,127 [INFO] 🚀 Project Acquirer AI started
 2025-09-25 00:58:58,128 [INFO] Created fresh file: output/Easy_applies.csv
 2025-09-25 00:58:58,128 [INFO] Created fresh file: output/Confirmation_applies.csv
@@ -920,3 +921,12 @@ TimeoutError
 2025-09-24 19:32:11,597 [INFO] 📤 Debugging screenshots and spider.logs email sent
 2025-09-24 19:32:11,598 [INFO] 🛑 Scraper finished, sleep mode re-enabled
 >>>>>>> bbdc203770546ee6a805862a92f3830a203efc0c
+=======
+2025-09-25 20:37:07,834 [INFO] Read output/Easy_applies.csv with utf-8 encoding
+2025-09-25 20:37:07,840 [INFO] Sorted and saved output/Easy_applies.csv
+2025-09-25 20:37:07,840 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
+2025-09-25 20:37:07,841 [INFO] Sorted and saved output/Confirmation_applies.csv
+2025-09-25 20:37:21,957 [INFO] 📊 Google Sheets updated
+2025-09-25 20:37:21,957 [ERROR] Missing one or more required .env values for email
+2025-09-25 20:37:21,957 [INFO] 📤 Debugging screenshots and spider.logs email sent
+>>>>>>> f9e4cc3be277a1bfce442aee71a63f649eca4a5c

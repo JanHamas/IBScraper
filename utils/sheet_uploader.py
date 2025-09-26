@@ -9,6 +9,7 @@ import logging
 # Logger
 logger = logging.getLogger("spider")
 
+
 # === 2. Append new job entries to corresponding CSVs ===
 def _append_jobs(easy_applies, cs_applies, c_applies):
     def append_to_csv(file_name, rows):
