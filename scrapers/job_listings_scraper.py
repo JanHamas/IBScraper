@@ -28,7 +28,7 @@ async def _listing(context, job_page_url):
         # Navigate to jobs page
         try:
             await page.goto(job_page_url, wait_until="load")
-            await asyncio.sleep(random.randint(3,9))
+            await asyncio.sleep(random.randint(1,5))
             await helper.handle_terms_cond_btn(page)
         except Exception:
             try:
@@ -130,17 +130,13 @@ async def _listing(context, job_page_url):
 
             try:
                 button_locator = page.locator(f"[data-testid='pagination-page-{pagination_number + 1}']")
-                if await button_locator.is_visible(timeout=10000):
-                    await button_locator.click(timeout=1000)
-                    pagination_number += 1
-                else:
-                    filename = f"screenshot_{pagination_number}.png"
-                    file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
-                    await page.screenshot(path=file_path, full_page=True)
-                    logger.info(f"No more pages. Screenshot saved: {file_path}")
-                    break
+                await button_locator.click(timeout=20000)
+                pagination_number += 1
             except Exception as e:
-
+                filename = f"screenshot_{pagination_number}.png"
+                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
+                await page.screenshot(path=file_path, full_page=True)
+                logger.info(f"No more pages. Screenshot saved: {file_path}")
                 logger.warning(f"Failed to click page {pagination_number + 1}: {e}")
                 break
 
@@ -201,8 +197,7 @@ async def jobs_lister(chunk_urls):
         for index, job_page_url in enumerate(chunk_urls):
             try:
                 context = await browser.new_context(
-                    proxy=proxies[index],
-                    viewport = { 'width': 320, 'height': 480 },
+                    proxy=proxies[index]
                 )
 
                 script = await fingerprint_loader.load_fingerprint(index)

@@ -43,7 +43,6 @@ async def extract_full_details(context, urls, percentages):
                 await tab2_page.goto(full_url, wait_until="load", timeout=30000)
             except Exception as e:
                 logger.info(f"Page not loaded after two tries: {e}")
-                await tab2_page.close()
                 continue
         
         # Simulate human behavior
@@ -55,7 +54,6 @@ async def extract_full_details(context, urls, percentages):
             await cf_bypasser.detect_and_bypass()
         except Exception as e:
             logger.error(f"Captcha bypass failed: {e}")
-            await tab2_page.close()
         
 
 
@@ -69,7 +67,6 @@ async def extract_full_details(context, urls, percentages):
             content = await tab2_page.content()
             if any(keyword in content for keyword in config_input.AVIOD_JOBS):
                 logger.info(f"Clearance-related job skipped: {full_url}")
-                await tab2_page.close()
                 continue
         except Exception as e:
             logger.error(f"Error checking clearance: {e}")
