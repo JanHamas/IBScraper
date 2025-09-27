@@ -37,27 +37,27 @@ if __name__ == "__main__":
     try:
         logger.info("🚀 Project Acquirer AI started")
 
-        # # Prevent screen to sleep
-        # sb = helper.SleepBlocker()
-        # sb.prevent_sleep()
+        # Prevent screen to sleep
+        sb = helper.SleepBlocker()
+        sb.prevent_sleep()
         
-        # # Create first new workbook with three sheets for saving scraper result
-        # helper.create_csv_files(config_input.CSV_FILES)
-        # logger.info("✅ Fresh CSV files created")
+        # Create first new workbook with three sheets for saving scraper result
+        helper.create_csv_files(config_input.CSV_FILES)
+        logger.info("✅ Fresh CSV files created")
 
-        # # Clean the processed saved jobs file
-        # helper.clean_processed_jobs_file()
-        # logger.info("🧹 Processed jobs file cleaned")
+        # Clean the processed saved jobs file
+        helper.clean_processed_jobs_file()
+        logger.info("🧹 Processed jobs file cleaned")
 
-        # # Create a debugging folder
-        # folder_path = "debugging_screenshots"
-        # helper.create_debugging_screenshots_folder(folder_path)
-        # logger.info("📁 Debugging folder ready")
+        # Create a debugging folder
+        folder_path = "debugging_screenshots"
+        helper.create_debugging_screenshots_folder(folder_path)
+        logger.info("📁 Debugging folder ready")
 
-        # # Jobs lister main function
-        # asyncio.run(jobs_lister(config_input.jobs_listed_pages_urls))
+        # Jobs lister main function
+        asyncio.run(jobs_lister(config_input.jobs_listed_pages_urls))
 
-        # logger.info("🧭 jobs_lister() finished")
+        logger.info("🧭 jobs_lister() finished")
 
         # After saving all scraper results, upload to Google Sheets
         helper.sort_csv_files_by_column(

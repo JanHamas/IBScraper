@@ -46,10 +46,6 @@ async def _listing(context, job_page_url):
                 await asyncio.sleep(2)
                 
 
-        # Before performing critical actions, check internet
-        if not await helper.check_internet():
-            await helper.wait_until_internet_is_back(page)
-        
         # Bypass cloudflare if appears
         try:
             cf_bypasser = CloudflareBypasser(page)
@@ -59,9 +55,6 @@ async def _listing(context, job_page_url):
             await context.close()
             logger.error(f"Captcha error: {e}")
         
-        # # Before performing critical actions, check internet
-        if not await helper.check_internet():
-            await helper.wait_until_internet_is_back(page)
 
         # Temporary save extract data
         list_of_processed_jobs = []
