@@ -78,6 +78,7 @@ days_map = {
 }
 
 date_value = None
+
 for key, val in days_map.items():
     if key in config["DATE_POSTED"]:
         date_value = val
@@ -113,7 +114,7 @@ PROCESSED_JOBS_FILE_PATH = os.path.join('input', 'processed_jobs.txt')
 DEBUGGING_SCREENSHOTS_PATH = "debugging_screenshots"
 
 # on/off headless mode
-headless = False
+headless = True
 
 
 RANDOM_SLEEP = random.randint(1,3)

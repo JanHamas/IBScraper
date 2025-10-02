@@ -7,7 +7,7 @@ from config import config_input
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
 from .job_details_scraper import extract_full_details
-
+from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 import logging
 logger = logging.getLogger("spider")  # use shared logger
 
@@ -31,17 +31,8 @@ async def _listing(context, job_page_url):
                 await page.goto(job_page_url, wait_until="load")
                 await helper.handle_terms_cond_btn(page)
                 break  # Success: exit loop
-            except TimeoutError:
+            except PlaywrightTimeoutError:
                 print(f"Attempt {attempt + 1} failed, retrying...")
-
-                # Format datetime to make it filename-safe
-                timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-                filename = f"screenshot_{timestamp}.png"
-                file_path = os.path.join(config_input.DEBUGGING_SCREENSHOTS_PATH, filename)
-
-                # Take a full-page screenshot
-                await page.screenshot(path=file_path, full_page=True)
-
                 # Wait before retrying
                 await asyncio.sleep(2)
                 
