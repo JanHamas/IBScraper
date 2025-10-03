@@ -26,18 +26,18 @@ async def _listing(context, job_page_url):
             await helper.wait_until_internet_is_back(page)
 
         # Navigate to jobs page
-        for attempt in range(3):
+        for attempt in range(3):  # 3 attempts: 0, 1, 2
             try:
                 await page.goto(job_page_url, wait_until="load")
                 await helper.handle_terms_cond_btn(page)
                 break  # Success: exit loop
             except PlaywrightTimeoutError:
-                if attempt == 3:
-                    logger.warning(f"Attempt {attempt + 1, job_page_url} failed, retrying...")
-                else:
+                if attempt < 2:  # first two attempts (0,1)
                     print(f"Attempt {attempt + 1} failed, retrying...")
-                # Wait before retrying
-                await asyncio.sleep(2)
+                    await asyncio.sleep(2)
+                else:  # last attempt failed (attempt == 2)
+                    logger.warning(f"All attempts failed for {job_page_url}")
+
                 
 
         # Bypass cloudflare if appears
