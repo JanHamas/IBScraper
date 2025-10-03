@@ -370,6 +370,7 @@ async def get_match_percentage(prompt):
 
 
 
+
 # Async function to check internet connectivity
 async def check_internet():
     test_sites = [
@@ -387,8 +388,9 @@ async def check_internet():
                 async with session.get(site) as response:
                     if response.status == 200:
                         return True
-            except aiohttp.ClientError:
-                pass  # Ignore failed site and try next
+            except (aiohttp.ClientError, asyncio.TimeoutError):
+                # Ignore error and try next site
+                pass  
 
     return False
 
@@ -399,5 +401,7 @@ async def wait_until_internet_is_back(page):
     while not await check_internet():
         await asyncio.sleep(10)
     print("✅ Internet reconnected.")
-    await page.reload()
-
+    try:
+        await page.reload()
+    except Exception as e:
+        print(f"⚠️ Failed to reload page after reconnect: {e}")

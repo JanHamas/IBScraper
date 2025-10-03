@@ -32,7 +32,10 @@ async def _listing(context, job_page_url):
                 await helper.handle_terms_cond_btn(page)
                 break  # Success: exit loop
             except PlaywrightTimeoutError:
-                print(f"Attempt {attempt + 1} failed, retrying...")
+                if attempt == 3:
+                    logger.warning(f"Attempt {attempt + 1, job_page_url} failed, retrying...")
+                else:
+                    print(f"Attempt {attempt + 1} failed, retrying...")
                 # Wait before retrying
                 await asyncio.sleep(2)
                 
