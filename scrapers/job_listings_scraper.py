@@ -68,6 +68,7 @@ async def _listing(context, job_page_url):
             except Exception as e:
                 logger.error(f"Captcha error: {e}")
                 await context.close()
+                return
 
             try:
                 await page.wait_for_timeout(random.randint(3000, 10000))
