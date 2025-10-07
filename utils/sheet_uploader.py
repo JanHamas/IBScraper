@@ -9,7 +9,6 @@ import logging
 # Logger
 logger = logging.getLogger("spider")
 
-
 # === 2. Append new job entries to corresponding CSVs ===
 def _append_jobs(easy_applies, cs_applies, c_applies):
     def append_to_csv(file_name, rows):
@@ -34,9 +33,8 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
     except Exception as e:
         logger.error(f"❌ Error saving to CSV: {e}")
 
-
 # After complete scraping sort row descending base matching % column and overwrite save files
-def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applies.csv")):
+def update_google_sheets_from_csv(files=config_input.CSV_FILES):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "indeed_spider_gs_credentails.json")
@@ -54,13 +52,11 @@ def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applie
     for file_name in files:
         file_path = os.path.join("output", file_name)
         sheet_name = os.path.splitext(file_name)[0]  # "Easy_applies.csv" → "Easy_applies"
-
         try:
             worksheet = workbook.worksheet(sheet_name)
         except gspread.exceptions.WorksheetNotFound:
             logger.warning(f"⚠️ Sheet '{sheet_name}' not found. Creating new one...")
             worksheet = workbook.add_worksheet(title=sheet_name, rows="500", cols="30")
-
         rows = []
         for encoding in encodings_to_try:
             try:

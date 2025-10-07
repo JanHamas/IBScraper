@@ -2,7 +2,9 @@ from config import config_input
 from utils import sheet_uploader
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import helper
-import logging
+import logging, asyncio
+from playwright.async_api import TimeoutError as PlaywrightTimeoutError
+
 logger = logging.getLogger("spider")  # use shared logger
 
 async def extract_full_details(context, urls, percentages):
@@ -34,16 +36,18 @@ async def extract_full_details(context, urls, percentages):
     for p_index, url in enumerate(urls):
         full_url = f"https://indeed.com{url}"
 
-        # Navigating to page to extract complete info
-        try:
-            await tab2_page.goto(full_url, wait_until="load", timeout=30000)
-        except Exception as e:
+        # Navigate to jobs page
+        for attempt in range(2):
             try:
-                await tab2_page.reload()
-                await tab2_page.goto(full_url, wait_until="load", timeout=30000)
-            except Exception as e:
-                logger.info(f"Page not loaded after two tries: {e}")
-                continue
+                await tab2_page.goto(full_url, wait_until="load")
+                break  # Success: exit loop
+            except PlaywrightTimeoutError:
+                if attempt < 1:  # first two attempts (0,1)
+                    print(f"Attempt {attempt + 1} failed, retrying...")
+                    await asyncio.sleep(2)
+                else:  # last attempt failed (attempt == 2)
+                    logger.warning(f"All attempts failed for {full_url}")
+                    continue
         
         # Simulate human behavior
         await helper.simulate_human_behavior(tab2_page)

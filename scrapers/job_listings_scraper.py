@@ -37,8 +37,8 @@ async def _listing(context, job_page_url):
                     await asyncio.sleep(2)
                 else:  # last attempt failed (attempt == 2)
                     logger.warning(f"All attempts failed for {job_page_url}")
-
-                
+                    await context.close()
+                    return
 
         # Bypass cloudflare if appears
         try:
@@ -48,8 +48,8 @@ async def _listing(context, job_page_url):
         except Exception as e:
             await context.close()
             logger.error(f"Captcha error: {e}")
+            return
         
-
         # Temporary save extract data
         list_of_processed_jobs = []
         list_of_titles = []

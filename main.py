@@ -18,6 +18,7 @@ def check_internet():
             pass    
     return False
 
+
 # Wait until internet is available
 while not check_internet():
     print("Check your internet connection...")
@@ -76,3 +77,4 @@ if __name__ == "__main__":
     finally:
         sb.allow_sleep()
         logger.info("🛑 Scraper finished, sleep mode re-enabled")
+
