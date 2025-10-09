@@ -1,1678 +1,495 @@
-2025-10-09 16:03:36,039 [INFO] 🚀 Project Acquirer AI started
-2025-10-09 16:03:36,041 [INFO] Created fresh file: output/Easy_applies.csv
-2025-10-09 16:03:36,041 [INFO] Created fresh file: output/Confirmation_applies.csv
-2025-10-09 16:03:36,041 [INFO] ✅ Fresh CSV files created
-2025-10-09 16:03:36,076 [INFO] Trimmed processed jobs file to last 12000 entries
-2025-10-09 16:03:36,078 [INFO] 🧹 Processed jobs file cleaned
-2025-10-09 16:03:36,086 [INFO] Created new folder: debugging_screenshots
-2025-10-09 16:03:36,086 [INFO] 📁 Debugging folder ready
-2025-10-09 16:03:36,088 [INFO] ✔ Sucessfully 1 indeed accounts load
-2025-10-09 16:03:38,022 [INFO] ✔  Unique fingerprints loaded
-2025-10-09 16:04:21,906 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:24,108 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:25,032 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:26,773 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:27,300 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:30,403 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:36,833 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:37,339 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:04:38,990 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:07,130 [ERROR] Error in _listing
-Traceback (most recent call last):
-  File "/home/haris/Desktop/IBScraper/scrapers/job_listings_scraper.py", line 31, in _listing
-    await page.goto(job_page_url, wait_until="load")
-  File "/home/haris/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8992, in goto
-    await self._impl_obj.goto(
-  File "/home/haris/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py", line 556, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/haris/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 153, in goto
-    await self._channel.send(
-  File "/home/haris/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
-    return await self._connection.wrap_api_call(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/haris/Desktop/IBScraper/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.Error: Page.goto: net::ERR_TIMED_OUT at https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1
+2025-10-09 22:11:55,871 [INFO] 🚀 Project Acquirer AI started
+2025-10-09 22:11:55,873 [INFO] Created fresh file: output/Easy_applies.csv
+2025-10-09 22:11:55,873 [INFO] Created fresh file: output/Confirmation_applies.csv
+2025-10-09 22:11:55,873 [INFO] ✅ Fresh CSV files created
+2025-10-09 22:11:55,898 [INFO] Trimmed processed jobs file to last 12000 entries
+2025-10-09 22:11:55,900 [INFO] 🧹 Processed jobs file cleaned
+2025-10-09 22:11:55,911 [INFO] Created new folder: debugging_screenshots
+2025-10-09 22:11:55,911 [INFO] 📁 Debugging folder ready
+2025-10-09 22:11:55,913 [INFO] ✔ Sucessfully 1 indeed accounts load
+2025-10-09 22:11:58,460 [INFO] ✔  Unique fingerprints loaded
+2025-10-09 22:12:17,696 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:24,000 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:48,336 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:51,542 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:51,909 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:53,368 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:54,810 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:12:59,610 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:21,122 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:22,655 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:28,655 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:28,888 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:29,072 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:33,553 [WARNING] All attempts failed for https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1
+2025-10-09 22:13:34,166 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:34,395 [WARNING] All attempts failed for https://www.indeed.com/jobs?q=tensorflow&l=United+States&fromage=1
+2025-10-09 22:13:35,326 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:36,737 [INFO] Collected 5 jobs...
+2025-10-09 22:13:52,275 [INFO] Collected 5 jobs...
+2025-10-09 22:13:57,120 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:13:59,409 [INFO] Collected 5 jobs...
+2025-10-09 22:14:04,713 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:14:09,854 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:14:11,948 [INFO] Collected 5 jobs...
+2025-10-09 22:14:12,901 [INFO] Collected 10 jobs...
+2025-10-09 22:14:12,902 [INFO] Processing batch...
+2025-10-09 22:14:22,114 [INFO] Collected 5 jobs...
+2025-10-09 22:14:23,400 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:14:23,413 [INFO] Updated processed jobs with 61 new links
+2025-10-09 22:14:28,073 [INFO] Collected 10 jobs...
+2025-10-09 22:14:28,073 [INFO] Processing batch...
+2025-10-09 22:14:28,933 [INFO] Gemini response: 70 40 70 0 70 0 0 0 0 0
+2025-10-09 22:14:45,341 [INFO] Collected 5 jobs...
+2025-10-09 22:14:48,647 [INFO] Collected 10 jobs...
+2025-10-09 22:14:48,647 [INFO] Processing batch...
+2025-10-09 22:14:50,138 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:14:50,149 [INFO] Updated processed jobs with 56 new links
+2025-10-09 22:14:53,116 [INFO] Collected 5 jobs...
+2025-10-09 22:14:54,435 [INFO] Collected 5 jobs...
+2025-10-09 22:14:57,054 [INFO] Benefits missing
+2025-10-09 22:14:57,265 [INFO] Company site apply: Solina Group
+2025-10-09 22:15:04,489 [INFO] Collected 5 jobs...
+2025-10-09 22:15:05,331 [INFO] Collected 10 jobs...
+2025-10-09 22:15:05,332 [INFO] Processing batch...
+2025-10-09 22:15:06,323 [INFO] Gemini response: 0 95 90 95 90 90 0 0 0
+2025-10-09 22:15:11,457 [WARNING] All attempts failed for https://www.indeed.com/jobs?q=ai+testing&l=United+States&fromage=1
+2025-10-09 22:15:21,054 [INFO] Collected 10 jobs...
+2025-10-09 22:15:21,054 [INFO] Processing batch...
+2025-10-09 22:15:22,522 [INFO] Gemini response: 0 0 0 0 95 0 0 0 0 0
+2025-10-09 22:15:28,423 [INFO] Collected 10 jobs...
+2025-10-09 22:15:28,424 [INFO] Processing batch...
+2025-10-09 22:15:29,846 [INFO] Gemini response: 90 30 30 30 30 30 30 30 30 90
+2025-10-09 22:15:30,812 [INFO] Collected 10 jobs...
+2025-10-09 22:15:30,812 [INFO] Processing batch...
+2025-10-09 22:15:32,309 [INFO] Gemini response: 95 95 95 95 95 90 95 95 95 95
+2025-10-09 22:15:40,583 [INFO] Benefits missing
+2025-10-09 22:15:40,818 [INFO] Easy apply: Ascent Solutions
+2025-10-09 22:15:55,571 [INFO] Benefits missing
+2025-10-09 22:15:55,899 [INFO] Easy apply: apexanalytix
+2025-10-09 22:15:57,249 [INFO] Company site apply: Daktronics
+2025-10-09 22:16:02,523 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:16:06,136 [INFO] Benefits missing
+2025-10-09 22:16:06,269 [INFO] Easy apply: Stack Builders
+2025-10-09 22:16:07,655 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:16:07,890 [INFO] Collected 5 jobs...
+2025-10-09 22:16:26,597 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=a64a9c7a2332ecdc&bb=wEba7JSN_Sw4WxNF6FEDDnBTMlPM4Xf16Y88a1elDS2NxvLIEuC7SVmQnrDXmzFyofvUGEucI5RWv05JnRECm-w4iITuTkA8fNUTOwQvSvAdHarp2J2u7Nv3oXXzf1lpNN5pEW1-2IU%3D&xkcb=SoCE67M3sk2zU_2Etx0MbzkdCdPP&fccid=48ecd526e3aa3225&vjs=3
+2025-10-09 22:16:31,896 [INFO] Benefits missing
+2025-10-09 22:16:32,180 [INFO] Company site apply: Kaiser Permanente
+2025-10-09 22:16:32,398 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:16:32,412 [INFO] Updated processed jobs with 38 new links
+2025-10-09 22:16:33,822 [INFO] Collected 5 jobs...
+2025-10-09 22:16:34,786 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=436f282682057783&bb=dYqKCHCX-iJ6aIjvLk62RwSv9EwaW3y-PV3L2rAmowFvDas8KAzyTL7cpzc0eaZTWfvQFRVPmFdgvRtadPODQMYkpVXYuRRp0gyH1quSMNX0_BsTiIdrNqdBE71l2EKZ&xkcb=SoBS67M3sk2zcKzb3h0MbzkdCdPP&fccid=4670abd2e864ca6d&vjs=3
+2025-10-09 22:16:36,317 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=6d481ac396f77dec&bb=3wJg3-pTGQCdVwlcmtbnatzU7qxH7Uf_14LrN-o49DucdHOBmYSK5lteQ70TXXZ--rcocOctPRDNo0O-DnTYO98khAi2JiTL386xmnsMQMbJudRf0E8g0efpZ9RrjTMPFOfPo6hzl2FC2k2DUrYeug%3D%3D&xkcb=SoAV67M3sk262DXqZB0PbzkdCdPP&fccid=99307c04d11906da&vjs=3
+2025-10-09 22:16:38,192 [INFO] Company site apply: Fermilab
+2025-10-09 22:16:40,004 [INFO] Confirmation job: AssistRx
+2025-10-09 22:16:40,959 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_6.png
+2025-10-09 22:16:40,959 [WARNING] Failed to click page 7: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
-  - navigating to "https://www.indeed.com/jobs?q=mlops&l=United+States&fromage=1", waiting until "load"
+  - waiting for locator("[data-testid='pagination-page-7']") to be visible
 
-2025-10-09 16:05:14,689 [ERROR] Captcha error: Page.reload: Timeout 30000ms exceeded.
+2025-10-09 22:16:42,333 [INFO] Gemini response: 30 95 20 60
+2025-10-09 22:16:47,929 [INFO] Collected 5 jobs...
+2025-10-09 22:16:49,711 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=030ef814da97f955&bb=WZ8A_DJFO8sx7-ghpFUpeIlKVm9M76aL3xv_OB7E5ET4Bm1CxUlrFm_mGs0-aTdSHKQ3bZhVFfeeE4_p5UDnJZ4JlML6WQVWqv1_pwcZ4rgmZRwfZ90lUb2gt0wI0ucbjmKPmfosOk_xqLYP4Do8KA%3D%3D&xkcb=SoDI67M3sk2xKFRM5x0IbzkdCdPP&fccid=a83bc8ffa15ff367&vjs=3
+2025-10-09 22:16:50,766 [INFO] Salary missing
+2025-10-09 22:16:50,948 [INFO] Easy apply: Calabrio
+2025-10-09 22:16:52,786 [INFO] Easy apply: MKS Inc.
+2025-10-09 22:16:59,031 [INFO] Collected 10 jobs...
+2025-10-09 22:16:59,032 [INFO] Processing batch...
+2025-10-09 22:16:59,363 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=fd4c74a0ce4a909c&bb=QaDbMxAUG7_Ltpk4NHoJP2fvAh70SWoqccfZrMyms8JUqhVVGQiA8M01Cam_N_W968ddmaExUVXGKOvsg_KWKdrNFKQfykwZ4ujwbuqyIjiSAbw6xP3DaVC7SHZffZ-RvxqyVgnQqBP-65h0sPB90g%3D%3D&xkcb=SoDT67M3sk25BoWTbJ0AbzkdCdPP&fccid=f680c571dce97e34&cmp=Systems-Development-and-Analysis&ti=Data+Analyst&vjs=3
+2025-10-09 22:16:59,450 [INFO] Collected 10 jobs...
+2025-10-09 22:16:59,457 [INFO] Processing batch...
+2025-10-09 22:17:00,022 [INFO] Gemini response: 85 85 0 90 75 90 90 80 90 65
+2025-10-09 22:17:00,551 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:17:00,551 [INFO] Updated processed jobs with 22 new links
+2025-10-09 22:17:01,211 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4f006b00b8dfebb5&bb=WZ8A_DJFO8sx7-ghpFUpeKFZw7aNJVtFVSIPwiC8sl-K1gPlFfM0aHNUKzv4lEQsmvxDYyIBr-Z1yLCG_txteD0zJPR87L5s34Pu8PSblJqZIu_8MxyUZU0SiirchwbizVKgUzwUKSi1QC1jOhzqVw%3D%3D&xkcb=SoAy67M3sk2xKFRM5x0DbzkdCdPP&fccid=a83bc8ffa15ff367&vjs=3
+2025-10-09 22:17:01,566 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:17:01,637 [INFO] Updated processed jobs with 45 new links
+2025-10-09 22:17:01,968 [INFO] Collected 5 jobs...
+2025-10-09 22:17:03,146 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fd4c74a0ce4a909c&bb=QaDbMxAUG7_Ltpk4NHoJP2fvAh70SWoqccfZrMyms8JUqhVVGQiA8M01Cam_N_W968ddmaExUVXGKOvsg_KWKdrNFKQfykwZ4ujwbuqyIjiSAbw6xP3DaVC7SHZffZ-RvxqyVgnQqBP-65h0sPB90g%3D%3D&xkcb=SoDT67M3sk25BoWTbJ0AbzkdCdPP&fccid=f680c571dce97e34&cmp=Systems-Development-and-Analysis&ti=Data+Analyst&vjs=3
+2025-10-09 22:17:05,401 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_8.png
+2025-10-09 22:17:05,407 [WARNING] Failed to click page 9: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
-  - waiting for navigation until "load"
-    - navigated to "https://www.indeed.com/jobs?q=transformer&l=United+States&fromage=1"
+  - waiting for locator("[data-testid='pagination-page-9']") to be visible
 
-2025-10-09 16:05:19,574 [ERROR] Captcha error: Page.reload: net::ERR_TIMED_OUT
+2025-10-09 22:17:06,522 [INFO] Gemini response: 85 85 75 75 85 80
+2025-10-09 22:17:15,939 [INFO] Collected 10 jobs...
+2025-10-09 22:17:15,940 [INFO] Processing batch...
+2025-10-09 22:17:16,871 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:17:16,873 [INFO] Updated processed jobs with 11 new links
+2025-10-09 22:17:17,348 [INFO] Collected 5 jobs...
+2025-10-09 22:17:31,428 [INFO] Collected 10 jobs...
+2025-10-09 22:17:31,438 [INFO] Processing batch...
+2025-10-09 22:17:32,236 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:17:32,248 [INFO] Updated processed jobs with 13 new links
+2025-10-09 22:17:33,069 [INFO] Collected 5 jobs...
+2025-10-09 22:17:33,544 [INFO] Collected 10 jobs...
+2025-10-09 22:17:33,544 [INFO] Processing batch...
+2025-10-09 22:17:34,296 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:17:34,296 [INFO] Updated processed jobs with 11 new links
+2025-10-09 22:17:41,984 [INFO] Company site apply: Agero
+2025-10-09 22:17:46,426 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=aed0a74c5bc5c1dc&bb=dYqKCHCX-iJ6aIjvLk62R86AKFrITff7_U8FJWwMhUc06ny43ZpnkSCJFu-_HAID3_l413ba7ScS24z1f6rW99S04PB80hgPW9111UMbysaJU0JUMncbdi8Ws0t4no6R&xkcb=SoAP67M3sk2zcKzb3h0CbzkdCdPP&fccid=edae4285faf6c2f0&vjs=3
+2025-10-09 22:17:47,136 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=596bdbbcae4cf911&bb=4H6_fOEefCXv_L0B-ywMulZOgKou4DIRPIRKeaLZltsoMR9YxAxwW3Tk0MSkpjRPw_XydbtutwMF-R7DcgPxfnHDRZcq2aEZRXkuY7UdGEks7ZmBwaULewGLgAeHpaCR9rv2s-hJzm-oC54R3FcCqA%3D%3D&xkcb=SoAB67M3sk24loQHQp0CbzkdCdPP&fccid=7132ad57ac19b668&vjs=3
+2025-10-09 22:17:50,996 [INFO] Benefits missing
+2025-10-09 22:17:51,176 [INFO] Easy apply: Quest Diagnostics
+2025-10-09 22:17:51,377 [INFO] Easy apply: Acelab
+2025-10-09 22:18:01,597 [INFO] Easy apply: BridgeNexus Technologies Inc
+2025-10-09 22:18:02,456 [INFO] Collected 10 jobs...
+2025-10-09 22:18:02,456 [INFO] Processing batch...
+2025-10-09 22:18:02,833 [INFO] Collected 5 jobs...
+2025-10-09 22:18:03,322 [INFO] Gemini response: 75 25 0 80 0 70 0 10 0 0
+2025-10-09 22:18:03,766 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=7225353034a9e42f&bb=EXBDKr2p5mEa3j3nLApCuHyzTq8g-XRfpal1kGM1jQrAJ9lmwQUjjbJqVAnzxUE31qDIDSgh5U9HMsxO0LefPyVOyfRyQKvWCMJ5wat75-S2tRHIF7yeNhaFEon7NjzdMrq7aEX8vlb_qOxskJ9Wk8CS-c-2C0Xf&xkcb=SoD367M3sk28S_xM5x0JbzkdCdPP&fccid=d795d2d76bccc6f1&vjs=3
+2025-10-09 22:18:05,185 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=b3a1d3e03636fe87&bb=QaDbMxAUG7_Ltpk4NHoJPz-Mnv4tQLg3wjMs_-dolKbzVkk2uQH6ZeVTFD0WCEyW91lRyj1B5qwD1wfrlt81YLILXc2ZnEu1pBApNNYfmiKY-BTSWyp7rhCwiozAjAhRxnYlMI1FYzF8miRIRfYHeA%3D%3D&xkcb=SoDp67M3sk25BoWTbJ0GbzkdCdPP&fccid=421d84bb1f03b36d&cmp=CCNY%2C-Inc.&ti=Senior+Data+Analyst&vjs=3
+2025-10-09 22:18:06,044 [INFO] Benefits missing
+2025-10-09 22:18:06,236 [INFO] Easy apply: Key2Source INC
+2025-10-09 22:18:06,963 [ERROR] Failed to extract company name
+2025-10-09 22:18:12,436 [INFO] Easy apply: CCNY, Inc.
+2025-10-09 22:18:12,547 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:18:12,566 [INFO] Updated processed jobs with 37 new links
+2025-10-09 22:18:14,861 [INFO] Collected 5 jobs...
+2025-10-09 22:18:24,176 [INFO] Benefits missing
+2025-10-09 22:18:24,773 [INFO] Easy apply: Altak Group
+2025-10-09 22:18:29,820 [INFO] Company site apply: University of Texas at Austin
+2025-10-09 22:18:32,377 [INFO] Easy apply: Systems Development and Analysis
+2025-10-09 22:18:32,438 [INFO] Collected 10 jobs...
+2025-10-09 22:18:32,438 [INFO] Processing batch...
+2025-10-09 22:18:32,956 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=0670f7302578d4b2&bb=dYqKCHCX-iJ6aIjvLk62R6xx4cBzl8PE6p4sq0poMDSxzNU90ceVlTOaYiuRE42Y4_4YBDF7GqVDSuHl1tRHWyw6roJoeFrXtuRagNZJyrklS6HUjNxbPBvSZdfqlbhA&xkcb=SoCS67M3sk2zcKzb3h0BbzkdCdPP&fccid=edae4285faf6c2f0&vjs=3
+2025-10-09 22:18:33,556 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:18:33,592 [INFO] Updated processed jobs with 32 new links
+2025-10-09 22:18:42,679 [INFO] Benefits missing
+2025-10-09 22:18:43,399 [INFO] Benefits missing
+2025-10-09 22:18:44,966 [INFO] Easy apply: Envision Technology Solutions
+2025-10-09 22:18:46,828 [INFO] Salary missing
+2025-10-09 22:18:46,984 [INFO] Company site apply: Amazon.com LLC
+2025-10-09 22:18:47,475 [INFO] Benefits missing
+2025-10-09 22:18:47,773 [INFO] Collected 5 jobs...
+2025-10-09 22:18:48,138 [INFO] Easy apply: MM International
+2025-10-09 22:18:49,474 [INFO] Company site apply: Ampere Computing
+2025-10-09 22:18:49,512 [INFO] Collected 10 jobs...
+2025-10-09 22:18:49,521 [INFO] Processing batch...
+2025-10-09 22:18:50,380 [INFO] Gemini response: 0 0 0 0 50 65 50 0 50 50
+2025-10-09 22:18:54,258 [INFO] Easy apply: Popeyes
+2025-10-09 22:19:00,505 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=9a1cce1041d3cceb&bb=h7-vAShl2oZ2S1TBq9SERkvbozX8biSR6ZW4-V68rd6EFKQ-6K7w03unX8AboJOXiyrCKBTR4hBtMj4rlANN4_8DzTSWolRo_M4GuMOXPUltcYulI_CgNZS0Rm_wxQu2Hh-KgfWVrr2hSt25l7Gp_g%3D%3D&xkcb=SoAz67M3sk2y8mwpXh0MbzkdCdPP&fccid=90e13980bc03c064&vjs=3
+2025-10-09 22:19:00,775 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:19:00,808 [INFO] Updated processed jobs with 83 new links
+2025-10-09 22:19:05,856 [INFO] Company site apply: PRICE WATERHOUSE COOPERS
+2025-10-09 22:19:05,998 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:19:06,016 [INFO] Updated processed jobs with 166 new links
+2025-10-09 22:19:07,790 [INFO] Collected 5 jobs...
+2025-10-09 22:19:08,526 [INFO] Benefits missing
+2025-10-09 22:19:09,403 [INFO] Company site apply: Applied Information Sciences
+2025-10-09 22:19:11,301 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=978c556e8cdeaa8a&bb=DNDS27-HuYw-wG0489lKPOLvs8S7RHewuJz2ctaXCJCAcjCfQSgD3nGU5_PEdudfubxqCRgeTk6z8q6ADz8ZA3TfdmT4E8LC99-cO3bJ0oEmy53y7gvyTXin22rhsXONOO2lcP--fro%3D&xkcb=SoDo67M3sk2zvkTb5J0BbzkdCdPP&fccid=bae098e9666bd225&vjs=3
+2025-10-09 22:19:11,610 [INFO] Collected 10 jobs...
+2025-10-09 22:19:11,619 [INFO] Processing batch...
+2025-10-09 22:19:12,455 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:19:12,466 [INFO] Updated processed jobs with 15 new links
+2025-10-09 22:19:20,387 [INFO] Benefits missing
+2025-10-09 22:19:20,733 [INFO] Company site apply: Cengage Group
+2025-10-09 22:19:26,215 [INFO] Benefits missing
+2025-10-09 22:19:26,780 [INFO] Company site apply: Amazon.com LLC
+2025-10-09 22:19:27,022 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=551033c444dc82c1&bb=UM1wZiUbWfKc1GKMV2eOQofvYLoRFVNTOSJ9sYoM_2_PXLW2cSoyg9qIgm6EZwDm_Ni7wBhAqqYBEFAcWXpvpzN_MGKAwq1PGzsFjM8P-XALqtbPWOBFZzNbf26t6N1JXEV-LJ4p8OxdfrodvjRBJw%3D%3D&xkcb=SoDu67M3sk220Exbmp0BbzkdCdPP&fccid=40dab2048c41a718&vjs=3
+2025-10-09 22:19:27,219 [INFO] Company site apply: SCAN
+2025-10-09 22:19:28,454 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:19:33,748 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:19:35,082 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=8af6221258a593af&bb=dYqKCHCX-iJ6aIjvLk62RxTv5u8Ih4f9wqOcuXmXwQjr0717mrW7qNZlf4xf9aFQjtTdQqyVdYYe8ajrjtNe4fWUBm6Q_cqadBvtiaK88N_qfwQ-5O5iWbauGtfLycOxf5AX78oK_Mo%3D&xkcb=SoAm67M3sk2zcKzb3h0AbzkdCdPP&fccid=4764eccaf3acfcec&cmp=Strativ-Group&ti=Firmware+Engineer&vjs=3
+2025-10-09 22:19:35,817 [INFO] Collected 5 jobs...
+2025-10-09 22:19:36,281 [INFO] Collected 5 jobs...
+2025-10-09 22:19:39,012 [INFO] Collected 10 jobs...
+2025-10-09 22:19:39,012 [INFO] Processing batch...
+2025-10-09 22:19:39,133 [INFO] Benefits missing
+2025-10-09 22:19:39,499 [INFO] Company site apply: Finance and Administration
+2025-10-09 22:19:39,769 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:19:39,770 [INFO] Updated processed jobs with 21 new links
+2025-10-09 22:19:41,433 [INFO] Easy apply: Strativ Group
+2025-10-09 22:19:42,733 [INFO] Easy apply: SES
+2025-10-09 22:19:44,139 [INFO] Collected 10 jobs...
+2025-10-09 22:19:44,140 [INFO] Processing batch...
+2025-10-09 22:19:44,948 [INFO] Gemini response: 30 20 25 30 30 0 10 15 10 25
+2025-10-09 22:19:51,464 [INFO] Company site apply: Centene
+2025-10-09 22:19:52,198 [INFO] Benefits missing
+2025-10-09 22:19:52,543 [INFO] Easy apply: apexanalytix
+2025-10-09 22:19:53,057 [INFO] Benefits missing
+2025-10-09 22:19:53,069 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:19:53,079 [INFO] Updated processed jobs with 125 new links
+2025-10-09 22:19:53,376 [INFO] Easy apply: InsightglobalIT
+2025-10-09 22:19:53,567 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:19:53,580 [INFO] Updated processed jobs with 72 new links
+2025-10-09 22:19:55,334 [INFO] Benefits missing
+2025-10-09 22:19:55,465 [INFO] Easy apply: Perma Technologies
+2025-10-09 22:19:56,937 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=df19dfbf046ba352&bb=bhV4G3gu-szh1G86-vB-61lH4g4s6tGb7McFZDYE9alX572okc0kchSOM3d71YtoOJnXbS7PGg-GuwJMUx5FPUuMVICoBZ1ORCtbkv4R1quVfDv8D0boLc85nuDNkp2P1CS1rFkC37EWcwlWenHAZA%3D%3D&xkcb=SoAk67M3sk3AqZTb5J0LbzkdCdPP&fccid=f88ce7308732d284&vjs=3
+2025-10-09 22:19:58,490 [INFO] Collected 5 jobs...
+2025-10-09 22:19:59,889 [INFO] Collected 10 jobs...
+2025-10-09 22:19:59,889 [INFO] Processing batch...
+2025-10-09 22:19:59,913 [INFO] Collected 10 jobs...
+2025-10-09 22:19:59,914 [INFO] Processing batch...
+2025-10-09 22:20:01,053 [INFO] Gemini response: 65 40 0 40 80 75 75 40 0 40
+2025-10-09 22:20:01,406 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:20:01,407 [INFO] Updated processed jobs with 14 new links
+2025-10-09 22:20:03,218 [INFO] Easy apply: ATEX Distributing, Inc.
+2025-10-09 22:20:05,054 [INFO] Benefits missing
+2025-10-09 22:20:05,213 [INFO] Company site apply: Amazon Kuiper Commercial Services LLC - O41
+2025-10-09 22:20:11,419 [INFO] Collected 5 jobs...
+2025-10-09 22:20:18,721 [INFO] Collected 5 jobs...
+2025-10-09 22:20:20,715 [INFO] Company site apply: Erie Insurance
+2025-10-09 22:20:20,825 [INFO] Benefits missing
+2025-10-09 22:20:21,533 [INFO] Company site apply: Clipboard
+2025-10-09 22:20:22,793 [INFO] Collected 10 jobs...
+2025-10-09 22:20:22,793 [INFO] Processing batch...
+2025-10-09 22:20:23,604 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:20:23,607 [INFO] Updated processed jobs with 17 new links
+2025-10-09 22:20:24,020 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=bfb5f6a138c14b77&bb=V8-FsrTtmDjxCFGcL1PfNbeFL7d3c3PzGQiVuuRIJd6PkCOHtLeO9dcFQp7c-A5_tsoiP9EABcCtt4cq5rASmXdisLQ90oXgjwQDePHGInneuavkRpWsVhsedacPFBsNTqYvPsFgBoxofryyOKNCdA%3D%3D&xkcb=SoAy67M3sk3X50RM5x0BbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
+2025-10-09 22:20:24,214 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:20:24,227 [INFO] Updated processed jobs with 92 new links
+2025-10-09 22:20:43,918 [INFO] Benefits missing
+2025-10-09 22:20:44,224 [INFO] Easy apply: Srimatrix Health
+2025-10-09 22:20:44,726 [INFO] Collected 5 jobs...
+2025-10-09 22:20:45,339 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:20:47,384 [INFO] Collected 10 jobs...
+2025-10-09 22:20:47,384 [INFO] Processing batch...
+2025-10-09 22:20:48,323 [INFO] Gemini response: 0 10 10 10 10 10 15 10 10 10
+2025-10-09 22:20:48,327 [INFO] Updated processed jobs with 16 new links
+2025-10-09 22:20:51,068 [INFO] Easy apply: MLabs
+2025-10-09 22:20:51,849 [INFO] Benefits missing
+2025-10-09 22:20:52,356 [INFO] Easy apply: Heartland Community Health Center
+2025-10-09 22:20:53,257 [INFO] Company site apply: Bread Financial
+2025-10-09 22:20:54,961 [INFO] Collected 10 jobs...
+2025-10-09 22:20:54,973 [INFO] Processing batch...
+2025-10-09 22:20:55,778 [INFO] Gemini response: 60 50 60 70 60 70 60 60 60 60
+2025-10-09 22:21:03,040 [INFO] Easy apply: Abercrombie and Fitch Co.
+2025-10-09 22:21:03,186 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:21:03,211 [INFO] Updated processed jobs with 145 new links
+2025-10-09 22:21:06,911 [INFO] Collected 5 jobs...
+2025-10-09 22:21:09,876 [INFO] Benefits missing
+2025-10-09 22:21:10,757 [INFO] Company site apply: USC
+2025-10-09 22:21:12,974 [INFO] Collected 5 jobs...
+2025-10-09 22:21:14,906 [INFO] Collected 10 jobs...
+2025-10-09 22:21:14,906 [INFO] Processing batch...
+2025-10-09 22:21:15,736 [INFO] Company site apply: Sodexo
+2025-10-09 22:21:15,814 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:21:15,815 [INFO] Updated processed jobs with 21 new links
+2025-10-09 22:21:15,934 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:21:15,937 [INFO] Updated processed jobs with 11 new links
+2025-10-09 22:21:16,721 [INFO] Collected 5 jobs...
+2025-10-09 22:21:16,853 [INFO] Company site apply: PNC Financial Services Group
+2025-10-09 22:21:17,416 [INFO] Collected 5 jobs...
+2025-10-09 22:21:17,574 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:21:21,700 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=efe9d542ba50f10a&bb=io5J-Gs9relO_YcD_APCQblCegWWgzZe1z9fNSOepS_bR_ZB-PaFqOJdcVyzZjl2bH1HvOn6U-Md7e0Z9NYalN3pqqsNDDWhFG4cdB1ixc2hJH-DcoUolSUStCje1Ap6PNa3MzvgpUo%3D&xkcb=SoAP67M3sk3OsKWTbJ0JbzkdCdPP&fccid=64f33335ed7c57ec&vjs=3
+2025-10-09 22:21:25,120 [INFO] Easy apply: Strella
+2025-10-09 22:21:30,838 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8082f49bb51afd5e&bb=io5J-Gs9relO_YcD_APCQRTmuIx_Igk4QbaeKlPhHC_2W9xGgzcku8Dd54ZOHNnAXGEXRkesvMN9xdTT7MnMOOyRrMIUs1OwzgV5lT_h0B84cnSYmk8xFmkG9fqNN9LEc0rNBcHkcyg%3D&xkcb=SoA167M3sk3OsKWTbJ0PbzkdCdPP&fccid=5c42f0ed4ae5b712&vjs=3
+2025-10-09 22:21:36,515 [INFO] Collected 10 jobs...
+2025-10-09 22:21:36,517 [INFO] Processing batch...
+2025-10-09 22:21:36,752 [INFO] Collected 10 jobs...
+2025-10-09 22:21:36,752 [INFO] Processing batch...
+2025-10-09 22:21:37,543 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:21:37,547 [INFO] Updated processed jobs with 16 new links
+2025-10-09 22:21:37,793 [INFO] Easy apply: Motion Industries (MOT)
+2025-10-09 22:21:38,206 [INFO] Gemini response: 75 0 50 50 75 75 50 50 75 0
+2025-10-09 22:21:39,381 [INFO] Collected 5 jobs...
+2025-10-09 22:21:47,754 [INFO] Collected 5 jobs...
+2025-10-09 22:21:53,670 [INFO] Collected 5 jobs...
+2025-10-09 22:21:56,522 [INFO] Collected 10 jobs...
+2025-10-09 22:21:56,522 [INFO] Processing batch...
+2025-10-09 22:21:57,272 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:21:57,280 [INFO] Updated processed jobs with 18 new links
+2025-10-09 22:21:59,289 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=edc9ecd66d8c1db2&bb=6Jx-dnYnw8xZ42RRdsDKxFdmRUBEKj78tqW2RYnH_3x_GhZXH_Q50VhHmrmqdVAbIlvd2TtOrD9PtS-dcqPepX0F7s5FFttFPgXqHLQBYci6v__T_P8BoX5vKZpxgyg7CPkPvCiaK0BPO5WeEQjp1w%3D%3D&xkcb=SoBE67M3sk3XWtAIfz0BbzkdCdPP&fccid=90473552d7bbb6d4&vjs=3
+2025-10-09 22:22:03,097 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_17.png
+2025-10-09 22:22:03,098 [WARNING] Failed to click page 18: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
-  - waiting for navigation until "load"
+  - waiting for locator("[data-testid='pagination-page-18']") to be visible
 
-2025-10-09 16:05:22,562 [ERROR] Captcha error: Page.reload: Timeout 30000ms exceeded.
-Call log:
-  - waiting for navigation until "load"
-    - navigated to "https://www.indeed.com/jobs?q=nlp&l=United+States&fromage=1"
-
-2025-10-09 16:05:22,567 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:23,408 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:23,994 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:26,757 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:27,031 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:42,093 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:42,528 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:05:42,593 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:14,776 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:18,775 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:19,932 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:30,256 [INFO] Collected 5 jobs...
-2025-10-09 16:06:30,367 [INFO] Collected 10 jobs...
-2025-10-09 16:06:30,367 [INFO] Processing batch...
-2025-10-09 16:06:32,820 [INFO] Gemini response: 60 60 40 70 40 40 40 80 50 50
-2025-10-09 16:06:38,069 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:38,079 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:06:39,550 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_1.png
-2025-10-09 16:06:39,550 [WARNING] Failed to click page 2: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-2']") to be visible
-
-2025-10-09 16:06:40,132 [INFO] Collected 5 jobs...
-2025-10-09 16:06:48,484 [INFO] Collected 5 jobs...
-2025-10-09 16:06:53,772 [INFO] Collected 5 jobs...
-2025-10-09 16:06:53,859 [INFO] Collected 5 jobs...
-2025-10-09 16:06:54,738 [INFO] Collected 10 jobs...
-2025-10-09 16:06:54,738 [INFO] Processing batch...
-2025-10-09 16:06:56,309 [INFO] Gemini response: 95 85 70 80 70 65 80 50 75 0
-2025-10-09 16:07:03,894 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:07:06,295 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_1.png
-2025-10-09 16:07:06,299 [WARNING] Failed to click page 2: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-2']") to be visible
-
-2025-10-09 16:07:14,780 [INFO] Collected 10 jobs...
-2025-10-09 16:07:14,784 [INFO] Processing batch...
-2025-10-09 16:07:15,894 [INFO] Gemini response: 75 65 85 45 25 90 60 30 55 30
-2025-10-09 16:07:17,400 [INFO] Collected 10 jobs...
-2025-10-09 16:07:17,401 [INFO] Processing batch...
-2025-10-09 16:07:18,307 [INFO] Benefits missing
-2025-10-09 16:07:18,504 [INFO] Easy apply: Walter
-2025-10-09 16:07:18,636 [INFO] Gemini response: 95 95 95 95 75 95 65 50 20 75
-2025-10-09 16:07:28,669 [INFO] Collected 5 jobs...
-2025-10-09 16:07:33,978 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:07:37,210 [INFO] Benefits missing
-2025-10-09 16:07:37,338 [INFO] Company site apply: Realign LLC
-2025-10-09 16:07:42,967 [INFO] Easy apply: Tonic AI
-2025-10-09 16:07:44,582 [INFO] Salary missing
-2025-10-09 16:07:44,622 [INFO] Benefits missing
-2025-10-09 16:07:44,743 [INFO] Company site apply: Flylance
-2025-10-09 16:07:50,978 [INFO] Benefits missing
-2025-10-09 16:07:51,308 [INFO] Easy apply: SSAB
-2025-10-09 16:07:53,338 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=81db567148aefeb7&bb=L6SNKdDrFAp3820jMAN0WBGPOYiMsKYR8PdHRlhuxBJTSDJX_RzY5bHy85g3VsfWv58fHsLl6wRvvqSO6sP7Qgz6gme1BIOCp8o3gQEpZ9KxX_a6yX3IRErlSqgjPrzF1mlm9c3Kg02MQ7nML-ZdJA%3D%3D&xkcb=SoBI67M3skc8x0Tbqp0ObzkdCdPP&fccid=78a1d3439f00301c&vjs=3
-2025-10-09 16:07:53,815 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:07:54,109 [INFO] Salary missing
-2025-10-09 16:07:54,181 [INFO] Benefits missing
-2025-10-09 16:07:54,441 [INFO] Company site apply: Satelytics
-2025-10-09 16:07:54,683 [INFO] Collected 5 jobs...
-2025-10-09 16:08:00,939 [INFO] Easy apply: Life.Church
-2025-10-09 16:08:01,112 [INFO] Easy apply: Agile Group
-2025-10-09 16:08:05,359 [INFO] Easy apply: LighthouseAI, a Pharma Solutions Company
-2025-10-09 16:08:06,021 [INFO] Collected 5 jobs...
-2025-10-09 16:08:07,211 [INFO] Salary missing
-2025-10-09 16:08:07,420 [INFO] Easy apply: Corby Energy Services Inc
-2025-10-09 16:08:09,535 [INFO] Benefits missing
-2025-10-09 16:08:09,551 [INFO] Easy apply: Compucom
-2025-10-09 16:08:09,697 [INFO] Company site apply: CHSGa Gray (Stonebrooke)
-2025-10-09 16:08:10,886 [INFO] Collected 10 jobs...
-2025-10-09 16:08:10,886 [INFO] Processing batch...
-2025-10-09 16:08:11,898 [INFO] Gemini response: 95 90 80 95 95 0 0 95 0 0
-2025-10-09 16:08:14,386 [INFO] Benefits missing
-2025-10-09 16:08:14,520 [INFO] Easy apply: Surrender To God
-2025-10-09 16:08:16,514 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:08:18,659 [INFO] Collected 10 jobs...
-2025-10-09 16:08:18,668 [INFO] Processing batch...
-2025-10-09 16:08:20,633 [INFO] Benefits missing
-2025-10-09 16:08:20,963 [INFO] Collected 10 jobs...
-2025-10-09 16:08:20,963 [INFO] Processing batch...
-2025-10-09 16:08:21,330 [INFO] Easy apply: FitNext Co.
-2025-10-09 16:08:21,694 [INFO] Gemini response: 95 90 80 90 95 95 95 95 80 70
-2025-10-09 16:08:21,976 [INFO] Gemini response: 70 40 40 70 60 85 0 70 60 70
-2025-10-09 16:08:23,787 [INFO] Easy apply: Cretex Companies, Inc.
-2025-10-09 16:08:25,501 [INFO] Easy apply: SONIFI Solutions, Inc.
-2025-10-09 16:08:26,531 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:08:32,924 [INFO] Salary missing
-2025-10-09 16:08:32,969 [INFO] Benefits missing
-2025-10-09 16:08:33,048 [INFO] Company site apply: LATCHA+ASSOCIATES
-2025-10-09 16:08:34,134 [INFO] Collected 5 jobs...
-2025-10-09 16:08:34,309 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=183571d7f0e80070&bb=GWQWo_NTGU7M8FQR_4eWQYlhHzJU_TSY6B48EQAHVQnyNe1E1G9T-_6Q7uzViCUrwvVILVIkHA3JBDuJy-PzJ9q-Zosk-nZejImOLZxFXhVrO_BnvVTBy_mICO2aMe67GPyhA-Sbajr1DjSJnMxs8g%3D%3D&xkcb=SoBi67M3skc6lrxM5x0LbzkdCdPP&fccid=8049b0e747760bf9&vjs=3
-2025-10-09 16:08:39,288 [INFO] Easy apply: Elevate Patient Financial Solutions
-2025-10-09 16:08:39,670 [INFO] Benefits missing
-2025-10-09 16:08:40,247 [INFO] Company site apply: Realign LLC
-2025-10-09 16:08:42,866 [INFO] Benefits missing
-2025-10-09 16:08:42,989 [INFO] Easy apply: Decillion Digital Pvt Ltd
-2025-10-09 16:08:49,565 [INFO] Easy apply: Harvard Shared Services, LLC
-2025-10-09 16:08:50,359 [INFO] Benefits missing
-2025-10-09 16:08:50,444 [INFO] Company site apply: Realign LLC
-2025-10-09 16:08:50,957 [INFO] Collected 10 jobs...
-2025-10-09 16:08:50,957 [INFO] Processing batch...
-2025-10-09 16:08:52,146 [INFO] Gemini response: 60 60 60 0 20 20 30 40
-2025-10-09 16:08:54,153 [INFO] Company site apply: Sargent & Lundy
-2025-10-09 16:08:56,002 [INFO] Collected 5 jobs...
-2025-10-09 16:08:57,018 [INFO] Collected 10 jobs...
-2025-10-09 16:08:57,021 [INFO] Processing batch...
-2025-10-09 16:08:57,889 [INFO] Gemini response: 85 80 80 80 85 80 0 85 85 80
-2025-10-09 16:08:58,547 [INFO] Easy apply: HARTING Inc. of North America
-2025-10-09 16:08:59,739 [INFO] Benefits missing
-2025-10-09 16:08:59,833 [INFO] Company site apply: Davenport University
-2025-10-09 16:09:04,894 [INFO] Company site apply: Clearwater Analytics
-2025-10-09 16:09:04,904 [INFO] Company site apply: Macy’s
-2025-10-09 16:09:07,294 [INFO] Easy apply: Marketing Research Services
-2025-10-09 16:09:08,468 [INFO] Easy apply: Simple AI
-2025-10-09 16:09:11,736 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=21452f50fee33d65&bb=P6dAK4k9SlYHyvKgbqzro9TKPxq6Ft4q9yGTzMWwdzawDI_7gofzaE58fi-K-gYHj1aOojO9_h-5C8MNC99n3ZMm0Uh1hbnotvngCv400UoAOL6tYooPj66Nt3ay8ovjBmyna9oIsf0KT_wzljkvdg%3D%3D&xkcb=SoCk67M3skc844AIfz0MbzkdCdPP&fccid=bb45dd61f3d010f0&vjs=3
-2025-10-09 16:09:15,167 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=e9752d9582e4573d&bb=lPGraICFgyuGBMfZ8Xay6Bb4OnORfNAg8e0u_U2E8Rw0rRoBDM1kvDOmFZ_Zqcd6Gk97MfGtiTAqQ-lDV8SNcpeAX2BAJwd6VVrgT_zdiro5J0NikPEdNLS6wR05EHhQjzx8Q3SXbyvCAd3J7ztTIQ%3D%3D&xkcb=SoCJ67M3skc3oZxM550PbzkdCdPP&fccid=394aeba807831416&vjs=3
-2025-10-09 16:09:15,338 [INFO] Company site apply: Jerry
-2025-10-09 16:09:15,396 [INFO] Benefits missing
-2025-10-09 16:09:15,975 [INFO] Easy apply: Nuvia Dental Implant Center
-2025-10-09 16:09:16,254 [INFO] Company site apply: TSMC
-2025-10-09 16:09:16,802 [INFO] Easy apply: Simple AI
-2025-10-09 16:09:19,890 [INFO] Benefits missing
-2025-10-09 16:09:20,821 [INFO] Easy apply: Embark Veterinary
-2025-10-09 16:09:21,141 [INFO] Easy apply: Nuvia Dental Implant Center
-2025-10-09 16:09:22,440 [INFO] Collected 10 jobs...
-2025-10-09 16:09:22,440 [INFO] Processing batch...
-2025-10-09 16:09:22,498 [INFO] Benefits missing
-2025-10-09 16:09:22,573 [INFO] Easy apply: Benda Infotech
-2025-10-09 16:09:23,126 [INFO] Gemini response: 65 65 65 65 65 65 0 65 65 0
-2025-10-09 16:09:24,985 [INFO] Easy apply: Legence
-2025-10-09 16:09:26,881 [INFO] Benefits missing
-2025-10-09 16:09:27,335 [INFO] Easy apply: Bridgehead IT
-2025-10-09 16:09:29,725 [INFO] Benefits missing
-2025-10-09 16:09:30,544 [INFO] Easy apply: PDF Solutions
-2025-10-09 16:09:31,720 [INFO] Company site apply: Centerwell
-2025-10-09 16:09:31,806 [INFO] Benefits missing
-2025-10-09 16:09:32,136 [INFO] Easy apply: HealthDrive
-2025-10-09 16:09:32,450 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:09:32,452 [INFO] Updated processed jobs with 19 new links
-2025-10-09 16:09:33,423 [INFO] Easy apply: Dixon Group Services LLC
-2025-10-09 16:09:33,761 [INFO] Easy apply: Sure
-2025-10-09 16:09:33,764 [INFO] Collected 5 jobs...
-2025-10-09 16:09:34,850 [INFO] Easy apply: RE Tech
-2025-10-09 16:09:35,905 [INFO] Company site apply: Grainger
-2025-10-09 16:09:37,963 [INFO] Easy apply: United Dental Corporation
-2025-10-09 16:09:38,671 [INFO] Company site apply: HealthEquity
-2025-10-09 16:09:39,616 [INFO] Company site apply: New York Life Insurance Company
-2025-10-09 16:09:39,676 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:09:39,677 [INFO] Updated processed jobs with 41 new links
-2025-10-09 16:09:42,103 [INFO] Company site apply: Twitch Interactive, Inc. - D48
-2025-10-09 16:09:42,642 [INFO] Company site apply: Pinkerton
-2025-10-09 16:09:44,660 [INFO] Salary missing
-2025-10-09 16:09:44,686 [INFO] Benefits missing
-2025-10-09 16:09:44,761 [INFO] Easy apply: Simple Technology Solutions
-2025-10-09 16:09:48,874 [INFO] Collected 10 jobs...
-2025-10-09 16:09:48,882 [INFO] Processing batch...
-2025-10-09 16:09:50,547 [INFO] Gemini response: 80 70 40 30 50 40 50 60 60 50
-2025-10-09 16:09:50,831 [INFO] Benefits missing
-2025-10-09 16:09:51,087 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fe9785757a7041d0&bb=upINFR-Ie3TNt36F47JX0DAllymOHxSbhJD_N0tnnoUppyvC1uZX8KVDmKvNwrc6yfnLX7nA10Sjs1fTOS9qDaP3_LK8IKa2rW6ULT1iVSlX-bi7eKvXOTCuSC4Czba7AYHLZuDRs20%3D&xkcb=SoCP67M3skcxI8TxbZ0MbzkdCdPP&fccid=874a2cfca52d5937&vjs=3
-2025-10-09 16:09:51,136 [INFO] Easy apply: LightBox
-2025-10-09 16:09:52,377 [INFO] Salary missing
-2025-10-09 16:09:52,729 [INFO] Easy apply: The Energy Cooperative
-2025-10-09 16:09:55,935 [INFO] Company site apply: Match Group
-2025-10-09 16:09:56,331 [INFO] Benefits missing
-2025-10-09 16:09:56,416 [INFO] Benefits missing
-2025-10-09 16:09:56,547 [INFO] Easy apply: Bank of China Limited, New York Branch
-2025-10-09 16:09:56,608 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:09:56,622 [INFO] Updated processed jobs with 20 new links
-2025-10-09 16:09:56,808 [INFO] Easy apply: SoHo Dragon
-2025-10-09 16:10:00,881 [INFO] Company site apply: Rockefeller Capital Management
-2025-10-09 16:10:01,351 [INFO] Benefits missing
-2025-10-09 16:10:01,484 [INFO] Easy apply: Modern Amenities
-2025-10-09 16:10:03,519 [INFO] Benefits missing
-2025-10-09 16:10:04,081 [INFO] Easy apply: Intellyk
-2025-10-09 16:10:05,257 [INFO] Benefits missing
-2025-10-09 16:10:05,546 [INFO] Company site apply: Saint Luke's
-2025-10-09 16:10:05,673 [INFO] Benefits missing
-2025-10-09 16:10:05,880 [INFO] Company site apply: Amazon.com LLC
-2025-10-09 16:10:06,812 [INFO] Company site apply: Ambry Genetics Corporation
-2025-10-09 16:10:08,340 [INFO] Easy apply: Column
-2025-10-09 16:10:11,499 [INFO] Benefits missing
-2025-10-09 16:10:11,622 [INFO] Company site apply: Rebrandly
-2025-10-09 16:10:14,424 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8caf5b7227032e5f&bb=-QnBDD1EyOUdMYuRanwkAALcoITmKq5goAQQsoPtKWGEhdYHoFCCGymp8yrh7XvTIOID463Cztw9pJo-TQnREF6TGDzXU_AWTuVPfHx8aeAjbr0unzmbn3_MT7eemPXk9mnnwBvh4ACQmXTM9fYLag%3D%3D&xkcb=SoCj67M3skdKWTyLHR0DbzkdCdPP&fccid=888ea8f4aa798036&vjs=3
-2025-10-09 16:10:14,462 [INFO] Easy apply: Motion Industries (MOT)
-2025-10-09 16:10:15,197 [INFO] Collected 5 jobs...
-2025-10-09 16:10:15,628 [INFO] Collected 10 jobs...
-2025-10-09 16:10:15,628 [INFO] Processing batch...
-2025-10-09 16:10:16,571 [INFO] Gemini response: 90 95 90 90 90 90 90 90 90 90
-2025-10-09 16:10:17,961 [INFO] Salary missing
-2025-10-09 16:10:17,966 [INFO] Easy apply: Achariya Group of Educational Institutions
-2025-10-09 16:10:18,050 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:18,060 [INFO] Updated processed jobs with 81 new links
-2025-10-09 16:10:18,426 [INFO] Benefits missing
-2025-10-09 16:10:18,931 [INFO] Company site apply: GreenRoad
-2025-10-09 16:10:22,215 [INFO] Benefits missing
-2025-10-09 16:10:22,569 [INFO] Company site apply: Wilson, Sonsini, Goodrich & Rosati
-2025-10-09 16:10:23,219 [INFO] Easy apply: RAPID EAGLE INC
-2025-10-09 16:10:23,305 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:23,313 [INFO] Updated processed jobs with 14 new links
-2025-10-09 16:10:24,640 [INFO] Salary missing
-2025-10-09 16:10:24,713 [INFO] Benefits missing
-2025-10-09 16:10:24,747 [INFO] Salary missing
-2025-10-09 16:10:24,856 [INFO] Benefits missing
-2025-10-09 16:10:25,075 [INFO] Company site apply: Liberate
-2025-10-09 16:10:25,093 [INFO] Collected 5 jobs...
-2025-10-09 16:10:25,139 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:25,150 [INFO] Updated processed jobs with 27 new links
-2025-10-09 16:10:25,287 [INFO] Company site apply: Advanced Micro Devices, Inc
-2025-10-09 16:10:26,412 [INFO] Easy apply: Sprout.ai
-2025-10-09 16:10:28,888 [INFO] Salary missing
-2025-10-09 16:10:28,950 [INFO] Benefits missing
-2025-10-09 16:10:29,153 [INFO] Company site apply: Brillio
-2025-10-09 16:10:30,780 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6d3abe4f465643be&bb=dDIijd8snIP_A7Lsl-GgE0y-QmOobGQDyyCqrd-M_tbjJruh6-RxsMlMadvMuPtHGtbAI1F4oseovyq6H-MgOubWRZMpsVGuTQkY0LAYa5w4GAc6Ke947yxz_-pC-g_yTZF17d9EKk2dPoIZR-aWtA%3D%3D&xkcb=SoAl67M3skdLf22Etx0DbzkdCdPP&fccid=adab04218ef837d0&vjs=3
-2025-10-09 16:10:33,183 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=1149a521d7a98a51&bb=aQZSmzEVRkQrX7aSRT-M_SU0LOtSPKkrlsRkODwTjIG1xcWqckdblRGtSTdK5mnWSDJ8DApTetQBCIPSgGacD3i2DeC8vmvdqGDRPN6R-aPavX0cCxQ6Qi5ErMXEha7wXRuzkoa1mKDDZQ9T2APJpw%3D%3D&xkcb=SoBu67M3skc3idwEBJ0DbzkdCdPP&fccid=6aa087409ac8a5ac&vjs=3
-2025-10-09 16:10:37,001 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=78f1f931dfd70c48&bb=DZ_TizRfqRrls308ev4Ob6uuWKuesqcb0Siwob6K519YKCSC4bGGxdmKnvFMs6yP5Vk5mSmfAIR0bA6LjajjufeDxf3J-7CIRB47G1O-Mt50_rCzEiYd_ZyRmP1S3iFdZs2yfxi9kq4%3D&xkcb=SoCZ67M3skcyTiR7s50HbzkdCdPP&fccid=ac33de20bd01eff0&vjs=3
-2025-10-09 16:10:37,075 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:37,086 [INFO] Updated processed jobs with 69 new links
-2025-10-09 16:10:38,191 [INFO] Salary missing
-2025-10-09 16:10:38,594 [INFO] Benefits missing
-2025-10-09 16:10:39,045 [INFO] Company site apply: StoneX Group
-2025-10-09 16:10:45,204 [INFO] Salary missing
-2025-10-09 16:10:45,562 [INFO] Benefits missing
-2025-10-09 16:10:45,706 [INFO] Company site apply: GreenRoad
-2025-10-09 16:10:45,758 [INFO] Collected 5 jobs...
-2025-10-09 16:10:45,853 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:45,857 [INFO] Updated processed jobs with 53 new links
-2025-10-09 16:10:46,273 [INFO] Collected 5 jobs...
-2025-10-09 16:10:46,773 [INFO] Collected 10 jobs...
-2025-10-09 16:10:46,773 [INFO] Processing batch...
-2025-10-09 16:10:46,943 [INFO] Benefits missing
-2025-10-09 16:10:47,218 [INFO] Company site apply: Avis Budget Group
-2025-10-09 16:10:47,518 [INFO] Gemini response: 95 95 95 95 95 95 95 95 95 95
-2025-10-09 16:10:51,696 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a8892bad3f0e6552&bb=vDTo_0Un3GLXbhF-FIFPUyNcfzcVEfw2kAin2BXaCekTbmkg5DXK21gJOwHvCWtoMGRPqCEYQFrxSenqxObMABHjyK5VAuffJuhZb7Ux2Dz3mjfXr2v7tgBqxHFFqAhEwHmJCJN7JsOu6MGPTh1dWg%3D%3D&xkcb=SoCY67M3skdBE_Tbqp0IbzkdCdPP&fccid=f34acbd24dd4fcb0&vjs=3
-2025-10-09 16:10:56,877 [INFO] Benefits missing
-2025-10-09 16:10:57,196 [INFO] Easy apply: Katalyst Healthcares & Life Sciences Inc
-2025-10-09 16:10:57,267 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:10:57,289 [INFO] Updated processed jobs with 31 new links
-2025-10-09 16:10:57,956 [INFO] Salary missing
-2025-10-09 16:10:58,062 [INFO] Benefits missing
-2025-10-09 16:10:58,494 [INFO] Easy apply: Vensure Employer Solutions
-2025-10-09 16:11:03,986 [INFO] Collected 5 jobs...
-2025-10-09 16:11:04,452 [INFO] Collected 10 jobs...
-2025-10-09 16:11:04,463 [INFO] Processing batch...
-2025-10-09 16:11:05,336 [INFO] Gemini response: 90 80 80 80 80 70 70 90 80 90
-2025-10-09 16:11:05,508 [INFO] Benefits missing
-2025-10-09 16:11:05,608 [INFO] Benefits missing
-2025-10-09 16:11:07,052 [INFO] Easy apply: Alembic
-2025-10-09 16:11:07,503 [INFO] Company site apply: Johns Hopkins University
-2025-10-09 16:11:11,583 [INFO] Easy apply: Berry Appleman & Leiden LLP
-2025-10-09 16:11:17,178 [INFO] Benefits missing
-2025-10-09 16:11:17,263 [INFO] Confirmation job: Tantus Technologies
-2025-10-09 16:11:18,447 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a5e4b1316dd437d9&bb=vDTo_0Un3GLXbhF-FIFPUyHlR1IVXQ4jqW_IQxQ11zg4NEj7z3p7yXOhx6O_UekH6NLIhyPcMnwc3liEnprueIuye4r2oFm-l9kbq51jLUCXr2rUNtRjM7WKdsMNmEHSuARq50CQybRYu5oATrhs5A%3D%3D&xkcb=SoA_67M3skdBE_Tbqp0NbzkdCdPP&fccid=5fb7110c127c39eb&vjs=3
-2025-10-09 16:11:24,496 [INFO] Benefits missing
-2025-10-09 16:11:24,669 [INFO] Easy apply: AES Corporation
-2025-10-09 16:11:30,816 [INFO] Company site apply: Cox Automotive
-2025-10-09 16:11:31,548 [INFO] Confirmation job: LTIMindtree
-2025-10-09 16:11:34,159 [INFO] Collected 10 jobs...
-2025-10-09 16:11:34,159 [INFO] Processing batch...
-2025-10-09 16:11:34,673 [INFO] Collected 10 jobs...
-2025-10-09 16:11:34,673 [INFO] Processing batch...
-2025-10-09 16:11:35,102 [INFO] Gemini response: 95 0 95 90 0 0 90 85 80 90
-2025-10-09 16:11:35,602 [INFO] Gemini response: 70 70 70 70 70 70 80 65 0 70
-2025-10-09 16:11:38,419 [INFO] Collected 5 jobs...
-2025-10-09 16:11:38,543 [INFO] Benefits missing
-2025-10-09 16:11:38,774 [INFO] Easy apply: Evolve Bank & Trust
-2025-10-09 16:11:43,292 [INFO] Benefits missing
-2025-10-09 16:11:43,426 [INFO] Collected 10 jobs...
-2025-10-09 16:11:43,426 [INFO] Processing batch...
-2025-10-09 16:11:43,465 [INFO] Company site apply: The Happier Life Project
-2025-10-09 16:11:43,941 [INFO] Benefits missing
-2025-10-09 16:11:44,063 [INFO] Easy apply: Compest Solutions Inc
-2025-10-09 16:11:44,772 [INFO] Gemini response: 20 0 0 95 35 25 0 60 95 30
-2025-10-09 16:11:46,585 [INFO] Benefits missing
-2025-10-09 16:11:46,661 [INFO] Confirmation job: Tantus Technologies
-2025-10-09 16:11:46,746 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:11:46,755 [INFO] Updated processed jobs with 139 new links
-2025-10-09 16:11:49,049 [INFO] Benefits missing
-2025-10-09 16:11:49,134 [INFO] Company site apply: Huntington Bank
-2025-10-09 16:11:53,175 [INFO] Benefits missing
-2025-10-09 16:11:53,307 [INFO] Easy apply: SoHo Dragon
-2025-10-09 16:11:55,012 [INFO] Easy apply: Ascend Clinical
-2025-10-09 16:12:01,229 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=83936624ca60333a&bb=DAtR4QutGff7FItybkpBckjoGj9xNkE5dp8ULgYL_iQS6I6zU7h4UiR3W5OX2tojz5c-H_v21m8BtY1lXgXl7QogVxCerwpYGVOnwkAd8yC1lbIUyP2OEhfeX7N9Rmc90kV-Ii29Obd0y2Pg60SScQ%3D%3D&xkcb=SoBJ67M3skdDdigIfz0CbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:12:02,125 [INFO] Salary missing
-2025-10-09 16:12:02,161 [INFO] Benefits missing
-2025-10-09 16:12:02,345 [INFO] Company site apply: WPP
-2025-10-09 16:12:02,860 [INFO] Company site apply: Transamerica
-2025-10-09 16:12:06,518 [INFO] Benefits missing
-2025-10-09 16:12:06,615 [INFO] Company site apply: xAI
-2025-10-09 16:12:09,126 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=53c352c71bd92765&bb=p0RawlisoGeBHIAAJ46mk7oq73uDJbt1PjTi1jxYPbOGknyM3SXX4PJGerYPtgpze39X7muygoHJ7Xf2DmF-jGDeDGvmaJMfLK_qYXVxeJjNCYIdrH0HSXf0bCLq9zihyy7QErROhykPv-M5f-mj8g%3D%3D&xkcb=SoC667M3skdfx-SMcp0IbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:12:15,103 [INFO] Company site apply: Trimble
-2025-10-09 16:12:16,366 [INFO] Collected 5 jobs...
-2025-10-09 16:12:16,509 [INFO] Company site apply: Twitch Interactive, Inc. - D48
-2025-10-09 16:12:16,741 [INFO] Collected 10 jobs...
-2025-10-09 16:12:16,741 [INFO] Processing batch...
-2025-10-09 16:12:17,795 [INFO] Gemini response: 0 80 0 0 0 0 0 75 70 0
-2025-10-09 16:12:23,160 [INFO] Benefits missing
-2025-10-09 16:12:23,242 [INFO] Easy apply: Spino Inc
-2025-10-09 16:12:23,368 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=ac2d6cd44c74185b&bb=c3jRoRh3kI3FHxEE0WWtPa6kY-wgqwwR4tw5h1j5KzMlrZOAnZz3j92TxX1QnG_-UL298Jv3BM9sRUv9BfOihmWDcAYj0ioTw9jVTPfhxIPN2p_sw3UOV6lZ34g-jp3MJGD-QDd2_uA%3D&xkcb=SoCa67M3skdbgRW0N50PbzkdCdPP&fccid=f4c6ed63cbcfdc0d&vjs=3
-2025-10-09 16:12:28,057 [INFO] Collected 5 jobs...
-2025-10-09 16:12:33,517 [INFO] Benefits missing
-2025-10-09 16:12:33,577 [INFO] Easy apply: Optimal Inc.
-2025-10-09 16:12:35,719 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=62238b69be43f9b4&bb=vDTo_0Un3GLXbhF-FIFPU9RyRAlijKc2_v0Oe2-G86kYQl8R3c-NA27Y-V8lh8omk2ztBOYAj_GPxqIS8u2gCeCgvKrnyki1qZNV_uwavx3p6S4DDJFrwCb7Qc5UAwVJWc1Bn7eQLg133Z2YHeBJnw%3D%3D&xkcb=SoBL67M3skdBE_Tbqp0BbzkdCdPP&fccid=dbe45aeb04fa2c5a&vjs=3
-2025-10-09 16:12:36,457 [INFO] Benefits missing
-2025-10-09 16:12:36,589 [INFO] Easy apply: xAI
-2025-10-09 16:12:38,058 [INFO] Benefits missing
-2025-10-09 16:12:38,171 [INFO] Company site apply: Amazon Kuiper Commercial Services LLC - O41
-2025-10-09 16:12:38,612 [INFO] Benefits missing
-2025-10-09 16:12:38,840 [INFO] Easy apply: Saltec Associates
-2025-10-09 16:12:39,580 [INFO] Benefits missing
-2025-10-09 16:12:39,701 [INFO] Company site apply: Rogue Credit Union
-2025-10-09 16:12:42,345 [INFO] Benefits missing
-2025-10-09 16:12:42,568 [INFO] Company site apply: Yale University
-2025-10-09 16:12:45,027 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8dd964ced911170c&bb=p0RawlisoGeBHIAAJ46mk31oUrqYpksUnEIqRqLUEuYwwtpQ5W_DaNGYTKZ7Zuy3B8kRFYu22iLBxWqn4V8Naq5Oa0JecQypQ--FO60-6lwQ9Ap17zjdrjDLmjvcke44dXmvl-r0oJIwURU4TRPzSQ%3D%3D&xkcb=SoDn67M3skdfx-SMcp0GbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:12:48,833 [INFO] Easy apply: Rea
-2025-10-09 16:12:49,248 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6ffaee57295fd2c8&bb=F6yi2CbTRlCBepuJ8_S6iwQq_0V3V-ifojB5csJjmJghXSUQ4p4ft1dFcRUb8Im7QSPd6hydJvBIvGaoP0H3Y-bjEyFJgYR2DLeRZco0xkbgqiJ-wb0iXTmM_pHoPJcWuqrS_tXV60e2sTugfPQqdg%3D%3D&xkcb=SoAx67M3skdXnFSMcp0AbzkdCdPP&fccid=4bb4a98ffe880354&vjs=3
-2025-10-09 16:12:49,924 [INFO] Company site apply: New Relic
-2025-10-09 16:12:50,660 [INFO] Easy apply: AVS LLC
-2025-10-09 16:12:54,722 [INFO] Collected 5 jobs...
-2025-10-09 16:12:58,396 [INFO] Benefits missing
-2025-10-09 16:12:58,542 [INFO] Easy apply: RSA Tech
-2025-10-09 16:13:00,733 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=62ce8dd6beb5af41&bb=2uIYJhfrMS_E6YH5zohDBbT9d-zJ3q3etwcXYxyJM0bJpbtEwYOnFqZwePTqUpovFYgcbN6l33rESIn3o5SUzwLBWZNIuiFA8JJxNo_Ugt3VC0xP0BTs7D7DDPyLDlqbiGPj23BpPE8%3D&xkcb=SoC967M3skdYNEURqZ0PbzkdCdPP&fccid=872833f72d0278a3&vjs=3
-2025-10-09 16:13:07,435 [INFO] Benefits missing
-2025-10-09 16:13:07,569 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=44f34531bb633a12&bb=p0RawlisoGeBHIAAJ46mk7LJesnmSzgPm1adTJGhL5JWOSzxr-TuflSnkcYyW42TDZE3ecPyruF2fFYwA_NYaEofcZt5t5Irhbus6ycz7v1CrJOUGGbCk_VMWpl8_6P_hQdQNpVD6dVIuU20YMKEqQ%3D%3D&xkcb=SoB667M3skdfx-SMcp0FbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:13:07,714 [INFO] Easy apply: Tilebar | Soho Studio LLC
-2025-10-09 16:13:08,230 [INFO] Benefits missing
-2025-10-09 16:13:08,362 [INFO] Easy apply: Aspire Global Tech
-2025-10-09 16:13:08,538 [INFO] Benefits missing
-2025-10-09 16:13:08,573 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:08,574 [INFO] Updated processed jobs with 15 new links
-2025-10-09 16:13:08,758 [INFO] Easy apply: RSA Tech Group
-2025-10-09 16:13:09,026 [INFO] Collected 5 jobs...
-2025-10-09 16:13:09,329 [INFO] Collected 10 jobs...
-2025-10-09 16:13:09,329 [INFO] Processing batch...
-2025-10-09 16:13:10,579 [INFO] Gemini response: 75 75 90 90 75 90 75 75 75 75
-2025-10-09 16:13:12,149 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=9f525026ab3fbf4a&bb=F6yi2CbTRlCBepuJ8_S6i1Xg03FUHDTFebbzVvAs-zd0GJqYNMPGy9Z84mO1fO9QJ_yeS4Olvpe6a0JkhEu3qHeDMQRVM2-xqjQIkqQIUNgWd23OCwUN4THIsT2bIyX68HhPaotSE9IdkpF2ZA9CAA%3D%3D&xkcb=SoC_67M3skdXnFSMcp0HbzkdCdPP&fccid=64040824ce1c08b2&vjs=3
-2025-10-09 16:13:12,438 [INFO] Company site apply: Stanford University
-2025-10-09 16:13:18,122 [INFO] Benefits missing
-2025-10-09 16:13:18,137 [INFO] Easy apply: Achieve
-2025-10-09 16:13:18,206 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:18,209 [INFO] Updated processed jobs with 16 new links
-2025-10-09 16:13:18,394 [INFO] Company site apply: Sacramento Municipal Utility District
-2025-10-09 16:13:18,479 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:18,480 [INFO] Updated processed jobs with 26 new links
-2025-10-09 16:13:20,302 [INFO] Benefits missing
-2025-10-09 16:13:20,497 [INFO] Company site apply: Disney Experiences
-2025-10-09 16:13:20,643 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:20,657 [INFO] Updated processed jobs with 35 new links
-2025-10-09 16:13:21,123 [INFO] Collected 5 jobs...
-2025-10-09 16:13:30,538 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=02610514719e887f&bb=MiwVn8rvM1XNJGcSt15McWELOiy---x1e3AkOskntnnbmI5f-Y6NoUvpPUa_LBBgSywI9KYoTucak6tHd4RCCBsxNG6LOseCGBzt7jpHBLEK3QCbjJgFEewH31ZNo6uXkmEFRxbfuCk1LKQ_lOwYrQ%3D%3D&xkcb=SoD767M3skdEOnAIfz0JbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:13:34,469 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=99ca114b1cf5d814&bb=F6yi2CbTRlCBepuJ8_S6i044C3QH8XoDN0zxkEgKb5THGJBWH_TKge4sop8FK6sHXu_DIEANjPiQiXIzb4IwE6DYIZ9hZOfMBAxmRiKgKnJxunLgKXAXuoifswAwlaRC92i7hy6k1DmSi2q5PB_WRA%3D%3D&xkcb=SoCW67M3skdXnFSMcp0FbzkdCdPP&fccid=65f120e244aba589&vjs=3
-2025-10-09 16:13:34,616 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:34,626 [INFO] Updated processed jobs with 43 new links
-2025-10-09 16:13:35,152 [INFO] Benefits missing
-2025-10-09 16:13:35,263 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=379a98e0c4df1314&bb=8hBot1H2LsL-tpPDpqrAKFYgFPqvYCSpffHD974MAEAMFoQNxzXq93ConKzC96ThPSV_WEhNqpNaqYXSlmJKw0o1JcX5TrHdzbZ3T-MTW2U41b6GOngdqYDK4MSACy2mgf_pBsTcM4LDL4JK29KsYQ%3D%3D&xkcb=SoDG67M3skdd6dQEBJ0AbzkdCdPP&fccid=cc66ecc923c53ec5&vjs=3
-2025-10-09 16:13:35,547 [INFO] Company site apply: Johnson Controls
-2025-10-09 16:13:35,643 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:13:35,665 [INFO] Updated processed jobs with 34 new links
-2025-10-09 16:13:37,273 [INFO] Collected 5 jobs...
-2025-10-09 16:13:37,530 [INFO] Collected 10 jobs...
-2025-10-09 16:13:37,531 [INFO] Processing batch...
-2025-10-09 16:13:37,566 [INFO] Collected 10 jobs...
-2025-10-09 16:13:37,566 [INFO] Processing batch...
-2025-10-09 16:13:38,643 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=7c30181e6d720482&bb=mF-f-kic59YAJYtQqP5n5BFe4j4EpAf-GqV2afTnGZRvSDpe-BP_rKgT6ZGDw0Ty8Za5yxI9NRkIe0r4x1FXwa2AlX57sK0q2TEMN_PjgX-qHNPscOvROwz4YY72IA_tI22nVh0e7n8%3D&xkcb=SoBh67M3skc3v2wpXh0FbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:13:40,372 [INFO] Gemini response: 0 95 0 40 75 90 60 0 60 85
-2025-10-09 16:13:41,115 [INFO] Easy apply: Valon Tech
-2025-10-09 16:13:41,830 [INFO] Gemini response: 30 60 30 30 0 0 50 0 30
-2025-10-09 16:13:45,845 [INFO] Collected 10 jobs...
-2025-10-09 16:13:45,845 [INFO] Processing batch...
-2025-10-09 16:13:47,898 [INFO] Gemini response: 75 95 0 0 95 95 95 0 95 95
-2025-10-09 16:13:50,679 [INFO] Company site apply: Pacific Life
-2025-10-09 16:14:27,036 [INFO] Collected 10 jobs...
-2025-10-09 16:14:27,036 [INFO] Processing batch...
-2025-10-09 16:14:28,590 [INFO] Gemini response: 85 75 85 85 80 75 0 75 65 80
-2025-10-09 16:14:29,933 [INFO] Collected 5 jobs...
-2025-10-09 16:14:31,177 [INFO] Salary missing
-2025-10-09 16:14:31,195 [INFO] Benefits missing
-2025-10-09 16:14:31,232 [INFO] Company site apply: Tractor Supply Company
-2025-10-09 16:14:36,249 [INFO] Easy apply: Valon Tech
-2025-10-09 16:14:49,353 [INFO] Benefits missing
-2025-10-09 16:14:49,382 [INFO] Easy apply: Hecta Data (DBA) Vilwaa
-2025-10-09 16:14:50,305 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=d80e462fb3797f05&bb=vDTo_0Un3GLXbhF-FIFPUzTuDuLwlSnuSgM4qfv74Wfivqy3BeMsv27KGocZ74_pQfQ5de1xQ8ONKXM1TCY4gz1AHemYGjWI64i1bUOsvsZMkHncEEr-XVoiV5VNogeVrRodn90qq9a8Pk0b2YyDHw%3D%3D&xkcb=SoDF67M3skdBE_Tbqp0GbzkdCdPP&fccid=49726699152fbcc1&vjs=3
-2025-10-09 16:14:52,705 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=6fc064f5849a7492&bb=8hBot1H2LsL-tpPDpqrAKPgI-ba2mTuMuLaH-C_CauM6_yVPAQ7_NESAIe1oPbSutK54wARUp1Cb_PD_V69uzfk9VB067JxqJ-hrSMP6Dc5goUDzW04gSeReQcgXY49Aa6j-4DT1rnlOu4Zi1Nb64Q%3D%3D&xkcb=SoBh67M3skdd6dQEBJ0FbzkdCdPP&fccid=b00c87afd6413d5e&vjs=3
-2025-10-09 16:14:53,146 [INFO] Benefits missing
-2025-10-09 16:14:53,219 [INFO] Company site apply: Sacramento Municipal Utility District
-2025-10-09 16:14:55,568 [ERROR] Failed to extract company name
-2025-10-09 16:14:57,913 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2f37db2438d311fa&bb=-QnBDD1EyOUdMYuRanwkAPfbm9LnXOYab83Ubfx1sXZIOm9K-MON-Wb5v_7HA3tjA7yC8ThZazX1BghwcEJ_8DFhRiXAuS8TlqkkiofMHNNuKgpJia9mE_yQcyZi4tAqh7l5sZWuuF5WVjQEcFUsNw%3D%3D&xkcb=SoCZ67M3skdKWTyLHR0FbzkdCdPP&fccid=6b1c3ab87fdba23e&vjs=3
-2025-10-09 16:15:01,210 [INFO] Collected 10 jobs...
-2025-10-09 16:15:01,210 [INFO] Processing batch...
-2025-10-09 16:15:06,074 [INFO] Collected 5 jobs...
-2025-10-09 16:15:06,812 [INFO] Gemini response: 0 90 30 60 50 0 95 95 95 60
-2025-10-09 16:15:09,295 [INFO] Benefits missing
-2025-10-09 16:15:09,330 [INFO] Company site apply: The University of Pittsburgh
-2025-10-09 16:15:13,792 [INFO] Collected 5 jobs...
-2025-10-09 16:15:21,647 [INFO] Company site apply: Twitch Interactive, Inc. - D48
-2025-10-09 16:15:31,320 [INFO] Benefits missing
-2025-10-09 16:15:31,358 [INFO] Company site apply: Alibaba
-2025-10-09 16:15:33,236 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=8bb13557ec01769e&bb=MiwVn8rvM1XNJGcSt15McVohFTTOTMwB5Cjb5OWtTWY72Br-diI6QUDJ1DIMgX7vNM1YbNOvgnZXnbRRrb0HUVOZuIKQJ3Ss37z-bi4o9bG6mZZHW-LrDcqZ1UcHX1MIzHdIr87FGJpC6bhnb5K5xg%3D%3D&xkcb=SoB167M3skdEOnAIfz0ObzkdCdPP&fccid=96af7c53fbc27b35&vjs=3
-2025-10-09 16:15:36,415 [ERROR] Failed to extract company name
-2025-10-09 16:15:38,262 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=6288c7198d40ae9c&bb=eArjChSUIvX-UuPOGa_IQ73VsNOnNXhKWXMOv5fWqDULeuG6462lfNGlSYpwuevBH7cb2MmPLikrGcgSOgGD68hV62EKddM5b84JbLYOvH6029dqPkpF_j6obZeYGXmZLw39UJwnXz0%3D&xkcb=SoAA67M3skdduRXfsp0JbzkdCdPP&fccid=6f31a081958fdb62&vjs=3
-2025-10-09 16:15:41,306 [ERROR] Failed to extract company name
-2025-10-09 16:15:47,804 [INFO] Company site apply: Qualcomm
-2025-10-09 16:15:49,574 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=80956bdc7d973b7f&bb=kepZEp_pskHcAbAokmiKFW0nw-BlfPAfaXfr7QydpRTzKtjix274syZNmY1sWPRZcVLiQUJ1mh51fFElahnxW5w9zZKuA5QNb-pZ6EQxRuLc-nfqC63AhO0MElFCWO2B-eLmvE6IIbGLkperYLaWEZO36YVI03t1&xkcb=SoA867M3skdPU7xM550PbzkdCdPP&fccid=74f65078093903f6&vjs=3
-2025-10-09 16:15:50,451 [INFO] Company site apply: American Family Insurance
-2025-10-09 16:15:51,566 [INFO] Company site apply: Bonterra Tech
-2025-10-09 16:15:52,029 [ERROR] Failed to extract company name
-2025-10-09 16:15:55,248 [INFO] Benefits missing
-2025-10-09 16:15:55,280 [INFO] Company site apply: Mohawk Valley Community College
-2025-10-09 16:15:56,658 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6f4718230b839846&bb=BnSz2jzbgHIY46xTX0IuCBo9nxT9f0As4M7QPj4mVmBZDcxiKxzRlViihGLPFr4ZDP5Cpwco82JUo60mMaaakhKk6wVFfprbXnUcDb-6KSUsFFmKrdlx6tCfniXcCdQh0naT6z93qvuOwkRu5czkLA%3D%3D&xkcb=SoAO67M3skdp8KSPrR0MbzkdCdPP&fccid=e3775e5ec8ee0d6e&vjs=3
-2025-10-09 16:15:57,574 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=32238bcf6b974486&bb=abGywJygb6sa6U558qNhmZAb5rL68jPkXhlz_cikCvwXuv3c36bai5o_rk4PxaAvla94Ccc17ZbNBpSKwW1CrQDhO5mKf4u9kODpRu0q-32u0FCIBsT9eBghSi0bvAggVBTyYHW85ZezyWXm3yYF6Q%3D%3D&xkcb=SoBw67M3skdX9W3zS50UbzkdCdPP&fccid=168c4f478bad7012&vjs=3
-2025-10-09 16:15:57,678 [INFO] Collected 10 jobs...
-2025-10-09 16:15:57,678 [INFO] Processing batch...
-2025-10-09 16:15:57,746 [INFO] Easy apply: Motion Industries (MOT)
-2025-10-09 16:15:58,221 [INFO] Easy apply: Tampa Bay Lightning
-2025-10-09 16:16:00,028 [ERROR] Failed to extract company name
-2025-10-09 16:16:00,036 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:16:00,040 [INFO] Updated processed jobs with 84 new links
-2025-10-09 16:16:02,166 [INFO] Gemini response: 90 0 0 85 90 95 95 95 90 90
-2025-10-09 16:16:03,582 [INFO] Company site apply: Reputation
-2025-10-09 16:16:03,586 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:16:03,586 [INFO] Updated processed jobs with 132 new links
-2025-10-09 16:16:03,751 [INFO] Collected 5 jobs...
-2025-10-09 16:16:04,719 [INFO] Benefits missing
-2025-10-09 16:16:04,749 [INFO] Company site apply: New York University
-2025-10-09 16:16:19,257 [INFO] Easy apply: USA Swimming
-2025-10-09 16:16:19,564 [INFO] Collected 10 jobs...
-2025-10-09 16:16:19,564 [INFO] Processing batch...
-2025-10-09 16:16:20,727 [INFO] Company site apply: RELX
-2025-10-09 16:16:21,143 [INFO] Easy apply: Contexture
-2025-10-09 16:16:21,707 [INFO] Gemini response: 85 0 0 0 0 0 70 50 40 0
-2025-10-09 16:16:22,376 [INFO] Easy apply: Motion Industries (MOT)
-2025-10-09 16:16:28,147 [INFO] Benefits missing
-2025-10-09 16:16:28,180 [INFO] Easy apply: Tech Interacts Inc
-2025-10-09 16:16:34,141 [INFO] Company site apply: GXO Logistics
-2025-10-09 16:16:35,023 [INFO] Company site apply: Ampere Computing
-2025-10-09 16:16:35,236 [INFO] Benefits missing
-2025-10-09 16:16:35,268 [INFO] Easy apply: RSA Tech Group
-2025-10-09 16:16:36,894 [INFO] Collected 10 jobs...
-2025-10-09 16:16:36,894 [INFO] Processing batch...
-2025-10-09 16:16:38,643 [INFO] Gemini response: 85 85 0 85 75 50 75 75 50 85
-2025-10-09 16:16:42,038 [INFO] Company site apply: Olsson
-2025-10-09 16:16:42,086 [INFO] Benefits missing
-2025-10-09 16:16:42,115 [INFO] Easy apply: Infinity Quest
-2025-10-09 16:16:42,434 [INFO] Benefits missing
-2025-10-09 16:16:42,466 [INFO] Easy apply: Quamputon
-2025-10-09 16:16:44,616 [INFO] Collected 5 jobs...
-2025-10-09 16:16:44,685 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a3214adbd7dce71f&bb=2uIYJhfrMS_E6YH5zohDBS1TlaLiJQMlJbFRUtp95eYQYoPhdB1SlD8AokpQvUghRpRjq474c1h-Ry4_uOd6ONxmfs4FTRLtsGvxu8PiPHHChJ2AvaLS5I_B7PI8_aWLOv86iPpPKe4%3D&xkcb=SoDz67M3skdYNEURqZ0FbzkdCdPP&fccid=fcce311099a3a228&vjs=3
-2025-10-09 16:16:44,767 [INFO] Collected 10 jobs...
-2025-10-09 16:16:44,767 [INFO] Processing batch...
-2025-10-09 16:16:46,347 [INFO] Gemini response: 75 20 30 30 0 70 70 30 50 50
-2025-10-09 16:16:48,936 [INFO] Benefits missing
-2025-10-09 16:16:48,964 [INFO] Company site apply: Florida State University
-2025-10-09 16:16:49,743 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7a76ff6458792ad5&bb=FKG8KqUweslkrWQD5qmFsyTkwLkx9j3fUg81lUabAxRq5jd8_cG6WVcEp5pZUkQ1vdCpEijqdDx-3J_h3VEkWcn3YbCvkB-ySLTEZwyIDdixmnqnsDNKh0tW1w0MdFNFMe104hS8Nts%3D&xkcb=SoBY67M3skd7TZwrKx0HbzkdCdPP&fccid=9f03ff3535e6ee4b&vjs=3
-2025-10-09 16:16:52,704 [INFO] Benefits missing
-2025-10-09 16:16:52,732 [INFO] Company site apply: The Hartford
-2025-10-09 16:16:53,567 [INFO] Easy apply: FTS, Inc.
-2025-10-09 16:16:54,034 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=5b90bbfeb67c9b53&bb=inqCrljpG-SOJjPrXNYDg0gwJePWuedQ_xcX11Dk6xZMBrbKOfo0mk7SA9S1JvHA7XviCfYeoxu7dWNwUFSbEFuOvxZmBDny7TDCx7Ib5faJNZDZMbzAaymouWlnst2obc0ukYI7MXLQwjW6b-GLCNi0BviLpW6R&xkcb=SoC-67M3skdt7eRM550KbzkdCdPP&fccid=a568936f23ad622d&vjs=3
-2025-10-09 16:16:56,711 [INFO] Company site apply: Rockefeller Capital Management
-2025-10-09 16:17:01,508 [INFO] Company site apply: HealthEquity
-2025-10-09 16:17:01,515 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:17:01,516 [INFO] Updated processed jobs with 91 new links
-2025-10-09 16:17:04,521 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=99a4e81bd95dc11f&bb=Rz32kDL5xjApeHUtvmX2tBUWKSGWfsh6ZLmf_pPCrjHx6MVk9YLS1It3b_JrE_xS5GAXJxSOxMbw8Dkek2J6jUuQRYnWr3az8RdsvN_U69EILHuWh4f_4YCGbgwO0_FxOCybHqyqDgh4kSX1C4sT6A%3D%3D&xkcb=SoAi67M3skdnauSQwx0CbzkdCdPP&fccid=a7c92d37815397cf&vjs=3
-2025-10-09 16:17:04,605 [INFO] Benefits missing
-2025-10-09 16:17:04,631 [INFO] Company site apply: BayOne
-2025-10-09 16:17:22,731 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=7837f5d62ff83fbb&bb=jeeGy9PJaKhsuPrYyep93m0ZzDMjyZyFldZcSpCgu1ewX9ZV36NS_x19AIg9U0uafylRhDuHiQWgNuIxB-qBVi6jdMMhpQLdhUh_YFgqGorhlF7jjeKJkAXGgEJh69X0IAN24lRB5u72Uw7dHCNzeg%3D%3D&xkcb=SoBG67M3skdmjcwpXh0FbzkdCdPP&fccid=b6add0e6a71f1008&vjs=3
-2025-10-09 16:17:25,421 [INFO] Company site apply: Chewy
-2025-10-09 16:17:36,223 [INFO] Benefits missing
-2025-10-09 16:17:36,261 [INFO] Company site apply: Fujitsu
-2025-10-09 16:17:36,428 [INFO] Company site apply: Two Harbors Investment Corp.
-2025-10-09 16:17:39,529 [INFO] Benefits missing
-2025-10-09 16:17:39,559 [INFO] Easy apply: omega solutions inc
-2025-10-09 16:17:40,276 [INFO] Benefits missing
-2025-10-09 16:17:40,321 [INFO] Company site apply: UBS
-2025-10-09 16:17:42,622 [INFO] Company site apply: Rockefeller Capital Management
-2025-10-09 16:17:44,119 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=5ab7c4b01cbbb93d&bb=eArjChSUIvX-UuPOGa_IQ5coXN2F4DCyN5kgwMQAa1MOqfTbzeOabk4lYu2DqGJv4Cbl5TirNeOFxjzwKrXGF7jL3wODTMC8h0mC1gjh7oqkuLsH3aZ3iJdxK4YlhWUTl0aoxIYeyuk%3D&xkcb=SoBd67M3skdduRXfsp0HbzkdCdPP&fccid=ff8beac309490ffa&vjs=3
-2025-10-09 16:17:46,247 [INFO] Benefits missing
-2025-10-09 16:17:46,293 [INFO] Company site apply: Fidelity TalentSource
-2025-10-09 16:17:47,091 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=5ab7c4b01cbbb93d&bb=eArjChSUIvX-UuPOGa_IQ5coXN2F4DCyN5kgwMQAa1MOqfTbzeOabk4lYu2DqGJv4Cbl5TirNeOFxjzwKrXGF7jL3wODTMC8h0mC1gjh7oqkuLsH3aZ3iJdxK4YlhWUTl0aoxIYeyuk%3D&xkcb=SoBd67M3skdduRXfsp0HbzkdCdPP&fccid=ff8beac309490ffa&vjs=3
-2025-10-09 16:17:51,464 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=9e5c424de477df83&bb=JyibVHJd2UPJzPQPkPmPaSK0B6_ge2g3bhj_ZeSmLqeh6-D7VzioCxdLQUjDT8PGZk-GKvIw17nsxq7RkZiYpVeTI1bDizpliFCiT17_zLOJHdqnbLvgO_t7y-tsee_sOoJC9PG5CNoa637B6AC2Hg%3D%3D&xkcb=SoB267M3skdot53fsp0ObzkdCdPP&fccid=65f120e244aba589&vjs=3
-2025-10-09 16:17:51,574 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:17:51,577 [INFO] Updated processed jobs with 16 new links
-2025-10-09 16:17:51,893 [INFO] Company site apply: EchoStar
-2025-10-09 16:17:52,275 [INFO] Company site apply: NetApp
-2025-10-09 16:17:52,550 [INFO] Benefits missing
-2025-10-09 16:17:52,607 [INFO] Company site apply: Fidelity TalentSource
-2025-10-09 16:17:53,650 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b46fc1e5f154bc7e&bb=inqCrljpG-SOJjPrXNYDg9FEJT4Tr6Bq5b4Pw_pvdlBUOqk5xZKMk14KfTkGKa0SdsHI6FxJku729q2dQ1YbSBKZcYtVuz8s-nXDAeYnKD0inVG_wFXRgmTw4jeIchHRJL4xmZPToq03e1dW-FItcKiBbYOZvcYy&xkcb=SoCt67M3skdt7eRM550ObzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:17:54,832 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4f58e52132e78e58&bb=ZN4avUYiPGYHpDrJWYD_l27cBFLc7BAA9m-APEh7jjRGB2Cw5LgBkgGtAWo7M4tEVMOMq5UBymocGpsFhAXVrRh06NZFrDvVL03a8kPdWYVqt1-cC9uR-rXTENO9tXkuTM5nhrIisw7j_BaEkunRzA%3D%3D&xkcb=SoAE67M3skd03rwHQp0FbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:17:57,014 [INFO] Company site apply: NetApp
-2025-10-09 16:17:57,066 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:17:57,068 [INFO] Updated processed jobs with 17 new links
-2025-10-09 16:17:58,010 [INFO] Salary missing
-2025-10-09 16:17:58,036 [INFO] Benefits missing
-2025-10-09 16:17:58,123 [INFO] Company site apply: ABCloudZ
-2025-10-09 16:17:58,429 [INFO] Collected 5 jobs...
-2025-10-09 16:17:59,693 [INFO] Benefits missing
-2025-10-09 16:17:59,757 [INFO] Company site apply: Waymo
-2025-10-09 16:18:01,019 [INFO] Benefits missing
-2025-10-09 16:18:01,171 [INFO] Company site apply: Wilson, Sonsini, Goodrich & Rosati
-2025-10-09 16:18:02,139 [INFO] Easy apply: United Wholesale Mortgage
-2025-10-09 16:18:05,328 [INFO] Collected 5 jobs...
-2025-10-09 16:18:06,497 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=38133058dc163841&bb=EUYz-TcqwUIlr421rC81s3BQQ7kmRUceBY3ETR7BOYSPRid7nGtN7kDrl9Zd2Bi5GIAgnAlsyhtEkv3flsIH9mzbENYYjCIpwM4CalmkcZc30FWEUv--jfcLWiiGGVAG7E11gYaZCF3fB7ZaJzX_3g%3D%3D&xkcb=SoA967M3skd5TVW0N50HbzkdCdPP&fccid=f9b13aacd55ca265&vjs=3
-2025-10-09 16:18:06,648 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:18:06,648 [INFO] Updated processed jobs with 48 new links
-2025-10-09 16:18:07,877 [INFO] Benefits missing
-2025-10-09 16:18:08,160 [INFO] Easy apply: Instacart
-2025-10-09 16:18:08,430 [INFO] Benefits missing
-2025-10-09 16:18:08,611 [INFO] Easy apply: SoHo Dragon
-2025-10-09 16:18:08,796 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:18:08,807 [INFO] Updated processed jobs with 22 new links
-2025-10-09 16:18:10,450 [INFO] Company site apply: American Water
-2025-10-09 16:18:14,393 [INFO] Collected 10 jobs...
-2025-10-09 16:18:14,399 [INFO] Processing batch...
-2025-10-09 16:18:15,318 [INFO] Company site apply: Carnival Cruise Line
-2025-10-09 16:18:15,554 [INFO] Gemini response: 60 0 50 80 30 30 30 0 30 30
-2025-10-09 16:18:16,422 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=5349e48b19eb5f73&bb=Tb6qdGIswRBw55vWB6FSNBamK4fKz8q92f4ll5LT5Q1izLqEHnB3j4iqE7roTC2IEPXxN1SXkqODr16MbcOIutekj7pKndU6p0eigQ3jFZULDzOVKa0Zv1NbmQ0nx4t6SU1AdeFX966ZdR9IDC7S9mLVSqa61r2Y&xkcb=SoC667M3skdlYmTbqp0PbzkdCdPP&fccid=0dc39526940fb900&vjs=3
-2025-10-09 16:18:17,291 [INFO] Benefits missing
-2025-10-09 16:18:17,514 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=e2d8343d676b4221&bb=WidM6M2vZXLINUQob_0Yksui0Fa6CGOc3Sb4PG-qfTscc7C1hl0JOtnIJJY4t2tNqjPS-nHmjA6n42M_NLD9hj05iOBzKhDvsBAw6f-Qw7eJ8oNoU-trJ6bbiVyuZ14WDlz2JxcLoQYVE-QxkuX5ug%3D%3D&xkcb=SoDr67M3skdyJGWEtx0JbzkdCdPP&fccid=3e23fb735ae9cae4&vjs=3
-2025-10-09 16:18:18,102 [INFO] Company site apply: USC
-2025-10-09 16:18:26,413 [INFO] Collected 5 jobs...
-2025-10-09 16:18:26,744 [INFO] Collected 10 jobs...
-2025-10-09 16:18:26,780 [INFO] Processing batch...
-2025-10-09 16:18:27,639 [INFO] Gemini response: 70 70 85 70 70 70 70 70 70 85
-2025-10-09 16:18:28,510 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=f56879c94b346cce&bb=WidM6M2vZXLINUQob_0Ykoo9SuxX7knbBzqVbLogVCO7L-xEHZUTIM49V1Tdt4Tv9cr4TDAUuntRNEi9KcFrEYjKrScdwy89UXWPpgh5a3FyyIJ6dMFf6YUR83eAPM3Ie5z8AJgLh9HohKyrbi3Kow%3D%3D&xkcb=SoBl67M3skdyJGWEtx0ObzkdCdPP&fccid=394aeba807831416&vjs=3
-2025-10-09 16:18:29,719 [INFO] Company site apply: Reputation
-2025-10-09 16:18:29,769 [INFO] Benefits missing
-2025-10-09 16:18:30,456 [INFO] Easy apply: Work from Home
-2025-10-09 16:18:31,006 [INFO] Company site apply: CBRE
-2025-10-09 16:18:32,318 [INFO] Company site apply: American Water
-2025-10-09 16:18:40,359 [INFO] Easy apply: Solar Landscape
-2025-10-09 16:18:41,105 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6071bfbd7fce6fd3&bb=GyO7-m9-3AIz1bRM0JHfqCPAmZj2162RKZC0DSGEsI5PpehjBAXjUQF6xUEtTVpnDB9vSxAmeu5hI0WVYwMts0Ba0ZKul0fsf7O-xFyxEfE27Gxb8Y4VMWgVSb6-KAruffLwbylu9nCU4iaWFgW4ew%3D%3D&xkcb=SoAI67M3skeHea2Etx0IbzkdCdPP&fccid=6f9991d1f2148170&vjs=3
-2025-10-09 16:18:43,124 [INFO] Benefits missing
-2025-10-09 16:18:43,297 [INFO] Company site apply: Crowe LLP
-2025-10-09 16:18:50,500 [INFO] Company site apply: UniFirst
-2025-10-09 16:18:50,879 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:18:50,890 [INFO] Updated processed jobs with 12 new links
-2025-10-09 16:18:54,417 [INFO] Easy apply: Vail Systems Inc.
-2025-10-09 16:18:55,063 [INFO] Company site apply: EchoStar
-2025-10-09 16:18:58,527 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=57bd72bfe16784c9&bb=Tb6qdGIswRBw55vWB6FSNGs3RQZ_mTcqil7nOlnjbsmvf54_hgcWUK1aUSy9zM3eZshLiI8q9GDjj-sTn0cQesEzg1Ue5qIhywTg9L4DLSAgmhpvTgWpXDLOkGExg64VQL43v9nH_kME5jBsKFyDa6kWABe3o4lo&xkcb=SoDd67M3skdlYmTbqp0HbzkdCdPP&fccid=eccc1e6c4007ba56&vjs=3
-2025-10-09 16:18:58,894 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:18:58,919 [INFO] Updated processed jobs with 205 new links
-2025-10-09 16:18:59,519 [INFO] Company site apply: American Water
-2025-10-09 16:19:00,625 [INFO] Company site apply: American Family Insurance
-2025-10-09 16:19:04,650 [INFO] Benefits missing
-2025-10-09 16:19:05,127 [INFO] Easy apply: OptConnect Management, LLC
-2025-10-09 16:19:05,642 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=ed675edea1ead53a&bb=k0i_R0siz7eJV1Id3QLtIAx6kLrJnnPjo2gBw0JHRSZwgh3rtpycZmE-Ga03hPJP9K8ypz-QljzswEfZ9Vl9WfKCbmcAK3sDlCh5KV4LBTr1UCM2uO5UueeXYlPY8P4uqugyMrqYrmg%3D&xkcb=SoCW67M3skeIZWwGZp0DbzkdCdPP&fccid=072fba56a95ac58f&cmp=GrayMatter-Robotics&ti=Hardware+Technician&vjs=3
-2025-10-09 16:19:06,877 [INFO] Easy apply: Zūm
-2025-10-09 16:19:07,906 [INFO] Collected 10 jobs...
-2025-10-09 16:19:07,906 [INFO] Processing batch...
-2025-10-09 16:19:08,765 [INFO] Gemini response: 70 30 75 70 80 0 70 0 75 50
-2025-10-09 16:19:10,333 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_10.png
-2025-10-09 16:19:10,333 [WARNING] Failed to click page 11: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-11']") to be visible
-
-2025-10-09 16:19:10,935 [INFO] Gemini response: 95 90 0 80
-2025-10-09 16:19:13,160 [INFO] Company site apply: Intelligent Medical Objects
-2025-10-09 16:19:16,958 [INFO] Collected 5 jobs...
-2025-10-09 16:19:17,272 [INFO] Salary missing
-2025-10-09 16:19:17,483 [INFO] Benefits missing
-2025-10-09 16:19:18,599 [INFO] Company site apply: Advanced Micro Devices, Inc
-2025-10-09 16:19:20,669 [INFO] Company site apply: Child Development Associates
-2025-10-09 16:19:21,876 [INFO] Benefits missing
-2025-10-09 16:19:21,890 [INFO] Collected 10 jobs...
-2025-10-09 16:19:21,891 [INFO] Processing batch...
-2025-10-09 16:19:21,906 [INFO] Benefits missing
-2025-10-09 16:19:22,429 [INFO] Company site apply: Zoll Medical Corporation
-2025-10-09 16:19:22,469 [INFO] Easy apply: 3 Tone Enterprise
-2025-10-09 16:19:22,698 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:19:22,721 [INFO] Updated processed jobs with 39 new links
-2025-10-09 16:19:22,786 [INFO] Gemini response: 80 80 80 80 80 80 0 80 80
-2025-10-09 16:19:22,860 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:19:22,869 [INFO] Updated processed jobs with 34 new links
-2025-10-09 16:19:23,986 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4245a132d5dca0fc&bb=EUYz-TcqwUIlr421rC81sxAQR2oEsXo5I5-av-rChjrlXljX2dnuhUbd_Uag66TBFUKWsOATFtg5BhQn5Iljtn0I1ofLLUiItbZ3CePQcNsQJAEPRKI5izb1-6cP08cqNfDo1_8R2fj-0NRucD0axg%3D%3D&xkcb=SoAU67M3skd5TVW0N50FbzkdCdPP&fccid=1d718e0e6bd3b5f7&vjs=3
-2025-10-09 16:19:26,361 [INFO] Company site apply: Jerry
-2025-10-09 16:19:26,421 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:19:26,433 [INFO] Updated processed jobs with 38 new links
-2025-10-09 16:19:30,657 [INFO] Salary missing
-2025-10-09 16:19:30,719 [INFO] Benefits missing
-2025-10-09 16:19:30,766 [INFO] Benefits missing
-2025-10-09 16:19:31,210 [INFO] Company site apply: Advanced Micro Devices, Inc
-2025-10-09 16:19:31,267 [INFO] Company site apply: Dana-Farber Cancer Institute
-2025-10-09 16:19:36,917 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=cf379037fd15a67e&bb=zt41JMarnxabmaCrDCOxhPDLCpZ1Ew34405xsGk6pe4Z6uxICazMw2SkWs5k9kNFiFRuAoDS3VLk17F3gt_XrXfnmgqvBfKPUOUQpOeLMds9Wsyflw6IlMe-rooTymxvDuGOL9BwT2c%3D&xkcb=SoDt67M3skdoajRM5x0AbzkdCdPP&fccid=48c6693384c61f43&vjs=3
-2025-10-09 16:19:40,046 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8cc9fbbce16f7cf2&bb=ncSDrRr1LGX64Am4KDSY01rxilndHARxnEol7YxEfKmKqmZXd8dHD4Oy43tiFiWhO1wsxcbORmH8eiIyGQYDwzShs7daWPBrhwo38obRgr6GrZTgdevbZj6ytyEYsKNrmfHWs9h1sjU%3D&xkcb=SoDH67M3skeGrIwUrR0NbzkdCdPP&fccid=38955923843e0f56&vjs=3
-2025-10-09 16:19:41,837 [INFO] Benefits missing
-2025-10-09 16:19:42,691 [INFO] Easy apply: Softthink Solutions Inc
-2025-10-09 16:19:43,539 [INFO] Benefits missing
-2025-10-09 16:19:44,141 [INFO] Company site apply: The Hartford
-2025-10-09 16:19:51,568 [INFO] Easy apply: SEL Engineering Services, Inc.
-2025-10-09 16:19:52,659 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=0b2fb82fc3feb7c7&bb=ncSDrRr1LGX64Am4KDSY00ixWrZql-0qPa3vEhxVvzg3NP2H5i0oD49ci0bzRLzhdp0vLfshKnel9l6Bkb9lDxR7DMB8pYjx4eC90DPfsdxHXkvQykEyWRKzszIge4T6P0tH7ceeNyE%3D&xkcb=SoBz67M3skeGrIwUrR0MbzkdCdPP&fccid=38955923843e0f56&vjs=3
-2025-10-09 16:19:52,878 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:19:52,904 [INFO] Updated processed jobs with 49 new links
-2025-10-09 16:19:53,199 [INFO] Collected 5 jobs...
-2025-10-09 16:19:57,364 [INFO] Benefits missing
-2025-10-09 16:19:57,877 [INFO] Easy apply: Chabez Tech
-2025-10-09 16:19:57,938 [INFO] Company site apply: Old National Bank
-2025-10-09 16:19:58,405 [INFO] Benefits missing
-2025-10-09 16:19:58,564 [INFO] Collected 10 jobs...
-2025-10-09 16:19:58,574 [INFO] Processing batch...
-2025-10-09 16:19:58,731 [INFO] Company site apply: Converge Technology Solutions
-2025-10-09 16:19:59,319 [INFO] Gemini response: 0 70 10 75 10 70 10 10 10 65
-2025-10-09 16:20:00,545 [INFO] Collected 5 jobs...
-2025-10-09 16:20:03,862 [INFO] Benefits missing
-2025-10-09 16:20:04,314 [INFO] Easy apply: JOEL FERNANDEZ
-2025-10-09 16:20:08,836 [INFO] Company site apply: Gainwell Technologies LLC
-2025-10-09 16:20:09,459 [INFO] Collected 5 jobs...
-2025-10-09 16:20:11,406 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=f26273fca551e0b5&bb=Dtxh4UR7uD9ugcqup_0JZhEdb69puNETQSsroG6--4Y1o7pWfZtSkl9DtRJ0j8GFJCDDLlauG2nE865x0uJe-DOaH9hrOotOK43u305FpafYZFOZA22fM0btX4AYx_Ond4QmNsZ5g192vKsjks2ocw%3D%3D&xkcb=SoAp67M3skd_qLXzS50AbzkdCdPP&fccid=326f5cbd4573b99d&vjs=3
-2025-10-09 16:20:17,344 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=59c656a2015362ef&bb=zIeiHCwoB9VKRG2UDSxTfisj-ZWS7nliWOZJwuuTpCHagx_s9esOTVx9Z0Defe3-UpwzVpSrsJTYcAtT2i0PibriKr9SMcwXAxu5l8MXn8l61DPDO2Ote_INE2fzzTKfLhKSWg8wVGDNs8FsAl2sEA%3D%3D&xkcb=SoD167M3skefh_WTbJ0PbzkdCdPP&fccid=8e2380cbcdb6403d&vjs=3
-2025-10-09 16:20:20,209 [INFO] Collected 5 jobs...
-2025-10-09 16:20:21,311 [INFO] Benefits missing
-2025-10-09 16:20:21,433 [INFO] Easy apply: The University of Chicago Medicine
-2025-10-09 16:20:25,435 [INFO] Company site apply: Qualcomm
-2025-10-09 16:20:29,038 [INFO] Collected 10 jobs...
-2025-10-09 16:20:29,047 [INFO] Processing batch...
-2025-10-09 16:20:29,438 [INFO] Easy apply: Evolutia Bio
-2025-10-09 16:20:30,116 [INFO] Gemini response: 40 35 10 35 10 10 45 30 30 40
-2025-10-09 16:20:32,331 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7aa1dbfd43926fd8&bb=GyO7-m9-3AIz1bRM0JHfqH84izUFtINco4wS2YIiRsJgIk6nmRZcQlJcUKpvNtFZBGFNH45ZBFHG5kjARn8AJLaLuPWIINoR6-I2Nw_X59ZOGPT3IwmMjnaYsWVm1lkPmFT4L4lqEBOJ_OpU1KNcHw%3D%3D&xkcb=SoDb67M3skeHea2Etx0BbzkdCdPP&fccid=d3d28fff4c42abc0&vjs=3
-2025-10-09 16:20:41,124 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=64e574b98ca23eb8&bb=ZLp7kKVZb5-PadpuHTzDIaWQNgi_kJo8qpMv-_3Aw2iBlpXbsl0ASM7heXiHXcUvzlMLR-1sT4vTsbHFQ7aunK0DjNvqF2W4rNuS18C3ufo0Sl6EMxjX4f1zVx6Lv8UuPaems9AxX0jIiyYA1Nc7zg%3D%3D&xkcb=SoBl67M3skeFpG0RqZ0FbzkdCdPP&fccid=1d922806d157ac24&vjs=3
-2025-10-09 16:20:45,040 [INFO] Collected 10 jobs...
-2025-10-09 16:20:45,063 [INFO] Processing batch...
-2025-10-09 16:20:45,104 [INFO] Benefits missing
-2025-10-09 16:20:45,949 [INFO] Gemini response: 75 0 70 45 70 50 0 95 95 30
-2025-10-09 16:20:46,078 [INFO] Easy apply: Chabez Tech
-2025-10-09 16:20:47,574 [INFO] Company site apply: Centene
-2025-10-09 16:20:47,857 [INFO] Benefits missing
-2025-10-09 16:20:48,065 [INFO] Easy apply: Quadrant Technologies
-2025-10-09 16:20:52,767 [INFO] Easy apply: Deciphex
-2025-10-09 16:20:57,801 [INFO] Company site apply: University Corporation for Atmospheric Research
-2025-10-09 16:20:58,028 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:20:58,031 [INFO] Updated processed jobs with 30 new links
-2025-10-09 16:20:59,576 [INFO] Salary missing
-2025-10-09 16:21:00,029 [INFO] Company site apply: Ascension
-2025-10-09 16:21:02,658 [INFO] Company site apply: Alkami
-2025-10-09 16:21:04,251 [INFO] Benefits missing
-2025-10-09 16:21:05,095 [INFO] Collected 10 jobs...
-2025-10-09 16:21:05,095 [INFO] Processing batch...
-2025-10-09 16:21:05,118 [INFO] Company site apply: Verily
-2025-10-09 16:21:06,061 [INFO] Gemini response: 0 85 0 70 70 0 50 30 0 50
-2025-10-09 16:21:06,713 [INFO] Benefits missing
-2025-10-09 16:21:07,006 [INFO] Easy apply: 3 Tone Enterprise
-2025-10-09 16:21:07,984 [INFO] Benefits missing
-2025-10-09 16:21:08,417 [INFO] Company site apply: Insulet Corporation
-2025-10-09 16:21:08,636 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=0664571ec35a3feb&bb=wGblYtKJ0okHAs1nN4ECcZbB8-4yZsiA6sYUhgv0gZHka8Z5XqTycivh-yNewn2tXHEzpdZYgQu6smUV-xgfzDHA_WUIHPUD4dvmxks_vh-NNZhx0awSA8fmJj6KptB5rrkb8FPYazsr7rYWBgX5ZQ%3D%3D&xkcb=SoBG67M3skebgV2Etx0HbzkdCdPP&fccid=07cd6550e0b5f101&vjs=3
-2025-10-09 16:21:08,754 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:21:08,757 [INFO] Updated processed jobs with 22 new links
-2025-10-09 16:21:21,076 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:21:21,246 [INFO] Benefits missing
-2025-10-09 16:21:21,953 [INFO] Company site apply: Timberland
-2025-10-09 16:21:22,308 [INFO] Benefits missing
-2025-10-09 16:21:22,322 [INFO] Salary missing
-2025-10-09 16:21:22,419 [INFO] Benefits missing
-2025-10-09 16:21:22,803 [INFO] Company site apply: Waymo
-2025-10-09 16:21:22,871 [INFO] Easy apply: Spino Inc
-2025-10-09 16:21:23,156 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:21:23,181 [INFO] Updated processed jobs with 38 new links
-2025-10-09 16:21:23,386 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:21:23,398 [INFO] Updated processed jobs with 19 new links
-2025-10-09 16:21:24,186 [INFO] Easy apply: Publishing Concepts
-2025-10-09 16:21:24,589 [INFO] Company site apply: Resolve AI
-2025-10-09 16:21:24,869 [INFO] Collected 5 jobs...
-2025-10-09 16:21:26,081 [INFO] Benefits missing
-2025-10-09 16:21:26,353 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:21:26,388 [INFO] Collected 5 jobs...
-2025-10-09 16:21:26,415 [INFO] Company site apply: Valuetainment
-2025-10-09 16:21:26,830 [INFO] Collected 5 jobs...
-2025-10-09 16:21:27,832 [INFO] Collected 10 jobs...
-2025-10-09 16:21:27,833 [INFO] Processing batch...
-2025-10-09 16:21:28,565 [INFO] Gemini response: 20 20 20 20 20 20 0 20 60 20
-2025-10-09 16:21:30,602 [INFO] Benefits missing
-2025-10-09 16:21:30,698 [INFO] Company site apply: Boston Dynamics
-2025-10-09 16:21:37,639 [INFO] Easy apply: Crusoe
-2025-10-09 16:21:38,067 [INFO] Collected 5 jobs...
-2025-10-09 16:21:44,105 [INFO] Easy apply: Data Inc
-2025-10-09 16:21:44,548 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:21:44,569 [INFO] Updated processed jobs with 16 new links
-2025-10-09 16:21:45,036 [INFO] Salary missing
-2025-10-09 16:21:45,193 [INFO] Benefits missing
-2025-10-09 16:21:45,710 [INFO] Easy apply: Simple Technology Solutions
-2025-10-09 16:21:49,221 [INFO] Collected 10 jobs...
-2025-10-09 16:21:49,222 [INFO] Processing batch...
-2025-10-09 16:21:50,291 [INFO] Gemini response: 85 50 85 85 75 85 85 85 50 85
-2025-10-09 16:21:52,272 [INFO] Confirmation job: LPL Financial
-2025-10-09 16:21:53,176 [INFO] Benefits missing
-2025-10-09 16:21:53,494 [INFO] Easy apply: Jam City
-2025-10-09 16:21:53,961 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:21:53,964 [INFO] Updated processed jobs with 14 new links
-2025-10-09 16:21:58,698 [INFO] Benefits missing
-2025-10-09 16:21:59,275 [INFO] Company site apply: Perforce
-2025-10-09 16:22:03,804 [INFO] Collected 10 jobs...
-2025-10-09 16:22:03,806 [INFO] Processing batch...
-2025-10-09 16:22:04,210 [INFO] Salary missing
-2025-10-09 16:22:04,367 [INFO] Benefits missing
-2025-10-09 16:22:04,983 [INFO] Gemini response: 75 75 75 85 75 50 75 85 0 30
-2025-10-09 16:22:05,150 [INFO] Company site apply: Zeus Fire & Security
-2025-10-09 16:22:08,520 [INFO] Company site apply: CD PROJEKT RED
-2025-10-09 16:22:12,097 [INFO] Collected 10 jobs...
-2025-10-09 16:22:12,107 [INFO] Processing batch...
-2025-10-09 16:22:13,073 [INFO] Gemini response: 0 95 85 75 40 30 85 70 70 75
-2025-10-09 16:22:13,663 [INFO] Benefits missing
-2025-10-09 16:22:13,809 [INFO] Company site apply: Olympus Group Inc
-2025-10-09 16:22:20,238 [INFO] Benefits missing
-2025-10-09 16:22:20,638 [INFO] Easy apply: CommunityCare
-2025-10-09 16:22:22,162 [INFO] Benefits missing
-2025-10-09 16:22:22,334 [INFO] Easy apply: Chuwa America
-2025-10-09 16:22:24,925 [INFO] Collected 5 jobs...
-2025-10-09 16:22:25,708 [INFO] Collected 10 jobs...
-2025-10-09 16:22:25,709 [INFO] Processing batch...
-2025-10-09 16:22:26,077 [INFO] Company site apply: Modern Technology Solutions, Inc
-2025-10-09 16:22:26,224 [INFO] Collected 5 jobs...
-2025-10-09 16:22:26,262 [INFO] Company site apply: Team LINX
-2025-10-09 16:22:26,614 [INFO] Gemini response: 80 80 80 80 80 80 0 80 80 0
-2025-10-09 16:22:28,039 [INFO] Easy apply: BridgeNexus Technologies Inc
-2025-10-09 16:22:32,613 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2ce50ae225829790&bb=J1h4xvhXfoHRH8B81UUA6ClKrhEXdgY-x7HPrnB-xMMOe5tsJXHr2KnfBAJ1_lRFCP5sJOSZKN9Lhz3C5JkcaNlPXsD9gQpn5DOh5MUZm6yLyVM9CCD6biCR1fS2KsvqeUf2g32E2v1SbJuIGT4C6g%3D%3D&xkcb=SoBo67M3skeWCi3fsp0PbzkdCdPP&fccid=93524bf0a6090bb2&vjs=3
-2025-10-09 16:22:32,740 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:22:32,748 [INFO] Updated processed jobs with 38 new links
-2025-10-09 16:22:33,973 [INFO] Salary missing
-2025-10-09 16:22:34,462 [INFO] Benefits missing
-2025-10-09 16:22:35,062 [INFO] Company site apply: SYNITI
-2025-10-09 16:22:35,102 [INFO] Easy apply: Riot Platforms
-2025-10-09 16:22:35,336 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6aecfd44380aff23&bb=VbxufLZAMYaL3ttqhP2cahQ6JCXQwGAQaKOOtEJni6MTQwtgrrBMquNc4hBG3Qx7gd9juw2upjWuV49pvsxmih6c-zxFT4iWGNyiCNPpBZ-HdLqi8tOf1XQAT6nAbUeLArD47WOB9bY%3D&xkcb=SoBA67M3skeR84gN4T0ObzkdCdPP&fccid=0318f8aab0067f18&vjs=3
-2025-10-09 16:22:35,456 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:22:35,459 [INFO] Updated processed jobs with 45 new links
-2025-10-09 16:22:36,017 [INFO] Collected 5 jobs...
-2025-10-09 16:22:37,516 [INFO] Benefits missing
-2025-10-09 16:22:37,712 [INFO] Easy apply: NATIONMIND LLC
-2025-10-09 16:22:38,152 [INFO] Company site apply: Selective Insurance Company of America
-2025-10-09 16:22:40,367 [INFO] Benefits missing
-2025-10-09 16:22:40,695 [INFO] Easy apply: Bankers Financial Corp
-2025-10-09 16:22:44,149 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_5.png
-2025-10-09 16:22:44,151 [WARNING] Failed to click page 6: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-6']") to be visible
-
-2025-10-09 16:22:44,735 [INFO] Salary missing
-2025-10-09 16:22:44,947 [INFO] Benefits missing
-2025-10-09 16:22:44,961 [INFO] Gemini response: 90 95
-2025-10-09 16:22:45,777 [INFO] Company site apply: Artisan Partners
-2025-10-09 16:22:46,953 [INFO] Company site apply: MindsDB
-2025-10-09 16:22:47,223 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4ac0f9926896af51&bb=PsDLOAe28onF286h77r89xjwjVo7SsbLnEWFdF7mtrj7XCS3Ur7IokBVUNy0wERhIizn9IhrMyVOOEgcWofKrMUVyBI_z8nqFtPGTaDIVoo5d3LeWlQ7cdWhDW4an08o0QZHSzwz61c%3D&xkcb=SoDK67M3skeUwlS6mx0HbzkdCdPP&fccid=c0f8fe90d3cd91fa&vjs=3
-2025-10-09 16:22:47,298 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:22:47,310 [INFO] Updated processed jobs with 53 new links
-2025-10-09 16:22:47,739 [INFO] Salary missing
-2025-10-09 16:22:48,582 [INFO] Company site apply: Wealthbox
-2025-10-09 16:22:50,713 [INFO] Benefits missing
-2025-10-09 16:22:50,824 [INFO] Company site apply: Upward Health
-2025-10-09 16:22:54,840 [INFO] Salary missing
-2025-10-09 16:22:55,231 [INFO] Benefits missing
-2025-10-09 16:22:55,707 [INFO] Company site apply: Blue Cross Blue Shield of Louisiana
-2025-10-09 16:22:58,600 [INFO] Salary missing
-2025-10-09 16:23:00,092 [INFO] Company site apply: Balfour Beatty
-2025-10-09 16:23:01,154 [INFO] Company site apply: Trimble
-2025-10-09 16:23:03,250 [INFO] Collected 10 jobs...
-2025-10-09 16:23:03,251 [INFO] Processing batch...
-2025-10-09 16:23:03,910 [INFO] Gemini response: 85 70 0 85 50 50 0 75 85 0
-2025-10-09 16:23:04,794 [INFO] Benefits missing
-2025-10-09 16:23:05,196 [INFO] Easy apply: Nautilus Hyosung America Inc
-2025-10-09 16:23:09,837 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=e5b5e2d8ebe681cc&bb=vniqd4K_Gej6eQoNH6ih5u-2OFRoygc3T9rTA_srh433cuyrBC9NFPGeJait6-hjvWhIyRE4S5T_JJNbLRjdS6HK7szYXANdanPLU1yRltIUImLNXta9OOV7Ps3EJaV2SaopKMwNPRbNGnHMhh31AQ%3D%3D&xkcb=SoCn67M3skeqtJQEBJ0FbzkdCdPP&fccid=53ed914fbd8df7a3&vjs=3
-2025-10-09 16:23:09,922 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:23:09,958 [INFO] Updated processed jobs with 17 new links
-2025-10-09 16:23:10,183 [INFO] Confirmation job: HealthVerity
-2025-10-09 16:23:11,443 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d4e32ff220db0ff6&bb=lDwrZ_2h7WOSBr_zYWOnglD4pYP9L9l052mQPVXEEKItOyZMUwHVcooA1PZ_Xeuxb-RRYO85sMjg-FbtAGLgkPAo-vI8p0z9DEmNquQrw8Gso5N9lZDExJccmdSRgHxMm82j-kY2IAf5qKdPhflYjKREo4l81oF4&xkcb=SoD767M3skevlTWEtx0MbzkdCdPP&fccid=1d718e0e6bd3b5f7&vjs=3
-2025-10-09 16:23:15,641 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=84f7bb4bffd15780&bb=PowkU8TAWZmAEbZeT02igVHkh5Qd5rO42pKCh33EOFM_7c_7OADjOOzLuLPDVB2OfqBYiOdwDFk9UVaBBK4tD-VH3bhg6BXNUQ9d_wQD1yVqoWnbfsDtQoo8vxdrr297ruc7It5elM1z2gMLO9ip6A%3D%3D&xkcb=SoDw67M3skeo09QHQp0ObzkdCdPP&fccid=f281ea25a6929b07&vjs=3
-2025-10-09 16:23:16,999 [INFO] Collected 5 jobs...
-2025-10-09 16:23:18,689 [INFO] Benefits missing
-2025-10-09 16:23:18,983 [INFO] Company site apply: ResMed
-2025-10-09 16:23:21,704 [INFO] Easy apply: Janie and Jack LLC
-2025-10-09 16:23:22,266 [INFO] Collected 5 jobs...
-2025-10-09 16:23:23,232 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=61fcfe38760ae4db&bb=jdT0JCKc7H9GSLLxXr1T-qMzgum1U4kKzYtnkyTOKmib0If0Pxun1oHIzkMCvtUFpzSrmHX7mBAGu8cEwi0d2MK8dgqPy9TeyjY7rrWXuVdGRPHI2UBoaXCNAa9a84oOH4A90zfNKl9FmRs5Ww1j5Q%3D%3D&xkcb=SoAu67M3skeAfgWTbJ0bbzkdCdPP&fccid=4646eb4f4a0ba78e&vjs=3
-2025-10-09 16:23:33,872 [INFO] Company site apply: The Cigna Group
-2025-10-09 16:23:33,944 [INFO] Salary missing
-2025-10-09 16:23:34,105 [INFO] Easy apply: Ivalua
-2025-10-09 16:23:41,512 [INFO] Company site apply: amdocs
-2025-10-09 16:23:44,424 [INFO] Collected 10 jobs...
-2025-10-09 16:23:44,427 [INFO] Processing batch...
-2025-10-09 16:23:45,526 [INFO] Gemini response: 90 90 80 90 90 90 90 90 90 0
-2025-10-09 16:23:46,142 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=57f666601c3feb08&bb=J1h4xvhXfoHRH8B81UUA6M9UKGvKYTLAygprCdroKYbRtoMkZu3ycRt1BAyDh6LPn4tY0b-A_V2DrICMkGiZIDsZZJ1qMSKFsihUpEUkpd3Jy7ps7cCRkncsun1xFQvKHTs3PyKKUmXd1hSOnfeSbw%3D%3D&xkcb=SoC767M3skeWCi3fsp0GbzkdCdPP&fccid=69247daab4a84a92&vjs=3
-2025-10-09 16:23:46,313 [INFO] Company site apply: Charles Schwab Corporation
-2025-10-09 16:23:46,805 [INFO] Easy apply: CDR Fundraising Group
-2025-10-09 16:23:47,647 [INFO] Collected 10 jobs...
-2025-10-09 16:23:47,647 [INFO] Processing batch...
-2025-10-09 16:23:48,702 [INFO] Gemini response: 0 80 95 0 85 0 85 85 80 0
-2025-10-09 16:23:52,682 [INFO] Benefits missing
-2025-10-09 16:23:52,839 [INFO] Confirmation job: Rippling
-2025-10-09 16:23:55,546 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3deaae27ac8abd3e&bb=PowkU8TAWZmAEbZeT02igR8kHclopEDCcx7w2a74ejjeaDPpLNOYontnea0ZaRAW8VPaAXdRBV2zeK1-BX4Pj1uznoD9uiTb84IEe43xPx3ZxOjdVQx-B8_kJBXGPvznReOT-DESqd1jx2d8Zvc23g%3D%3D&xkcb=SoCE67M3skeo09QHQp0CbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:23:55,620 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fad4bc37cc3d0bdd&bb=mqba7934AooaaujOpnyh1J8_Vj0X3YNaVW7sVAgqNJ9XVaDFJucyP5yNub0Jlce7fu4o6cVW0MYEM4XAds7o0tr3nKCwTKI5UcAgRNfL5r6kYtLptFj8_c0nW9PDzWUwnOGqmkDkz8JWfBl-ABdFPA%3D%3D&xkcb=SoDa67M3skeuExwEJ50IbzkdCdPP&fccid=e8f998ddd15bac9c&vjs=3
-2025-10-09 16:23:55,862 [INFO] Easy apply: Nixon web tech
-2025-10-09 16:23:56,083 [INFO] Company site apply: Backroads
-2025-10-09 16:24:04,750 [INFO] Easy apply: HAUS LABS BY LADY GAGA
-2025-10-09 16:24:05,793 [INFO] Easy apply: Skyfire
-2025-10-09 16:24:05,924 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:24:05,927 [INFO] Updated processed jobs with 128 new links
-2025-10-09 16:24:07,566 [INFO] Salary missing
-2025-10-09 16:24:08,386 [INFO] Company site apply: Roadrunner
-2025-10-09 16:24:08,621 [INFO] Benefits missing
-2025-10-09 16:24:09,481 [INFO] Company site apply: Home Depot / THD
-2025-10-09 16:24:10,055 [INFO] Company site apply: Goosehead Insurance Agency
-2025-10-09 16:24:10,509 [INFO] Collected 10 jobs...
-2025-10-09 16:24:10,516 [INFO] Processing batch...
-2025-10-09 16:24:10,630 [INFO] Benefits missing
-2025-10-09 16:24:11,182 [INFO] Easy apply: Westwood Management Corp
-2025-10-09 16:24:11,203 [INFO] Company site apply: W.L. Gore & Associates
-2025-10-09 16:24:11,255 [INFO] Gemini response: 95 90 95 85 90 40 0 80 50
-2025-10-09 16:24:11,340 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:24:11,341 [INFO] Updated processed jobs with 14 new links
-2025-10-09 16:24:14,630 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:24:16,065 [INFO] Easy apply: Teak
-2025-10-09 16:24:18,515 [INFO] Easy apply: USA Swimming
-2025-10-09 16:24:19,765 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:24:29,973 [INFO] Benefits missing
-2025-10-09 16:24:30,462 [INFO] Benefits missing
-2025-10-09 16:24:30,882 [INFO] Company site apply: Boar's Head
-2025-10-09 16:24:30,895 [INFO] Easy apply: Berkshire Grey
-2025-10-09 16:24:34,086 [INFO] Company site apply: Landis+Gyr
-2025-10-09 16:24:34,111 [INFO] Company site apply: Canoe Intelligence
-2025-10-09 16:24:34,149 [INFO] Collected 5 jobs...
-2025-10-09 16:24:34,896 [INFO] Collected 10 jobs...
-2025-10-09 16:24:34,896 [INFO] Processing batch...
-2025-10-09 16:24:35,693 [INFO] Gemini response: 20 60 20 20 20 20 20 70 0 20
-2025-10-09 16:24:36,780 [INFO] Easy apply: Rupp Pfalzgraf LLC
-2025-10-09 16:24:38,265 [INFO] Easy apply: Mission Underwriting Managers, LLC
-2025-10-09 16:24:41,534 [INFO] Benefits missing
-2025-10-09 16:24:41,683 [INFO] Easy apply: Katalyst Healthcares & Life Sciences
-2025-10-09 16:24:41,836 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3abe2d716745028b&bb=lGT16ClV6wQB0tqoLrEEcMo5ZCHDsEoliLUnX9hVMLE8JAPNBkJ8qwsMMtw-kbMnW-QklnOFIiSUy0ePDwsTpKhspxhKqd_VSFiOs5RGA3Ih-oBF4MiHszstePmjsqhJwEQltkBoTA4%3D&xkcb=SoAk67M3skevlGx7s50FbzkdCdPP&fccid=4462c9ece41cde7d&vjs=3
-2025-10-09 16:24:43,896 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=253ba7fb0a4d1d60&bb=PowkU8TAWZmAEbZeT02igcch4PLXwpcQA94Za-wTmw5OzHyiV_cVz9Q41Jleg34UbC0T3Cf-SI47C-WMmDWclACYnctFMkfUB9waHYfhFG26-Ec3IRgIMNQkttqZo8e9t4eREbNy2urFN1WtOepe9g%3D%3D&xkcb=SoCX67M3skeo09QHQp0GbzkdCdPP&fccid=bd8753bffa1f0c5e&vjs=3
-2025-10-09 16:24:48,476 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=9bb67f5b405601f9&bb=2Vm2FAPe3J-gT81gQsAVslphITWfLefNhcwyb-nDcSSWbD5oh7rJKxRfOS28Tcw6BmXdYr9GVYRkXn-55O9BkPisS_WWWNJ5Us02cw5StbS27hF-nE8pnIU5wMuomJCsz7nTFChITadX6eJoA7NXYg%3D%3D&xkcb=SoDS67M3skekWcXfsp0CbzkdCdPP&fccid=b839f9af280b111f&vjs=3
-2025-10-09 16:24:54,169 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b26f2b65bc836d6d&bb=vJCw4ie6dqYLUOVBEZlk682lMAzuESQm6clBjX_kJrMQH9U3em1vp9if3rs49ErAlUyf-tYjELSNBvcAxxXJp_XKb8IfUcKpx7oncJZfvy5Q8GXQqLZDAf_gJHH7cxon0re_B3Kn5yQcBxqq469Oeg%3D%3D&xkcb=SoB567M3ske47zzbqp0ObzkdCdPP&fccid=aa0a5cbd88d36750&vjs=3
-2025-10-09 16:24:54,229 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:24:54,231 [INFO] Updated processed jobs with 13 new links
-2025-10-09 16:24:55,727 [INFO] Company site apply: BMO US
-2025-10-09 16:24:55,748 [INFO] Company site apply: Zillow
-2025-10-09 16:24:57,796 [INFO] Benefits missing
-2025-10-09 16:24:58,332 [INFO] Collected 5 jobs...
-2025-10-09 16:24:58,419 [INFO] Company site apply: Turner Construction Company
-2025-10-09 16:25:02,042 [INFO] Benefits missing
-2025-10-09 16:25:02,325 [INFO] Company site apply: Teradata
-2025-10-09 16:25:06,986 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4b34f6e0e412f383&bb=2Vm2FAPe3J-gT81gQsAVstrM2FZk-_vaTUEJZpdRPwUEbYQBwD_Jo3wZ98h9I-lhg4vPPLoKOoq1EPWpydifH6UpD-WQ5Jwox8ivU2SAtKq7ThIh3TJjELDVAeyZBZKyXy4YQpRh9jJhe8lDmrp1Sw%3D%3D&xkcb=SoBP67M3skekWcXfsp0BbzkdCdPP&fccid=434d631ce9b7106e&vjs=3
-2025-10-09 16:25:07,407 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:25:07,417 [INFO] Updated processed jobs with 24 new links
-2025-10-09 16:25:08,469 [INFO] Company site apply: College of Charleston
-2025-10-09 16:25:08,764 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=556d01409263043e&bb=OLoFnYiF6WIatkUXEuK7AavWlhZubaufpkOJMaXfztVNvSbGfj4u509mzFM_MJ0JCoS7u8QTuq1zo1JgmVBgFkqTBoE23Sx85udXlJDLhYWIVQEzc5C_qcY0Lo6YHNT0FfVEaEVXsajKiHfRU1Bn6Q%3D%3D&xkcb=SoA767M3skes_3wHQp0MbzkdCdPP&fccid=025f5fd370e93345&vjs=3
-2025-10-09 16:25:08,872 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:25:08,888 [INFO] Updated processed jobs with 20 new links
-2025-10-09 16:25:11,530 [INFO] Benefits missing
-2025-10-09 16:25:13,185 [INFO] Easy apply: Fortitude Re
-2025-10-09 16:25:14,725 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8417acb3eb82ddfa&bb=fBnVqDjsqK6I__iIdOStPyOzQoVkqP22DQNWyNDPYAtq8pCMWeREzZ1Z0YdaOAV0bulf-4vN0xSyrn0ZHHo0GQ82S3n4iEiKjWmddpUzCo5jRGDhvw0_VT8W88VHaDLRMeMgtTnqcMVHJ58gKuEDBw%3D%3D&xkcb=SoCS67M3skervV20N50ObzkdCdPP&fccid=6e4828d61ff7d77c&vjs=3
-2025-10-09 16:25:14,993 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:25:14,998 [INFO] Updated processed jobs with 25 new links
-2025-10-09 16:25:15,375 [INFO] Collected 5 jobs...
-2025-10-09 16:25:17,247 [INFO] Easy apply: Sinch
-2025-10-09 16:25:18,718 [INFO] Collected 5 jobs...
-2025-10-09 16:25:18,928 [INFO] Collected 5 jobs...
-2025-10-09 16:25:20,812 [INFO] Benefits missing
-2025-10-09 16:25:21,474 [INFO] Easy apply: Gormat
-2025-10-09 16:25:22,050 [INFO] Collected 10 jobs...
-2025-10-09 16:25:22,050 [INFO] Processing batch...
-2025-10-09 16:25:22,536 [INFO] Collected 5 jobs...
-2025-10-09 16:25:22,650 [INFO] Gemini response: 75 75 0 75 75 75 0 75 75 75
-2025-10-09 16:25:25,156 [INFO] Benefits missing
-2025-10-09 16:25:25,683 [INFO] Easy apply: Fortitude Re
-2025-10-09 16:25:26,026 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=44afd1ae74e6a253&bb=lPxKcT2n0LSyRBt40En8um6ACohydpoM1IYGnQ_MdehM_4XFqL6-YgbzIsB80dv4XR7JYVzuCcak8jV0xPcTbU7SsFl7gXjUZcy2PML4f16xIbOsimOVQaeKiSSn1NhCIO50X0dwv98%3D&xkcb=SoA467M3sken6TWTbJ0AbzkdCdPP&fccid=c0e7e1062f8fa6f6&vjs=3
-2025-10-09 16:25:34,992 [INFO] Salary missing
-2025-10-09 16:25:35,025 [INFO] Benefits missing
-2025-10-09 16:25:35,064 [INFO] Collected 10 jobs...
-2025-10-09 16:25:35,065 [INFO] Processing batch...
-2025-10-09 16:25:35,226 [INFO] Company site apply: Trinity University
-2025-10-09 16:25:35,282 [INFO] Easy apply: E Tech Group
-2025-10-09 16:25:35,343 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:25:35,346 [INFO] Updated processed jobs with 53 new links
-2025-10-09 16:25:35,593 [INFO] Collected 5 jobs...
-2025-10-09 16:25:35,993 [INFO] Gemini response: 60 75 90 90 90 90 95 95 75 95
-2025-10-09 16:25:36,166 [INFO] Salary missing
-2025-10-09 16:25:36,462 [INFO] Company site apply: Micron
-2025-10-09 16:25:41,457 [INFO] Collected 10 jobs...
-2025-10-09 16:25:41,465 [INFO] Processing batch...
-2025-10-09 16:25:42,321 [INFO] Gemini response: 0 75 60 0 70 70 0 0 70
-2025-10-09 16:25:47,819 [INFO] Benefits missing
-2025-10-09 16:25:48,690 [INFO] Company site apply: Bechtel
-2025-10-09 16:25:50,150 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=76af9970ac479015&bb=vgHoR3ySKbp8GH6Y9ulJaa-f68oSbG3tuum3RzveSOXmRy_ZwSEYrx2G64EjCX1d4I_e-vHM5a2CJMZHEQgmwQt-7AQF_caRmdCZp59YfPkBfgHpyjRX7_LJDVoT6iJ2Xm_0dBrNHyuuQ_Qh5wTCog%3D%3D&xkcb=SoDW67M3skejIqyPrR0AbzkdCdPP&fccid=5874abf7fe94cd99&cmp=SDA-Solutions-LLC&ti=Data+Scientist&vjs=3
-2025-10-09 16:25:50,978 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:25:50,992 [INFO] Updated processed jobs with 23 new links
-2025-10-09 16:25:53,603 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8284e1aae0668a43&bb=OLoFnYiF6WIatkUXEuK7AfyOMVT0e6aDZ7M4AzevFCUGwiMuEvnzr_VxnRiEv7fxBxYFgXC01NTm9WV-A_1uOnZSTWzNSlmJmkBhHI_mmn5zZ6O2Vagf0oafrSLdoJiu-9G8vUfoM9D8gvwDW47mDQ%3D%3D&xkcb=SoDS67M3skes_3wHQp0DbzkdCdPP&fccid=3aea00d21205a7b3&vjs=3
-2025-10-09 16:25:57,791 [INFO] Collected 10 jobs...
-2025-10-09 16:25:57,799 [INFO] Processing batch...
-2025-10-09 16:25:58,546 [INFO] Gemini response: 85 30 30 85 30 30 85 85 30 85
-2025-10-09 16:26:04,363 [INFO] Easy apply: TerraMax Inc
-2025-10-09 16:26:05,051 [INFO] Collected 10 jobs...
-2025-10-09 16:26:05,052 [INFO] Processing batch...
-2025-10-09 16:26:05,113 [INFO] Company site apply: Affirm
-2025-10-09 16:26:06,017 [INFO] Gemini response: 65 0 60 20 20 35 20 40 0 0
-2025-10-09 16:26:06,726 [INFO] Company site apply: The Clorox Company
-2025-10-09 16:26:09,798 [INFO] Benefits missing
-2025-10-09 16:26:10,327 [INFO] Company site apply: University of Miami
-2025-10-09 16:26:21,200 [INFO] Benefits missing
-2025-10-09 16:26:21,309 [INFO] Easy apply: LCMC Health
-2025-10-09 16:26:21,312 [INFO] Benefits missing
-2025-10-09 16:26:21,419 [INFO] Company site apply: enGen
-2025-10-09 16:26:21,751 [INFO] Collected 5 jobs...
-2025-10-09 16:26:23,576 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=604b92e6ce27a586&bb=OLoFnYiF6WIatkUXEuK7AVOMM6EsZHkPut9_FwcMixW8bUfnekIgeCktm4TaZkwzvhe8oKgxGMtr6KhbL-vg_3aINYBNZJ10WmgEHb3WWid67DRion-HE0F1hBeirdvJyRhXm5UknfA%3D&xkcb=SoBP67M3skes_3wHQp0AbzkdCdPP&fccid=59867e5a232c7b5c&vjs=3
-2025-10-09 16:26:24,699 [INFO] Company site apply: Utilidata
-2025-10-09 16:26:24,759 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:26:24,784 [INFO] Updated processed jobs with 245 new links
-2025-10-09 16:26:25,154 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8755b0e050cc74aa&bb=fBnVqDjsqK6I__iIdOStPzG3FoqDxVnC3T0hzupSag3t89IQ8NMIPOAZsY0M2BFxEhQ-qjK-9sqe8w8eNvC0hwpFtl3c1Zu2Y1TFrxUiuQEJvJisK3jcS4gsvKfKcmCJvGi2103yDpQnD2UVdoXc5A%3D%3D&xkcb=SoAP67M3skervV20N50NbzkdCdPP&fccid=033b673c9c5dc788&vjs=3
-2025-10-09 16:26:32,600 [INFO] Benefits missing
-2025-10-09 16:26:32,671 [INFO] Company site apply: Globant
-2025-10-09 16:26:32,720 [INFO] Benefits missing
-2025-10-09 16:26:32,782 [INFO] Easy apply: Stier Solutions Inc
-2025-10-09 16:26:33,274 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c235c54178eb288b&bb=OLoFnYiF6WIatkUXEuK7ATNbYWbOQnVUWuT8cGuubY8tFmuRI15wWwIc6hgAaF0ocevmHFn6-udwDGy5AtkLnydWae1kc_UHUqbbtjzLXjojOeCv3hotDs7EWzq0jsvoBafcy3ifdls%3D&xkcb=SoDB67M3skes_3wHQp0HbzkdCdPP&fccid=59867e5a232c7b5c&vjs=3
-2025-10-09 16:26:37,849 [INFO] Company site apply: Ensemble Health Partners
-2025-10-09 16:26:39,187 [INFO] Collected 10 jobs...
-2025-10-09 16:26:39,187 [INFO] Processing batch...
-2025-10-09 16:26:40,091 [INFO] Gemini response: 70 0 80 75 70 55 0 70 0 75
-2025-10-09 16:26:42,036 [INFO] Benefits missing
-2025-10-09 16:26:42,162 [INFO] Company site apply: Colorado Farm Bureau Mutual Insurance Company
-2025-10-09 16:26:43,713 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=1034b203fd84d7dc&bb=OLoFnYiF6WIatkUXEuK7AXAoZM_0HFJGml1X4mwC8hojPcgILa0NrwfV0IGTWzXMsi0y7Rt5cBhgrJMf-63RCtAY-Q78C1IbmOq5FzF__Gkpg0zjiG0RMhEer1XSZtu_I0f7beAz7NE%3D&xkcb=SoB167M3skes_3wHQp0GbzkdCdPP&fccid=59867e5a232c7b5c&vjs=3
-2025-10-09 16:26:44,021 [INFO] Company site apply: HealthPartners/GHI
-2025-10-09 16:26:52,739 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=ef6a6c0036567991&bb=PqM_Wi8K8HkpCYceKWoKquRlpfMDHr5toxed3R0CCd6NEsMVVGWclH3Frr2kASoP688yBV2gHmAmY96AFJ5PDFgqsBkGhJUS3NEy8Xy9GTxSvMtttQd6GQ_crjZQCUJWqVc03A9jePLywNHDcgrASg%3D%3D&xkcb=SoC667M3ske_cGyw5J0DbzkdCdPP&fccid=405872e6dc98cf20&vjs=3
-2025-10-09 16:26:53,006 [INFO] Company site apply: First National Bank of Omaha
-2025-10-09 16:26:55,873 [INFO] Collected 5 jobs...
-2025-10-09 16:27:02,033 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4492e523988323e4&bb=-dXyFDYEC6FEyYk1ZvYCNHnW0dICPRGaidlUojVBM4f4K8DLzYez-JIVUjM6FIdfyFQGuDVzo00p56cFZIU45Jg-QENfqI-KHenccWjX5AFvg3aH48Y9oPwHguWISMgIzIhsGrSqkrINBXfcgL0KU2TbRwfC2bQL&xkcb=SoCZ67M3ske2O8SMcp0FbzkdCdPP&fccid=f4c6ed63cbcfdc0d&vjs=3
-2025-10-09 16:27:03,955 [INFO] Collected 5 jobs...
-2025-10-09 16:27:07,655 [INFO] Company site apply: New Relic
-2025-10-09 16:27:07,785 [INFO] Collected 10 jobs...
-2025-10-09 16:27:07,785 [INFO] Processing batch...
-2025-10-09 16:27:08,839 [INFO] Gemini response: 70 60 0 0 55 65 75 80 40 45
-2025-10-09 16:27:10,799 [INFO] Benefits missing
-2025-10-09 16:27:10,874 [INFO] Company site apply: The Church of Jesus Christ of Latter-day Saints
-2025-10-09 16:27:19,613 [INFO] Company site apply: Litera
-2025-10-09 16:27:21,940 [INFO] Easy apply: AbbVie
-2025-10-09 16:27:21,967 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:27:21,976 [INFO] Updated processed jobs with 63 new links
-2025-10-09 16:27:23,705 [INFO] Benefits missing
-2025-10-09 16:27:23,900 [INFO] Company site apply: Linedata Services
-2025-10-09 16:27:26,140 [INFO] Benefits missing
-2025-10-09 16:27:26,423 [INFO] Easy apply: Cephas
-2025-10-09 16:27:26,534 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=73d631ba5985b42e&bb=mtDbvAn6OrYjHSqg9E-FeKuiykZGQcKGoxhi8GDR3ZqroklZfRD5ffiR_audslv8YI45nWeM5rgz1Nf3cZEVC5nsFBka7MB80IGRwzj1dPqVPf4JRu7MzIUdLj46Fxw_gDRxzhAFOtCCxneUB-vtFQ%3D%3D&xkcb=SoDp67M3skexXDRM550BbzkdCdPP&fccid=a77d7dcdb8364a0d&vjs=3
-2025-10-09 16:27:29,597 [INFO] Company site apply: Campbell Soup Company
-2025-10-09 16:27:29,691 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:27:29,703 [INFO] Updated processed jobs with 31 new links
-2025-10-09 16:27:32,898 [INFO] Easy apply: Oscar Health
-2025-10-09 16:27:33,583 [INFO] Company site apply: University of South Carolina
-2025-10-09 16:27:38,238 [INFO] Easy apply: Talkdesk 2
-2025-10-09 16:27:39,524 [INFO] Benefits missing
-2025-10-09 16:27:39,783 [INFO] Easy apply: Port 51 Lending
-2025-10-09 16:27:40,762 [INFO] Collected 10 jobs...
-2025-10-09 16:27:40,762 [INFO] Processing batch...
-2025-10-09 16:27:41,116 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c181c73c0ab1f863&bb=mtDbvAn6OrYjHSqg9E-FeHAFYfzoXAHSUcIQlCgcbAqj4utGYVrhC-rR4BA4rK3kPMPqk9ozpO-eBUhvj9rpe6bzQ84d_ETxeM5zB9ne2TaUqxUiQQfgNQRLq6fUCxtCkhCDCekiQD1Hv7dB6xqFeA%3D%3D&xkcb=SoBd67M3skexXDRM550AbzkdCdPP&fccid=a77d7dcdb8364a0d&vjs=3
-2025-10-09 16:27:41,530 [INFO] Collected 10 jobs...
-2025-10-09 16:27:41,530 [INFO] Processing batch...
-2025-10-09 16:27:41,837 [INFO] Gemini response: 40 40 95 0 65 0 40 70 85 20
-2025-10-09 16:27:42,403 [INFO] Benefits missing
-2025-10-09 16:27:42,611 [INFO] Easy apply: CARE IT SERVICES INC
-2025-10-09 16:27:42,644 [INFO] Gemini response: 0 85 25 0 25 30 10 20 10 10
-2025-10-09 16:27:43,477 [INFO] Benefits missing
-2025-10-09 16:27:43,552 [INFO] Company site apply: Sunny Delight Beverage Co
-2025-10-09 16:27:43,591 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:27:43,599 [INFO] Updated processed jobs with 22 new links
-2025-10-09 16:27:51,953 [INFO] Collected 5 jobs...
-2025-10-09 16:27:52,283 [INFO] Salary missing
-2025-10-09 16:27:52,493 [INFO] Benefits missing
-2025-10-09 16:27:53,276 [INFO] Easy apply: Tiger Analytics
-2025-10-09 16:27:53,937 [INFO] Benefits missing
-2025-10-09 16:27:54,119 [INFO] Company site apply: Myriad Genetics Inc.
-2025-10-09 16:27:54,329 [INFO] Collected 10 jobs...
-2025-10-09 16:27:54,329 [INFO] Processing batch...
-2025-10-09 16:27:54,707 [INFO] Easy apply: Primoris Services Corporation
-2025-10-09 16:27:55,844 [INFO] Gemini response: 60 60 60 0 0 0 20 50 40 10
-2025-10-09 16:28:02,337 [INFO] Collected 5 jobs...
-2025-10-09 16:28:03,520 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3c0a839b9bab0c3f&bb=PnCEWqKYuKEJSS4cSaDRA36jl4s2xtiF8PDClAd_tnDBodzOQPe0ZjMPH2i-Ik5lWJ5SVPPvdmX1ZLnKksOgtLV6UlxNtVtOlygOy3fokelYUVO3uZdmjU-R8qnul-TgHiYpi0AAoYG2ooJhKtKzzg%3D%3D&xkcb=SoCj67M3skfML4ywNR0BbzkdCdPP&fccid=101851eba25dce3c&vjs=3
-2025-10-09 16:28:04,744 [INFO] Company site apply: Upstart Network, Inc.
-2025-10-09 16:28:05,222 [INFO] Collected 5 jobs...
-2025-10-09 16:28:06,704 [INFO] Easy apply: Luminie Studio
-2025-10-09 16:28:09,669 [INFO] Benefits missing
-2025-10-09 16:28:10,045 [INFO] Easy apply: ARROWMINDS INC
-2025-10-09 16:28:11,505 [INFO] Benefits missing
-2025-10-09 16:28:11,581 [INFO] Easy apply: Progressive Technology Solutions
-2025-10-09 16:28:12,116 [INFO] Company site apply: The Boston Beer Company
-2025-10-09 16:28:12,706 [INFO] Company site apply: ING Bank
-2025-10-09 16:28:13,770 [INFO] Collected 5 jobs...
-2025-10-09 16:28:16,038 [INFO] Benefits missing
-2025-10-09 16:28:16,146 [INFO] Company site apply: First Command Financial Services, Inc.
-2025-10-09 16:28:24,545 [INFO] Benefits missing
-2025-10-09 16:28:24,875 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8c2bd487eca06e87&bb=9uJIwIDLSIU2ug-DGIUpb1Pl59i1PRgSORTv_VtMXnxW_-vZECsmwUFc2u5_JAngAPTra488lVSxUDvv_C5SV5HnagQ5e8k8Fc0uH0nHYyNXe6yDfuXvqZd_kOjubMvB_HpBl0BCNNEyRlhd1Zhnfg%3D%3D&xkcb=SoBh67M3skfJLxSwNR0MbzkdCdPP&fccid=fe0c688904dd0f58&vjs=3
-2025-10-09 16:28:25,243 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:28:25,254 [INFO] Updated processed jobs with 35 new links
-2025-10-09 16:28:25,503 [INFO] Easy apply: Sinopec Tech Houston
-2025-10-09 16:28:26,103 [INFO] Company site apply: Smart Tech Contracting
-2025-10-09 16:28:26,518 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=35beb1d17f10697a&bb=eith7h5d9XWl3-ZxA0MoRxefnsrfWzOVpqi3auzjUGF6HewGNTMq-z09fM71WGo0gsIjoNSf7uWpHedd8RT3xXUkijC0bVq_3l_nSFvuxv_e7gNoqDhMxzC36zm85v9pSZNhB81sViHVn2aBUXujibCu460eDJVX&xkcb=SoBH67M3skekx_zbqp0bbzkdCdPP&fccid=5acf3c1d84f9b6de&vjs=3
-2025-10-09 16:28:27,139 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=f9bf8c67ad5ef1c0&bb=q3YsCmgYAYrXRUG_Nb5fhHQnjY2RML7BUrJwTe8Jlrb_Lod1uF_2hQKIaj1OkNSEb81Ss3yOs2nEiBiJiBTxBlDmdwLjapbj_pw27_ZoUvqO6fUJKNunw-Eed8QsdhvpywHQPRUJv7o17LUm-Qx-EA%3D%3D&xkcb=SoAX67M3skfNja3fsp0BbzkdCdPP&fccid=c6bf0f426ed23cc0&vjs=3
-2025-10-09 16:28:28,966 [INFO] Easy apply: Compass Technology
-2025-10-09 16:28:29,148 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:28:29,150 [INFO] Updated processed jobs with 74 new links
-2025-10-09 16:28:29,542 [INFO] Easy apply: Rea
-2025-10-09 16:28:29,784 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:28:29,786 [INFO] Updated processed jobs with 14 new links
-2025-10-09 16:28:31,613 [INFO] Collected 10 jobs...
-2025-10-09 16:28:31,620 [INFO] Processing batch...
-2025-10-09 16:28:32,113 [INFO] Collected 10 jobs...
-2025-10-09 16:28:32,113 [INFO] Processing batch...
-2025-10-09 16:28:32,161 [INFO] Collected 5 jobs...
-2025-10-09 16:28:32,689 [INFO] Gemini response: 70 0 70 80 60 30 40 60 70 70
-2025-10-09 16:28:33,469 [INFO] Gemini response: 90 50 0 65 30 65 30 70 0 70
-2025-10-09 16:28:35,516 [INFO] Company site apply: Qualcomm
-2025-10-09 16:28:35,566 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:28:35,574 [INFO] Updated processed jobs with 26 new links
-2025-10-09 16:28:37,571 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=f040c7693a5ddd4e&bb=q3YsCmgYAYrXRUG_Nb5fhMHpeeU3OUQ8uD3dYxR6lpyXrEqnAlXbJukV09e_rZuhRcZz6mZiYu2vTH3LYeUzsIVS7_-gPQpAd4xNPWAf_R8rv70hgaGrAI06YIiBBj4g8a_RgVFX5jsb31xs_WKAIw%3D%3D&xkcb=SoCZ67M3skfNja3fsp0GbzkdCdPP&fccid=77284ebadb5e0a08&vjs=3
-2025-10-09 16:28:38,910 [INFO] Company site apply: Georg Fischer Central Plastics LLC
-2025-10-09 16:28:44,675 [INFO] Collected 5 jobs...
-2025-10-09 16:28:46,422 [INFO] Collected 10 jobs...
-2025-10-09 16:28:46,423 [INFO] Processing batch...
-2025-10-09 16:28:47,292 [INFO] Gemini response: 80 95 60 95 70 60 95 95 30 95
-2025-10-09 16:28:51,113 [INFO] Easy apply: Sentra
-2025-10-09 16:28:51,211 [INFO] Benefits missing
-2025-10-09 16:28:51,925 [INFO] Company site apply: Trellis Company
-2025-10-09 16:28:56,992 [INFO] Easy apply: Robust Open Online Safety Tools (ROOST)
-2025-10-09 16:28:57,260 [INFO] Collected 10 jobs...
-2025-10-09 16:28:57,260 [INFO] Processing batch...
-2025-10-09 16:28:58,082 [INFO] Gemini response: 80 60 85 50 0 60 30 60 70 70
-2025-10-09 16:29:01,030 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=40c988894a269f41&bb=9uJIwIDLSIU2ug-DGIUpb7OgkAu1CfdHqDHAzdHySXJ8VJRlwf4_GRVOrTZoLKFlqzq7umms1XBmZ0N8_7TYPKh2UpqPBJTpadxGevBLJm0yEFZdIgEP8hNGEOPmyeC9m6qh-5MQkIiveQ6q5-pbKg%3D%3D&xkcb=SoCh67M3skfJLxSwNR0BbzkdCdPP&fccid=c6efe3bf9d180964&vjs=3
-2025-10-09 16:29:01,912 [INFO] Collected 5 jobs...
-2025-10-09 16:29:07,337 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6c6cc266e3b57cef&bb=QZpmuBAnrFHnY3y7litGiXcl3VX9u1YjJUleRTBKtrXkmitI7X7impmewXfPdHT5jy4Raos5_9mCOkJwvKAjGtQZySyzmX92YvopjniOF76W0_0eUWHoOOMipq0rlNX9_q_6ftnj6oj1DF80vJHoqg%3D%3D&xkcb=SoDh67M3skfAVJWTWZ0AbzkdCdPP&fccid=18721e88ef6fc058&vjs=3
-2025-10-09 16:29:08,674 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2f9f3ad6575e2bf5&bb=PnPabIRl-sYhDC2oqE7acx5EDyJNUmUFD6JN7ThNTrSu9cNnyxsoqxHNVzpAZSoSl6zgCQVw0TuSgxvsusY-wve6WbvnnAkZnOJqZdzoc91OiYJD4Q9NIbQrQOiIBUVhf1BsAMNh1N7h4cKFTPYd0OphVCpGIJf-&xkcb=SoDG67M3ske_Ep0HpJ0DbzkdCdPP&fccid=fe0c688904dd0f58&vjs=3
-2025-10-09 16:29:08,953 [INFO] Benefits missing
-2025-10-09 16:29:09,138 [INFO] Easy apply: BLYK Engineering Services
-2025-10-09 16:29:09,922 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2ca318045c61acb6&bb=OHSk215lL5_OGXg-7KRyu0U4bzy1kLg4dHc4VNENTFwCAjtrOTU-QFTcgtCo1QdqtzajRCGTbz-k3S3SBSlK0YMw791uxMewYFZdZSiiBAJsx7L09SgmnXHEj_ngLV9h89Dxr2JKfHXlLIqjzODAaDZUcYjY1t2n&xkcb=SoCW67M3skewHL2Etx0ObzkdCdPP&fccid=db25687464a9ecf6&vjs=3
-2025-10-09 16:29:10,461 [INFO] Company site apply: T. Rowe Price
-2025-10-09 16:29:18,764 [INFO] Collected 5 jobs...
-2025-10-09 16:29:22,458 [INFO] Benefits missing
-2025-10-09 16:29:22,766 [INFO] Company site apply: Harvest Hill Beverage Company
-2025-10-09 16:29:22,849 [INFO] Company site apply: BlueCross BlueShield of South Carolina
-2025-10-09 16:29:22,950 [INFO] Company site apply: Lincoln Financial Group
-2025-10-09 16:29:23,048 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:29:23,061 [INFO] Updated processed jobs with 78 new links
-2025-10-09 16:29:23,265 [INFO] Company site apply: Polaris Inc.
-2025-10-09 16:29:23,852 [INFO] Collected 10 jobs...
-2025-10-09 16:29:23,853 [INFO] Processing batch...
-2025-10-09 16:29:24,971 [INFO] Company site apply: Marmon Holdings
-2025-10-09 16:29:25,306 [INFO] Gemini response: 0 75 60 70 75 50 50 70 50 40
-2025-10-09 16:29:29,352 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b67cedcbd654f64d&bb=9uJIwIDLSIU2ug-DGIUpbzuzf4Zmx2_i7PysFUiUr-p4ezcav3uEZhGsCxGr9g7VvOGYPxOhH-tKkwQ1LBtz2VkqeQrxvim0YYUoKLBRUQCeWvT0W0BQuMkDkmPG52-KGUU6lGja5zY%3D&xkcb=SoCy67M3skfJLxSwNR0FbzkdCdPP&fccid=a215dc475be40d5a&vjs=3
-2025-10-09 16:29:32,931 [INFO] Collected 10 jobs...
-2025-10-09 16:29:32,937 [INFO] Processing batch...
-2025-10-09 16:29:34,101 [INFO] Gemini response: 95 75 15 15 0 75 75 0 0 0
-2025-10-09 16:29:37,008 [INFO] Benefits missing
-2025-10-09 16:29:37,191 [INFO] Easy apply: Appzlogic Mobility Solutions Pvt Ltd
-2025-10-09 16:29:38,597 [INFO] Benefits missing
-2025-10-09 16:29:38,657 [INFO] Company site apply: Optimus Health Care, Inc.
-2025-10-09 16:29:42,713 [INFO] Company site apply: Lytx
-2025-10-09 16:29:43,092 [INFO] Benefits missing
-2025-10-09 16:29:43,163 [INFO] Company site apply: Brookhaven National Laboratory
-2025-10-09 16:29:46,191 [INFO] Company site apply: HDR
-2025-10-09 16:29:52,824 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=22355b00bcbe9858&bb=8Ta3mZZuBWw1dbrlJ5sv3GQEIzQ9U4HelWJx2x_IB-uOJhvSddup76G27d_O--n9EQEOtGyqYm9-dtSQtX6wSqsLCEfqlvrJGCeDp606EYY7bxMleI2obLzdX5H6JABUceFPZsnb05QDeT6-5NQzV3i7w_AFve3J&xkcb=SoA267M3skezCGSMcp0FbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3
-2025-10-09 16:29:53,390 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_12.png
-2025-10-09 16:29:53,390 [WARNING] Failed to click page 13: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-13']") to be visible
-
-2025-10-09 16:29:53,877 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=23c49636ba96b5ce&bb=YtCdURlNTq-oA5BdelShcLCD4D7N_4TYm8xPLGZ2g6oshZKIRuSf1mbrgW1vGZUHXegHMyCudsk3Olen7xZVXbiM7BPB4kgRtUlQocilRReWzbGzrODleohacQHyueF23aESsaSNky79GSNJmhRbcQ%3D%3D&xkcb=SoBk67M3skfYU43zS50BbzkdCdPP&fccid=6153cf878ee73d92&vjs=3
-2025-10-09 16:29:54,145 [INFO] Salary missing
-2025-10-09 16:29:54,168 [INFO] Benefits missing
-2025-10-09 16:29:54,258 [INFO] Company site apply: FCA
-2025-10-09 16:29:54,316 [INFO] Gemini response: 80 80 70 80 80 20 70 80 60
-2025-10-09 16:29:56,103 [INFO] Company site apply: Nauto
-2025-10-09 16:29:57,503 [INFO] Collected 5 jobs...
-2025-10-09 16:30:04,470 [INFO] Salary missing
-2025-10-09 16:30:05,533 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a2d2750a05371cd3&bb=kjRHJSTdiDTXqNllNzVCRXQypfwZRTeAKNkEpzACpJLxIbcoYO-XCcGUIY35qmcYCk1tftY_RVfl8McH8tXtA0n8eezKFeRQkhqjuycTpl9OyEW4SAfqt1tTHXAeBmhnYaUZIrs3Cf2_NrOEYtyVZg%3D%3D&xkcb=SoAr67M3skfZrAyEYp0ObzkdCdPP&fccid=ccff88949e54ecb8&cmp=NexThreat&ti=Data+Scientist&vjs=3
-2025-10-09 16:30:05,630 [INFO] Benefits missing
-2025-10-09 16:30:06,475 [INFO] Easy apply: Freeform
-2025-10-09 16:30:06,598 [INFO] Company site apply: Susquehanna International Group
-2025-10-09 16:30:07,885 [INFO] Company site apply: Bertelsmann
-2025-10-09 16:30:08,849 [INFO] Benefits missing
-2025-10-09 16:30:09,451 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=60d9b29311da38e5&bb=QZpmuBAnrFHnY3y7litGifYVsDmNRvU7OR7I5G-HKFsFyRyLiXDMHVp4Muog_wJu2inQGbR7ik3SMRDklKms4p9brktvpvRQ9MQGczqLAhPq8UQdEcR2b2CmwOZGiLk2je_XaqfADJa3qcvKc50DmA%3D%3D&xkcb=SoBv67M3skfAVJWTWZ0HbzkdCdPP&fccid=90db2040fb4d034d&vjs=3
-2025-10-09 16:30:09,624 [INFO] Company site apply: WPP
-2025-10-09 16:30:13,393 [INFO] Easy apply: Massachusetts Budget and Policy Center
-2025-10-09 16:30:15,657 [INFO] Salary missing
-2025-10-09 16:30:16,344 [INFO] Benefits missing
-2025-10-09 16:30:17,934 [INFO] Company site apply: The University of Kansas Health System
-2025-10-09 16:30:18,549 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:18,550 [INFO] Updated processed jobs with 26 new links
-2025-10-09 16:30:19,233 [INFO] Company site apply: Upstart Network, Inc.
-2025-10-09 16:30:19,981 [INFO] Benefits missing
-2025-10-09 16:30:20,484 [INFO] Easy apply: 4P Consulting Inc.
-2025-10-09 16:30:21,268 [INFO] Salary missing
-2025-10-09 16:30:21,277 [INFO] Benefits missing
-2025-10-09 16:30:21,376 [INFO] Easy apply: Senra Systems
-2025-10-09 16:30:21,832 [INFO] Easy apply: Katalyst Healthcares & Life Sciences
-2025-10-09 16:30:21,868 [INFO] Benefits missing
-2025-10-09 16:30:22,307 [INFO] Easy apply: NeuraFlash
-2025-10-09 16:30:22,323 [INFO] Easy apply: Vminds technologies Inc
-2025-10-09 16:30:22,678 [INFO] Benefits missing
-2025-10-09 16:30:22,993 [INFO] Easy apply: SHINEHIRE
-2025-10-09 16:30:23,214 [INFO] Collected 10 jobs...
-2025-10-09 16:30:23,214 [INFO] Processing batch...
-2025-10-09 16:30:24,056 [INFO] Gemini response: 50 0 75 0 25 25 60 25 0 0
-2025-10-09 16:30:26,764 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=afcaf55c9a9ed2c6&bb=gwRGUEe9Y6ciJWfarFpiIHb6FzMwTz1G-wT9XnEqtB9JbC4sXJE_99m9-beQKPN_N7_LYGcPctQIokR6JCQC2FFt1NeiMPut4ZVVP3VCRk2c3rIYpZ4jN81P7HQWVgEVYWqYCTEaf088dUpNngf_apaeTbnsAHVd&xkcb=SoCn67M3skfCrEURqZ0LbzkdCdPP&fccid=efd76c98bd20bd43&vjs=3
-2025-10-09 16:30:26,976 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:26,988 [INFO] Updated processed jobs with 253 new links
-2025-10-09 16:30:29,872 [INFO] Benefits missing
-2025-10-09 16:30:30,291 [INFO] Benefits missing
-2025-10-09 16:30:30,306 [INFO] Company site apply: Fortinet
-2025-10-09 16:30:31,000 [INFO] Easy apply: Katalyst Healthcares & Life Sciences
-2025-10-09 16:30:31,149 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:31,173 [INFO] Updated processed jobs with 17 new links
-2025-10-09 16:30:31,664 [INFO] Easy apply: 360 Privacy
-2025-10-09 16:30:32,201 [INFO] Benefits missing
-2025-10-09 16:30:32,849 [INFO] Company site apply: Esri
-2025-10-09 16:30:33,342 [INFO] Easy apply: Mall of America
-2025-10-09 16:30:33,707 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a34ae503ba225688&bb=lUAoE5l5pNisRKbNBD4oEDhlbbjCiRQzIK2RyYH47PWRo4OT8vCRZO6XvNThcPaE4cMXHTkKNAcwUBQnToUSrkB-0nHofn8dFwGF93jeuhgohCNWIyRvZE1EbSBgajF18HAmzQL-cAA%3D&xkcb=SoD667M3skfEwvQh9x0CbzkdCdPP&fccid=95edb0211faaac5c&vjs=3
-2025-10-09 16:30:33,791 [INFO] Company site apply: Mass General Brigham
-2025-10-09 16:30:40,549 [INFO] Benefits missing
-2025-10-09 16:30:40,758 [INFO] Easy apply: Luminie Studio
-2025-10-09 16:30:42,868 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d151d283e766d340&bb=EeYXIp34J0XwF_3ZSai6io52xKp1aZbTUm-JuNkgTr8PtrLyBGRuP8HpYV83d9OPFSQSomewOuJXiHeyaHZMRWQoibT_-nOKnYZs0Si75sCxF_dskEImUbuNkN0ziWEVHA7T8AUDbnQ%3D&xkcb=SoB467M3skew86RM550DbzkdCdPP&fccid=bd32e6847d942d26&vjs=3
-2025-10-09 16:30:44,149 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=16a6dab86caf4ff3&bb=lUAoE5l5pNisRKbNBD4oEJcCh8gVtoxzdKk-E6EN0Zw0Kr630gQ8LTHQ6Uz9v0iPYqS1BYqHZBibwluowcSKh4dN2ODF5sz45VIh3fXBXeaoEX46R6zMnNrBl9OFfBO0bzA9dSeB6Jo%3D&xkcb=SoDp67M3skfEwvQh9x0GbzkdCdPP&fccid=fcce311099a3a228&vjs=3
-2025-10-09 16:30:44,692 [INFO] Easy apply: Method, a GlobalLogic company
-2025-10-09 16:30:44,910 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:44,936 [INFO] Updated processed jobs with 37 new links
-2025-10-09 16:30:45,476 [INFO] Easy apply: MindsDB
-2025-10-09 16:30:45,630 [INFO] Company site apply: Lincoln Financial Group
-2025-10-09 16:30:45,880 [INFO] Collected 5 jobs...
-2025-10-09 16:30:50,470 [INFO] Collected 5 jobs...
-2025-10-09 16:30:52,231 [INFO] Easy apply: ART Infotech
-2025-10-09 16:30:52,293 [INFO] Benefits missing
-2025-10-09 16:30:52,380 [INFO] Company site apply: SLAC National Accelerator Laboratory
-2025-10-09 16:30:53,006 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=6f3172e5cffbe316&bb=z2cH7KNtvlNSpQvE3cioTgN2CoU-pq7BDs_wNMiQDismAWwJ7pzUcRsPZAHhwKBrj3VzGU3S2y8PWMSetmce10_CcvZMJoaYzFu3--GUvogH5l4O8aDEUTdudSBSN-Tk6cCfQ0y0vhf4_BjaToVtLA%3D%3D&xkcb=SoCR67M3skfd5AUHpJ0GbzkdCdPP&fccid=81d482e3c82c0a4c&vjs=3
-2025-10-09 16:30:55,047 [INFO] Benefits missing
-2025-10-09 16:30:55,439 [INFO] Company site apply: UBS
-2025-10-09 16:30:55,463 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:55,466 [INFO] Updated processed jobs with 39 new links
-2025-10-09 16:30:57,899 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=99a2cd918630139f&bb=_Q2RkL7eRyaDc0qWmoZ5Px5DYnsPB2QIG17LBBLnRdLdPeyh59CC9zJMb2wy5LHJ0IJiN1IG9-JhwwlPbWRhpfexFUFq_MBGngZcpLy9VQtJwpB0angCqmHGK43e-0-INMnoOqKRVzTkGAKjzpTVbZtWCZObdE2m&xkcb=SoCW67M3skfZZEWTbJ0IbzkdCdPP&fccid=8e1f25db81772523&vjs=3
-2025-10-09 16:30:57,987 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:30:58,010 [INFO] Updated processed jobs with 55 new links
-2025-10-09 16:30:58,474 [INFO] Benefits missing
-2025-10-09 16:30:58,540 [INFO] Easy apply: Southcentral Foundation
-2025-10-09 16:31:00,642 [INFO] Benefits missing
-2025-10-09 16:31:00,839 [INFO] Easy apply: Prolim global system
-2025-10-09 16:31:06,177 [INFO] Collected 10 jobs...
-2025-10-09 16:31:06,177 [INFO] Processing batch...
-2025-10-09 16:31:07,793 [INFO] Gemini response: 95 80 95 95 95 75 95 0 75 90
-2025-10-09 16:31:10,650 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8a43fa800900743f&bb=ctrwFjVrlArR8JbgIUJxMN8p2rvdVlhN18DAKff9DevUKcaMjDP3Mza-t0tPU3njDDEd75lxjyD1vsSfbYbOfE2fuwq3rY1WGsW7xNwdZvdBFd10XOF332eql4peW5e5aTzzC7MZ-sfykSaepMGekQ%3D%3D&xkcb=SoCx67M3skfexQwHQp0FbzkdCdPP&fccid=087e66bf8a559169&vjs=3
-2025-10-09 16:31:14,246 [INFO] Collected 10 jobs...
-2025-10-09 16:31:14,246 [INFO] Processing batch...
-2025-10-09 16:31:15,314 [INFO] Gemini response: 0 85 75 75 70 50 40 40 50
-2025-10-09 16:31:20,676 [INFO] Collected 5 jobs...
-2025-10-09 16:31:21,570 [INFO] Collected 5 jobs...
-2025-10-09 16:31:22,119 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d4386c81f7cc5c87&bb=hq9i6-vufzeHeVTEpgdnTHV936DhRKrSdrAMWoHsYF7-aBit_aFI2-n1aa8jQJfZu4E_4nZhpzDJUTM6tFX5V-Ejx9MXn3RTPrb-u5_Pnzs31EKAr_vT-n-btcaUCiALE8jgMHLNm7WnLSTPDkbfMA%3D%3D&xkcb=SoCg67M3skfVU9x7s50DbzkdCdPP&fccid=42e657b8eedc9ee5&vjs=3
-2025-10-09 16:31:23,149 [INFO] Company site apply: Ascension
-2025-10-09 16:31:23,807 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:31:23,811 [INFO] Updated processed jobs with 199 new links
-2025-10-09 16:31:25,450 [INFO] Benefits missing
-2025-10-09 16:31:26,135 [INFO] Company site apply: Insulet Corporation
-2025-10-09 16:31:28,000 [INFO] Easy apply: The Orchard
-2025-10-09 16:31:28,522 [INFO] Benefits missing
-2025-10-09 16:31:28,796 [INFO] Salary missing
-2025-10-09 16:31:29,993 [INFO] Easy apply: Advanced Medical Strategies
-2025-10-09 16:31:31,550 [INFO] Easy apply: MNTN
-2025-10-09 16:31:31,573 [INFO] Collected 5 jobs...
-2025-10-09 16:31:44,455 [INFO] Salary missing
-2025-10-09 16:31:45,137 [INFO] Benefits missing
-2025-10-09 16:31:45,603 [INFO] Easy apply: Ascent Solutions
-2025-10-09 16:31:46,167 [INFO] Easy apply: Further
-2025-10-09 16:31:46,351 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:31:46,377 [INFO] Updated processed jobs with 18 new links
-2025-10-09 16:31:48,832 [INFO] Benefits missing
-2025-10-09 16:31:49,118 [INFO] Easy apply: YT Global Network
-2025-10-09 16:31:49,177 [INFO] Benefits missing
-2025-10-09 16:31:49,460 [INFO] Easy apply: VTekis Consulting LLP
-2025-10-09 16:31:49,684 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:31:49,692 [INFO] Updated processed jobs with 36 new links
-2025-10-09 16:31:49,950 [INFO] Collected 5 jobs...
-2025-10-09 16:31:54,900 [INFO] Benefits missing
-2025-10-09 16:31:55,436 [INFO] Company site apply: BI Pharmaceuticals, Inc.
-2025-10-09 16:32:00,345 [INFO] Salary missing
-2025-10-09 16:32:00,833 [INFO] Benefits missing
-2025-10-09 16:32:01,460 [INFO] Company site apply: McKinsey & Company
-2025-10-09 16:32:01,887 [INFO] Benefits missing
-2025-10-09 16:32:02,465 [INFO] Easy apply: Key2Source INC
-2025-10-09 16:32:08,660 [INFO] Company site apply: CONSUMER AND WORKER PROTECTION
-2025-10-09 16:32:11,740 [INFO] Collected 5 jobs...
-2025-10-09 16:32:14,429 [INFO] Collected 10 jobs...
-2025-10-09 16:32:14,429 [INFO] Processing batch...
-2025-10-09 16:32:15,149 [INFO] Gemini response: 0 0 0 0 0 0 0 0 100 0
-2025-10-09 16:32:15,478 [INFO] Collected 10 jobs...
-2025-10-09 16:32:15,478 [INFO] Processing batch...
-2025-10-09 16:32:16,163 [INFO] Gemini response: 90 30 30 85 80 0 30 0 80 85
-2025-10-09 16:32:16,726 [INFO] Benefits missing
-2025-10-09 16:32:17,071 [INFO] Collected 10 jobs...
-2025-10-09 16:32:17,081 [INFO] Processing batch...
-2025-10-09 16:32:17,193 [INFO] Easy apply: YT Global Network
-2025-10-09 16:32:18,248 [INFO] Gemini response: 60 0 50 50 70 0 50 50 0 50
-2025-10-09 16:32:23,044 [INFO] Company site apply: WeedMaps
-2025-10-09 16:32:30,479 [INFO] Benefits missing
-2025-10-09 16:32:30,600 [INFO] Benefits missing
-2025-10-09 16:32:30,868 [INFO] Company site apply: AgSource
-2025-10-09 16:32:31,055 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:32:31,259 [INFO] Updated processed jobs with 31 new links
-2025-10-09 16:32:31,262 [INFO] Easy apply: TalentMovers
-2025-10-09 16:32:33,439 [INFO] Benefits missing
-2025-10-09 16:32:33,736 [INFO] Easy apply: Neighborhood Health Plan of Rhode Island
-2025-10-09 16:32:34,130 [INFO] Easy apply: Etiometry Inc
-2025-10-09 16:32:36,071 [INFO] Benefits missing
-2025-10-09 16:32:36,625 [INFO] Easy apply: MLabs
-2025-10-09 16:32:39,343 [INFO] Collected 5 jobs...
-2025-10-09 16:32:43,786 [INFO] Company site apply: Nauto
-2025-10-09 16:32:46,272 [INFO] Collected 10 jobs...
-2025-10-09 16:32:46,272 [INFO] Processing batch...
-2025-10-09 16:32:48,401 [INFO] Collected 5 jobs...
-2025-10-09 16:32:49,029 [INFO] Collected 10 jobs...
-2025-10-09 16:32:49,029 [INFO] Processing batch...
-2025-10-09 16:32:51,134 [INFO] Gemini response: 80 70 65 30 80 30 80 75 30 30
-2025-10-09 16:32:52,297 [INFO] Gemini response: 55 35 35 45 70 35 0 75 60 0
-2025-10-09 16:32:55,997 [INFO] Salary missing
-2025-10-09 16:32:56,190 [INFO] Benefits missing
-2025-10-09 16:32:56,290 [INFO] Company site apply: Hexaware Technologies
-2025-10-09 16:32:56,337 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:32:56,338 [INFO] Updated processed jobs with 31 new links
-2025-10-09 16:32:59,143 [INFO] Benefits missing
-2025-10-09 16:32:59,213 [INFO] Company site apply: Kaiser Permanente
-2025-10-09 16:33:03,702 [INFO] Benefits missing
-2025-10-09 16:33:03,785 [INFO] Easy apply: Tiger Analytics
-2025-10-09 16:33:03,918 [INFO] Collected 10 jobs...
-2025-10-09 16:33:03,918 [INFO] Processing batch...
-2025-10-09 16:33:05,868 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
-2025-10-09 16:33:05,868 [INFO] Updated processed jobs with 50 new links
-2025-10-09 16:33:12,688 [INFO] Salary missing
-2025-10-09 16:33:12,819 [INFO] Easy apply: NeuraFlash
-2025-10-09 16:33:14,732 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a9d54c8ff2aba02a&bb=gwRGUEe9Y6ciJWfarFpiIEFQfhomtpBYfLcs6wnsU2SCvKkb7GMWPhaxF6g9VhiR4U4Na2oMJ8VfPvg9Bl7mIhuZGSYtqhGqNpralaZJuSpT9-IJbFqdf1XquJh2ePFxQAJhgyzByDlrEGge1Ke-PTICf9utON5S&xkcb=SoAA67M3skfCrEURqZ0ObzkdCdPP&fccid=5dd0073fb1381f82&vjs=3
-2025-10-09 16:33:16,707 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=17fbdb7238278c1e&bb=AVSTO7mjegMWas8YbtGwuhKObEVMMKWliPaut2M-eNmeFuVGdvN4TbYFqOs3qUdpDzQ6l5uvHXmBgM6iodDcpSW3-dzEdepyG68XyO97qMn-n51RBBIgjP6_v9lK6yK0H4kBNfrtVrcCUVOGF_tSYg%3D%3D&xkcb=SoBs67M3skfobYy6QR0IbzkdCdPP&fccid=55db0adc72497ff1&vjs=3
-2025-10-09 16:33:19,333 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=72a46f2c1b20f53e&bb=L-aYbSkecYZEmnJIHv2hunvW6dNU26VYPVS4A9x5ZBEwL-AScBRJ6hedu0DuqLMMIZJzWpnnLgbcO9zA3Y5FhdGah3xOEoyst3Je_5sYjdlnfUI_lLQ8Nl0a7Zn4RtPOYc9Se5MVTgTKDZVB3126iw%3D%3D&xkcb=SoBA67M3skfpAt2TWZ0LbzkdCdPP&fccid=8e1bf28000a98db5&vjs=3
-2025-10-09 16:33:20,506 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_37.png
-2025-10-09 16:33:20,506 [WARNING] Failed to click page 38: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-38']") to be visible
-
-2025-10-09 16:33:21,873 [INFO] Company site apply: HealthPartners/GHI
-2025-10-09 16:33:22,521 [INFO] Gemini response: 0 95
-2025-10-09 16:33:26,577 [INFO] Salary missing
-2025-10-09 16:33:26,836 [INFO] Company site apply: Distillery
-2025-10-09 16:33:29,482 [INFO] Collected 5 jobs...
-2025-10-09 16:33:29,913 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=600a1f8456661bf0&bb=xcklIckSBly4DtE9qaqAoujAYlTIAUOH7Gw1_-bj-wxsa9azvEJQ5iUUqmhBk1oVqGzxBgTdjROzaS8n59BiiJ8cv-z2OV56EI3pSBr4rUPsMfLu-nt_40hEQx5EzR8S9xQ73GKdoFwJEHL3YrCPCjhoUzzPICXP&xkcb=SoDf67M3skfo6HAIfz0DbzkdCdPP&fccid=eda93ba595d7d1d1&vjs=3
-2025-10-09 16:33:31,703 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=038d105441cc7a23&bb=1IPV5YpWOo-cru_woB-yLhOy3gfhsFcrKO7OGvj8-2lA97BcFamy7lc8kWwrOaRmlwpGuxweuczYi5cinSlU6leh5wzzmlH2ep1vpsyno8Rwata5Pxvd1k57cq2LDDWffnN8pFMvRN5oAm6zGwA4Bw%3D%3D&xkcb=SoAr67M3skfcCX20N50MbzkdCdPP&fccid=1f0ef4e12bf278b2&vjs=3
-2025-10-09 16:33:32,326 [INFO] Easy apply: Valon Tech
-2025-10-09 16:33:35,280 [INFO] Easy apply: Tavus
-2025-10-09 16:33:35,328 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:33:35,329 [INFO] Updated processed jobs with 6 new links
-2025-10-09 16:33:36,199 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:33:40,663 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=244d9f5626a626fe&bb=1IPV5YpWOo-cru_woB-yLi4SghQbpi4dASu77Dsh0ZSpmJkgnuKECBhcfrjp6d371bBIB-QknoiraqdiCirqA9Qx4LcbKcxOGTLvuZESz4Ih0RQ52PIDqXsJErXYJa74FEB0-dyAdN_AJLxaQ3dFHQ%3D%3D&xkcb=SoDC67M3skfcCX20N50DbzkdCdPP&fccid=a575b7c5c50b587a&vjs=3
-2025-10-09 16:33:41,325 [ERROR] NotError/found clicking Accept Terms button.
-2025-10-09 16:33:45,548 [INFO] Salary missing
-2025-10-09 16:33:46,248 [INFO] Company site apply: LSEG (London Stock Exchange Group)
-2025-10-09 16:33:46,712 [INFO] Company site apply: Nearsure
-2025-10-09 16:33:46,741 [INFO] Benefits missing
-2025-10-09 16:33:47,096 [INFO] Company site apply: Vas
-2025-10-09 16:33:47,268 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:33:47,277 [INFO] Updated processed jobs with 34 new links
-2025-10-09 16:33:47,879 [INFO] Collected 10 jobs...
-2025-10-09 16:33:47,887 [INFO] Processing batch...
-2025-10-09 16:33:48,039 [INFO] Collected 10 jobs...
-2025-10-09 16:33:48,039 [INFO] Processing batch...
-2025-10-09 16:33:48,846 [INFO] Gemini response: 80 70 70 75 70 70 70 90 0 90
-2025-10-09 16:33:49,386 [INFO] Gemini response: 85 0 30 0 40 20 20 60 20 0
-2025-10-09 16:33:51,039 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=70af43759263528b&bb=xcklIckSBly4DtE9qaqAosIXValSABzR1K6zEG9Kp_TqlXnmFe5dI9aihTvCzqZa-hOIz17obHZ-d4h_o0yMNlY9k89MVaSVQ2TRiwpxcZOzRfcXZ-Y2roTrgPMllR4aozSo3uiFVt2_jWXpuYZCyzxQd8l7G4HK&xkcb=SoBR67M3skfo6HAIfz0EbzkdCdPP&fccid=61e0448b2ad8fba3&vjs=3
-2025-10-09 16:33:54,598 [INFO] Benefits missing
-2025-10-09 16:33:54,906 [INFO] Easy apply: Advance Auto Parts
-2025-10-09 16:33:55,504 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=871ea341a6694d06&bb=iNgguKJGb4dATWfVbw7WGZgS8h6rA250wm6f_lkAiCIUbrtv9Y0j1QG8RyU4RiIdMLlrwkfBoq41Js_nKGG19cqUoWYplt9DckaH_YcsBz2K-vHNmoUq28yRCbXqmoqwfB5r2f7E4As%3D&xkcb=SoDg67M3skfo9XWoBJ0FbzkdCdPP&fccid=b925f10025507cd8&cmp=Heads-in-the-Cloud&ti=Cloud+Engineer&vjs=3
-2025-10-09 16:33:55,712 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:33:55,725 [INFO] Updated processed jobs with 33 new links
-2025-10-09 16:33:57,293 [INFO] Easy apply: Global IT Resources
-2025-10-09 16:33:59,458 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d015e9f558d2ce9e&bb=39EQ_GNOmpcyxnciLRCccfYracmGQtobKXb3pI-6ZcSP_m6enOuEwl7Q7BxR9NyLEbLDlxiNo5DxPGtALDIh5hABoPdjHnkiiVMvMs3KJmQC8jcFFBr7Ie1A7PRNvDWy5IMFOA5xOX95wrncLL8jNQ%3D%3D&xkcb=SoDR67M3skf6P0QpXh0FbzkdCdPP&fccid=1ea0475711674f3b&vjs=3
-2025-10-09 16:34:00,258 [INFO] Benefits missing
-2025-10-09 16:34:00,660 [INFO] Easy apply: vasitum
-2025-10-09 16:34:03,658 [INFO] Benefits missing
-2025-10-09 16:34:03,794 [INFO] Easy apply: Broadspire Services, Inc.
-2025-10-09 16:34:06,830 [INFO] Easy apply: Metropolis
-2025-10-09 16:34:09,155 [INFO] Benefits missing
-2025-10-09 16:34:09,633 [INFO] Easy apply: Syntelligent Analytic Solutions
-2025-10-09 16:34:11,043 [INFO] Company site apply: Block, Inc.
-2025-10-09 16:34:12,192 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=5f1d5f2760b1badd&bb=oqHL0DMQGqxHaqDKkYK15XIwsUydEi6U6Y8ZBrcNzY6Sq9YocbRauo3Z5dQ8Eo5hOXxZ3lHn2nsscSDqamDF7UJBr4L70huOxSXA9LaWYtfml8Gf3U73G_-AmgpiGdcLjs8ldzXTfmbSg2PUvzu6QA%3D%3D&xkcb=SoB067M3skfgX_RM550ObzkdCdPP&fccid=215d393b94a71c7f&vjs=3
-2025-10-09 16:34:12,351 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:34:12,354 [INFO] Updated processed jobs with 16 new links
-2025-10-09 16:34:12,806 [INFO] Collected 5 jobs...
-2025-10-09 16:34:13,271 [INFO] Collected 10 jobs...
-2025-10-09 16:34:13,271 [INFO] Processing batch...
-2025-10-09 16:34:13,541 [INFO] Easy apply: Penn Foster Group
-2025-10-09 16:34:14,532 [INFO] Gemini response: 80 80 80 80 80 80 80 80 80 0
-2025-10-09 16:34:15,171 [INFO] Easy apply: Cinemark USA, Inc.
-2025-10-09 16:34:18,379 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=e7a2ba7fc0cf1f4d&bb=L-aYbSkecYZEmnJIHv2hunrah9Z7jh81v9yvedGXdTd0JO_TiswBrf4o8ob6GiWlheOsnWZYSdmfm7-pcmSFw67Gix85ID2HcZ_iVGwHX6yuspRIlV3rFbEc91irqE0ce6JxvE50xNDwg4dqIioqow%3D%3D&xkcb=SoDd67M3skfpAt2TWZ0IbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:34:18,440 [INFO] Benefits missing
-2025-10-09 16:34:18,795 [INFO] Company site apply: TSMC
-2025-10-09 16:34:23,081 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_23.png
-2025-10-09 16:34:23,081 [WARNING] Failed to click page 24: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-24']") to be visible
-
-2025-10-09 16:34:23,595 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=63f23d3190aa2221&bb=oqHL0DMQGqxHaqDKkYK15QZBDpGEWrMBlWuV_f7hSBlKTFmp4OAoa6d-xvYoc-8z9ys0gDZlq--_7_-AaCuk0gaZ2GKwfHtNEbknjipmFdZOkdP-y44qd4vm-TWGenQ97pyi8LXevKjr2peAC4ER4g%3D%3D&xkcb=SoDp67M3skfgX_RM550NbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:34:23,913 [INFO] Company site apply: ISO New England Inc.
-2025-10-09 16:34:32,959 [INFO] Company site apply: Smile Digital Health
-2025-10-09 16:34:34,223 [INFO] Benefits missing
-2025-10-09 16:34:34,296 [INFO] Easy apply: Astec Industries
-2025-10-09 16:34:35,814 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=af28918743ebba77&bb=KS2u-SKL_9QH0NDpXo0dfUJDITYvjkUByVUJ_tQC3hMMumdDrwRTp5qW0ICEonMu96WLwbHG6nowDlFg6Qwaq06YR0p0RxjRRgo2m5aeBEHP8y9udPuqBl_Rxg-eNNnaPyna4pbyWwiLAieEY5y5uw%3D%3D&xkcb=SoBg67M3skf3mcQEBJ0ObzkdCdPP&fccid=1585668872ffe7ac&vjs=3
-2025-10-09 16:34:36,645 [INFO] Collected 5 jobs...
-2025-10-09 16:34:38,423 [INFO] Company site apply: Slingshot Aerospace
-2025-10-09 16:34:44,369 [INFO] Company site apply: Tenaska, Inc.
-2025-10-09 16:34:45,057 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=68d1ee0beedb683c&bb=TZ1a7YZLXMXHecD7ANvOhaLV4ZSANIoIAVKv9yHAIOo3BSW6CyfZQGw5omtjY-V1I_pxeMjx3XJ7OvYFkKx_WjgHKXPWakeGonlvTXYcNWhcjG_tO8iZhhv8zmJrCZy-3Bo-EaMyKbiRzRzjFPzemw%3D%3D&xkcb=SoAO67M3skf5ftAIfz0FbzkdCdPP&fccid=62bc2507c43f41ad&vjs=3
-2025-10-09 16:34:45,083 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:34:45,093 [INFO] Updated processed jobs with 83 new links
-2025-10-09 16:34:45,299 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=dd0cf39e20de5f14&bb=KS2u-SKL_9QH0NDpXo0dfZCiQBnSNw-jM9gDHg8-CHU_14cJ653Yp42zpUSr4PONDuHWslJfUBGp7m-Fr5316Hf8cyGL6eC73tRjlkhXOs5xsZGBnkFBqfbiBp-H0rMy94ib62-NZJd-kEFTkux6UA%3D%3D&xkcb=SoD967M3skf3mcQEBJ0NbzkdCdPP&fccid=1585668872ffe7ac&vjs=3
-2025-10-09 16:34:45,557 [INFO] Salary missing
-2025-10-09 16:34:46,133 [INFO] Easy apply: Analytic Partners
-2025-10-09 16:34:46,492 [INFO] Company site apply: Clear Street
-2025-10-09 16:34:48,362 [INFO] Benefits missing
-2025-10-09 16:34:48,461 [INFO] Company site apply: Codvo.ai
-2025-10-09 16:34:52,161 [INFO] Collected 5 jobs...
-2025-10-09 16:34:52,978 [INFO] Benefits missing
-2025-10-09 16:34:53,089 [INFO] Easy apply: Mayville Engineering Company, Inc.
-2025-10-09 16:34:56,296 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3da0dc6ba00e960e&bb=KS2u-SKL_9QH0NDpXo0dfSeEIrqLWxo-fTPZsJpBo4LNrch3Eavojx1TZe4dIlfzsiiyQKSh6TnQsjWsIosj_NF2qBAen--n-xU4oj65ztI4FQfRz4KvVWJoFapW4GZlIWXWYGthoZKhZ7dKRzkfpg%3D%3D&xkcb=SoBJ67M3skf3mcQEBJ0MbzkdCdPP&fccid=1585668872ffe7ac&vjs=3
-2025-10-09 16:34:57,972 [INFO] Easy apply: ICONIQ
-2025-10-09 16:35:00,126 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c48d166b57f36b7f&bb=oqHL0DMQGqxHaqDKkYK15S9BH2hr_bjHaIIdQnCyE1oFBMxh7ICDcy2e-s86srx6J4DH-9HwV7abEiW5aI2nnC1i5M2jZQJG8VHsn4fep8E-y2Y-FX88bbhBX8kmwauYa10Qk0bIr_9KWORjZa9DpA%3D%3D&xkcb=SoCd67M3skfgX_RM550BbzkdCdPP&fccid=6dbb279ac3436e54&vjs=3
-2025-10-09 16:35:03,364 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c4862fafe184b8c1&bb=LkS076X6zPJTyKHmm8q_vzFCTXzdrNOJmkWos_j5r3nEYNiodvSVsx0TDDdT0SByeYXLrArtpREM1D7dbgRMZ-rNV9hz4ITe58qzGXaz9KS95TV93R5NwrC3v1OKlzI4gyaHGACyZhDaeJ99E0bG2M3HqeVsR9ZO&xkcb=SoAm67M3skf8EswHQp0DbzkdCdPP&fccid=ffd98152d5e973b6&vjs=3
-2025-10-09 16:35:03,444 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:35:03,446 [INFO] Updated processed jobs with 95 new links
-2025-10-09 16:35:05,748 [INFO] Benefits missing
-2025-10-09 16:35:05,997 [INFO] Easy apply: Sunrun Inc
-2025-10-09 16:35:08,138 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=9c7ad2a92c57420b&bb=uwOEuH2KTWQcaFlLWOm8XY1geInz3eM0jvK0Mul4arjCk6UgNzrwhLbwyIIIjjZrJ29EiC3ANf2M3QTuFxmJ2hlnDJw15cjYmTfNPlVpLYFN5nkf7SeV4mWV0T8jRAu7Ymx4Ts7i6BiSOM_DjnjNw1HX6xwcX6Z4&xkcb=SoC967M3skf8yzR7s50DbzkdCdPP&fccid=11802080879afc60&vjs=3
-2025-10-09 16:35:08,196 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:35:08,197 [INFO] Updated processed jobs with 69 new links
-2025-10-09 16:35:11,393 [INFO] Company site apply: BOEING
-2025-10-09 16:35:13,350 [INFO] Company site apply: Centene
-2025-10-09 16:35:14,468 [INFO] Easy apply: Schweitzer Engineering Laboratories, Inc.
-2025-10-09 16:35:20,893 [INFO] Collected 10 jobs...
-2025-10-09 16:35:20,894 [INFO] Processing batch...
-2025-10-09 16:35:21,988 [INFO] Collected 5 jobs...
-2025-10-09 16:35:22,425 [INFO] Gemini response: 75 30 70 65 0 50 60 40 75 50
-2025-10-09 16:35:27,483 [INFO] Collected 5 jobs...
-2025-10-09 16:35:27,530 [INFO] Collected 10 jobs...
-2025-10-09 16:35:27,531 [INFO] Processing batch...
-2025-10-09 16:35:28,423 [INFO] Gemini response: 0 0 90 80 75 85 85 70 80 0
-2025-10-09 16:35:32,145 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a6074e341c9a186b&bb=rpzqCZB-3IH4xzShSy68wSdYkRIt_8_KTs1HIONfKoRuiGVtao9r7ZLwyo2ofnv3EkqCI1mqUWuSywMpmfO7YJ9e3DbFOu3_uXtTVH0ZKAAEPMfz8h-lUDRAz6jznxRPHln30xmO-Ks%3D&xkcb=SoC467M3skfnAw0RqZ0NbzkdCdPP&fccid=9cc4969625fb80b5&vjs=3
-2025-10-09 16:35:37,059 [INFO] Collected 5 jobs...
-2025-10-09 16:35:37,082 [INFO] Benefits missing
-2025-10-09 16:35:37,226 [INFO] Easy apply: Neotecra
-2025-10-09 16:35:39,224 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=393f7fa5e3940685&bb=oqHL0DMQGqxHaqDKkYK15fSw3FVTTaTWjJDjImEQxL0zF4kwcxtA4rbveLqY2Sm5M70pv9-bjFOEGExT_9NZxeAvj-fScFvNZv6g5eDJHjQ-r44hcpvcuM1kabLPjbNwqve64pnTRZgt1mg1h3JB-Q%3D%3D&xkcb=SoC_67M3skfgX_xM550JbzkdCdPP&fccid=bae098e9666bd225&vjs=3
-2025-10-09 16:35:41,909 [INFO] Collected 10 jobs...
-2025-10-09 16:35:41,915 [INFO] Processing batch...
-2025-10-09 16:35:42,846 [INFO] Gemini response: 60 85 70 50 30 40 0 40 60 40
-2025-10-09 16:35:44,980 [INFO] Benefits missing
-2025-10-09 16:35:45,086 [INFO] Company site apply: VXI Global Solutions
-2025-10-09 16:35:46,825 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2dd5c299b7372610&bb=rpzqCZB-3IH4xzShSy68wY74B5AOJhZIXJDxtbvNEg5kZBuKuBk7v4tNZ-N04v8-dOrOsHgudjr7UOrcrBd7B5fFrpCjnlUR2k78BLaNeUxEODa4cW_tFKu16-CCWLMWRhrbZKuKcJE%3D&xkcb=SoBC67M3skfnAw0RqZ0GbzkdCdPP&fccid=9e844d867d37ea6f&vjs=3
-2025-10-09 16:35:47,637 [INFO] Company site apply: UnitedHealthcare
-2025-10-09 16:35:51,184 [INFO] Collected 10 jobs...
-2025-10-09 16:35:51,185 [INFO] Processing batch...
-2025-10-09 16:35:52,509 [INFO] Gemini response: 0 0 80 0 0 70 50 0 40 0
-2025-10-09 16:35:53,242 [INFO] Company site apply: Cencora
-2025-10-09 16:35:53,306 [INFO] Easy apply: HomeLight
-2025-10-09 16:35:54,785 [INFO] Benefits missing
-2025-10-09 16:35:54,946 [INFO] Easy apply: Elite Quests LLC
-2025-10-09 16:35:57,850 [INFO] Easy apply: Credit Karma
-2025-10-09 16:35:57,883 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:35:57,886 [INFO] Updated processed jobs with 14 new links
-2025-10-09 16:36:00,649 [INFO] Company site apply: Selective Insurance Company of America
-2025-10-09 16:36:02,400 [INFO] Benefits missing
-2025-10-09 16:36:02,476 [INFO] Easy apply: Aera Technology & Consulting
-2025-10-09 16:36:06,715 [INFO] Company site apply: KinderCare Education
-2025-10-09 16:36:11,987 [INFO] Collected 5 jobs...
-2025-10-09 16:36:15,451 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d62a2e813fd01728&bb=8HeLDHv3_8ON_Q-nziUD_0L32O_i7qV88OZnhJxMxPsEfHZXxQycs5ys_p28R8SMXhHgdVcfcRw70QHl31WjH73qYt5JQ3X5o3JrL-l5JX5Hh2Td03FBpAgea3-tgfAJ5AA8qL2Xzeg0C6LQzSK0bA%3D%3D&xkcb=SoCT67M3skfgHmwHQp0NbzkdCdPP&fccid=58e2d1183d2fe5e4&vjs=3
-2025-10-09 16:36:17,900 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d6839332c09ae32a&bb=pw4p3BW6vdPxKs-rM0rSk-xpu6h0Cf6jVobzyHeWr6UbWvmrI2kUOiwWgxVggwMsqKnqLkCCrhxFP7ZzyghNf7u1IOCBjD9DSMBiCHOQpBr3D4b7_82BsgYsMwCqTd-y9osGkx4sCOfUDSy8-Tcq0zUcYjjTKUos&xkcb=SoCi67M3skQIe22TWZ0PbzkdCdPP&fccid=5d1506a5df73a48e&vjs=3
-2025-10-09 16:36:21,170 [INFO] Collected 10 jobs...
-2025-10-09 16:36:21,170 [INFO] Processing batch...
-2025-10-09 16:36:21,905 [INFO] Gemini response: 85 50 60 70 80 70 70 80 80 80
-2025-10-09 16:36:27,541 [INFO] Collected 10 jobs...
-2025-10-09 16:36:27,541 [INFO] Processing batch...
-2025-10-09 16:36:28,333 [INFO] Gemini response: 70 0 65 0 65 65 65 60 65 50
-2025-10-09 16:36:28,985 [INFO] Salary missing
-2025-10-09 16:36:29,010 [INFO] Benefits missing
-2025-10-09 16:36:29,096 [INFO] Easy apply: HANDLE Global
-2025-10-09 16:36:30,353 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3f79bbb32042c73e&bb=LkS076X6zPJTyKHmm8q_vyhlzKCqQfIXLUc-VVW8lsMfqjFllGuo-jkMGw12A2_IOTBsaLbEMmsf2YT98SHANJ07UdYXFXo-zhQYkrP5yMhS2gc0qb4oybDzsiLkRY-h9wbNeH1dJXf8r7jy3_iRW9HMPGWl_D_1&xkcb=SoC767M3skf8EswHQp0AbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:36:30,652 [INFO] Easy apply: MLabs
-2025-10-09 16:36:35,838 [INFO] Company site apply: The Clorox Company
-2025-10-09 16:36:38,717 [INFO] Company site apply: National Debt Relief, LLC.
-2025-10-09 16:36:38,782 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:36:38,789 [INFO] Updated processed jobs with 58 new links
-2025-10-09 16:36:39,013 [INFO] Easy apply: MLabs
-2025-10-09 16:36:39,366 [INFO] Easy apply: Chan Zuckerberg Biohub
-2025-10-09 16:36:41,401 [INFO] Easy apply: Shumaker & Sieffert P.A.
-2025-10-09 16:36:43,651 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fd20505988672791&bb=xKVuZAszaekgntaAk9cM-fdO8h-YtQ69o5UjC2ERt2l1L-0JRemUt_yqnFc2HybXKh5e5JRj1lLxT0qPr7DJQXvGWqDFk2Qkdq56yShzJL0p80k-_bx2Etr9br-Lt6ku5gXCHC4vLsU%3D&xkcb=SoDw67M3skQK4IxM550KbzkdCdPP&fccid=db092f8b7448d6e5&vjs=3
-2025-10-09 16:36:47,692 [INFO] Easy apply: Chan Zuckerberg Biohub
-2025-10-09 16:36:51,365 [INFO] Company site apply: Humana
-2025-10-09 16:36:53,156 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=81455fad4aeba38e&bb=3i0_arnom4qeW-Wm__guiRhmWydVkTq3zgIIA0qeBkEHOtQBgs5Oi_N9dYWCiLfjnjZUo0r0GzRBKMXtf5ZAWofumoT7CymY673RtCCSg6g4DI8TrboFUfO32Gtfw5zj5P6uaKDHUt4fm8oKfOnYqQ%3D%3D&xkcb=SoBC67M3skQIzjURqZ0GbzkdCdPP&fccid=f1f381861c1f0b69&vjs=3
-2025-10-09 16:36:56,435 [INFO] Easy apply: Pye-Barker Fire & Safety, LLC
-2025-10-09 16:36:56,567 [INFO] Benefits missing
-2025-10-09 16:36:56,691 [INFO] Easy apply: Donato Technologies Inc
-2025-10-09 16:36:56,719 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:36:56,726 [INFO] Updated processed jobs with 27 new links
-2025-10-09 16:36:58,185 [INFO] Benefits missing
-2025-10-09 16:36:58,246 [INFO] Easy apply: Softcrylic Technology Solutions
-2025-10-09 16:36:58,260 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:36:58,261 [INFO] Updated processed jobs with 95 new links
-2025-10-09 16:37:01,062 [INFO] Salary missing
-2025-10-09 16:37:01,221 [INFO] Company site apply: Electronic Arts
-2025-10-09 16:37:04,690 [INFO] Benefits missing
-2025-10-09 16:37:04,788 [INFO] Company site apply: Shirley Ryan AbilityLab
-2025-10-09 16:37:08,801 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c1a233aab7b562dc&bb=Cs0kpuwfw7ukx7KQS02ImQ8Y0ro8MC0FsDqRkmQibMQWW-ku5XfpGiVPCsZh_28up4W6a1oz7JUDBzmn2r4cRA4HsysG_GnrL5tTSFinHvImspqjD5DF1DD-3Q4W5_ZbVD5RZOC6mmZpdQVZOHGKvDi2k3mo3K2e&xkcb=SoAT67M3skQHFAwHQp0JbzkdCdPP&fccid=0b34f5e02a1add35&cmp=Parallel&ti=Engineering+Lead&vjs=3
-2025-10-09 16:37:09,367 [INFO] Benefits missing
-2025-10-09 16:37:09,461 [INFO] Easy apply: Epic Technologies
-2025-10-09 16:37:10,540 [INFO] Collected 5 jobs...
-2025-10-09 16:37:11,889 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_20.png
-2025-10-09 16:37:11,889 [WARNING] Failed to click page 21: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-21']") to be visible
-
-2025-10-09 16:37:12,364 [INFO] Gemini response: 80
-2025-10-09 16:37:16,774 [INFO] Easy apply: Lineage Logistics
-2025-10-09 16:37:17,605 [INFO] Salary missing
-2025-10-09 16:37:17,767 [INFO] Benefits missing
-2025-10-09 16:37:17,936 [INFO] Company site apply: McKinsey & Company
-2025-10-09 16:37:20,484 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=2c886e9eb4bda211&bb=P9-Bd7B8SJjfs2djPfFaPSu3KKI5hyncx9YeA006n2CAKz4xpC2rpKhsPk5N2CfmxJPK7ZSRZpRWrRJaN4EPEEmBa6wmD0HKvMxaGrfJHg-ftoyC9zvZbMMD_ztr0Vf0GRmGasqBQ1c_EzdXpm-pEw%3D%3D&xkcb=SoC667M3skQC4NUHpJ0ObzkdCdPP&fccid=6cde43ef8db900c4&vjs=3
-2025-10-09 16:37:20,803 [INFO] Company site apply: Barr Engineering
-2025-10-09 16:37:23,815 [ERROR] Failed to extract company name
-2025-10-09 16:37:29,015 [INFO] Collected 10 jobs...
-2025-10-09 16:37:29,015 [INFO] Processing batch...
-2025-10-09 16:37:29,445 [INFO] Benefits missing
-2025-10-09 16:37:29,493 [INFO] Company site apply: WestRock
-2025-10-09 16:37:31,294 [INFO] Collected 5 jobs...
-2025-10-09 16:37:31,321 [INFO] Benefits missing
-2025-10-09 16:37:31,402 [INFO] Company site apply: OhioHealth
-2025-10-09 16:37:33,578 [INFO] Gemini response: 70 60 30 0 0 50 20 70 30 50
-2025-10-09 16:38:05,262 [INFO] Company site apply: PNC Financial Services Group
-2025-10-09 16:38:06,910 [INFO] Benefits missing
-2025-10-09 16:38:06,956 [INFO] Easy apply: Lenmar Consulting Inc.
-2025-10-09 16:38:13,046 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a53f971b18d526a2&bb=PUfZEnizRZWw8gtmR3cQRpLaD08TtaKKs2RTca8nDIqQwZNNLUDoJ_89zJMPPlvtGWrCYKoq5P1J3zDrJDmrBetkUsK-oZa_-eb03ECPVolx24dY8y9Br4OKaT2yIWsqPUavAriYeF71bfrZWSEcZA%3D%3D&xkcb=SoD967M3skQbrf2TWZ0LbzkdCdPP&fccid=f65dc27fae2e9bf3&vjs=3
-2025-10-09 16:38:14,008 [INFO] Benefits missing
-2025-10-09 16:38:14,077 [INFO] Company site apply: Experian Information Solutions
-2025-10-09 16:38:14,093 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:38:14,094 [INFO] Updated processed jobs with 3 new links
-2025-10-09 16:38:17,182 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8a2839501530dc9e&bb=C-8IazUvOuRlf9q7ETUL4mB9ts2IJYLs-iecmFJaADa5CKhbXiHUIuJMIPZc1htatdYg3_uxwDELEKjagcFerkA3OjrkIn5esQzU6GhwRz8TcH7DC5GH81bFr8-mHYrp-Qu7DLNNeClK7uYEr7PVy0Sl0K4JlT4g&xkcb=SoBm67M3skQFZsW0N50JbzkdCdPP&fccid=e723d4f0d550c6cf&vjs=3
-2025-10-09 16:38:18,048 [INFO] Easy apply: InPwr
-2025-10-09 16:38:18,063 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:38:18,064 [INFO] Updated processed jobs with 62 new links
-2025-10-09 16:38:19,642 [INFO] Salary missing
-2025-10-09 16:38:19,692 [INFO] Company site apply: Wealthbox
-2025-10-09 16:38:19,717 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:38:19,718 [INFO] Updated processed jobs with 90 new links
-2025-10-09 16:38:25,826 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=c958dedfc005da7b&bb=pw4p3BW6vdPxKs-rM0rSk4TVBT44bGQY8Tth3J_aOck2q38kUSW6oiIagFai8L5fri6An_S1AAVoRmGH64LUiPyPz32G8DR40c-JjuOLD5NQyt_-QLGsdlqzJv0mxh_gXq9NlbwZUuqhlCWNOvSjKps45-htPKJq&xkcb=SoD_67M3skQIe22TWZ0BbzkdCdPP&fccid=4e64238c89e14944&cmp=Tangspac-Consulting-Pte-Ltd&ti=Full+Stack+Developer&vjs=3
-2025-10-09 16:38:26,727 [INFO] Easy apply: Team Velocity
-2025-10-09 16:38:27,270 [INFO] Collected 10 jobs...
-2025-10-09 16:38:27,270 [INFO] Processing batch...
-2025-10-09 16:38:27,544 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=202aecfe3a6a64b6&bb=CphuUipOE3TBkiVGQXzhv1UkUPZpxkEVICfH_UGVpOimJ3FOylf1QQX-bFNyTCZJzkDyFxNwc2xk-DkJ0FzUoGVqZ9-TBVD7clgjPul6IXcXEK4CjaLFjSwrkvdcpqip69cUMyngRDdl7mTPbx0WxSGLJ-dFwvqR&xkcb=SoCz67M3skQBmG2Etx0GbzkdCdPP&fccid=712bad24a9fb5c54&vjs=3
-2025-10-09 16:38:28,020 [INFO] Gemini response: 70 0 75 60 75 0 65 0 0 0
-2025-10-09 16:38:28,720 [INFO] Easy apply: Tangspac Consulting Pte Ltd
-2025-10-09 16:38:32,456 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7b2d4de76327dc5e&bb=CphuUipOE3TBkiVGQXzhvyGqNm7d0w_QZ-3MZD6e1RZm_FMYbLSQSU1-EasC2tx95o_6iCiYTQlmY1yWSHqEZmhuKrNhULEA8LRheOKUZH0kRqd3SnwyiUtLypSebXDgG3-IU2nEN0CHBCpQuMnA0rBOOkKgNQKR&xkcb=SoAu67M3skQBmG2Etx0FbzkdCdPP&fccid=712bad24a9fb5c54&vjs=3
-2025-10-09 16:38:32,462 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:38:32,464 [INFO] Updated processed jobs with 84 new links
-2025-10-09 16:38:33,994 [INFO] Benefits missing
-2025-10-09 16:38:34,027 [INFO] Easy apply: Laurate LLC
-2025-10-09 16:38:41,264 [INFO] Salary missing
-2025-10-09 16:38:41,281 [INFO] Benefits missing
-2025-10-09 16:38:41,331 [INFO] Company site apply: ZapCom Solutions
-2025-10-09 16:38:48,609 [INFO] Easy apply: Tangspac Consulting Pte Ltd
-2025-10-09 16:38:49,389 [INFO] Easy apply: Redguard,LLC
-2025-10-09 16:38:50,927 [INFO] Company site apply: Villanova University
-2025-10-09 16:38:56,430 [INFO] Company site apply: Altria
-2025-10-09 16:38:59,395 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=cbd241276378696d&bb=P9-Bd7B8SJjfs2djPfFaPVrOuDD-l-Gk09-dDe_IyWPX9EtI3EIKBGWT18grSthtsYGGSvVzj1K8MyN4NxQxJynQjTVhHLcLDeHicRSeaxPfCqM54PhIIvBpGq4cGrDVYDszLeRcDEb2ebmIoNHQZA%3D%3D&xkcb=SoDO67M3skQC4NUHpJ0CbzkdCdPP&fccid=b06976a77ac2aa60&vjs=3
-2025-10-09 16:39:03,593 [INFO] Benefits missing
-2025-10-09 16:39:03,618 [INFO] Easy apply: SYENERGY DATA INC
-2025-10-09 16:39:06,793 [INFO] Collected 5 jobs...
-2025-10-09 16:39:07,841 [INFO] Benefits missing
-2025-10-09 16:39:07,887 [INFO] Company site apply: Seer Interactive
-2025-10-09 16:39:07,928 [INFO] Benefits missing
-2025-10-09 16:39:07,970 [INFO] Company site apply: ​Illinois State Board of Education
-2025-10-09 16:39:12,865 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_28.png
-2025-10-09 16:39:12,865 [WARNING] Failed to click page 29: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-29']") to be visible
-
-2025-10-09 16:39:13,030 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fa7a9a0f365ad7e6&bb=U7ZH3zV_8CBOreNR8Hilt7Dhw-XKlgSh0_NmTeV_zkqhms7CiMl2Bkl9vg082OchDLtNxiE29P8Pih3QGYifJSR_zgPhM7ZRKXzH7wjuO5mQurJ7b_0wa7cALtn4FOmrjAN96PAVOos%3D&xkcb=SoD-67M3skQZlV2TbJ0DbzkdCdPP&fccid=02dbb5c6d31477a8&vjs=3
-2025-10-09 16:39:14,013 [INFO] Benefits missing
-2025-10-09 16:39:14,048 [INFO] Company site apply: Maximus
-2025-10-09 16:39:14,059 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:39:14,061 [INFO] Updated processed jobs with 19 new links
-2025-10-09 16:39:14,176 [INFO] Collected 5 jobs...
-2025-10-09 16:39:14,838 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_35.png
-2025-10-09 16:39:14,838 [WARNING] Failed to click page 36: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-36']") to be visible
-
-2025-10-09 16:39:15,528 [INFO] Gemini response: 95
-2025-10-09 16:39:16,825 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b44136e076745d4f&bb=qMvrEgQ3uTZuLOnDKMfFxvouhaDGyZm20mCv0tlkorL03WVNbtz1D6vuvHu6OXK5YZ7zwaWhRC6mFmQ8j9EtW-B9cuac1SeVmI0ovJLfBl_FN7SPbjrt5OPt-oYe9unuE3cZ-qtfoZbZSL9ovZu1lA%3D%3D&xkcb=SoAA67M3skQZx8gIfz0NbzkdCdPP&fccid=f6b479d2e2497954&cmp=Summit-Technologies-%2526-Solutions%2C-Inc.&ti=Virtualization+Engineer&vjs=3
-2025-10-09 16:39:17,507 [INFO] Collected 10 jobs...
-2025-10-09 16:39:17,507 [INFO] Processing batch...
-2025-10-09 16:39:18,248 [INFO] Gemini response: 0 95 40 0 50 0 80 0 0 70
-2025-10-09 16:39:18,991 [INFO] Benefits missing
-2025-10-09 16:39:19,098 [INFO] Company site apply: Frank Rimerman and Co LLP
-2025-10-09 16:39:19,122 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:39:19,123 [INFO] Updated processed jobs with 44 new links
-2025-10-09 16:39:31,248 [INFO] Benefits missing
-2025-10-09 16:39:31,369 [INFO] Easy apply: Tangspac Consulting Pte Ltd
-2025-10-09 16:39:32,173 [INFO] Company site apply: Global Atlantic Financial Group
-2025-10-09 16:39:32,460 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:39:32,467 [INFO] Updated processed jobs with 34 new links
-2025-10-09 16:39:34,170 [INFO] Easy apply: Applied Systems Canada
-2025-10-09 16:39:34,333 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:39:34,342 [INFO] Updated processed jobs with 22 new links
-2025-10-09 16:39:35,178 [INFO] Company site apply: Kite Pharma
-2025-10-09 16:39:48,928 [INFO] Company site apply: Antech Diagnostics
-2025-10-09 16:39:49,000 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:39:49,035 [INFO] Updated processed jobs with 33 new links
-2025-10-09 16:39:49,880 [INFO] Company site apply: LSEG (London Stock Exchange Group)
-2025-10-09 16:39:50,331 [INFO] Collected 5 jobs...
-2025-10-09 16:40:01,820 [INFO] Salary missing
-2025-10-09 16:40:01,878 [INFO] Benefits missing
-2025-10-09 16:40:01,987 [INFO] Company site apply: J. F. Ahern Co.
-2025-10-09 16:40:04,571 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_11.png
-2025-10-09 16:40:04,571 [WARNING] Failed to click page 12: Page.wait_for_selector: Timeout 30000ms exceeded.
+2025-10-09 22:22:03,772 [INFO] Gemini response: 80 70 0 0 0 0 0 90
+2025-10-09 22:22:04,002 [INFO] Benefits missing
+2025-10-09 22:22:04,592 [INFO] Easy apply: Mitsubishi Electric Research Laboratories
+2025-10-09 22:22:04,765 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:22:04,773 [INFO] Updated processed jobs with 29 new links
+2025-10-09 22:22:05,755 [INFO] Company site apply: Twitch Interactive, Inc. - D48
+2025-10-09 22:22:06,074 [INFO] Collected 10 jobs...
+2025-10-09 22:22:06,074 [INFO] Processing batch...
+2025-10-09 22:22:06,293 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=e328e9d7ad0b025b&bb=UQMMbdfuVxewx5db5lfM716zxLaXkkCuOMqxbtL-QMcTQ8pWyCS7TWfGmmoaXHPkpaN4zCVqeNkgpGyHK9mSz4rTK-3YZ39G2JGd9X1RQ-4_F_oS3ikmla_Nn28U4z_6_4x6M4obO-4%3D&xkcb=SoDY67M3sk3RHRzb3h0HbzkdCdPP&fccid=01e32ef1532db6a0&vjs=3
+2025-10-09 22:22:06,761 [INFO] Gemini response: 60 80 30 40 30 30 30 30 30 30
+2025-10-09 22:22:11,940 [INFO] Collected 5 jobs...
+2025-10-09 22:22:13,957 [INFO] Benefits missing
+2025-10-09 22:22:14,153 [INFO] Company site apply: PNM
+2025-10-09 22:22:16,776 [INFO] Benefits missing
+2025-10-09 22:22:18,026 [INFO] Easy apply: Golden Lotus Ventures
+2025-10-09 22:22:21,209 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_11.png
+2025-10-09 22:22:21,209 [WARNING] Failed to click page 12: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator("[data-testid='pagination-page-12']") to be visible
 
-2025-10-09 16:40:05,906 [INFO] Collected 10 jobs...
-2025-10-09 16:40:05,907 [INFO] Processing batch...
-2025-10-09 16:40:06,813 [INFO] Gemini response: 60 60 40 50 85 0 30 70 60 80
-2025-10-09 16:40:08,603 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=fcd29f6d7f5168f9&bb=LBjzpSfuk5IjSD0Ebcum6o-6fbZIEmHd62pm3G9jPytJ6ENk1rBK5cDjs1SntHSI_8-W-mJ64rMo5eeoe_A_qRoTKwDjHQ9SF3WUBh1oq9YT0Va5qH_T7obrQAuW7U7tZY-1ZEDoW64gmnHgxLAfpw%3D%3D&xkcb=SoAV67M3skQt7ATbqp0DbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
-2025-10-09 16:40:17,048 [INFO] Collected 5 jobs...
-2025-10-09 16:40:20,589 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_16.png
-2025-10-09 16:40:20,589 [WARNING] Failed to click page 17: Page.wait_for_selector: Timeout 30000ms exceeded.
+2025-10-09 22:22:22,063 [INFO] Gemini response: 75 50 50 0 0
+2025-10-09 22:22:22,764 [INFO] Easy apply: Findpro Group Inc.
+2025-10-09 22:22:23,034 [INFO] Company site apply: Vofox Solutions
+2025-10-09 22:22:23,094 [INFO] Company site apply: Calabrio
+2025-10-09 22:22:29,413 [INFO] Company site apply: University of Pennsylvania
+2025-10-09 22:22:29,838 [INFO] Collected 5 jobs...
+2025-10-09 22:22:32,055 [INFO] Benefits missing
+2025-10-09 22:22:32,519 [INFO] Company site apply: Nue.io Careers
+2025-10-09 22:22:34,321 [INFO] Collected 10 jobs...
+2025-10-09 22:22:34,322 [INFO] Processing batch...
+2025-10-09 22:22:35,167 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:22:35,178 [INFO] Updated processed jobs with 28 new links
+2025-10-09 22:22:37,494 [INFO] Collected 10 jobs...
+2025-10-09 22:22:37,495 [INFO] Processing batch...
+2025-10-09 22:22:38,559 [INFO] Gemini response: 80 80 90 90 90 80 80 80 90 80
+2025-10-09 22:22:41,101 [INFO] Company site apply: Landis+Gyr
+2025-10-09 22:22:48,071 [INFO] Collected 10 jobs...
+2025-10-09 22:22:48,072 [INFO] Processing batch...
+2025-10-09 22:22:49,236 [INFO] Gemini response: 0 20 20 0 20 0 20 20 20 20
+2025-10-09 22:22:49,243 [INFO] Updated processed jobs with 31 new links
+2025-10-09 22:22:49,660 [INFO] Collected 5 jobs...
+2025-10-09 22:22:49,947 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=87dc3f542d56e975&bb=nEzwpu4njZedYu2RqlvTEZbziedQbkchkf6uqPfqTtuzMnhfGSCrNWTL5Abmb035WqF3UoGDuGpyUXlbnF26LnRGz4M4UI_b2lYXzQ3yflf4Wx1dJUxrme2zzUFss9XbDdoqAZGotazVQ8kCS0K4uQ%3D%3D&xkcb=SoDU67M3sk3nvcUHpJ0AbzkdCdPP&fccid=fe23daa7afb5de21&vjs=3
+2025-10-09 22:22:50,300 [INFO] Salary missing
+2025-10-09 22:22:50,360 [INFO] Benefits missing
+2025-10-09 22:22:50,553 [INFO] Easy apply: Smartcat
+2025-10-09 22:22:55,356 [INFO] Benefits missing
+2025-10-09 22:22:55,525 [INFO] Easy apply: Intellibus
+2025-10-09 22:22:55,684 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:22:55,689 [INFO] Updated processed jobs with 95 new links
+2025-10-09 22:22:57,967 [INFO] Company site apply: Samsara
+2025-10-09 22:22:57,978 [INFO] Company site apply: Hewlett Packard
+2025-10-09 22:23:01,918 [INFO] Benefits missing
+2025-10-09 22:23:02,031 [INFO] Easy apply: EMR CPR LLC
+2025-10-09 22:23:04,627 [INFO] Collected 10 jobs...
+2025-10-09 22:23:04,635 [INFO] Processing batch...
+2025-10-09 22:23:05,028 [INFO] Company site apply: BOEING
+2025-10-09 22:23:05,444 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
+2025-10-09 22:23:05,445 [INFO] Updated processed jobs with 22 new links
+2025-10-09 22:23:08,846 [INFO] Collected 5 jobs...
+2025-10-09 22:23:09,483 [INFO] Benefits missing
+2025-10-09 22:23:09,856 [INFO] Company site apply: Waymo
+2025-10-09 22:23:14,556 [INFO] Easy apply: La-Z-Boy Inc.
+2025-10-09 22:23:14,907 [INFO] Easy apply: Great American Insurance Company
+2025-10-09 22:23:19,417 [INFO] Benefits missing
+2025-10-09 22:23:19,535 [INFO] Easy apply: Atvantiq Network
+2025-10-09 22:23:24,388 [INFO] Salary missing
+2025-10-09 22:23:24,446 [INFO] Company site apply: Rhythmlink International LLC
+2025-10-09 22:23:24,535 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:23:24,536 [INFO] Updated processed jobs with 96 new links
+2025-10-09 22:23:24,950 [INFO] Collected 5 jobs...
+2025-10-09 22:23:25,014 [INFO] Company site apply: Nearsure
+2025-10-09 22:23:25,620 [INFO] Collected 10 jobs...
+2025-10-09 22:23:25,621 [INFO] Processing batch...
+2025-10-09 22:23:26,468 [INFO] Gemini response: 0 0 0 0 60 0 50 30 60 40
+2025-10-09 22:23:28,085 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_23.png
+2025-10-09 22:23:28,085 [WARNING] Failed to click page 24: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
-  - waiting for locator("[data-testid='pagination-page-17']") to be visible
+  - waiting for locator("[data-testid='pagination-page-24']") to be visible
 
-2025-10-09 16:40:21,615 [INFO] Gemini response: 50 0 65 35 65 50 35 50
-2025-10-09 16:40:27,227 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7e02bfa637457d72&bb=qMvrEgQ3uTZuLOnDKMfFxuw3mf0qH2VooCNHrX1P8QwdYRzoeROygSR1xxSNZmo-Zvd0oz-_dG7rgvS1OJ23XKs6bsahduAshWhX1CTVanRwJgzu-DXM679kyZEB1OyrysY_roKcDkRdPbQ8UfP1OQ%3D%3D&xkcb=SoBO67M3skQZx8gIfz0HbzkdCdPP&fccid=75b3f9c79ae10bf4&vjs=3
-2025-10-09 16:40:32,613 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3aa881ccc288123b&bb=kq4y5RbWEJ6BibMVdpVeGDQMjHGM3vi7S20rKodhL-jTyWFTZ-w6UuHFDY65lHrB_IZNvKmf7cdAeTwkB8yZlpScsHs1YfVRtavSWyrOxZ8N9C-n-y21LcOJbnB6PhUoh9d0qO6b8NX5uWxXg2LqMw%3D%3D&xkcb=SoDJ67M3skQA5lQpXh0IbzkdCdPP&fccid=8b772ce2209ffa03&vjs=3
-2025-10-09 16:40:33,325 [INFO] Company site apply: OneMain Financial
-2025-10-09 16:40:33,360 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:40:33,361 [INFO] Updated processed jobs with 59 new links
-2025-10-09 16:40:34,068 [INFO] Collected 5 jobs...
-2025-10-09 16:40:36,013 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b9ef674cb4f0bcf2&bb=qMvrEgQ3uTZuLOnDKMfFxsbRHIkMFthuhboDFXpCZ-E8Z0WMOQbzB69krFFNbooKv0Z2N_mBMRpos8IzmrXrlFWT86ARcTDuDjIOYKQxEAsg1bXYqVWyJZ4tiHk1Ox_rxlL9rr9sv31RzsDJ_3WQRw%3D%3D&xkcb=SoD667M3skQZx8gIfz0GbzkdCdPP&fccid=e84543660fa54e90&vjs=3
-2025-10-09 16:40:39,475 [INFO] Benefits missing
-2025-10-09 16:40:39,550 [INFO] Company site apply: CSU Fullerton Auxiliary Services
-2025-10-09 16:40:41,804 [INFO] Company site apply: Forterra
-2025-10-09 16:40:48,512 [INFO] Salary missing
-2025-10-09 16:40:48,579 [INFO] Company site apply: United Rentals
-2025-10-09 16:40:52,031 [INFO] Benefits missing
-2025-10-09 16:40:52,064 [INFO] Company site apply: UNM Hospitals
-2025-10-09 16:40:54,896 [INFO] Benefits missing
-2025-10-09 16:40:54,922 [INFO] Easy apply: Donato Technologies Inc
-2025-10-09 16:41:00,492 [INFO] Collected 10 jobs...
-2025-10-09 16:41:00,492 [INFO] Processing batch...
-2025-10-09 16:41:01,324 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_43.png
-2025-10-09 16:41:01,324 [WARNING] Failed to click page 44: Page.wait_for_selector: Timeout 30000ms exceeded.
+2025-10-09 22:23:28,600 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=a713e9a73dc1b0d4&bb=-brcCozVG7orFJr3j7l_YvO7o1-STV_k3Van3xm2DaPny8SnWBkg7hFVeydvn_NxFxB1E0mresOdS_wDryQhYOgSbiBlraKIW367Qe0yYmeCaQxDMir3BtTgIg9lSpKk0YpL848nsFRF3lrnOdD0_Q%3D%3D&xkcb=SoAw67M3sk3itagIfz0JbzkdCdPP&fccid=983df8d8c088e301&cmp=Boston-City-Council&ti=Budget+Analyst&vjs=3
+2025-10-09 22:23:28,879 [INFO] Benefits missing
+2025-10-09 22:23:28,926 [INFO] Gemini response: 0 0 0 0
+2025-10-09 22:23:28,927 [INFO] Updated processed jobs with 22 new links
+2025-10-09 22:23:28,967 [INFO] Easy apply: Dynamic Ratings Inc.
+2025-10-09 22:23:29,580 [INFO] Benefits missing
+2025-10-09 22:23:29,749 [INFO] Company site apply: Intercontinental Exchange Holdings, Inc.
+2025-10-09 22:23:29,811 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:23:29,811 [INFO] Updated processed jobs with 105 new links
+2025-10-09 22:23:31,266 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:23:36,334 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:23:37,942 [INFO] Easy apply: MLabs
+2025-10-09 22:23:40,318 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=96a42a0fe9b2697b&bb=KF5WLy8FwjEfaoBn48zysetK1KjttzNTIJDwd4TheIYQ6wh_4YwhK5NlvSa-2rsKpOak91tFZrgc3Lf7LFbHp_EW-lSZKDkVK5SWq1L4E1POvgssrdjszJ-2QaYvs8AwPGRD-rNEMyw%3D&xkcb=SoCm67M3sk30Y-WTWZ0ZbzkdCdPP&fccid=50f96051976a92af&vjs=3
+2025-10-09 22:23:43,512 [INFO] Company site apply: Blizzard Entertainment
+2025-10-09 22:23:48,888 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:23:52,485 [INFO] Easy apply: T&S Brass and Bronze Works, Inc
+2025-10-09 22:23:54,202 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:23:55,006 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:24:00,088 [ERROR] NotError/found clicking Accept Terms button.
+2025-10-09 22:24:01,680 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=0e413417bf2c8888&bb=judC5tlcu5Ihw-jihW3p0DaDLNuSOM9iYvPpHaL32t_XVqmRwPlfdTK3DEbUL6nsPLIsdcja1DesT_Ekhhc4uEEi6_8ZmDPD50acUJVXXhPWKZY4SD2Ru9-KNUIR9fm-A61M6AbHvvKxpDY74cIPWw%3D%3D&xkcb=SoB-67M3sk395tURqZ0IbzkdCdPP&fccid=e8f998ddd15bac9c&vjs=3
+2025-10-09 22:24:03,418 [INFO] Easy apply: AbbVie
+2025-10-09 22:24:06,788 [INFO] Benefits missing
+2025-10-09 22:24:07,214 [INFO] Easy apply: Amphenol TCS
+2025-10-09 22:24:07,523 [INFO] Salary missing
+2025-10-09 22:24:08,024 [INFO] Easy apply: Fresh Start Womens Foundation
+2025-10-09 22:24:17,908 [INFO] Company site apply: POWER Engineers, Inc.
+2025-10-09 22:24:22,643 [INFO] Collected 10 jobs...
+2025-10-09 22:24:22,644 [INFO] Processing batch...
+2025-10-09 22:24:23,466 [INFO] Gemini response: 60 20 70 0 60 0 70 40 20 40
+2025-10-09 22:24:27,481 [INFO] Benefits missing
+2025-10-09 22:24:27,581 [INFO] Easy apply: Johnstone Supply (JTEAM EMP LLC)
+2025-10-09 22:24:32,562 [INFO] Benefits missing
+2025-10-09 22:24:32,880 [INFO] Company site apply: Cohu, Inc.
+2025-10-09 22:24:33,886 [INFO] Easy apply: MLabs
+2025-10-09 22:24:36,979 [INFO] Company site apply: OMMO
+2025-10-09 22:24:37,164 [INFO] Easy apply: H&M
+2025-10-09 22:24:42,919 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=ee4a2818db63d16b&bb=yVsN5dxEN9a3Wz6jPllWI3RH-3kkoXCbZk5d8Uq97ddpbXnKBfONe9KFtepc_IU6eJhTbGGRNhg7_4LeERot-0nIxG5ESo4cotnzQtDCz9dWJlArkM3wV4jVQP68HwJWoKKE75yF_z4%3D&xkcb=SoBp67M3sk3napUHpJ0LbzkdCdPP&fccid=e32821fd776ddd40&vjs=3
+2025-10-09 22:24:42,983 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:24:43,003 [INFO] Updated processed jobs with 49 new links
+2025-10-09 22:24:43,884 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=382840c90729326d&bb=KF5WLy8FwjEfaoBn48zysXOthuw3Hyo0TAsBrSJtjw9VJ3wKcDKhQX4sQGRYd55buE0HCPwH0YzEhSguk7k6qkfKbVN8oH6uFfYKZPh1I8lcac_vW0LXgV7-Uzo-PpnP&xkcb=SoDo67M3sk30Y-WTWZ0TbzkdCdPP&fccid=64e028df9b3fd2c4&vjs=3
+2025-10-09 22:24:48,194 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7d1e6bbbe51c8568&bb=judC5tlcu5Ihw-jihW3p0Ah7xw9NIY8xELqIYWDH_Etcl6pPfVGunlu9ItJM7qUr0c6q5TbYJeZqrqWdhay2zhdxTWQJiMd22Cg6XnEz2CIOH4IcZyVNiduPoJ7Z_9Tgr8oNijCyQ9zVdPiuTh5EhQ%3D%3D&xkcb=SoCt67M3sk395tURqZ0BbzkdCdPP&fccid=9f03ff3535e6ee4b&vjs=3
+2025-10-09 22:24:48,224 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:24:48,245 [INFO] Updated processed jobs with 83 new links
+2025-10-09 22:24:53,509 [INFO] Benefits missing
+2025-10-09 22:24:53,597 [INFO] Company site apply: SLAC National Accelerator Laboratory
+2025-10-09 22:24:53,624 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:24:53,632 [INFO] Updated processed jobs with 18 new links
+2025-10-09 22:24:56,179 [INFO] Benefits missing
+2025-10-09 22:24:56,231 [INFO] Easy apply: SHAKTECH CORP
+2025-10-09 22:24:59,265 [INFO] Benefits missing
+2025-10-09 22:24:59,497 [INFO] Easy apply: Avalign Technologies
+2025-10-09 22:25:10,092 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=4fecd22627fde9f5&bb=Lq22IfudEtaa3Twc7X08EyJFpzgBrWUldwGbjfsorZXQnpNEEsH3bQMI8XBSA6XR7jymHlMclBUui_Du4hVu15G7AGtEWJq7Rf_AzfrgdP9KeLtp-R86zkANLrvkR0525k7RLIwAtaMxixWwJ8rnyQ%3D%3D&xkcb=SoAV67M3sk3hqv3fhh0MbzkdCdPP&fccid=ffa0939cae523fb4&vjs=3
+2025-10-09 22:25:11,142 [INFO] Collected 5 jobs...
+2025-10-09 22:25:11,458 [INFO] Collected 10 jobs...
+2025-10-09 22:25:11,458 [INFO] Processing batch...
+2025-10-09 22:25:12,562 [INFO] Gemini response: 65 55 55 55 45 50 60 60 35 35
+2025-10-09 22:25:14,238 [INFO] Easy apply: Hunter Douglas
+2025-10-09 22:25:14,904 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=7c22dbba88e74bcb&bb=rCApOcZLwl7oLiekBwVickOSPoHiYu496nSvq1fYmuPr1yaODvqzcbMuohJNv7MqgXoc6wP0V4ycUZuyO9bvCXoy96ZNIg-MYaY6rpQ7Pb7Pq6yry3nG41DI-hZXcbmp4j4jiRNMSIFeJBkQCh4efvyLceVe_VgX&xkcb=SoDL67M3sk3EKpXqZB0NbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
+2025-10-09 22:25:29,163 [INFO] Company site apply: Front Row Europe GmbH
+2025-10-09 22:25:29,973 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3612519f36acda24&bb=KF5WLy8FwjEfaoBn48zysQyDPJbSi0bidrpnEzZaYk6XORGJITnVL8BLyZZlkUuwiLv7MV696RJbysjBM3czVgDNU3XAvphz6ygYs0WCbWeN60jVx7u-l5rHwzbbko3MGG46A3XafnE%3D&xkcb=SoDB67M3sk30Y-WTWZ0RbzkdCdPP&fccid=d3e82d10e248596b&vjs=3
+2025-10-09 22:25:32,582 [INFO] Collected 5 jobs...
+2025-10-09 22:25:34,053 [INFO] Collected 10 jobs...
+2025-10-09 22:25:34,060 [INFO] Processing batch...
+2025-10-09 22:25:34,897 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0
+2025-10-09 22:25:34,898 [INFO] Updated processed jobs with 103 new links
+2025-10-09 22:25:37,200 [INFO] Collected 5 jobs...
+2025-10-09 22:25:42,658 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8014e3b71d25190f&bb=KF5WLy8FwjEfaoBn48zysferfIPhxHSEndoYF6q6zjvccEPYByALVQgepH7B9uEyNoR8JHbvzcrSoDaCBHBx3lHUdP-ji_Rj8AN7C5UTaN2dWG8iuO3JRVFh8p_r1BYlmRdtonB_fe0%3D&xkcb=SoBP67M3sk30Y-WTWZ0WbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
+2025-10-09 22:25:47,582 [INFO] Benefits missing
+2025-10-09 22:25:47,810 [INFO] Easy apply: Envita Solutions
+2025-10-09 22:25:54,366 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4ecdb0ad6e40de78&bb=vF6p-b8OVBRMuefVVsKNOOCupio2aQiYl1ducJ2Ram6N9gZ1Wjj5nmA6yEQkypKI10lSG7qarttYeEBy-OX9zc6cR8bYv64PQ3NxbQs85INWD3nfM2Ony1gsQ1bPmHGtb6__Tzm5kv_WBcC0WkC5SQ%3D%3D&xkcb=SoCO67M3sk38yRUHpJ0EbzkdCdPP&fccid=90473552d7bbb6d4&vjs=3
+2025-10-09 22:25:56,238 [INFO] Benefits missing
+2025-10-09 22:25:56,332 [INFO] Company site apply: Disney Experiences
+2025-10-09 22:26:04,940 [INFO] Company site apply: PRICE WATERHOUSE COOPERS
+2025-10-09 22:26:05,297 [INFO] Collected 5 jobs...
+2025-10-09 22:26:10,599 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=aa14a6341b35f680&bb=erzqbStN8XbiRruzyj4abD6HIRa4cOm2RyMm4FfztVoXaSZ6mhEXw0mzgYFKbr00spbXNvg-IeqY3Rk9g96qzjv7SS8knZ9am43GFF-4xWPGBltrhdW0hwQSPguUy-cGTD1mCV3JfDI%3D&xkcb=SoA467M3slIHBRWTWZ0NbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3
+2025-10-09 22:26:12,621 [INFO] Company site apply: Toyota Material Handling North America, Inc.
+2025-10-09 22:26:12,875 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:26:12,878 [INFO] Updated processed jobs with 12 new links
+2025-10-09 22:26:13,453 [INFO] Collected 5 jobs...
+2025-10-09 22:26:19,832 [INFO] Salary missing
+2025-10-09 22:26:19,890 [INFO] Benefits missing
+2025-10-09 22:26:20,038 [INFO] Company site apply: Conservice LLC
+2025-10-09 22:26:20,088 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:26:20,100 [INFO] Updated processed jobs with 175 new links
+2025-10-09 22:26:31,926 [INFO] Collected 10 jobs...
+2025-10-09 22:26:31,926 [INFO] Processing batch...
+2025-10-09 22:26:32,809 [INFO] Gemini response: 90 90 90 70 90 90 90 70 70 90
+2025-10-09 22:26:33,665 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b8a5f5949d7f47e0&bb=erzqbStN8XbiRruzyj4abOYeE2rNsfPNuluTeYnWwH-PBDvnczgR1sQ1rle02xWZ5828verGRED67hiNZZnYNr3PXEF3DS8DByuAMj5Jkt87P_INGyf1xTQ3enielWFXDg2UHsqYPU0%3D&xkcb=SoCM67M3slIHBRWTWZ0MbzkdCdPP&fccid=17d397c17f760b21&vjs=3
+2025-10-09 22:26:39,116 [INFO] Benefits missing
+2025-10-09 22:26:39,652 [INFO] Easy apply: Johnstone Supply (JTEAM EMP LLC)
+2025-10-09 22:26:48,737 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=b4428c30ac76acda&bb=Lq22IfudEtaa3Twc7X08E8nGBdXEreWk1bjthsf1waithr7bVYkGBtPV0DpOI-NhaUfnavwF8FtDnEeNF2LfBIrEVWNZlF5HPbdoWhGqaf4BuBZfYGJ1Y4xWMMMbDPkEQbn3lI65yXozUkMLThl9Pw%3D%3D&xkcb=SoDv67M3sk3hqv3fhh0HbzkdCdPP&fccid=969b19518dd1ab0f&vjs=3
+2025-10-09 22:26:58,708 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=342f020b93673e23&bb=erzqbStN8XbiRruzyj4abDPvFD5GhYPND5WaeNDHQYFf_cdztT5QVP8g37Lv_K2dDy-I2KNFbydWHIVowB2bmI15xCkzVwBjRdsvOioL89nroUT84sZtI_afoW8uyMJPAayZdaGDGRU%3D&xkcb=SoBM67M3slIHBRWTWZ0BbzkdCdPP&fccid=5a2bceef3514005a&vjs=3
+2025-10-09 22:27:02,535 [INFO] Collected 5 jobs...
+2025-10-09 22:27:18,334 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=8cfc63f19325cb6e&bb=Lq22IfudEtaa3Twc7X08E0_bfSkM20uBWg7XhsuJMsG1tp1igfQtH6q3XMy1RbtMjJwCBwyvAv1Sd05ZoGmTYhl8Hi69ggvyxjXwoPhzPh1r3tsz8frhjD0MP3vcoMUOZOAkml95iBPdwUDlrgV_og%3D%3D&xkcb=SoBb67M3sk3hqv3fhh0GbzkdCdPP&fccid=dfb4c8eaf18526c1&vjs=3
+2025-10-09 22:27:23,389 [INFO] Benefits missing
+2025-10-09 22:27:23,546 [INFO] Company site apply: Optimum
+2025-10-09 22:27:23,670 [INFO] ✔ Saved in CSV files.
+2025-10-09 22:27:23,706 [INFO] Updated processed jobs with 46 new links
+2025-10-09 22:27:29,804 [INFO] Collected 5 jobs...
+2025-10-09 22:27:43,456 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_21.png
+2025-10-09 22:27:43,468 [WARNING] Failed to click page 22: Page.wait_for_selector: Timeout 30000ms exceeded.
 Call log:
-  - waiting for locator("[data-testid='pagination-page-44']") to be visible
+  - waiting for locator("[data-testid='pagination-page-22']") to be visible
 
-2025-10-09 16:41:01,852 [INFO] Gemini response: 75 0 0 50 30 0 20 20 20 50
-2025-10-09 16:41:02,534 [INFO] Gemini response: 50 55 65 55 50 60
-2025-10-09 16:41:07,814 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=4fef6585203b99a4&bb=kq4y5RbWEJ6BibMVdpVeGOOQdZM5KIqkTS1rsDESrmtTKxMM9YWZtXclcAeb00bYGLOmpuz03dLTvb0QncCaoeoCg8Pt7n6ekQnPE4HNV3ZK-T0OdjtBSOjmQqSbofq49i1iUguqJusBS9FicPyH4A%3D%3D&xkcb=SoAz67M3skQA5lQpXh0DbzkdCdPP&fccid=061dae1a32d9c919&vjs=3
-2025-10-09 16:41:14,534 [INFO] Benefits missing
-2025-10-09 16:41:14,611 [INFO] Company site apply: enGen
-2025-10-09 16:41:21,856 [INFO] Company site apply: Food City
-2025-10-09 16:41:23,714 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=c239d28563af152b&bb=tKYJnMEhPIwx19vrms5okR_FZWjW8k9YM-hAAvt6fi6MVq2lj2uv8w2aS19SQxhDZehKroHUPVfFX3uqt7qPlxg5yXmi8Uvnx0XCy-F7iFsipQ67kU0VXPpdQ0kB84Dz2x8NdTygyHKjy3caOa5UUg-IfBfBjR_l&xkcb=SoC_67M3skQGV00HpJ0BbzkdCdPP&fccid=ee1723cae957f03e&vjs=3
-2025-10-09 16:41:24,463 [INFO] Benefits missing
-2025-10-09 16:41:24,490 [INFO] Benefits missing
-2025-10-09 16:41:24,492 [INFO] Company site apply: Columbia University
-2025-10-09 16:41:24,527 [INFO] Company site apply: VXI Global Solutions
-2025-10-09 16:41:35,545 [INFO] Easy apply: Capital Credit Union
-2025-10-09 16:41:38,343 [INFO] Company site apply: Constellation Energy Generation, LLC.
-2025-10-09 16:41:38,887 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=3fc7fb6604eee5ba&bb=GST7geu2fGZseR2sZovKTwaXYus3L1V62mriD8pnrNxfNe-v7VJl9KAuWgkAsS36yEIu6nP2GWEHuuVd-FBvH1--CpAX5MrNGXDBJnu658l9aEgxghh6yUyIlrApdFFA9CiVUfjXzSwzv5rWUuHR9g%3D%3D&xkcb=SoCI67M3skQoQZwEBJ0KbzkdCdPP&fccid=64506471cc8b8617&vjs=3
-2025-10-09 16:41:42,527 [INFO] Easy apply: Coursedog
-2025-10-09 16:41:45,451 [INFO] Benefits missing
-2025-10-09 16:41:45,498 [INFO] Easy apply: Clearco
-2025-10-09 16:41:45,508 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:41:45,509 [INFO] Updated processed jobs with 35 new links
-2025-10-09 16:41:48,665 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=072964a8a241931a&bb=G1e9iHUiKPzoDZBHLoQUJbWc63p43UXEapoZyIZijHgRyJc81ciqbKJy4v50MgO8Ik2HdB-zANs8T7zHs8Gur4gplRMMTjXFd3Sw_kUPvpUnGhB45B2U27JHe15a5FKclvmRMWg2YMagDYeHsIu9Ew%3D%3D&xkcb=SoDj67M3skQrkIR7s50FbzkdCdPP&fccid=e723d4f0d550c6cf&vjs=3
-2025-10-09 16:41:49,602 [INFO] Benefits missing
-2025-10-09 16:41:49,627 [INFO] Easy apply: Celandyne Software Solutions LLC
-2025-10-09 16:41:49,648 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:41:49,649 [INFO] Updated processed jobs with 25 new links
-2025-10-09 16:41:51,035 [INFO] Salary missing
-2025-10-09 16:41:51,052 [INFO] Benefits missing
-2025-10-09 16:41:51,087 [INFO] Company site apply: Invisible Agency
-2025-10-09 16:42:01,458 [INFO] Benefits missing
-2025-10-09 16:42:01,496 [INFO] Easy apply: Premier Staffing Solution
-2025-10-09 16:42:01,517 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:42:01,518 [INFO] Updated processed jobs with 31 new links
-2025-10-09 16:42:01,709 [INFO] Collected 5 jobs...
-2025-10-09 16:42:06,333 [INFO] Salary missing
-2025-10-09 16:42:06,346 [INFO] Benefits missing
-2025-10-09 16:42:06,374 [INFO] Easy apply: Shields Health Solutions
-2025-10-09 16:42:18,561 [INFO] Collected 5 jobs...
-2025-10-09 16:42:53,756 [INFO] Collected 10 jobs...
-2025-10-09 16:42:53,757 [INFO] Processing batch...
-2025-10-09 16:42:56,932 [INFO] Gemini response: 40 35 0 0 0 0 0 60 0 50
-2025-10-09 16:43:08,383 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=4996c7e82d0a3f0b&bb=MI88cdM5U56IyQ_nvRKYLKq_x9xRE_2mqdlwPGAVGMlI_mhkLpldArsSTaf3sW2xqxJw3oBzKGp-vJq7P9Y8Yt1eAWRHu5PBcWX3qtRxwSNEwdaPP2eZCC5nQPmbrzm_EKvhD9rvqilTE2RDuqNDHH9G2Xm2P5nc&xkcb=SoAJ67M3skQkXQ3fsp0MbzkdCdPP&fccid=a5c381a5b33228a1&vjs=3
-2025-10-09 16:43:08,626 [INFO] Collected 10 jobs...
-2025-10-09 16:43:08,626 [INFO] Processing batch...
-2025-10-09 16:43:11,698 [INFO] Easy apply: Cushman & Wakefield
-2025-10-09 16:43:11,841 [INFO] Gemini response: 0 0 0 0 0 0 0 0 0 0
-2025-10-09 16:43:11,842 [INFO] Updated processed jobs with 65 new links
-2025-10-09 16:43:42,586 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_31.png
-2025-10-09 16:43:42,587 [WARNING] Failed to click page 32: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-32']") to be visible
-
-2025-10-09 16:43:44,817 [INFO] Gemini response: 70
-2025-10-09 16:44:03,573 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=5e6cede00101ad20&bb=l_hjBddP9EXmGNEo1N8ySoZ-XtaheJBDfCsWSy7HrR8L4XS_VEAaaCmfNnqzPtybeX5Oth8Re4WIljVQzXC0xKGfumSTUs1uf10ZVVODwPteWtD5zOLilHknFBTsXyVXL0QHbtE0Ddt2BAPahmmCdA%3D%3D&xkcb=SoCk67M3skQ_eD20N50JbzkdCdPP&fccid=247f6d950555f108&vjs=3
-2025-10-09 16:44:05,721 [ERROR] Failed to extract company name
-2025-10-09 16:44:13,704 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=b5a55121d7fbb99d&bb=MI88cdM5U56IyQ_nvRKYLPyALxXDb9GEGK7AsBlBZkSm4V0tfARKg6xp-S8a_eMyDsl4h1XFnmTgQryaLyExCqLAYrRKofhi_qhtDcul7tzjxdDeMfV9M6KT9UbM6zWHiLTG7U21CFsOiccCEH8rWOEbaCLmWV10&xkcb=SoDg67M3skQkXQ3fsp0DbzkdCdPP&fccid=994236e496d6cf6e&cmp=Text-Pro-LLC&ti=Senior+Programmer&vjs=3
-2025-10-09 16:44:17,333 [ERROR] Failed to extract company name
-2025-10-09 16:44:17,342 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:44:17,343 [INFO] Updated processed jobs with 54 new links
-2025-10-09 16:44:34,248 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=d20dd53ad7753577&bb=l_hjBddP9EXmGNEo1N8ySvulnVBNEZid2pBkQ4aiaMqg_EJMYYycdUDgf1cKuEuNvY06tUnyIf_QWsrJeTlx7tEHLrdRgQStMW6N5vVVgDu2HCaO_nrdbdXy7jNZcVr1ZXUD1Kr9I-MdX0WFY4egWQ%3D%3D&xkcb=SoAD67M3skQ_eD20N50MbzkdCdPP&fccid=fcfe744ee4d09e21&cmp=Indev&ti=Servicenow+Developer&vjs=3
-2025-10-09 16:44:40,714 [INFO] Easy apply: Premier Performance LLC
-2025-10-09 16:44:40,718 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:44:40,720 [INFO] Updated processed jobs with 12 new links
-2025-10-09 16:44:52,383 [INFO] Easy apply: Soleil Labs, LLC
-2025-10-09 16:45:51,153 [INFO] Easy apply: FBG Enterprises Opco, LLC
-2025-10-09 16:45:51,160 [INFO] ✔ Saved in CSV files.
-2025-10-09 16:45:51,161 [INFO] Updated processed jobs with 58 new links
-2025-10-09 16:46:21,948 [INFO] No more pages. Screenshot saved: debugging_screenshots/screenshot_31.png
-2025-10-09 16:46:21,948 [WARNING] Failed to click page 32: Page.wait_for_selector: Timeout 30000ms exceeded.
-Call log:
-  - waiting for locator("[data-testid='pagination-page-32']") to be visible
-
-2025-10-09 16:46:22,644 [INFO] Gemini response: 0
-2025-10-09 16:46:22,644 [INFO] Updated processed jobs with 4 new links
-2025-10-09 16:46:22,948 [INFO] 🧭 jobs_lister() finished
-2025-10-09 16:46:22,961 [INFO] Read output/Easy_applies.csv with utf-8 encoding
-2025-10-09 16:46:22,986 [INFO] Sorted and saved output/Easy_applies.csv
-2025-10-09 16:46:22,994 [INFO] Read output/Confirmation_applies.csv with utf-8 encoding
-2025-10-09 16:46:22,996 [INFO] Sorted and saved output/Confirmation_applies.csv
-2025-10-09 16:46:39,196 [INFO] 📊 Google Sheets updated
-2025-10-09 16:46:39,196 [ERROR] Missing one or more required .env values for email
-2025-10-09 16:46:39,199 [INFO] 📤 Debugging screenshots and spider.logs email sent
-2025-10-09 16:46:39,199 [INFO] 🛑 Scraper finished, sleep mode re-enabled
+2025-10-09 22:27:45,064 [INFO] Gemini response: 90 75
+2025-10-09 22:28:00,868 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=ec093ea7df181110&bb=erzqbStN8XbiRruzyj4abHU1BI47YmBO60sGAWfhdD_yjO3HJl64e6e4MQovnqT2hKQdlH2W81wwg6Dg6xXUAC5YyTVEzAR_GOWgbIgQfGVTX0066oaM0jce5R0ScnCJe3oRdwuYoKU%3D&xkcb=SoB267M3slIHBRWTWZ0HbzkdCdPP&fccid=9174083c83de636b&vjs=3
+2025-10-09 22:28:07,553 [INFO] Salary missing
+2025-10-09 22:28:12,166 [INFO] Easy apply: Legend Biotech US
+2025-10-09 22:28:18,269 [INFO] Salary missing
+2025-10-09 22:28:18,816 [INFO] Benefits missing
+2025-10-09 22:28:20,531 [WARNING] All attempts failed for https://indeed.com/rc/clk?jk=0f11dd5f0c1e48df&bb=Lq22IfudEtaa3Twc7X08E3A-v37PJT6uZoOkGHbjra-RlwTVOPSVEG6T9OStejfF7uLw0EShRVxlKiyTsmbnIKUa1H4HNIstnWX3wrGi5GOj8rQTUO1VFH7ieROjZI3TNyhdbTZi0hZ1-yEz4tkvtA%3D%3D&xkcb=SoDG67M3sk3hqv3fhh0FbzkdCdPP&fccid=8f1ca24c54c27400&vjs=3
+2025-10-09 22:28:20,937 [INFO] Company site apply: Smartcat
+2025-10-09 22:28:25,123 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=0f11dd5f0c1e48df&bb=Lq22IfudEtaa3Twc7X08E3A-v37PJT6uZoOkGHbjra-RlwTVOPSVEG6T9OStejfF7uLw0EShRVxlKiyTsmbnIKUa1H4HNIstnWX3wrGi5GOj8rQTUO1VFH7ieROjZI3TNyhdbTZi0hZ1-yEz4tkvtA%3D%3D&xkcb=SoDG67M3sk3hqv3fhh0FbzkdCdPP&fccid=8f1ca24c54c27400&vjs=3
+2025-10-09 22:28:25,158 [INFO] Collected 5 jobs...
+2025-10-09 22:28:33,976 [INFO] Confirmation job: John Deere
+2025-10-09 22:29:03,102 [INFO] Clearance-related job skipped: https://indeed.com/rc/clk?jk=ccf46f7a5cda3791&bb=erzqbStN8XbiRruzyj4abH5adYcw1ePHf4svfMcqvW-oKisxKItgVEx_WgHcjwE0lEl8rogGH2NM314o7dhqkezlYy7GN5X0J03Spk0_Sh1wys9lP2iIPBqhAPFrB595a3YaGFdf1Ng%3D&xkcb=SoBf67M3slIHBRWTWZ0FbzkdCdPP&fccid=f2c4f34c75d0143a&vjs=3
+2025-10-09 22:29:03,594 [INFO] Collected 5 jobs...
