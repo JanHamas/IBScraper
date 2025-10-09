@@ -34,7 +34,7 @@ async def jobs_append_to_csv(easy_applies, cs_applies, c_applies):
         logger.error(f"❌ Error saving to CSV: {e}")
 
 # After complete scraping sort row descending base matching % column and overwrite save files
-def update_google_sheets_from_csv(files=config_input.CSV_FILES):
+def update_google_sheets_from_csv(files=config_input.CSV_FILES.remove("CS_applies.csv")):
     # 🔐 Google Sheets credentials
     base_dir = os.path.dirname(__file__)
     creds_path = os.path.join(base_dir, "indeed_spider_gs_credentails.json")
