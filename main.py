@@ -35,7 +35,7 @@ if __name__ == "__main__":
     logger = setup_logger()
 
     try:
-        logger.info("🚀 Project Acquirer AI started")
+        # logger.info("🚀 Project Acquirer AI started")
 
         # Prevent screen to sleep
         sb = helper.SleepBlocker()
