@@ -2,20 +2,25 @@ import asyncio, random, re, os
 from datetime import datetime
 from playwright_stealth import Stealth
 from playwright.async_api import async_playwright
-
 from config import config_input
 from utils.bypass.cloudflare import CloudflareBypasser
 from utils import accounts_loader, fingerprint_loader, proxies_loader, helper
 from .job_details_scraper import extract_full_details
 from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 import logging
+
 logger = logging.getLogger("spider")  # use shared logger
 
+# Load previews processed jobs id from txt file
 processed_jobs_id = helper.load_processed_jobs_id()
+# this list are appendig with new jobs to append to processed jobs file
 processed_new_company_jobs = []
 
 
 async def _listing(context, job_page_url):
+    """
+    
+    """
     page = None
     try:
         # Create new page
@@ -26,18 +31,17 @@ async def _listing(context, job_page_url):
             await helper.wait_until_internet_is_back(page)
 
         # Navigate to jobs page
-        for attempt in range(3):  # 3 attempts: 0, 1, 2
+        for attempt in range(5):  # 3 attempts: 0, 1, 2
             try:
                 await page.goto(job_page_url, wait_until="load")
-                await helper.handle_terms_cond_btn(page)
                 break  # Success: exit loop
             except PlaywrightTimeoutError:
                 if attempt < 2:  # first two attempts (0,1)
                     print(f"Attempt {attempt + 1} failed, retrying...")
-                    await asyncio.sleep(2)
                 else:  # last attempt failed (attempt == 2)
                     logger.warning(f"All attempts failed for {job_page_url}")
                     await context.close()
+                    await asyncio.sleep(random.randint(4,8))
                     return
 
         # Bypass cloudflare if appears
@@ -69,12 +73,14 @@ async def _listing(context, job_page_url):
                 logger.error(f"Captcha error: {e}")
                 await context.close()
                 return
-
+            
+            # Random wait for page load to sleep
             try:
                 await page.wait_for_timeout(random.randint(3000, 10000))
             except Exception as e:
                 pass
 
+            # random sleep, simulate human acting on page.
             await asyncio.sleep(config_input.RANDOM_SLEEP)
             await helper.simulate_human_behavior(page)
 
