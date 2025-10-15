@@ -125,3 +125,5 @@ gemini_model_version = "gemini-2.0-flash"
 AVIOD_JOBS = ["clearance", "government", "cyber"]
 
 
+show_ai_prompt_for_getting_matching_percentage = False
+show_ai_response_for_getting_matching_percentage= False
